@@ -1,0 +1,1934 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#4188c9">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="robots" content="index,follow">
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.kimai.org/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.kimai.org/images/icon_32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.kimai.org/images/icon_16x16.png">
+<title>Invoice templates – Kimai</title>
+<meta name="description" content="Creating custom invoice templates for">
+<link type="application/atom+xml" rel="alternate" href="/en/feed.xml" title="Kimai Time-Tracking" />
+<meta property="og:locale" content="en">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Invoice templates">
+<meta property="og:image" content="https://www.kimai.org/images/social-preview.webp">
+<meta property="og:description" content="Creating custom invoice templates for">
+<link rel="canonical" href="https://www.kimai.org/documentation/invoice-templates.html" />
+<link href="/assets/build/main.css?v8" rel="stylesheet" />
+
+</head>
+<body class="">
+
+
+
+
+
+
+
+
+
+
+
+<header class="header navbar navbar-expand bg-light border-bottom border-light shadow" data-scroll-header>
+    <div class="container-fluid pe-lg-4">
+        <div class="d-flex align-items-center">
+            <a href="/" class="navbar-brand flex-shrink-0 py-1 py-lg-2">
+                <img src="/images/apple-touch-icon.png" width="32" alt="Kimai logo" class="me-2">
+                Kimai Docs
+            </a>
+            <span class="badge bg-warning">User manual</span>
+        </div>
+        <div class="docs-header-nav d-flex align-items-center w-100" style="padding-left: 6.75rem;">
+            <ul class="docs-primary-nav navbar-nav d-none d-lg-flex">
+                
+                    
+                    
+                    <li class="nav-item">
+                        <a href="/documentation/chapter-manual.html" class="nav-link  active">
+                            <i class="bx bx-book opacity-70 fs-lg me-1"></i>
+                            User manual
+                        </a>
+                    </li>
+                
+                    
+                    
+                    <li class="nav-item">
+                        <a href="/documentation/cloud.html" class="nav-link ">
+                            <i class="bx bx-cloud opacity-70 fs-lg me-1"></i>
+                            Kimai-Cloud
+                        </a>
+                    </li>
+                
+                    
+                    
+                    <li class="nav-item">
+                        <a href="/documentation/chapter-on-premise.html" class="nav-link ">
+                            <i class="bx bx-server opacity-70 fs-lg me-1"></i>
+                            On-Premise
+                        </a>
+                    </li>
+                
+                    
+                    
+                    <li class="nav-item">
+                        <a href="/documentation/chapter-developer.html" class="nav-link ">
+                            <i class="bx bx-code-alt opacity-70 fs-lg me-1"></i>
+                            Developer
+                        </a>
+                    </li>
+                
+            </ul>
+            <div class="docs-toolbar d-none d-xl-flex" data-pagefind-ignore="all">
+                <div class="docs-search-panel" data-doc-search>
+                    <label class="form-label visually-hidden" for="documentation-search">Search documentation</label>
+                    <input
+                        id="documentation-search"
+                        class="form-control"
+                        type="search"
+                        autocomplete="off"
+                        spellcheck="false"
+                        placeholder="Search the documentation"
+                        aria-describedby="documentation-search-status"
+                        data-doc-search-input
+                    >
+                    <div
+                        id="documentation-search-results"
+                        class="docs-search-results card border-0 shadow-sm"
+                        role="listbox"
+                        aria-label="Documentation search results"
+                        data-doc-search-results
+                    ></div>
+                    <div id="documentation-search-status" class="visually-hidden" aria-live="polite" data-doc-search-status></div>
+                </div>
+            </div>
+            <button type="button" class="navbar-toggler d-block d-lg-none ms-auto me-4" data-bs-toggle="offcanvas" data-bs-target="#componentsNav" aria-controls="componentsNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<aside class="bg-dark">
+    <div id="componentsNav" class="offcanvas-lg offcanvas-start d-flex flex-column position-fixed top-0 start-0 vh-100 bg-dark border-end-lg" style="width: 19rem; z-index: 1045;">
+        <div class="offcanvas-header d-none d-lg-flex justify-content-start">
+            <a href="/" class="navbar-brand d-none d-lg-flex py-0">
+                <img src="/images/apple-touch-icon.png" width="26" alt="Kimai logo" class="me-3">
+                Kimai Docs
+            </a>
+        </div>
+        <div class="offcanvas-header d-block d-lg-none border-bottom">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+                <h5 class="d-lg-none mb-0">Menu</h5>
+                <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas" data-bs-target="#componentsNav" aria-label="Close"></button>
+            </div>
+            <div class="list-group list-group-flush mx-n4">
+                
+                    
+                    
+                    <a href="/documentation/chapter-manual.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-1 px-4">
+                        <i class="bx bx-book opacity-70 me-1"></i>
+                        User manual
+                    </a>
+                
+                    
+                    
+                    <a href="/documentation/cloud.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-1 px-4">
+                        <i class="bx bx-cloud opacity-70 me-1"></i>
+                        Kimai-Cloud
+                    </a>
+                
+                    
+                    
+                    <a href="/documentation/chapter-on-premise.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-1 px-4">
+                        <i class="bx bx-server opacity-70 me-1"></i>
+                        On-Premise
+                    </a>
+                
+                    
+                    
+                    <a href="/documentation/chapter-developer.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-1 px-4">
+                        <i class="bx bx-code-alt opacity-70 me-1"></i>
+                        Developer
+                    </a>
+                
+            </div>
+        </div>
+        <div class="offcanvas-body overflow-scroll w-100 p-4">
+            <div class="h-auto docsnavi">
+                
+                    
+                    
+                    
+                    
+                    <p class="fs-lg mb-1 text-white fw-bold">User Guide</p>
+                    <div class="list-group list-group-flush mb-4 me-n4 border-start">
+                        
+                        
+                        
+                        
+                        <a href="/documentation/timesheet.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-timesheet">
+                            
+                            Timesheet
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/weekly-times.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-weekly-times">
+                            
+                            Weekly hours
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/calendar.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-calendar">
+                            
+                            Calendar
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/invoices.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-invoices">
+                            
+                            Invoices
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/export.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-export">
+                            
+                            Export
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/reporting.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-reporting">
+                            
+                            Reporting
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/customer.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-customer">
+                            
+                            Customer
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/project.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-project">
+                            
+                            Projects
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/activity.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-activity">
+                            
+                            Activities
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/tags.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-tags">
+                            
+                            Tags
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/users.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-users">
+                            
+                            Users
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/user-preferences.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-user-preferences">
+                            
+                            User preferences
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/permissions.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-permissions">
+                            
+                            Roles & Permissions
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/teams.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-teams">
+                            
+                            Teams
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/configurations.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-configurations">
+                            
+                            Settings
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/doctor.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-doctor">
+                            
+                            Doctor
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/contract.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-contract">
+                            
+                            Working times
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/public-holiday.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-public-holiday">
+                            
+                            Public holiday
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/absence.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-absence">
+                            
+                            Absence
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/dashboard.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-dashboard">
+                            
+                            Dashboard
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-custom-fields.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-custom-fields">
+                            
+                            Custom fields
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-expenses.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-expenses">
+                            
+                            Expenses
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-task-management.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-task-management">
+                            
+                            Tasks
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-custom-css.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-custom-css">
+                            
+                            Custom CSS
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-custom-content.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-custom-content">
+                            
+                            Custom content
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-translation.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-translation">
+                            
+                            Translation
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-invoice.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-invoice">
+                            
+                            Invoice+
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-import.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-import">
+                            
+                            Importer
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-audit-trail.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-audit-trail">
+                            
+                            Audit logs
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-kiosk.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-kiosk">
+                            
+                            Kiosk mode
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-customer-portal.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-customer-portal">
+                            
+                            Customer Portal
+                            
+                        </a>
+                        
+                        
+                    </div>
+                    
+                    
+                    
+                    <p class="fs-lg mb-1 text-white fw-bold">Advanced Topics</p>
+                    <div class="list-group list-group-flush mb-4 me-n4 border-start">
+                        
+                        
+                        
+                        
+                        <a href="/documentation/initial-setup.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-initial-setup">
+                            
+                            Initial setup
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/rates.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-rates">
+                            
+                            Prices (rates)
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/rounding.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-rounding">
+                            
+                            Rounding
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/billable.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-billable">
+                            
+                            Billable
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/invoice-templates.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2  active" id="docnavi-invoice-templates">
+                            
+                            Invoice templates
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/pdf-templates.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-pdf-templates">
+                            
+                            PDF templates
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/keyboard-shortcuts.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-keyboard-shortcuts">
+                            
+                            Keyboard shortcuts
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/i18n-am-pm.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-i18n-am-pm">
+                            
+                            Date and Time formats
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/duration-format.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-duration-format">
+                            
+                            Duration format
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/homescreen.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-homescreen">
+                            
+                            Use Kimai as app
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/user-api.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-user-api">
+                            
+                            Connecting via API
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/markdown.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-markdown">
+                            
+                            Markdown
+                            
+                        </a>
+                        
+                        
+                    </div>
+                    
+                    <div class="list-group list-group-flush pb-3 mb-4 mx-n4">
+                
+                    <a href="/en/" class="list-group-item list-group-item-action border-0 py-1 fs-sm px-4">Kimai Home</a>
+                    <a href="/en/site-notice.html" class="list-group-item list-group-item-action border-0 py-1 fs-sm px-4">Site notice</a>
+                    <a href="/en/privacy-policy.html" class="list-group-item list-group-item-action border-0 py-1 fs-sm px-4">Privacy policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        const dpm = document.getElementById('docnavi-invoice-templates');
+        if (dpm !== null) {
+            dpm.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+        }
+    });
+</script>
+<main class="docs-container">
+    <div class="container-fluid px-xxl-3 px-lg-2 pt-4 pt-lg-5 pb-2 pb-lg-4">
+        <div class="docs-layout">
+            <div class="docs-article" data-pagefind-body>
+                <div class="d-sm-flex align-items-end justify-content-between ps-lg-2 ps-xxl-0 mt-2 mt-lg-0 mb-n3 gap-4">
+                    <div class="me-4">
+                        <h1 class="pb-1" data-pagefind-meta="title" data-pagefind-weight="10.0">Invoice templates</h1>
+                        
+                        <p class="text-muted fs-lg mb-2" data-pagefind-meta="description">Creating custom invoice templates for</p>
+                        
+                    </div>
+                    <div class="d-none d-lg-flex">
+                    
+
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="markdown py-5 ps-lg-2 ps-xxl-0">
+                    <div>
+                        
+                        <div id="documentation-content">
+                            <p>The invoice system currently supports the following file formats for generating invoices:</p>
+
+<p><strong>PDF</strong></p>
+
+<ul>
+  <li>Filename must end with <code class="language-plaintext highlighter-rouge">.pdf.twig</code></li>
+  <li>Pro: no need for additional software</li>
+  <li>Contra: you have to understand HTML and Twig</li>
+  <li><strong>The recommended invoice document format</strong></li>
+</ul>
+
+<p><strong>HTML</strong></p>
+
+<ul>
+  <li>Filename must end with <code class="language-plaintext highlighter-rouge">.html.twig</code></li>
+  <li>Pro: no need for additional software, print or convert to PDF from your browser</li>
+  <li>Contra: you have to understand HTML and Twig</li>
+</ul>
+
+<p><strong>DOCX</strong></p>
+
+<ul>
+  <li>Microsoft Word</li>
+  <li>Filename must end with <code class="language-plaintext highlighter-rouge">.docx</code></li>
+  <li>Pro: possibility to edit the invoice later on, can be converted to PDF</li>
+  <li>Contra: not accepted for invoices in many countries, non-free software required</li>
+</ul>
+
+<p><strong>ODS</strong></p>
+
+<ul>
+  <li>Open Document Spreadsheet is supported by OpenOffice, LibreOffice, StarCalc, Microsoft and others</li>
+  <li>File extension: filename must end with <code class="language-plaintext highlighter-rouge">.ods</code></li>
+  <li>Pro: free and open format, can be converted to PDF</li>
+  <li>Contra: not accepted for invoices in many countries</li>
+</ul>
+
+<p><strong>XLSX</strong></p>
+
+<ul>
+  <li>File extension: filename must end with <code class="language-plaintext highlighter-rouge">.xlsx</code></li>
+  <li>Pro: good for creating enhanced reports with an office software package</li>
+  <li>Contra: not accepted for invoices in many countries, non-free software required</li>
+</ul>
+
+<h2 id="create-a-template">Create a template</h2>
+
+<p>Invoice documents are searched in two locations:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">var/invoices/</code> - does not exist by default, please create it when you add your templates</li>
+  <li><code class="language-plaintext highlighter-rouge">templates/invoice/renderer/</code> - don’t change files in here, will be overwritten with the next update</li>
+</ul>
+
+<p>Be aware of the following rules:</p>
+
+<ul>
+  <li>Documents are addressed by their filename without extension (e.g. <code class="language-plaintext highlighter-rouge">kimai.html.twig</code> results in <code class="language-plaintext highlighter-rouge">kimai</code>)</li>
+  <li>You can use every document name only once: so having <code class="language-plaintext highlighter-rouge">kimai.html.twig</code> and <code class="language-plaintext highlighter-rouge">kimai.docx</code> will lead to unpredictable results (the first file to be found takes precedence)</li>
+  <li>Kimai looks for templates in <code class="language-plaintext highlighter-rouge">var/invoices/</code> first, so you can overwrite default templates</li>
+  <li>You should store your templates in <code class="language-plaintext highlighter-rouge">var/invoices/</code>, as this directory is not shipped with Kimai and not touched during updates</li>
+</ul>
+
+<div class="alert alert-warning d-flex" role="alert"><i class="bx bx-alarm-exclamation lead me-3"></i><p>Do NOT change the default templates, but copy the file and save it at <code class="language-plaintext highlighter-rouge">var/invoices/</code></p>
+</div>
+
+<h3 id="pre-made-templates">Pre-made templates</h3>
+
+<p>There is a place where the community can share invoice templates. Please do so, if you created a nice looking and re-usable template yourself!</p>
+
+<p>The repository for all templates is <a href="https://github.com/kimai/invoice-templates">https://github.com/kimai/invoice-templates</a> and it includes installation notes.</p>
+
+<h3 id="pdf-templates">PDF templates</h3>
+
+<p>PDF files are generated from HTML, which itself is created with a Twig template (see below).</p>
+
+<p>There is so much to say about PDF templates, that there is a dedicated page about <a href="/documentation/pdf-templates.html">PDF templates</a>.</p>
+
+<h3 id="twig-templates-html">Twig templates (HTML)</h3>
+
+<p>Twig templates are used to generate HTML and PDF files.</p>
+
+<p>Generally speaking, you have two main variables in your template which you should use:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">invoice</code> which is an array of variables (see <code class="language-plaintext highlighter-rouge">Global variables</code> below)</li>
+  <li><code class="language-plaintext highlighter-rouge">entries</code> which is an array of arrays, representing the invoice items and their <code class="language-plaintext highlighter-rouge">Invoice items</code></li>
+</ul>
+
+<div class="alert alert-danger d-flex" role="alert"><i class="bx bx-info-circle lead me-3"></i>
+<p><strong>Attention</strong>: accessing the <code class="language-plaintext highlighter-rouge">model</code> variable (instance of <code class="language-plaintext highlighter-rouge">App\Model\InvoiceModel</code>) directly is deprecated since 2022 and will be removed in the near future.</p>
+</div>
+
+<p>Please see the <a href="https://github.com/kimai/kimai/blob/main/templates/invoice/renderer">default templates</a> at GitHub to find out which variables can be used.</p>
+
+<p>Want to include an image in your template? Use the <code class="language-plaintext highlighter-rouge">asset</code> tag for referencing relative URLs (this example points to the directory <code class="language-plaintext highlighter-rouge">public/images/my-logo.png</code>):</p>
+
+<div class="language-twig highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"</span><span class="cp">{{</span> <span class="nv">asset</span><span class="p">(</span><span class="s1">'images/my-logo.png'</span><span class="p">)</span> <span class="cp">}}</span><span class="s">"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<p>But the safest way is to host your images on your own domain:</p>
+
+<div class="language-twig highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://www.example.com/images/my-logo.png"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<p>Due to security reasons, most twig functions and filters are disabled in the invoice renderer.
+Therefor you cannot use <code class="language-plaintext highlighter-rouge">include</code> or <code class="language-plaintext highlighter-rouge">embed</code> to include other templates.</p>
+
+<p>After you changed a twig template, you have to <a href="/documentation/cache.html">clear the cache</a> to see the results.</p>
+
+<h4 id="custom-fields">Custom fields</h4>
+
+<p>Iterating above all entries (line items) in the invoice with <code class="language-plaintext highlighter-rouge">{% for line in entries %}</code> allows access to your custom fields.</p>
+
+<p>Want to use a <strong>timesheet custom-field</strong> in your template?</p>
+<div class="language-twig highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">{%</span> <span class="k">if</span> <span class="nv">line</span><span class="p">[</span><span class="s1">'entry.meta.foo'</span><span class="p">]</span> <span class="ow">is</span> <span class="nb">defined</span> <span class="cp">%}</span>
+    Foo: <span class="cp">{{</span> <span class="nv">line</span><span class="p">[</span><span class="s1">'entry.meta.foo'</span><span class="p">]</span> <span class="cp">}}</span>
+<span class="cp">{%</span> <span class="k">endif</span> <span class="cp">%}</span>
+</code></pre></div></div>
+<p>Please be aware:</p>
+<ul>
+  <li>you can access timesheet custom fields only if you use the “sum calculation” standard, which creates one invoice line item per timesheet.</li>
+  <li>if you group timesheets, e.g., by project, you lose access to their custom fields.</li>
+  <li>entries could be of type “expense” or other types (depending on your used plugins), you can test that with <code class="language-plaintext highlighter-rouge">{% if line['entry.type'] == 'timesheet' '%}</code></li>
+</ul>
+
+<p>Want to use a <strong>customer custom-field</strong> in your template?</p>
+<div class="language-twig highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">{%</span> <span class="k">if</span> <span class="nv">invoice</span><span class="p">[</span><span class="s1">'customer.meta.foo'</span><span class="p">]</span> <span class="ow">is</span> <span class="nb">defined</span> <span class="cp">%}</span>
+    Foo: <span class="cp">{{</span> <span class="nv">invoice</span><span class="p">[</span><span class="s1">'customer.meta.foo'</span><span class="p">]</span> <span class="cp">}}</span>
+<span class="cp">{%</span> <span class="k">endif</span> <span class="cp">%}</span>
+</code></pre></div></div>
+
+<p>Want to use a <strong>project custom-field</strong> in your template?</p>
+<div class="language-twig highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">{%</span> <span class="k">if</span> <span class="nv">line</span><span class="p">[</span><span class="s1">'entry.project.meta.foo'</span><span class="p">]</span> <span class="ow">is</span> <span class="nb">defined</span> <span class="cp">%}</span>
+    Foo: <span class="cp">{{</span> <span class="nv">line</span><span class="p">[</span><span class="s1">'entry.project.meta.foo'</span><span class="p">]</span> <span class="cp">}}</span>
+<span class="cp">{%</span> <span class="k">endif</span> <span class="cp">%}</span>
+</code></pre></div></div>
+
+<p>Want to use a <strong>user preference</strong> in your template?</p>
+<div class="language-twig highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">{%</span> <span class="k">if</span> <span class="nv">line</span><span class="p">[</span><span class="s1">'entry.user_preference.foo'</span><span class="p">]</span> <span class="ow">is</span> <span class="nb">defined</span> <span class="cp">%}</span>
+    Foo: <span class="cp">{{</span> <span class="nv">line</span><span class="p">[</span><span class="s1">'entry.user_preference.foo'</span><span class="p">]</span> <span class="cp">}}</span>
+<span class="cp">{%</span> <span class="k">endif</span> <span class="cp">%}</span>
+</code></pre></div></div>
+
+<h3 id="docx-templates">Docx templates</h3>
+
+<p>Docx templates are processed by <a href="https://github.com/PHPOffice/PHPWord">PHPWord</a> and its <code class="language-plaintext highlighter-rouge">TemplateProcessor</code>.</p>
+
+<p><strong>Important:</strong> You have to add the variable <code class="language-plaintext highlighter-rouge">${entry.row}</code> in the table row that will be duplicated for each entry,
+otherwise the records will not be rendered at all. In that case only the global values will be replaced!</p>
+
+<p>The row containing this variable will be cloned for every included (timesheet) record.</p>
+
+<p>The variable <code class="language-plaintext highlighter-rouge">${entry.row}</code> will be removed during the rendering process, it will not show up in your generated invoices.</p>
+
+<p>See below in <code class="language-plaintext highlighter-rouge">Template variables</code> to find out which variables you can use in your template.</p>
+
+<p>Find out more about PHPWord templates <a href="https://phpword.readthedocs.io/en/latest/templates-processing.html">here</a>.</p>
+
+<h3 id="spreadsheets-ods-and-xlsx">Spreadsheets (ODS and XLSX)</h3>
+
+<p>Spreadsheet templates are powered by <a href="https://github.com/PHPOffice/PhpSpreadsheet">PhpSpreadsheet</a>.</p>
+
+<p><strong>Important:</strong> within the first 100 rows of the <strong>active spreadsheet</strong> you MUST-HAVE the template row for timesheet entries, which means there must be
+a value starting with <code class="language-plaintext highlighter-rouge">${entry.</code> in one of the first 10 columns, otherwise no timesheet records will be rendered.</p>
+
+<p>If you don’t have that, you will see the error <code class="language-plaintext highlighter-rouge">Invalid invoice document, no template row found.</code>.
+This error might also happen if you have multiple sheets in your spreadsheet, and save the file while the active sheet is one without the <code class="language-plaintext highlighter-rouge">${entry.</code> placeholder.</p>
+
+<p><em>Check the default templates if that doesn’t make sense to you ;-)</em></p>
+
+<p>The row containing the <code class="language-plaintext highlighter-rouge">${entry.</code> template will be cloned for every timesheet entry.</p>
+
+<p>See below in <code class="language-plaintext highlighter-rouge">Template variables</code> to find out which variables you can use.</p>
+
+<h2 id="template-variables">Template variables</h2>
+
+<p>Be aware, that the following list of variables is working for the “document” based formats (ODS, XLSX, DOCX).</p>
+
+<p>Twig rendering is different, you have to access the variables with <code class="language-plaintext highlighter-rouge">{{ invoice['xxx.yyy'] }}</code> instead of <code class="language-plaintext highlighter-rouge">${xxx.yyy}</code>.</p>
+
+<p>Date variables have equivalents with the suffix <code class="language-plaintext highlighter-rouge">_process</code>, so you can use them in combination with the Twig filter for date formatting e.g. <code class="language-plaintext highlighter-rouge">|date('d. m. Y.')</code>.
+So you can either use the pre-formatted date value or you can convert it yourself.
+The example <code class="language-plaintext highlighter-rouge">{{ invoice['invoice.due_date'] }}</code> would then be converted to <code class="language-plaintext highlighter-rouge">{{ invoice['invoice.due_date_process']|date('d. m. Y.') }}</code>.</p>
+
+<h3 id="global-variables">Global variables</h3>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Twig</th>
+      <th>Document (DOCX, XLSX, ODS)</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['invoice.due_date']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${invoice.due_date}</code></td>
+      <td>The due date for the invoice payment formatted in the requested locale</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['invoice.due_date_process']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${invoice.due_date_process}</code></td>
+      <td>The due date for the invoice payment, to be formatted with the twig filter <code class="language-plaintext highlighter-rouge">date()</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['invoice.date']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${invoice.date}</code></td>
+      <td>The creation date of this invoice</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['invoice.date_process']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${invoice.date_process}</code></td>
+      <td>The creation date of this invoice, to be formatted with the twig filter <code class="language-plaintext highlighter-rouge">date()</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['invoice.number']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${invoice.number}</code></td>
+      <td>The generated invoice number</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['invoice.currency']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${invoice.currency}</code></td>
+      <td>The invoice currency</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['invoice.currency_symbol']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${invoice.currency_symbol}</code></td>
+      <td>The invoice currency as symbol (if available)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['invoice.total_time']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${invoice.total_time}</code></td>
+      <td>The total working time (entries with a fixed rate are always calculated with 1)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['invoice.duration_decimal']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${invoice.duration_decimal}</code></td>
+      <td>The total working time as decimal value</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['invoice.language']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${invoice.language}</code></td>
+      <td>The invoices language as two character code</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['invoice.total']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${invoice.total}</code></td>
+      <td>The invoices total (including tax) with currency</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['invoice.total_nc']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${invoice.total_nc}</code></td>
+      <td>The invoices total (including tax) without currency</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['invoice.total_plain']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${invoice.total_plain}</code></td>
+      <td>The invoices total (including tax) as unformatted value</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['invoice.subtotal']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${invoice.subtotal}</code></td>
+      <td>The invoices subtotal (excluding tax) with currency</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['invoice.subtotal_nc']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${invoice.subtotal_nc}</code></td>
+      <td>The invoices subtotal (excluding tax) without currency</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['invoice.subtotal_plain']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${invoice.subtotal_plain}</code></td>
+      <td>The invoices subtotal (excluding tax) as unformatted value</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['invoice.currency']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${invoice.currency}</code></td>
+      <td>The invoices currency as string (like EUR or USD)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['invoice.vat']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${invoice.vat}</code></td>
+      <td><strong>Deprecated</strong> The VAT in percent for this invoice</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['invoice.tax']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${invoice.tax}</code></td>
+      <td><strong>Deprecated</strong> The tax of the invoice amount with currency</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['invoice.tax_nc']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${invoice.tax_nc}</code></td>
+      <td><strong>Deprecated</strong> The tax of the invoice amount without currency</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['invoice.tax_plain']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${invoice.tax_plain}</code></td>
+      <td><strong>Deprecated</strong> The tax of the invoice amount as unformatted value</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['invoice.tax_hide']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${invoice.tax_hide}</code></td>
+      <td><strong>Deprecated</strong> A boolean flag indicating if the tax field should be hidden (only applies if tax = 0)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['template.name']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${template.name}</code></td>
+      <td>The invoice template (for internal use, usually not needed)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['template.title']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${template.title}</code></td>
+      <td>The invoice document title</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['template.payment_terms']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${template.payment_terms}</code></td>
+      <td>Your payment terms, might be multiple lines</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['template.due_days']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${template.due_days}</code></td>
+      <td>The amount of days for the payment, starting with the day of creating the invoice</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['template.contact']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${template.contact}</code></td>
+      <td>Extended contact information, might be multiple lines</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['template.payment_details']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${template.payment_details}</code></td>
+      <td>Payment details like bank accounts (free text, might be multiple lines)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['query.begin']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${query.begin}</code></td>
+      <td>The query begin as formatted short date</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['query.begin_process']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${query.begin_process}</code></td>
+      <td>The query begin, to be formatted with the twig filter <code class="language-plaintext highlighter-rouge">date()</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['query.end']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${query.end}</code></td>
+      <td>The query end as formatted short date</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['query.end_process']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${query.end_process}</code></td>
+      <td>The query end, to be formatted with the twig filter <code class="language-plaintext highlighter-rouge">date()</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['query.begin_month']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${query.begin_month}</code></td>
+      <td>The month for the queries begin date</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['query.begin_month_number']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${query.begin_month_number}</code></td>
+      <td>The numerical value for the month of the queries begin date with leading zero</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['query.begin_day']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${query.begin_day}</code></td>
+      <td>The day for the queries begin as numerical value with leading zero</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['query.begin_year']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${query.begin_year}</code></td>
+      <td>The year for the queries begin date</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['query.end_month']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${query.end_month}</code></td>
+      <td>The month for the queries end date</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['query.end_month_number']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${query.end_month_number}</code></td>
+      <td>The numerical value for the month of the queries end date with leading zero</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['query.end_day']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${query.end_day}</code></td>
+      <td>The day for the queries end as numerical value with leading zero</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['query.end_year']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${query.end_year}</code></td>
+      <td>The year for the queries end date</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['query.activity.name']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${query.activity.name}</code></td>
+      <td>Activity name (only if exactly one activity was filtered)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['query.activity.comment']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${query.activity.comment}</code></td>
+      <td>Activity comment/description (only if exactly one activity was filtered)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['query.project.name']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${query.project.name}</code></td>
+      <td>Project name (only if exactly one project was filtered)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['query.project.comment']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${query.project.comment}</code></td>
+      <td>Project comment/description (only if exactly one project was filtered)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['query.project.order_number']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${query.project.order_number}</code></td>
+      <td>Project Order-Number (only if exactly one project was filtered)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['user.display']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${user.display}</code></td>
+      <td>The current users display name</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['user.email']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${user.email}</code></td>
+      <td>The current users email</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['user.name']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${user.name}</code></td>
+      <td>The current users name</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['user.alias']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${user.alias}</code></td>
+      <td>The current users alias</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['user.title']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${user.title}</code></td>
+      <td>The current users title</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['user.see_others']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${user.see_others}</code></td>
+      <td>A boolean indicating if the current user can see other users items</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['user.meta.X']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${user.meta.X}</code></td>
+      <td>The current <a href="/documentation/user-preferences.html">users preference</a> named <code class="language-plaintext highlighter-rouge">X</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="tax-rows">Tax Rows</h3>
+
+<p>Tax rows are only available in Twig. You can loop all tax rows with <code class="language-plaintext highlighter-rouge">{% for tax in invoice['invoice.tax_rows'] %}</code>.</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Twig</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">tax['show']</code></td>
+      <td>Whether the row should be displayed</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">tax['name']</code></td>
+      <td>Name of the Tax rule (should be translated with the <code class="language-plaintext highlighter-rouge">trans</code> filter)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">tax['rate']</code></td>
+      <td>The tax rate between 0 and 99</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">tax['note']</code></td>
+      <td>An empty or non-empty string like “Reverse charge” or the Tax exempt message (should be translated with the <code class="language-plaintext highlighter-rouge">trans</code> filter)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">tax['amount']</code></td>
+      <td>Tax amount (should be used in combination with the <code class="language-plaintext highlighter-rouge">money</code> filter</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">tax['currency']</code></td>
+      <td>The tax currency</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">tax['counter']</code></td>
+      <td>And ID that you can use to create footnotes for the <code class="language-plaintext highlighter-rouge">note</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="invoice-items-timesheets">Invoice items (timesheets)</h3>
+
+<p>You can loop all invoice items in Twig with <code class="language-plaintext highlighter-rouge">{% for item in entries %}</code>. For all other formats see docs above.</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Twig</th>
+      <th>Document (DOCX, XLSX, ODS)</th>
+      <th>Description</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>-</td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.row}</code></td>
+      <td>An empty string, only used as template row for DOCX</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">item['entry.description']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.description}</code></td>
+      <td>The entries description</td>
+      <td><em>foo bar</em></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">item['entry.description_safe']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.description_safe}</code></td>
+      <td>The entries description. If that is empty the activity name will be used.</td>
+      <td><em>foo bar</em></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">item['entry.amount']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.amount}</code></td>
+      <td>DEPRECATED (do not use): The decimal duration for this entry. If this is a fixed rate entry, it contains the formatted amount.</td>
+      <td>2.78</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">item['entry.rate']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.rate}</code></td>
+      <td>The rate for one unit of the entry (normally one hour) with currency</td>
+      <td>1.100,01 EUR</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">item['entry.rate_nc']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.rate_nc}</code></td>
+      <td>The rate for one unit of the entry without currency</td>
+      <td>1100,01</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">item['entry.rate_plain']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.rate_plain}</code></td>
+      <td>The rate for one unit of the entry as unformatted value</td>
+      <td>1100.01</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">item['entry.total']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.total}</code></td>
+      <td>The total rate for this entry with currency</td>
+      <td>1.278,33 EUR</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">item['entry.total_nc']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.total_nc}</code></td>
+      <td>The total rate for this entry without currency</td>
+      <td>1.278,33</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">item['entry.total_plain']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.total_plain}</code></td>
+      <td>The total rate as unformatted value</td>
+      <td>1278.33</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">item['entry.currency']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.currency}</code></td>
+      <td>The currency for this record as string (like EUR or USD)</td>
+      <td>EUR</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">item['entry.duration']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.duration}</code></td>
+      <td>The duration in seconds</td>
+      <td>10020</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">item['entry.duration_format']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.duration_format}</code></td>
+      <td>The duration in human-readable format</td>
+      <td>02:47</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">item['entry.duration_decimal']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.duration_decimal}</code></td>
+      <td>The duration in decimal format (with localized separator)</td>
+      <td>2.78</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">item['entry.duration_minutes']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.duration_minutes}</code></td>
+      <td>The duration in minutes with no decimals</td>
+      <td>167</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">item['entry.begin']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.begin}</code></td>
+      <td>The begin date (format depends on the users language)</td>
+      <td>27.10.2018</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">item['entry.begin_time']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.begin_time}</code></td>
+      <td>The formatted time for the begin of this entry</td>
+      <td>14:57</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">item['entry.begin_timestamp']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.begin_timestamp}</code></td>
+      <td>The timestamp for the begin of this entry</td>
+      <td>1542016273</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">item['entry.end']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.end}</code></td>
+      <td>The begin date  (format depends on the users language)</td>
+      <td>27.10.2018</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">item['entry.end_time']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.end_time}</code></td>
+      <td>The formatted time for the end of this entry</td>
+      <td>17:44</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">item['entry.end_timestamp']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.end_timestamp}</code></td>
+      <td>The timestamp for the end of this entry</td>
+      <td>1542016273</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">item['entry.date']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.date}</code></td>
+      <td>The start date when this record was created</td>
+      <td>27.10.2018</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">item['entry.date_process']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.date_process}</code></td>
+      <td>The start date of this record, to be formatted with the twig filter <code class="language-plaintext highlighter-rouge">date()</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">item['entry.week']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.week}</code></td>
+      <td>The start week number when this record was created</td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">item['entry.weekyear']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.weekyear}</code></td>
+      <td>The corresponding year to the week number</td>
+      <td>2018</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">item['entry.user_id']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.user_id}</code></td>
+      <td>The user ID</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">item['entry.user_name']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.user_name}</code></td>
+      <td>The username</td>
+      <td>susan_super</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">item['entry.user_alias']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.user_alias}</code></td>
+      <td>The user alias</td>
+      <td>Susan Miller</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">item['entry.user_preference.foo']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.user_preference.foo}</code></td>
+      <td>The user preference called <code class="language-plaintext highlighter-rouge">foo</code></td>
+      <td>bar</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">item['entry.activity']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.activity}</code></td>
+      <td>Activity name</td>
+      <td>Post production</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">item['entry.activity_id']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.activity_id}</code></td>
+      <td>Activity ID</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">item['entry.project']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.project}</code></td>
+      <td>Project name</td>
+      <td>Nemesis</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">item['entry.project_id']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.project_id}</code></td>
+      <td>Project ID</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">item['entry.customer']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.customer}</code></td>
+      <td>Customer name</td>
+      <td>Acme Studios</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">item['entry.customer_id']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.customer_id}</code></td>
+      <td>Customer ID</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">item['entry.meta.foo']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.meta.foo}</code></td>
+      <td>The <a href="/documentation/plugin-custom-fields.html">meta field</a> with the internal name <code class="language-plaintext highlighter-rouge">foo</code> (must be in lowercase letters, e.g. <code class="language-plaintext highlighter-rouge">FOO</code> will be available as <code class="language-plaintext highlighter-rouge">${entry.meta.foo}</code>. Only available if the field is visible.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">item['entry.tags']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.tags}</code></td>
+      <td>Comma separated list of all tags</td>
+      <td>foo, bar</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">item['entry.type']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.type}</code></td>
+      <td>The type of this entry (plugins can add custom types)</td>
+      <td>timesheet</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">item['entry.category']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${entry.category}</code></td>
+      <td>The category of this entry (plugins can add custom types)</td>
+      <td>work</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="invoice-issuer">Invoice issuer</h3>
+
+<p>The invoice issuer is the company sending the invoice.</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Twig</th>
+      <th>Document (DOCX, XLSX, ODS)</th>
+      <th>Description (highlighted words are the names in the UI)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['issuer.id']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${issuer.id}</code></td>
+      <td>The internal customer ID (do not display that on your invoices)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['issuer.name']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${issuer.name}</code></td>
+      <td>The customer <code class="language-plaintext highlighter-rouge">name</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['issuer.comment']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${issuer.comment}</code></td>
+      <td>The <code class="language-plaintext highlighter-rouge">description</code> of this customer</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['issuer.address_line1']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${issuer.address_line1}</code></td>
+      <td>Customer address: Line 1</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['issuer.address_line2']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${issuer.address_line2}</code></td>
+      <td>Customer address: Line 2</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['issuer.address_line3']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${issuer.address_line3}</code></td>
+      <td>Customer address: Line 3</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['issuer.postcode']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${issuer.postcode}</code></td>
+      <td>Customer address: Post Code</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['issuer.city']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${issuer.city}</code></td>
+      <td>Customer address: City</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['issuer.contact']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${issuer.contact}</code></td>
+      <td>Usually the name of the customer <code class="language-plaintext highlighter-rouge">contact</code> person</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['issuer.company']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${issuer.company}</code></td>
+      <td>The <code class="language-plaintext highlighter-rouge">company name</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['issuer.vat_id']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${issuer.vat_id}</code></td>
+      <td>The customer <code class="language-plaintext highlighter-rouge">Vat ID</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['issuer.number']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${issuer.number}</code></td>
+      <td>The customer <code class="language-plaintext highlighter-rouge">account</code> number</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['issuer.country']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${issuer.country}</code></td>
+      <td>The <code class="language-plaintext highlighter-rouge">country</code> of the customer location, as 2-letter code</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['issuer.country_name']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${issuer.country_name}</code></td>
+      <td>The translated <code class="language-plaintext highlighter-rouge">country</code> name</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['issuer.homepage']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${issuer.homepage}</code></td>
+      <td>A URL to the customer <code class="language-plaintext highlighter-rouge">homepage</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['issuer.phone']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${issuer.phone}</code></td>
+      <td>The customers <code class="language-plaintext highlighter-rouge">phone</code> number</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['issuer.mobile']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${issuer.mobile}</code></td>
+      <td>The customers <code class="language-plaintext highlighter-rouge">mobile</code> number</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['issuer.email']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${issuer.email}</code></td>
+      <td>The customers <code class="language-plaintext highlighter-rouge">email</code> address</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['issuer.fax']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${issuer.fax}</code></td>
+      <td>The customers <code class="language-plaintext highlighter-rouge">fax</code> number</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['issuer.invoice_text']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${issuer.invoice_text}</code></td>
+      <td>The configurable invoice text for that customer</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['issuer.buyer_reference']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${issuer.buyer_reference}</code></td>
+      <td>Buyer reference, used in e-invoicing</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['issuer.meta.foo']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${issuer.meta.foo}</code></td>
+      <td>The customer <a href="/documentation/plugin-custom-fields.html">meta field</a> with the internal name <code class="language-plaintext highlighter-rouge">foo</code> (must be in lowercase letters, e.g. <code class="language-plaintext highlighter-rouge">FOO</code> will be available as <code class="language-plaintext highlighter-rouge">${customer.meta.foo}</code>. Only available if the field is visible.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="customer">Customer</h3>
+
+<p>The customer is the company receiving the invoice.</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Twig</th>
+      <th>Document (DOCX, XLSX, ODS)</th>
+      <th>Description (highlighted words are the names in the UI)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['customer.id']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${customer.id}</code></td>
+      <td>The internal customer ID (do not display that on your invoices)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['customer.name']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${customer.name}</code></td>
+      <td>The customer <code class="language-plaintext highlighter-rouge">name</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['customer.comment']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${customer.comment}</code></td>
+      <td>The <code class="language-plaintext highlighter-rouge">description</code> of this customer</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['customer.address_line1']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${customer.address_line1}</code></td>
+      <td>Customer address: Line 1</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['customer.address_line2']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${customer.address_line2}</code></td>
+      <td>Customer address: Line 2</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['customer.address_line3']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${customer.address_line3}</code></td>
+      <td>Customer address: Line 3</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['customer.postcode']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${customer.postcode}</code></td>
+      <td>Customer address: Post Code</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['customer.city']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${customer.city}</code></td>
+      <td>Customer address: City</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['customer.contact']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${customer.contact}</code></td>
+      <td>Usually the name of the customer <code class="language-plaintext highlighter-rouge">contact</code> person</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['customer.company']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${customer.company}</code></td>
+      <td>The <code class="language-plaintext highlighter-rouge">company name</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['customer.vat_id']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${customer.vat_id}</code></td>
+      <td>The customer <code class="language-plaintext highlighter-rouge">Vat ID</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['customer.number']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${customer.number}</code></td>
+      <td>The customer <code class="language-plaintext highlighter-rouge">account</code> number</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['customer.country']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${customer.country}</code></td>
+      <td>The <code class="language-plaintext highlighter-rouge">country</code> of the customer location, as 2-letter code</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['customer.country_name']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${customer.country_name}</code></td>
+      <td>The translated <code class="language-plaintext highlighter-rouge">country</code> name</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['customer.homepage']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${customer.homepage}</code></td>
+      <td>A URL to the customer <code class="language-plaintext highlighter-rouge">homepage</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['customer.phone']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${customer.phone}</code></td>
+      <td>The customers <code class="language-plaintext highlighter-rouge">phone</code> number</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['customer.mobile']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${customer.mobile}</code></td>
+      <td>The customers <code class="language-plaintext highlighter-rouge">mobile</code> number</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['customer.email']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${customer.email}</code></td>
+      <td>The customers <code class="language-plaintext highlighter-rouge">email</code> address</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['customer.fax']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${customer.fax}</code></td>
+      <td>The customers <code class="language-plaintext highlighter-rouge">fax</code> number</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['customer.invoice_text']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${customer.invoice_text}</code></td>
+      <td>The configurable invoice text for that customer</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['customer.buyer_reference']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${customer.buyer_reference}</code></td>
+      <td>Buyer reference, used in e-invoicing</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['customer.meta.foo']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${customer.meta.foo}</code></td>
+      <td>The customer <a href="/documentation/plugin-custom-fields.html">meta field</a> with the internal name <code class="language-plaintext highlighter-rouge">foo</code> (must be in lowercase letters, e.g. <code class="language-plaintext highlighter-rouge">FOO</code> will be available as <code class="language-plaintext highlighter-rouge">${customer.meta.foo}</code>. Only available if the field is visible.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="project">Project</h3>
+
+<p>The following variables exist, if projects could be found in the filtered data:</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Twig</th>
+      <th>Document (DOCX, XLSX, ODS)</th>
+      <th>Description (highlighted words are the names in the UI)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['project.id']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${project.id}</code></td>
+      <td>The internal project ID (do not display that on your invoices)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['project.name']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${project.name}</code></td>
+      <td>The project <code class="language-plaintext highlighter-rouge">name</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['project.comment']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${project.comment}</code></td>
+      <td>The <code class="language-plaintext highlighter-rouge">description</code> of this project</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['project.order_number']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${project.order_number}</code></td>
+      <td>The project <code class="language-plaintext highlighter-rouge">order number</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['project.start_date']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${project.start_date}</code></td>
+      <td>The <code class="language-plaintext highlighter-rouge">Project start</code> date-time</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['project.end_date']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${project.end_date}</code></td>
+      <td>The <code class="language-plaintext highlighter-rouge">Project end</code> date-time</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['project.order_date']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${project.order_date}</code></td>
+      <td>Projects <code class="language-plaintext highlighter-rouge">order date</code>-time</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['project.budget_money']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${project.budget_money}</code></td>
+      <td>Projects budget including currency</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['project.budget_money_nc']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${project.budget_money_nc}</code></td>
+      <td>The projects budget without currency</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['project.budget_money_plain']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${project.budget_money_plain}</code></td>
+      <td>The projects budget as unformatted value</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['project.budget_time']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${project.budget_time}</code></td>
+      <td>The projects time-budget as seconds</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['project.budget_time_decimal']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${project.budget_time_decimal}</code></td>
+      <td>The projects time-budget in decimal format (with localized separator)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['project.budget_time_minutes']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${project.budget_time_minutes}</code></td>
+      <td>The projects time-budget in minutes with no decimals</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['project.number']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${project.number}</code></td>
+      <td>The project number</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['project.invoice_text']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${project.invoice_text}</code></td>
+      <td>The project invoice-text</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['project.meta.foo']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${project.meta.foo}</code></td>
+      <td>The project <a href="/documentation/plugin-custom-fields.html">meta field</a> with the internal name <code class="language-plaintext highlighter-rouge">foo</code> (must be in lowercase letters, e.g. <code class="language-plaintext highlighter-rouge">FOO</code> will be available as <code class="language-plaintext highlighter-rouge">${project.meta.foo}</code>. Only available if the field is visible.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>If more than one project was found, you will have further variables (same list as above) called <code class="language-plaintext highlighter-rouge">${project.1.name}</code>, <code class="language-plaintext highlighter-rouge">${project.2.name}</code> and so on.
+The order is not guaranteed, so it is not recommended relying on those variables. 
+If your template relies on a <code class="language-plaintext highlighter-rouge">{$project.X}</code> variable, it is recommended to limit the invoice data with the project search filter.</p>
+
+<h3 id="activity">Activity</h3>
+
+<p>The following variables exist, if activities could be found in the filtered data:</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Twig</th>
+      <th>Document (DOCX, XLSX, ODS)</th>
+      <th>Description (highlighted words are the names in the UI)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['activity.id']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${activity.id}</code></td>
+      <td>The internal activity ID (do not display that on your invoices)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['activity.name']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${activity.name}</code></td>
+      <td>The activity <code class="language-plaintext highlighter-rouge">name</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['activity.comment']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${activity.comment}</code></td>
+      <td>The <code class="language-plaintext highlighter-rouge">description</code> of this activity</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['activity.number']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${activity.number}</code></td>
+      <td>The activity number</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['activity.invoice_text']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${activity.invoice_text}</code></td>
+      <td>The activity invoice-text</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invoice['activity.meta.foo']</code></td>
+      <td><code class="language-plaintext highlighter-rouge">${activity.meta.foo}</code></td>
+      <td>The activity <a href="/documentation/plugin-custom-fields.html">meta field</a> with the internal name <code class="language-plaintext highlighter-rouge">foo</code> (must be in lowercase letters, e.g. <code class="language-plaintext highlighter-rouge">FOO</code> will be available as <code class="language-plaintext highlighter-rouge">${activity.meta.foo}</code>. Only available if the field is visible.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>If more than one activity was found, you will have further variables (same list as above) called <code class="language-plaintext highlighter-rouge">${activity.1.name}</code>, <code class="language-plaintext highlighter-rouge">${activity.2.name}</code> and so on.
+The order is not guaranteed, so it is not recommended relying on those variables.
+If your template relies on a <code class="language-plaintext highlighter-rouge">{activity.X}</code> variable, it is recommended to limit the invoice data with the activity search filter.</p>
+
+<h3 id="uploading-invoice-templates">Uploading invoice templates</h3>
+
+<p>You can upload invoice documents via the UI at <code class="language-plaintext highlighter-rouge">/en/invoice/document_upload</code>.</p>
+
+<p>Due to security restrictions currently only the upload of the following formats is allowed: <code class="language-plaintext highlighter-rouge">DOCX</code>, <code class="language-plaintext highlighter-rouge">ODS</code>, <code class="language-plaintext highlighter-rouge">XLSX</code>.</p>
+
+<p>There is a known bug in LibreOffice which exports DOCX files with a wrong mime-type. These files will not be accepted
+by Kimai with the error <code class="language-plaintext highlighter-rouge">This file type is not allowed</code> (<a href="https://github.com/kimai/kimai/issues/1916">read this issue</a> for more information).
+The workaround is to change the document with another word processor: Apple pages, Google Drive and Microsoft 365 Online Office will export the DOCX files with the correct mimetype.</p>
+
+<h3 id="twig-debug-template">Twig debug template</h3>
+
+<p>Use this debug template to find out which variables are available:</p>
+
+<div class="language-twig highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span><span class="cp">{{</span> <span class="nv">invoice</span><span class="p">[</span><span class="s1">'invoice.number'</span><span class="p">]</span> <span class="cp">}}</span>-<span class="cp">{{</span> <span class="nv">invoice</span><span class="p">[</span><span class="s1">'customer.company'</span><span class="p">]</span><span class="o">|</span><span class="nf">default</span><span class="p">(</span><span class="nv">invoice</span><span class="p">[</span><span class="s1">'customer.name'</span><span class="p">])</span><span class="o">|</span><span class="nf">u</span><span class="err">.</span><span class="nv">snake</span> <span class="cp">}}</span><span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;style </span><span class="na">type=</span><span class="s">"text/css"</span><span class="nt">&gt;</span>
+        <span class="cp">{{</span> <span class="nv">encore_entry_css_source</span><span class="p">(</span><span class="s1">'invoice-pdf'</span><span class="p">)</span><span class="o">|</span><span class="nf">raw</span> <span class="cp">}}</span>
+    <span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"wrapper"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h3&gt;</span>The following list of variables is available for this invoice:<span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Please note, that the available variables will change depending on your search. E.g. the <span class="cp">{{</span> <span class="s1">'{{ project }}'</span> <span class="cp">}}</span> variables are only available if you selected a project in your search filter.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"items"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Variable<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Value<span class="nt">&lt;/th&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="cp">{%</span> <span class="k">for</span> <span class="nv">name</span><span class="p">,</span> <span class="nv">value</span> <span class="ow">in</span> <span class="nv">invoice</span> <span class="cp">%}</span>
+            <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"</span><span class="cp">{{</span> <span class="nv">cycle</span><span class="p">([</span><span class="s1">'odd'</span><span class="p">,</span> <span class="s1">'even'</span><span class="p">],</span> <span class="nv">loop.index0</span><span class="p">)</span> <span class="cp">}}</span><span class="s">"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;td&gt;</span><span class="cp">{{</span> <span class="s2">"{{ invoice['"</span> <span class="err">~</span> <span class="nv">name</span> <span class="err">~</span> <span class="s2">"'] }}"</span> <span class="cp">}}</span><span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span><span class="cp">{{</span> <span class="nv">invoice</span><span class="p">[</span><span class="nv">name</span><span class="p">]</span> <span class="cp">}}</span><span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+        <span class="cp">{%</span> <span class="k">endfor</span> <span class="cp">%}</span>
+    <span class="nt">&lt;/table&gt;</span>
+    <span class="nt">&lt;h3&gt;</span>The following list is available for all timesheet entries, which can be rendered like this:<span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;pre&gt;</span>
+    <span class="cp">{{</span> <span class="s1">'{%'</span> <span class="cp">}}</span> for entry in entries <span class="cp">{{</span> <span class="s1">'%}'</span> <span class="cp">}}</span>
+    <span class="ni">&amp;lt;</span>ul<span class="ni">&amp;gt;</span>
+        <span class="cp">{{</span> <span class="s1">'{%'</span> <span class="cp">}}</span> for name, value in entry <span class="cp">{{</span> <span class="s1">'%}'</span> <span class="cp">}}</span>
+            <span class="ni">&amp;lt;</span>li<span class="ni">&amp;gt;</span><span class="cp">{{</span> <span class="s1">'{{ name }}'</span> <span class="cp">}}</span>: <span class="cp">{{</span> <span class="s1">'{{ value }}'</span> <span class="cp">}}</span><span class="ni">&amp;lt;</span>/li<span class="ni">&amp;gt;</span>
+        <span class="cp">{{</span> <span class="s1">'{%'</span> <span class="cp">}}</span> endfor <span class="cp">{{</span> <span class="s1">'%}'</span> <span class="cp">}}</span>
+    <span class="ni">&amp;lt;</span>/ul<span class="ni">&amp;gt;</span>
+    <span class="cp">{{</span> <span class="s1">'{%'</span> <span class="cp">}}</span> endfor <span class="cp">{{</span> <span class="s1">'%}'</span> <span class="cp">}}</span>
+    <span class="nt">&lt;/pre&gt;</span>
+    <span class="nt">&lt;p&gt;</span>The table below contains only the first timesheet record:<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"items"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;tr&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Variable<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;th&gt;</span>Value<span class="nt">&lt;/th&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span>
+        <span class="cp">{%</span> <span class="k">for</span> <span class="nv">entry</span> <span class="ow">in</span> <span class="nv">entries</span><span class="o">|</span><span class="nf">slice</span><span class="p">(</span><span class="nv">1</span><span class="p">)</span> <span class="cp">%}</span>
+            <span class="cp">{%</span> <span class="k">for</span> <span class="nv">name</span><span class="p">,</span> <span class="nv">value</span> <span class="ow">in</span> <span class="nv">entry</span> <span class="cp">%}</span>
+                <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"</span><span class="cp">{{</span> <span class="nv">cycle</span><span class="p">([</span><span class="s1">'odd'</span><span class="p">,</span> <span class="s1">'even'</span><span class="p">],</span> <span class="nv">loop.index0</span><span class="p">)</span> <span class="cp">}}</span><span class="s">"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;td&gt;</span><span class="cp">{{</span> <span class="s2">"{{ entry['"</span> <span class="err">~</span> <span class="nv">name</span> <span class="err">~</span> <span class="s2">"'] }}"</span> <span class="cp">}}</span><span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td&gt;</span><span class="cp">{{</span> <span class="nv">value</span> <span class="cp">}}</span><span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;/tr&gt;</span>
+            <span class="cp">{%</span> <span class="k">endfor</span> <span class="cp">%}</span>
+        <span class="cp">{%</span> <span class="k">endfor</span> <span class="cp">%}</span>
+    <span class="nt">&lt;/table&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+                        </div>
+                        
+
+                        
+                        <div data-pagefind-ignore="all">
+                            <h2 id="related-articles" class="fs-4 mt-5">Related articles</h2>
+                            <ul>
+                                
+                                
+                                <li>
+                                    <a href="/documentation/invoices.html">Invoices</a> &ndash; Create invoices within Kimai in several file formats
+                                </li>
+                                
+                                
+                                <li>
+                                    <a href="/documentation/plugin-invoice.html">Invoice+</a> &ndash; Enhanced invoice features
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            
+                <aside class="side-nav side-nav-end d-none d-xxl-block docs-toc pe-0">
+                    <h3 class="fs-lg mt-2">Jump to</h3>
+                    <ul class="nav" id="jumpToNav"><li class="nav-item"><a href="#create-a-template" class="nav-link">Create a template</a><ul><li class="nav-item"><a href="#pre-made-templates" class="nav-link">Pre-made templates</a></li><li class="nav-item"><a href="#pdf-templates" class="nav-link">PDF templates</a></li><li class="nav-item"><a href="#twig-templates-html" class="nav-link">Twig templates (HTML)</a></li><li class="nav-item"><a href="#docx-templates" class="nav-link">Docx templates</a></li><li class="nav-item"><a href="#spreadsheets-ods-and-xlsx" class="nav-link">Spreadsheets (ODS and XLSX)</a></li></ul></li><li class="nav-item"><a href="#template-variables" class="nav-link">Template variables</a><ul><li class="nav-item"><a href="#global-variables" class="nav-link">Global variables</a></li><li class="nav-item"><a href="#tax-rows" class="nav-link">Tax Rows</a></li><li class="nav-item"><a href="#invoice-items-timesheets" class="nav-link">Invoice items (timesheets)</a></li><li class="nav-item"><a href="#invoice-issuer" class="nav-link">Invoice issuer</a></li><li class="nav-item"><a href="#customer" class="nav-link">Customer</a></li><li class="nav-item"><a href="#project" class="nav-link">Project</a></li><li class="nav-item"><a href="#activity" class="nav-link">Activity</a></li><li class="nav-item"><a href="#uploading-invoice-templates" class="nav-link">Uploading invoice templates</a></li><li class="nav-item"><a href="#twig-debug-template" class="nav-link">Twig debug template</a></li></ul></li></ul>
+                    
+                    <ul class="nav">
+                        <li>
+                            <a href="#related-articles" class="nav-link">Related articles</a>
+                        </li>
+                    </ul>
+                    
+                </aside>
+            
+        </div>
+    </div>
+</main>
+<script type="module" src="/assets/js/documentation-search.js?v1"></script>
+
+
+<a href="#top" class="btn-scroll-top" data-scroll>
+    <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+    <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+</a>
+
+<script src="/assets/build/main.js?v1"></script>
+
+<script defer src="https://u.kimai.org/script.js" data-website-id="e26bef12-9527-43bc-83fd-660e237f3526"></script>
+
+</body>
+</html>

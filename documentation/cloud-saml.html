@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#4188c9">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="robots" content="index,follow">
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.kimai.org/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.kimai.org/images/icon_32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.kimai.org/images/icon_16x16.png">
+<title>Single Sign-On (SAML) – Kimai</title>
+<meta name="description" content="Sign in to your Kimai Cloud with your company credentials">
+<link type="application/atom+xml" rel="alternate" href="/en/feed.xml" title="Kimai Time-Tracking" />
+<meta property="og:locale" content="en">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Single Sign-On (SAML)">
+<meta property="og:image" content="https://www.kimai.org/images/social-preview.webp">
+<meta property="og:description" content="Sign in to your Kimai Cloud with your company credentials">
+<link href="/assets/build/main.css?v8" rel="stylesheet" />
+
+</head>
+<body class="">
+
+
+
+
+
+
+
+
+
+
+
+<header class="header navbar navbar-expand bg-light border-bottom border-light shadow" data-scroll-header>
+    <div class="container-fluid pe-lg-4">
+        <div class="d-flex align-items-center">
+            <a href="/" class="navbar-brand flex-shrink-0 py-1 py-lg-2">
+                <img src="/images/apple-touch-icon.png" width="32" alt="Kimai logo" class="me-2">
+                Kimai Docs
+            </a>
+            <span class="badge bg-warning">Kimai-Cloud</span>
+        </div>
+        <div class="docs-header-nav d-flex align-items-center w-100" style="padding-left: 6.75rem;">
+            <ul class="docs-primary-nav navbar-nav d-none d-lg-flex">
+                
+                    
+                    
+                    <li class="nav-item">
+                        <a href="/documentation/chapter-manual.html" class="nav-link ">
+                            <i class="bx bx-book opacity-70 fs-lg me-1"></i>
+                            User manual
+                        </a>
+                    </li>
+                
+                    
+                    
+                    <li class="nav-item">
+                        <a href="/documentation/cloud.html" class="nav-link  active">
+                            <i class="bx bx-cloud opacity-70 fs-lg me-1"></i>
+                            Kimai-Cloud
+                        </a>
+                    </li>
+                
+                    
+                    
+                    <li class="nav-item">
+                        <a href="/documentation/chapter-on-premise.html" class="nav-link ">
+                            <i class="bx bx-server opacity-70 fs-lg me-1"></i>
+                            On-Premise
+                        </a>
+                    </li>
+                
+                    
+                    
+                    <li class="nav-item">
+                        <a href="/documentation/chapter-developer.html" class="nav-link ">
+                            <i class="bx bx-code-alt opacity-70 fs-lg me-1"></i>
+                            Developer
+                        </a>
+                    </li>
+                
+            </ul>
+            <div class="docs-toolbar d-none d-xl-flex" data-pagefind-ignore="all">
+                <div class="docs-search-panel" data-doc-search>
+                    <label class="form-label visually-hidden" for="documentation-search">Search documentation</label>
+                    <input
+                        id="documentation-search"
+                        class="form-control"
+                        type="search"
+                        autocomplete="off"
+                        spellcheck="false"
+                        placeholder="Search the documentation"
+                        aria-describedby="documentation-search-status"
+                        data-doc-search-input
+                    >
+                    <div
+                        id="documentation-search-results"
+                        class="docs-search-results card border-0 shadow-sm"
+                        role="listbox"
+                        aria-label="Documentation search results"
+                        data-doc-search-results
+                    ></div>
+                    <div id="documentation-search-status" class="visually-hidden" aria-live="polite" data-doc-search-status></div>
+                </div>
+            </div>
+            <button type="button" class="navbar-toggler d-block d-lg-none ms-auto me-4" data-bs-toggle="offcanvas" data-bs-target="#componentsNav" aria-controls="componentsNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<aside class="bg-dark">
+    <div id="componentsNav" class="offcanvas-lg offcanvas-start d-flex flex-column position-fixed top-0 start-0 vh-100 bg-dark border-end-lg" style="width: 19rem; z-index: 1045;">
+        <div class="offcanvas-header d-none d-lg-flex justify-content-start">
+            <a href="/" class="navbar-brand d-none d-lg-flex py-0">
+                <img src="/images/apple-touch-icon.png" width="26" alt="Kimai logo" class="me-3">
+                Kimai Docs
+            </a>
+        </div>
+        <div class="offcanvas-header d-block d-lg-none border-bottom">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+                <h5 class="d-lg-none mb-0">Menu</h5>
+                <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas" data-bs-target="#componentsNav" aria-label="Close"></button>
+            </div>
+            <div class="list-group list-group-flush mx-n4">
+                
+                    
+                    
+                    <a href="/documentation/chapter-manual.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-1 px-4">
+                        <i class="bx bx-book opacity-70 me-1"></i>
+                        User manual
+                    </a>
+                
+                    
+                    
+                    <a href="/documentation/cloud.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-1 px-4">
+                        <i class="bx bx-cloud opacity-70 me-1"></i>
+                        Kimai-Cloud
+                    </a>
+                
+                    
+                    
+                    <a href="/documentation/chapter-on-premise.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-1 px-4">
+                        <i class="bx bx-server opacity-70 me-1"></i>
+                        On-Premise
+                    </a>
+                
+                    
+                    
+                    <a href="/documentation/chapter-developer.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-1 px-4">
+                        <i class="bx bx-code-alt opacity-70 me-1"></i>
+                        Developer
+                    </a>
+                
+            </div>
+        </div>
+        <div class="offcanvas-body overflow-scroll w-100 p-4">
+            <div class="h-auto docsnavi">
+                
+                    
+                    
+                    
+                    
+                    <p class="fs-lg mb-1 text-white fw-bold">Cloud management</p>
+                    <div class="list-group list-group-flush mb-4 me-n4 border-start">
+                        
+                        
+                        
+                        
+                        <a href="/documentation/cloud-backups.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-cloud-backups">
+                            
+                            Backups
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/cloud-custom-domain.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-cloud-custom-domain">
+                            
+                            Custom domain
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/cloud-ip-restriction.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-cloud-ip-restriction">
+                            
+                            IP access restriction
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/cloud-saml.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2  active" id="docnavi-cloud-saml">
+                            
+                            Single Sign-On (SAML)
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/cloud-invoice-templates.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-cloud-invoice-templates">
+                            
+                            Invoice templates
+                            
+                        </a>
+                        
+                        
+                    </div>
+                    
+                    
+                    
+                    <p class="fs-lg mb-1 text-white fw-bold">FAQ</p>
+                    <div class="list-group list-group-flush mb-4 me-n4 border-start">
+                        
+                        
+                        
+                        
+                        <a href="/documentation/cloud-payment.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-cloud-payment">
+                            
+                            Payments
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/cloud-user-licenses.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-cloud-user-licenses">
+                            
+                            User licenses
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/cloud-domain.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-cloud-domain">
+                            
+                            Change the cloud domain
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/cloud-migration.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-cloud-migration">
+                            
+                            Migration to the cloud
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/cloud-plans.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-cloud-plans">
+                            
+                            Plan change
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/cloud-plugins.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-cloud-plugins">
+                            
+                            Plugins
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/cloud-countries.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-cloud-countries">
+                            
+                            Supported countries
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/cloud-data-removal.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-cloud-data-removal">
+                            
+                            Data removal
+                            
+                        </a>
+                        
+                        
+                    </div>
+                    
+                    <div class="list-group list-group-flush pb-3 mb-4 mx-n4">
+                
+                    <a href="/en/" class="list-group-item list-group-item-action border-0 py-1 fs-sm px-4">Kimai Home</a>
+                    <a href="/en/site-notice.html" class="list-group-item list-group-item-action border-0 py-1 fs-sm px-4">Site notice</a>
+                    <a href="/en/privacy-policy.html" class="list-group-item list-group-item-action border-0 py-1 fs-sm px-4">Privacy policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        const dpm = document.getElementById('docnavi-cloud-saml');
+        if (dpm !== null) {
+            dpm.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+        }
+    });
+</script>
+<main class="docs-container">
+    <div class="container-fluid px-xxl-3 px-lg-2 pt-4 pt-lg-5 pb-2 pb-lg-4">
+        <div class="docs-layout">
+            <div class="docs-article" data-pagefind-body>
+                <div class="d-sm-flex align-items-end justify-content-between ps-lg-2 ps-xxl-0 mt-2 mt-lg-0 mb-n3 gap-4">
+                    <div class="me-4">
+                        <h1 class="pb-1" data-pagefind-meta="title" data-pagefind-weight="10.0">Single Sign-On (SAML)</h1>
+                        
+                        <p class="text-muted fs-lg mb-2" data-pagefind-meta="description">Sign in to your Kimai Cloud with your company credentials</p>
+                        
+                    </div>
+                    <div class="d-none d-lg-flex">
+                    
+
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="markdown py-5 ps-lg-2 ps-xxl-0">
+                    <div>
+                        
+                        <div id="documentation-content">
+                            <div class="alert alert-info d-flex" role="alert"><i class="bx bx-message-rounded-detail lead me-3"></i><p>This feature is <strong>available for annual PRO subscriptions</strong>, check the feature comparison page for more details.</p>
+</div>
+
+<p>Your Kimai Cloud users can authenticate via any identity provider that supports SAML-based Single Sign-On (SSO).
+You’ll find the configuration after logging in at: <strong><a href="https://www.kimai.cloud/go/my-site">My Kimai Cloud</a> &gt; SSO Authentication</strong>.</p>
+
+<p>The following providers are currently supported:</p>
+
+<ul>
+  <li>Google Workspace</li>
+  <li>Microsoft Entra (formerly Azure AD)</li>
+  <li>Keycloak</li>
+  <li>Auth0</li>
+  <li>Authentik</li>
+</ul>
+
+<p>See below for integration details.</p>
+
+<p><strong>Important to know</strong></p>
+
+<ul>
+  <li>Existing cloud users are upgraded to SAML logins after their first SAML login, provided the identifier matches</li>
+  <li>SAML users cannot log in with a password</li>
+  <li>Without role mapping configured, every SAML user will only have the <code class="language-plaintext highlighter-rouge">User</code> role — even administrators will be downgraded on every login</li>
+</ul>
+
+<p><strong>Additional settings</strong></p>
+
+<p>The SSO configuration includes three toggle settings:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Activate SSO Login</code> — shows or hides the SSO login button</li>
+  <li><code class="language-plaintext highlighter-rouge">Activate regular login with username</code> — enables or disables the username/password form (can be turned off if all users log in via SSO)</li>
+  <li><code class="language-plaintext highlighter-rouge">Reset assigned user roles during login</code> — if enabled, user roles are reset on every login; custom role assignments are temporary and only last until the next login</li>
+</ul>
+
+<h2 id="google-saml">Google SAML</h2>
+
+<h3 id="workspace-configuration">Workspace configuration</h3>
+
+<ul>
+  <li>Go to https://admin.google.com/ac/apps/unified</li>
+  <li>Choose <strong>Add app</strong> → <strong>Add custom SAML app</strong></li>
+  <li>Enter a name (e.g. “Kimai Cloud Live”) and <a href="https://raw.githubusercontent.com/kimai/images/master/logo-transparent-cloud.png">add this image</a></li>
+  <li>Copy the values from the Google setup guide (page 2) into your Kimai Cloud SAML configuration:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">SSO-URL</code> → <code class="language-plaintext highlighter-rouge">Single Sign-On URL</code></li>
+      <li><code class="language-plaintext highlighter-rouge">Entity-ID</code> → <code class="language-plaintext highlighter-rouge">Entity ID</code></li>
+      <li><code class="language-plaintext highlighter-rouge">Certificate</code> → <code class="language-plaintext highlighter-rouge">X.509 Certificate</code></li>
+    </ul>
+  </li>
+  <li>Copy the values from your Kimai Cloud SAML configuration into the Google setup guide (page 3):
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">ACS-URL</code> → <code class="language-plaintext highlighter-rouge">ACS-URL</code></li>
+      <li><code class="language-plaintext highlighter-rouge">Entity ID</code> → <code class="language-plaintext highlighter-rouge">Entity-ID</code></li>
+      <li>Set <code class="language-plaintext highlighter-rouge">Name-ID Format</code> to “X509_SUBJECT”</li>
+      <li>Set <code class="language-plaintext highlighter-rouge">Name-ID</code> to “Basic Information &gt; Primary Email”</li>
+    </ul>
+  </li>
+  <li>On page 4 (<code class="language-plaintext highlighter-rouge">Attributes</code>), define the user attribute mapping as follows (<strong>case is important; configure all attributes, even the ones you don’t use</strong>):
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Basic Information &gt; Primary email</code> → <code class="language-plaintext highlighter-rouge">Email</code></li>
+      <li><code class="language-plaintext highlighter-rouge">Basic Information &gt; First name</code> → <code class="language-plaintext highlighter-rouge">FirstName</code> (optional)</li>
+      <li><code class="language-plaintext highlighter-rouge">Basic Information &gt; Last name</code> → <code class="language-plaintext highlighter-rouge">LastName</code> (optional)</li>
+      <li><code class="language-plaintext highlighter-rouge">Employee Details &gt; Employee ID</code> → <code class="language-plaintext highlighter-rouge">AccountNumber</code> (optional)</li>
+      <li><code class="language-plaintext highlighter-rouge">Employee Details &gt; Title</code> → <code class="language-plaintext highlighter-rouge">Title</code> (optional)</li>
+    </ul>
+  </li>
+  <li>Return to the overview page and activate the new application for your users</li>
+  <li>The final step is configuring <code class="language-plaintext highlighter-rouge">User role</code> mapping, which can be done in two ways:
+    <ul>
+      <li><strong>Using Google Groups (recommended):</strong>
+        <ul>
+          <li>Create groups for the Kimai roles you want to assign under Directory &gt; Groups</li>
+          <li>Assign those groups to your users</li>
+          <li>Edit your SAML application and configure the optional group membership:
+            <ul>
+              <li>Select all groups you configured for Kimai and map them to the App Attribute <code class="language-plaintext highlighter-rouge">Groups</code></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><strong>Using a custom attribute:</strong>
+        <ul>
+          <li>Create a <a href="https://admin.google.com/ac/customschema">user-defined attribute</a> called <code class="language-plaintext highlighter-rouge">SAML Group</code></li>
+          <li>Add a field <code class="language-plaintext highlighter-rouge">KimaiRole</code> as a multi-value text type</li>
+          <li>Edit your users and set values for the new attribute:
+            <ul>
+              <li><code class="language-plaintext highlighter-rouge">Kimai-System</code> maps to the Kimai role <code class="language-plaintext highlighter-rouge">System-Admin</code></li>
+              <li><code class="language-plaintext highlighter-rouge">Kimai-Admin</code> maps to the Kimai role <code class="language-plaintext highlighter-rouge">Administrator</code></li>
+              <li><code class="language-plaintext highlighter-rouge">Kimai-Teamlead</code> maps to the Kimai role <code class="language-plaintext highlighter-rouge">Teamlead</code></li>
+            </ul>
+          </li>
+          <li>Edit your SAML application and add one more attribute mapping:
+            <ul>
+              <li>Google directory attribute <code class="language-plaintext highlighter-rouge">SAML Group &gt; KimaiRole</code> → App Attribute <code class="language-plaintext highlighter-rouge">Groups</code></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>You can use different names for your groups — the mapping is done in the next step in your Cloud configuration.</p>
+
+<p>The following screenshot shows an example of the attribute mapping including groups:</p>
+
+<figure class="d-block figure mb-3" style="max-width: 800px">
+    <img src="/images/documentation/cloud/saml-google-attributes.webp" class="figure-img img-fluid rounded border border-primary border-3 p-2" />
+    <figcaption class="figure-caption">Google - SAML attribute mapping</figcaption>
+</figure>
+
+<h3 id="cloud-configuration">Cloud configuration</h3>
+
+<figure class="d-block figure mb-3" style="max-width: 800px">
+    <img src="/images/documentation/cloud/saml-google-cloud.webp" class="figure-img img-fluid rounded border border-primary border-3 p-2" />
+    <figcaption class="figure-caption">Google - Cloud configuration</figcaption>
+</figure>
+
+<h2 id="microsoft-saml">Microsoft SAML</h2>
+
+<h3 id="entra-id-formerly-azure-ad-configuration">Entra ID (formerly Azure AD) configuration</h3>
+
+<ul>
+  <li>Sign in to the <a href="https://portal.azure.com/">Azure portal</a>.</li>
+  <li>Select the <strong>Microsoft Entra ID</strong> service from the navigation.</li>
+  <li>Go to <strong>Enterprise Applications</strong> and select <strong>New application</strong>.</li>
+  <li>Search for <strong>Microsoft Entra SAML Toolkit</strong> in the gallery and select it.</li>
+  <li>Set the application name to “Kimai-Cloud”, click <code class="language-plaintext highlighter-rouge">Create</code>, and wait for the app to be added.</li>
+  <li>On the <strong>Overview</strong> page, select <strong>Assign users and groups</strong> and add all users who should have access to Kimai.</li>
+  <li>Back on the <strong>Overview</strong> page, select <strong>Set up single sign-on</strong> and choose <strong>SAML</strong>.</li>
+  <li>Edit the <strong>Basic SAML Configuration</strong> and enter the required URLs (replace <code class="language-plaintext highlighter-rouge">foo.kimai.cloud</code> with your actual cloud domain):
+    <ul>
+      <li>Identifier (Entity ID): <code class="language-plaintext highlighter-rouge">https://foo.kimai.cloud/auth/saml/metadata</code></li>
+      <li>Reply URL (Assertion Consumer Service URL): <code class="language-plaintext highlighter-rouge">https://foo.kimai.cloud/auth/saml/acs</code></li>
+      <li>Sign on URL: <code class="language-plaintext highlighter-rouge">https://foo.kimai.cloud/</code></li>
+      <li>Relay State: skip</li>
+      <li>Logout URL: skip</li>
+    </ul>
+  </li>
+  <li>Edit <strong>Attributes &amp; Claims</strong> (see screenshot below):
+    <ul>
+      <li>Change the <code class="language-plaintext highlighter-rouge">Source attribute</code> of <code class="language-plaintext highlighter-rouge">Unique User Identifier (Name ID)</code> to <code class="language-plaintext highlighter-rouge">user.mail</code></li>
+      <li>Select <code class="language-plaintext highlighter-rouge">Add a group claim</code> with <code class="language-plaintext highlighter-rouge">All groups</code> and Source attribute <code class="language-plaintext highlighter-rouge">Group ID</code></li>
+      <li>Optionally add claims from the <code class="language-plaintext highlighter-rouge">http://schemas.xmlsoap.org/ws/2005/05/identity/claims</code> namespace:
+        <ul>
+          <li>Name: <code class="language-plaintext highlighter-rouge">givenname</code>, Source attribute: <code class="language-plaintext highlighter-rouge">user.givenname</code> (optional)</li>
+          <li>Name: <code class="language-plaintext highlighter-rouge">surname</code>, Source attribute: <code class="language-plaintext highlighter-rouge">user.surname</code> (optional)</li>
+          <li>Name: <code class="language-plaintext highlighter-rouge">displayname</code>, Source attribute: <code class="language-plaintext highlighter-rouge">user.displayname</code> (optional)</li>
+          <li>Name: <code class="language-plaintext highlighter-rouge">employeeid</code>, Source attribute: <code class="language-plaintext highlighter-rouge">user.employeeid</code> (optional)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Download <strong>Certificate (Base64)</strong> from the <strong>SAML Signing Certificate</strong> section. Open the <code class="language-plaintext highlighter-rouge">Kimai Cloud.cer</code> file and paste its content into the Cloud configuration field <code class="language-plaintext highlighter-rouge">X.509 Certificate</code>.</li>
+  <li>Copy the values from the <strong>Set up Kimai-Cloud</strong> section into the Cloud configuration:
+    <ul>
+      <li>Login URL → <code class="language-plaintext highlighter-rouge">Login URL</code></li>
+      <li>Microsoft Entra Identifier → <code class="language-plaintext highlighter-rouge">Azure AD Identifier (SAML Entity ID)</code></li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Configure “Attributes &amp; Claims”:</strong></p>
+
+<figure class="d-block figure mb-3" style="max-width: 800px">
+    <img src="/images/documentation/cloud/saml-azure-attributes.webp" class="figure-img img-fluid rounded border border-primary border-3 p-2" />
+    <figcaption class="figure-caption">Azure - Attributes &amp; Claims</figcaption>
+</figure>
+
+<p><strong>Configure “Groups”:</strong></p>
+<ul>
+  <li>In the <strong>Microsoft Entra ID</strong> section, choose <strong>Groups</strong> from the navigation.</li>
+  <li>Click <strong>New group</strong> (group type: Security) and create one group for each Kimai role:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Kimai Teamlead</code></li>
+      <li><code class="language-plaintext highlighter-rouge">Kimai Admin</code></li>
+      <li><code class="language-plaintext highlighter-rouge">Kimai System-Admin</code></li>
+    </ul>
+  </li>
+  <li>Add the relevant members to each group.</li>
+  <li>Copy the <code class="language-plaintext highlighter-rouge">Object ID</code> of each group into the Cloud configuration (see screenshot below).</li>
+</ul>
+
+<figure class="d-block figure mb-3" style="max-width: 800px">
+    <img src="/images/documentation/cloud/saml-azure-groups.webp" class="figure-img img-fluid rounded border border-primary border-3 p-2" />
+    <figcaption class="figure-caption">Azure - Groups</figcaption>
+</figure>
+
+<h3 id="cloud-configuration-1">Cloud configuration</h3>
+
+<figure class="d-block figure mb-3" style="max-width: 800px">
+    <img src="/images/documentation/cloud/saml-azure-cloud.webp" class="figure-img img-fluid rounded border border-primary border-3 p-2" />
+    <figcaption class="figure-caption">Azure - Cloud configuration</figcaption>
+</figure>
+
+<h2 id="keycloak-saml">Keycloak SAML</h2>
+
+<p>Start by setting up Keycloak following the <a href="/documentation/saml-keycloak.html">Keycloak documentation</a>.</p>
+
+<p>There is one difference for the Cloud: <code class="language-plaintext highlighter-rouge">authnRequestsSigned</code> is not enabled, so you need to disable <strong>Client signature required</strong> in Keycloak.</p>
+
+<p>Define the user attribute mapping as follows (<strong>case is important; configure all attributes, even the ones you don’t use</strong>):</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Basic Information &gt; Primary email</code> → <code class="language-plaintext highlighter-rouge">Email</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Basic Information &gt; First name</code> → <code class="language-plaintext highlighter-rouge">FirstName</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Basic Information &gt; Last name</code> → <code class="language-plaintext highlighter-rouge">LastName</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Employee Details &gt; Employee ID</code> → <code class="language-plaintext highlighter-rouge">AccountNumber</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Employee Details &gt; Title</code> → <code class="language-plaintext highlighter-rouge">Title</code></li>
+</ul>
+
+<p>Also edit the SAML capabilities and set the <strong>Name ID format</strong> to <code class="language-plaintext highlighter-rouge">email</code>.</p>
+
+                        </div>
+                        
+
+                        
+                    </div>
+                </div>
+            </div>
+
+            
+                <aside class="side-nav side-nav-end d-none d-xxl-block docs-toc pe-0">
+                    <h3 class="fs-lg mt-2">Jump to</h3>
+                    <ul class="nav" id="jumpToNav"><li class="nav-item"><a href="#google-saml" class="nav-link">Google SAML</a><ul><li class="nav-item"><a href="#workspace-configuration" class="nav-link">Workspace configuration</a></li><li class="nav-item"><a href="#cloud-configuration" class="nav-link">Cloud configuration</a></li></ul></li><li class="nav-item"><a href="#microsoft-saml" class="nav-link">Microsoft SAML</a><ul><li class="nav-item"><a href="#entra-id-formerly-azure-ad-configuration" class="nav-link">Entra ID (formerly Azure AD) configuration</a></li><li class="nav-item"><a href="#cloud-configuration-1" class="nav-link">Cloud configuration</a></li></ul></li><li class="nav-item"><a href="#keycloak-saml" class="nav-link">Keycloak SAML</a></li></ul>
+                    
+                </aside>
+            
+        </div>
+    </div>
+</main>
+<script type="module" src="/assets/js/documentation-search.js?v1"></script>
+
+
+<a href="#top" class="btn-scroll-top" data-scroll>
+    <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+    <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+</a>
+
+<script src="/assets/build/main.js?v1"></script>
+
+<script defer src="https://u.kimai.org/script.js" data-website-id="e26bef12-9527-43bc-83fd-660e237f3526"></script>
+
+</body>
+</html>

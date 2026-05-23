@@ -1,0 +1,1953 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#4188c9">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="robots" content="index,follow">
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.kimai.org/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.kimai.org/images/icon_32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.kimai.org/images/icon_16x16.png">
+<title>Roles & Permissions – Kimai</title>
+<meta name="description" content="Configure the permission system which is based on user roles">
+<link type="application/atom+xml" rel="alternate" href="/en/feed.xml" title="Kimai Time-Tracking" />
+<meta property="og:locale" content="en">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Roles & Permissions">
+<meta property="og:image" content="https://www.kimai.org/images/social-preview.webp">
+<meta property="og:description" content="Configure the permission system which is based on user roles">
+<link href="/assets/build/main.css?v8" rel="stylesheet" />
+
+</head>
+<body class="">
+
+
+
+
+
+
+
+
+
+
+
+<header class="header navbar navbar-expand bg-light border-bottom border-light shadow" data-scroll-header>
+    <div class="container-fluid pe-lg-4">
+        <div class="d-flex align-items-center">
+            <a href="/" class="navbar-brand flex-shrink-0 py-1 py-lg-2">
+                <img src="/images/apple-touch-icon.png" width="32" alt="Kimai logo" class="me-2">
+                Kimai Docs
+            </a>
+            <span class="badge bg-warning">User manual</span>
+        </div>
+        <div class="docs-header-nav d-flex align-items-center w-100" style="padding-left: 6.75rem;">
+            <ul class="docs-primary-nav navbar-nav d-none d-lg-flex">
+                
+                    
+                    
+                    <li class="nav-item">
+                        <a href="/documentation/chapter-manual.html" class="nav-link  active">
+                            <i class="bx bx-book opacity-70 fs-lg me-1"></i>
+                            User manual
+                        </a>
+                    </li>
+                
+                    
+                    
+                    <li class="nav-item">
+                        <a href="/documentation/cloud.html" class="nav-link ">
+                            <i class="bx bx-cloud opacity-70 fs-lg me-1"></i>
+                            Kimai-Cloud
+                        </a>
+                    </li>
+                
+                    
+                    
+                    <li class="nav-item">
+                        <a href="/documentation/chapter-on-premise.html" class="nav-link ">
+                            <i class="bx bx-server opacity-70 fs-lg me-1"></i>
+                            On-Premise
+                        </a>
+                    </li>
+                
+                    
+                    
+                    <li class="nav-item">
+                        <a href="/documentation/chapter-developer.html" class="nav-link ">
+                            <i class="bx bx-code-alt opacity-70 fs-lg me-1"></i>
+                            Developer
+                        </a>
+                    </li>
+                
+            </ul>
+            <div class="docs-toolbar d-none d-xl-flex" data-pagefind-ignore="all">
+                <div class="docs-search-panel" data-doc-search>
+                    <label class="form-label visually-hidden" for="documentation-search">Search documentation</label>
+                    <input
+                        id="documentation-search"
+                        class="form-control"
+                        type="search"
+                        autocomplete="off"
+                        spellcheck="false"
+                        placeholder="Search the documentation"
+                        aria-describedby="documentation-search-status"
+                        data-doc-search-input
+                    >
+                    <div
+                        id="documentation-search-results"
+                        class="docs-search-results card border-0 shadow-sm"
+                        role="listbox"
+                        aria-label="Documentation search results"
+                        data-doc-search-results
+                    ></div>
+                    <div id="documentation-search-status" class="visually-hidden" aria-live="polite" data-doc-search-status></div>
+                </div>
+            </div>
+            <button type="button" class="navbar-toggler d-block d-lg-none ms-auto me-4" data-bs-toggle="offcanvas" data-bs-target="#componentsNav" aria-controls="componentsNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<aside class="bg-dark">
+    <div id="componentsNav" class="offcanvas-lg offcanvas-start d-flex flex-column position-fixed top-0 start-0 vh-100 bg-dark border-end-lg" style="width: 19rem; z-index: 1045;">
+        <div class="offcanvas-header d-none d-lg-flex justify-content-start">
+            <a href="/" class="navbar-brand d-none d-lg-flex py-0">
+                <img src="/images/apple-touch-icon.png" width="26" alt="Kimai logo" class="me-3">
+                Kimai Docs
+            </a>
+        </div>
+        <div class="offcanvas-header d-block d-lg-none border-bottom">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+                <h5 class="d-lg-none mb-0">Menu</h5>
+                <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas" data-bs-target="#componentsNav" aria-label="Close"></button>
+            </div>
+            <div class="list-group list-group-flush mx-n4">
+                
+                    
+                    
+                    <a href="/documentation/chapter-manual.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-1 px-4">
+                        <i class="bx bx-book opacity-70 me-1"></i>
+                        User manual
+                    </a>
+                
+                    
+                    
+                    <a href="/documentation/cloud.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-1 px-4">
+                        <i class="bx bx-cloud opacity-70 me-1"></i>
+                        Kimai-Cloud
+                    </a>
+                
+                    
+                    
+                    <a href="/documentation/chapter-on-premise.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-1 px-4">
+                        <i class="bx bx-server opacity-70 me-1"></i>
+                        On-Premise
+                    </a>
+                
+                    
+                    
+                    <a href="/documentation/chapter-developer.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-1 px-4">
+                        <i class="bx bx-code-alt opacity-70 me-1"></i>
+                        Developer
+                    </a>
+                
+            </div>
+        </div>
+        <div class="offcanvas-body overflow-scroll w-100 p-4">
+            <div class="h-auto docsnavi">
+                
+                    
+                    
+                    
+                    
+                    <p class="fs-lg mb-1 text-white fw-bold">User Guide</p>
+                    <div class="list-group list-group-flush mb-4 me-n4 border-start">
+                        
+                        
+                        
+                        
+                        <a href="/documentation/timesheet.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-timesheet">
+                            
+                            Timesheet
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/weekly-times.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-weekly-times">
+                            
+                            Weekly hours
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/calendar.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-calendar">
+                            
+                            Calendar
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/invoices.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-invoices">
+                            
+                            Invoices
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/export.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-export">
+                            
+                            Export
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/reporting.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-reporting">
+                            
+                            Reporting
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/customer.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-customer">
+                            
+                            Customer
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/project.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-project">
+                            
+                            Projects
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/activity.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-activity">
+                            
+                            Activities
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/tags.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-tags">
+                            
+                            Tags
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/users.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-users">
+                            
+                            Users
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/user-preferences.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-user-preferences">
+                            
+                            User preferences
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/permissions.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2  active" id="docnavi-permissions">
+                            
+                            Roles & Permissions
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/teams.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-teams">
+                            
+                            Teams
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/configurations.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-configurations">
+                            
+                            Settings
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/doctor.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-doctor">
+                            
+                            Doctor
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/contract.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-contract">
+                            
+                            Working times
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/public-holiday.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-public-holiday">
+                            
+                            Public holiday
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/absence.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-absence">
+                            
+                            Absence
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/dashboard.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-dashboard">
+                            
+                            Dashboard
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-custom-fields.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-custom-fields">
+                            
+                            Custom fields
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-expenses.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-expenses">
+                            
+                            Expenses
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-task-management.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-task-management">
+                            
+                            Tasks
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-custom-css.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-custom-css">
+                            
+                            Custom CSS
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-custom-content.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-custom-content">
+                            
+                            Custom content
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-translation.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-translation">
+                            
+                            Translation
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-invoice.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-invoice">
+                            
+                            Invoice+
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-import.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-import">
+                            
+                            Importer
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-audit-trail.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-audit-trail">
+                            
+                            Audit logs
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-kiosk.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-kiosk">
+                            
+                            Kiosk mode
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-customer-portal.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-customer-portal">
+                            
+                            Customer Portal
+                            
+                        </a>
+                        
+                        
+                    </div>
+                    
+                    
+                    
+                    <p class="fs-lg mb-1 text-white fw-bold">Advanced Topics</p>
+                    <div class="list-group list-group-flush mb-4 me-n4 border-start">
+                        
+                        
+                        
+                        
+                        <a href="/documentation/initial-setup.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-initial-setup">
+                            
+                            Initial setup
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/rates.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-rates">
+                            
+                            Prices (rates)
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/rounding.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-rounding">
+                            
+                            Rounding
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/billable.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-billable">
+                            
+                            Billable
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/invoice-templates.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-invoice-templates">
+                            
+                            Invoice templates
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/pdf-templates.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-pdf-templates">
+                            
+                            PDF templates
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/keyboard-shortcuts.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-keyboard-shortcuts">
+                            
+                            Keyboard shortcuts
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/i18n-am-pm.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-i18n-am-pm">
+                            
+                            Date and Time formats
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/duration-format.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-duration-format">
+                            
+                            Duration format
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/homescreen.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-homescreen">
+                            
+                            Use Kimai as app
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/user-api.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-user-api">
+                            
+                            Connecting via API
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/markdown.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-markdown">
+                            
+                            Markdown
+                            
+                        </a>
+                        
+                        
+                    </div>
+                    
+                    <div class="list-group list-group-flush pb-3 mb-4 mx-n4">
+                
+                    <a href="/en/" class="list-group-item list-group-item-action border-0 py-1 fs-sm px-4">Kimai Home</a>
+                    <a href="/en/site-notice.html" class="list-group-item list-group-item-action border-0 py-1 fs-sm px-4">Site notice</a>
+                    <a href="/en/privacy-policy.html" class="list-group-item list-group-item-action border-0 py-1 fs-sm px-4">Privacy policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        const dpm = document.getElementById('docnavi-permissions');
+        if (dpm !== null) {
+            dpm.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+        }
+    });
+</script>
+<main class="docs-container">
+    <div class="container-fluid px-xxl-3 px-lg-2 pt-4 pt-lg-5 pb-2 pb-lg-4">
+        <div class="docs-layout">
+            <div class="docs-article" data-pagefind-body>
+                <div class="d-sm-flex align-items-end justify-content-between ps-lg-2 ps-xxl-0 mt-2 mt-lg-0 mb-n3 gap-4">
+                    <div class="me-4">
+                        <h1 class="pb-1" data-pagefind-meta="title" data-pagefind-weight="10.0">Roles & Permissions</h1>
+                        
+                        <p class="text-muted fs-lg mb-2" data-pagefind-meta="description">Configure the permission system which is based on user roles</p>
+                        
+                    </div>
+                    <div class="d-none d-lg-flex">
+                    
+
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="markdown py-5 ps-lg-2 ps-xxl-0">
+                    <div>
+                        
+                        <div id="documentation-content">
+                            <p>Kimai provides a flexible permission system, which is based on <strong>user roles</strong> and <strong>permissions</strong>, 
+which can be turned on and off for these roles. You need the <code class="language-plaintext highlighter-rouge">role_permissions</code> permission to access the <code class="language-plaintext highlighter-rouge">Roles</code> screen.</p>
+
+<p>This permission system limits access to the functionality of Kimai.</p>
+
+<div class="alert alert-info d-flex" role="alert"><i class="bx bx-message-rounded-detail lead me-3"></i>
+<p>If you are looking for a way to limit access to timesheets, activities, projects and customers read about <a href="/documentation/teams.html">Team permissions</a>.</p>
+</div>
+
+<h2 id="roles">Roles</h2>
+
+<p>Access to functions is handled by the <a href="/documentation/permissions.html">permission system</a>, which is configurable through user roles.
+There are four pre-defined roles in Kimai, which have a customizable set of ACLs/permissions.</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Role name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>User</td>
+      <td>Normal user can track their working times, see basic reports and change their own preferences. Technical name: <code class="language-plaintext highlighter-rouge">ROLE_USER</code></td>
+    </tr>
+    <tr>
+      <td>Teamlead</td>
+      <td>Manages <a href="/documentation/teams.html">teams</a> with permissions for invoices and access to all <strong>team</strong> timesheets. Technical name: <code class="language-plaintext highlighter-rouge">ROLE_TEAMLEAD</code></td>
+    </tr>
+    <tr>
+      <td>Administrator</td>
+      <td>Can manage all content and timesheet related data, but lack user administration and system privileges. Technical name: <code class="language-plaintext highlighter-rouge">ROLE_ADMIN</code></td>
+    </tr>
+    <tr>
+      <td>System-Admin</td>
+      <td>Has permissions to manage everything in Kimai, from content to timesheets to users, plugins and system configurations. Technical name: <code class="language-plaintext highlighter-rouge">ROLE_SUPER_ADMIN</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="alert alert-danger d-flex" role="alert"><i class="bx bx-info-circle lead me-3"></i><p>Every user is automatically member of the <code class="language-plaintext highlighter-rouge">ROLE_USER</code> (this cannot be changed), which means that every user owns all permissions from the <code class="language-plaintext highlighter-rouge">ROLE_USER</code>.</p>
+</div>
+
+<h3 id="creating-roles">Creating roles</h3>
+
+<p>If the pre-defined roles are not enough for your use-case, and you need more roles, you can create new ones.</p>
+
+<p>Every user with the permission <code class="language-plaintext highlighter-rouge">role_permissions</code> can create new user roles. 
+There is a button that will open a new modal, to enter a role name. This new role will show up in the table after saving.</p>
+
+<p>Custom role names must start with <code class="language-plaintext highlighter-rouge">ROLE_</code> and need to be written in uppercase letters, so instead of using <code class="language-plaintext highlighter-rouge">Manager</code> you have to create <code class="language-plaintext highlighter-rouge">ROLE_MANAGER</code>. 
+This is required if you want to test for role permissions programmatically.</p>
+
+<div class="alert alert-warning d-flex" role="alert"><i class="bx bx-alarm-exclamation lead me-3"></i><p>Allowed character are: <code class="language-plaintext highlighter-rouge">A-Z</code> and <code class="language-plaintext highlighter-rouge">_</code>. If you use different character, you might experience strange bugs.</p>
+</div>
+
+<h2 id="permissions">Permissions</h2>
+
+<p>By turning permissions <strong>on</strong> and <strong>off</strong> for specific roles, you widen or limit the access to certain features.
+Clicking the <span class="badge bg-success">Yes</span>
+ and <span class="badge bg-secondary">No</span>
+ buttons 
+in the table toggles the selected permission for the respective role (column).</p>
+
+<p>If a user has multiple roles, then access is granted as soon as one of these roles own the permission.</p>
+
+<p>A few permissions for system-admins cannot be changed, as they are critical to manage the system. 
+Those appear in a warning color as <span class="badge bg-warning">Yes</span>
+.</p>
+
+<p><strong>Be aware</strong>: other business rules might limit access to certain functions, permissions are not the only checks in place.
+For example, exported timesheet records cannot be edited, even if a user owns the <code class="language-plaintext highlighter-rouge">edit_own_timesheet</code> or <code class="language-plaintext highlighter-rouge">edit_other_timesheet</code> permission.</p>
+
+<h3 id="activity">Activity</h3>
+
+<p><strong>Admin</strong></p>
+
+<table class="table permissions">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">budget_activity</code></td>
+      <td>Allows to see the budget (monetary) reports for activities of assigned projects/customers</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">time_activity</code></td>
+      <td>Allows to see the budget (time) reports for activities of assigned projects/customers</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">create_activity</code></td>
+      <td>Create a new activity</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">delete_activity</code></td>
+      <td>Delete activities</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">edit_activity</code></td>
+      <td>Edit existing activities</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">permissions_activity</code></td>
+      <td>Allows to edit the teams for assigned activities</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">view_activity</code></td>
+      <td>Allows access to the activity administration</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>If you are a Teamleader, whose team is assigned to this activity</strong></p>
+
+<table class="table permissions">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">budget_teamlead_activity</code></td>
+      <td>Allow team leaders to see the budget (money) reports for activities of assigned projects/customers</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">time_teamlead_activity</code></td>
+      <td>Allow team leaders to see the budget (time) reports for activities of assigned projects/customers</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">edit_teamlead_activity</code></td>
+      <td>Allow team leaders to edit activities for assigned projects/customers</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">permissions_teamlead_activity</code></td>
+      <td>Allow team leaders to edit the teams for assigned activities</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">view_teamlead_activity</code></td>
+      <td>Allow team leaders to access activity administration</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>If you are a member of a team, that is assigned to this activity</strong></p>
+
+<table class="table permissions">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">budget_team_activity</code></td>
+      <td>Allows team-members to see the budget (money) reports for activities of assigned projects/customers</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">time_team_activity</code></td>
+      <td>Allows team-members to see the budget (time) reports for activities of assigned projects/customers</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">edit_team_activity</code></td>
+      <td>Allows team-members to edit activities of assigned projects/customers</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">view_team_activity</code></td>
+      <td>Allows team-members to access activity administration</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="customer">Customer</h3>
+
+<p><strong>Admin</strong></p>
+
+<table class="table permissions">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">budget_customer</code></td>
+      <td>Allows to see the budget (money) reports for the customer</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">time_customer</code></td>
+      <td>Allows to see the budget (time) reports for the customer</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">comments_customer</code></td>
+      <td>Allows to see the comment section for customers</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">create_customer</code></td>
+      <td>Create new customers</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">delete_customer</code></td>
+      <td>Delete existing customers</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">details_customer</code></td>
+      <td>View customer details (account number, vat, rates, meta-fields, assigned teams &amp; users)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">edit_customer</code></td>
+      <td>Edit existing customers</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">permissions_customer</code></td>
+      <td>Allows to edit the teams for assigned customers</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">view_customer</code></td>
+      <td>Allows access to the customer administration</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>If you are a Teamleader, whose team is assigned to this customer</strong></p>
+
+<table class="table permissions">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">budget_teamlead_customer</code></td>
+      <td>Allow team leaders to see the budget (money) reports for assigned customers</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">time_teamlead_customer</code></td>
+      <td>Allow team leaders to see the budget (time) reports for assigned customers</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">comments_teamlead_customer</code></td>
+      <td>Allow team leaders to see the comment section for customers</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">details_teamlead_customer</code></td>
+      <td>Allow team leaders to see customer detail</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">edit_teamlead_customer</code></td>
+      <td>Allow team leaders to edit assigned customers</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">permissions_teamlead_customer</code></td>
+      <td>Allow team leaders to edit the teams for assigned customers</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">view_teamlead_customer</code></td>
+      <td>Allow team leaders to access project administration</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>If you are a member of a team, that is assigned to this customer</strong></p>
+
+<table class="table permissions">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">budget_team_customer</code></td>
+      <td>Allows team-members to see the budget (money) reports for assigned customers</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">time_team_customer</code></td>
+      <td>Allows team-members to see the budget (time) reports for assigned customers</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">comments_team_customer</code></td>
+      <td>Allows team-members to see the comment section for customers</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">details_team_customer</code></td>
+      <td>Allows team-members to see customer details</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">edit_team_customer</code></td>
+      <td>Allows team-members to edit assigned customers</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">view_team_customer</code></td>
+      <td>Allows team-members to access project administration</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="project">Project</h3>
+
+<p><strong>Admin</strong></p>
+
+<table class="table permissions">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">budget_project</code></td>
+      <td>Allows to see the budget (money) reports for projects</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">time_project</code></td>
+      <td>Allows to see the budget (time) reports for projects</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">comments_project</code></td>
+      <td>Allows to see the comment section for projects</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">create_project</code></td>
+      <td>Create a new project</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">delete_project</code></td>
+      <td>Delete existing projects</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">details_project</code></td>
+      <td>View project details (Order number &amp; date, start and end date, rates, assigned teams &amp; users)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">edit_project</code></td>
+      <td>Edit existing projects</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">permissions_project</code></td>
+      <td>Allows to edit the teams for assigned projects</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">view_project</code></td>
+      <td>Allows access to the project administration</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>If you are a Teamleader, whose team is assigned to this project</strong></p>
+
+<table class="table permissions">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">budget_teamlead_project</code></td>
+      <td>Allow team leaders to see the budget (money) reports for assigned projects or projects of assigned customers</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">time_teamlead_project</code></td>
+      <td>Allow team leaders to see the budget (time) reports for assigned projects or projects of assigned customers</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">comments_teamlead_project</code></td>
+      <td>Allow team leaders to see the comment section for project</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">details_teamlead_project</code></td>
+      <td>Allow team leaders to see project details</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">edit_teamlead_project</code></td>
+      <td>Allow team leaders to edit assigned projects or projects for assigned customers</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">permissions_teamlead_project</code></td>
+      <td>Allow team leaders to edit the teams for assigned projects or projects of assigned customers</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">view_teamlead_project</code></td>
+      <td>Allow team leaders to access projects administration</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>If you are a member of a team, that is assigned to this project</strong></p>
+
+<table class="table permissions">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">budget_team_project</code></td>
+      <td>Allows team-members to see the budget (money) reports for assigned projects or projects of assigned customers</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">time_team_project</code></td>
+      <td>Allows team-members to see the budget (time) reports for assigned projects or projects of assigned customers</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">comments_team_project</code></td>
+      <td>Allows team-members to see the comment section for project</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">details_team_project</code></td>
+      <td>Allows team-members to see project details</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">edit_team_project</code></td>
+      <td>Allows team-members to edit assigned projects or projects for assigned customers</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">view_team_project</code></td>
+      <td>Allows team-members to access projects administration</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="timesheet">Timesheet</h3>
+
+<p><strong>Admin</strong></p>
+
+<table class="table permissions">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">edit_exported_timesheet</code></td>
+      <td>Edit and delete timesheet records which were exported</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">lockdown_grace_timesheet</code></td>
+      <td>All records in the last lockdown period can be edited, even after the grace period ended</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">lockdown_override_timesheet</code></td>
+      <td>None of the lockdown rules apply</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Permissions for your own timesheets</strong></p>
+
+<table class="table permissions">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">create_own_timesheet</code></td>
+      <td>Create a new timesheet record with the dialog</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">delete_own_timesheet</code></td>
+      <td>Delete own timesheet records</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">edit_export_own_timesheet</code></td>
+      <td>Set the export state for your own timesheet record</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">edit_billable_own_timesheet</code></td>
+      <td>Set the billable state for your own timesheet record</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">edit_own_timesheet</code></td>
+      <td>Edit own timesheet records</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">edit_rate_own_timesheet</code></td>
+      <td>Edit the rates for own timesheet records (fixed, hourly and total)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">export_own_timesheet</code></td>
+      <td>Export your own timesheet in the timesheet panel</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">start_own_timesheet</code></td>
+      <td>Create a running timesheet record (restart and create)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">stop_own_timesheet</code></td>
+      <td>Stop the own running timesheets records</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">view_own_timesheet</code></td>
+      <td>Allows access to the own timesheet views</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">view_rate_own_timesheet</code></td>
+      <td>View the rates for own timesheet records (fixed, hourly and total)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">weekly_own_timesheet</code></td>
+      <td>Gives access to the <code class="language-plaintext highlighter-rouge">Weekly hours</code> screen</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Permissions to access timesheets of other users</strong></p>
+
+<table class="table permissions">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">create_other_timesheet</code></td>
+      <td>Create a new timesheet record in the name of another user</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">delete_other_timesheet</code></td>
+      <td>Delete timesheets of other users</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">edit_export_other_timesheet</code></td>
+      <td>Set the export state for other users timesheet records</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">edit_billable_other_timesheet</code></td>
+      <td>Set the billable state for other users timesheet record</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">edit_other_timesheet</code></td>
+      <td>Edit existing records of other users</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">edit_rate_other_timesheet</code></td>
+      <td>Edit the rates for other users timesheet records (fixed, hourly and total)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">export_other_timesheet</code></td>
+      <td>Export timesheet in the timesheet admin panel</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">start_other_timesheet</code></td>
+      <td>Start <em>running</em> timesheet records for other users</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">stop_other_timesheet</code></td>
+      <td>Stop <em>running</em> timesheet records of other users</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">view_other_timesheet</code></td>
+      <td>Allows access to the timesheet team panel</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">view_rate_other_timesheet</code></td>
+      <td>View the rates for other users timesheet records (fixed, hourly and total)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="export">Export</h3>
+
+<table class="table permissions">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">create_export</code></td>
+      <td>See the <code class="language-plaintext highlighter-rouge">Export</code> page at <code class="language-plaintext highlighter-rouge">Time Tracking &gt; Export</code> and create export documents from the selected timesheet data</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">create_export_template</code></td>
+      <td>Create, edit and delete <code class="language-plaintext highlighter-rouge">Export templates</code> (CSV and Excel)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="user">User</h3>
+
+<p><strong>Admin</strong></p>
+
+<table class="table permissions">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">view_user</code></td>
+      <td>View the <code class="language-plaintext highlighter-rouge">Users</code> screen at <code class="language-plaintext highlighter-rouge">System &gt; Users</code> - attention <code class="language-plaintext highlighter-rouge">System-Admins</code> will always own that permission</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">create_user</code></td>
+      <td>Create new users</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">delete_user</code></td>
+      <td><strong>SECURITY ALERT</strong> - delete existing users</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Permissions for the own user account</strong></p>
+
+<table class="table permissions">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">api-token_own_profile</code></td>
+      <td>Change the own API token</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">edit_own_profile</code></td>
+      <td>Edit own user profile/account</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">hourly-rate_own_profile</code></td>
+      <td>Edit the own (user specific) hourly rate</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">password_own_profile</code></td>
+      <td>Change own password (should be deactivated when <a href="{% link _documentation/ldap.md %}">LDAP</a> is used)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">preferences_own_profile</code></td>
+      <td>Allows a user to edit the own preferences</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">roles_own_profile</code></td>
+      <td><strong>SECURITY ALERT</strong> - change the own user roles</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">supervisor_own_profile</code></td>
+      <td>Change the supervisor for the own profile</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">teams_own_profile</code></td>
+      <td>Edit team assignments in own user profile</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">view_own_profile</code></td>
+      <td>View own user profile and statistics</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Permissions for profiles of other user accounts</strong></p>
+
+<table class="table permissions">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">api-token_other_profile</code></td>
+      <td>Change the API token for other users</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">edit_other_profile</code></td>
+      <td><strong>SECURITY ALERT</strong> - edit the profile for another user</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">hourly-rate_other_profile</code></td>
+      <td>Edit other (users specific) hourly rate</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">password_other_profile</code></td>
+      <td><strong>SECURITY ALERT</strong> - Change the password for another user</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">preferences_other_profile</code></td>
+      <td>Change the preferences for another user</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">roles_other_profile</code></td>
+      <td><strong>SECURITY ALERT</strong> - change roles for other users</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">supervisor_other_profile</code></td>
+      <td>Change the supervisor for the selected profile</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">teams_other_profile</code></td>
+      <td>Edit team assignments in other user profile</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">view_other_profile</code></td>
+      <td>View other user profiles</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="teams">Teams</h3>
+
+<table class="table permissions">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">view_team</code></td>
+      <td>View the <code class="language-plaintext highlighter-rouge">Teams</code> administration at <code class="language-plaintext highlighter-rouge">System &gt; Teams</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">create_team</code></td>
+      <td>Create new teams</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">delete_team</code></td>
+      <td>Delete existing teams</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">edit_team</code></td>
+      <td>Edit team assignments</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">view_team_member</code></td>
+      <td>View team leader and members for the teams of the current user</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="tags">Tags</h3>
+
+<table class="table permissions">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">view_tag</code></td>
+      <td>View the <code class="language-plaintext highlighter-rouge">Tags</code> administration at <code class="language-plaintext highlighter-rouge">Administration &gt; Tags</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">delete_tag</code></td>
+      <td>Delete existing tags</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">manage_tag</code></td>
+      <td>Edit existing and create new tags in the administration</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="invoice">Invoice</h3>
+
+<table class="table permissions">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">create_invoice</code></td>
+      <td>Create a new invoice</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">delete_invoice</code></td>
+      <td>Allows to delete invoices (please read docs why you shouldn’t)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">manage_invoice_template</code></td>
+      <td>Administrate invoice templates</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">upload_invoice_template</code></td>
+      <td>Allows to upload custom invoice templates</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">view_invoice</code></td>
+      <td>Gives access to the invoice history and allows to download existing invoices</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="absences">Absences</h3>
+
+<table class="table permissions">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">absence</code></td>
+      <td>View absences, e.g. the <code class="language-plaintext highlighter-rouge">Absence</code> screen at <code class="language-plaintext highlighter-rouge">Employment contract &gt; Absence</code> or the <code class="language-plaintext highlighter-rouge">Absence calendar</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">edit_own_absence</code></td>
+      <td>Edit the own absences</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">edit_other_absence</code></td>
+      <td>Edit other users absences</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">delete_own_absence</code></td>
+      <td>Delete the own absence entries</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">delete_other_absence</code></td>
+      <td>Delete other users absence entries</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">view_team_absence</code></td>
+      <td>Teamleads can see team member absences in the <code class="language-plaintext highlighter-rouge">Absence calendar</code> report</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">view_other_absence</code></td>
+      <td>Allows to switch the user in the <code class="language-plaintext highlighter-rouge">Absence</code> screen and the team in the <code class="language-plaintext highlighter-rouge">Absence calendar</code> report, also influences the visibility of absence entries in the calendar</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">approve_own_absence</code></td>
+      <td>Approve own absence requests</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">approve_other_absence</code></td>
+      <td>Approve absence requests of team members (or whose supervisor is not set)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">approval_other_absence</code></td>
+      <td>Request an approval on behalf of another user</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="working-times">Working times</h3>
+
+<table class="table permissions">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">contract_other_profile</code></td>
+      <td>Allow to see and change the contract settings of other users</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">hours_own_profile</code></td>
+      <td>View the <code class="language-plaintext highlighter-rouge">Employment contract</code> menu and the own “Working times”</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">hours_other_profile</code></td>
+      <td>View the <code class="language-plaintext highlighter-rouge">Employment contract</code> menu. Switch the user in the <code class="language-plaintext highlighter-rouge">Working Contract</code> screen</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">view_booking_contract</code></td>
+      <td>View working-time details (PDF, Manual bookings)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">approve_times_contract</code></td>
+      <td>Approve monthly timesheets</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">unlock_times_contract</code></td>
+      <td>Re-open an already locked month</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">create_booking_contract</code></td>
+      <td>Allows to create manual time bookings</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">workdays_override_timesheet</code></td>
+      <td>Allows to create timesheets on non-working days, if this restriction is activated in <code class="language-plaintext highlighter-rouge">System → Settings</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="customer-portal">Customer portal</h3>
+
+<table class="table permissions">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">customer_portal</code></td>
+      <td>Show the <code class="language-plaintext highlighter-rouge">Customer portal</code> menu at <code class="language-plaintext highlighter-rouge">Administration &gt; Customer portal</code> and create/edit/delete all shared URLs</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="custom-fields">Custom fields</h3>
+
+<table class="table permissions">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">configure_meta_fields</code></td>
+      <td>View the <code class="language-plaintext highlighter-rouge">Custom fields</code> screen at <code class="language-plaintext highlighter-rouge">System &gt; Custom fields</code> and administrate all custom field definitions</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="public-holidays">Public holidays</h3>
+
+<table class="table permissions">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">edit_public_holidays</code></td>
+      <td>Grant access to the <code class="language-plaintext highlighter-rouge">Public holidays</code> page to configure and import public holidays at <code class="language-plaintext highlighter-rouge">Administration &gt; Public holidays</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="tasks">Tasks</h3>
+
+<table class="table permissions">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">task_edit_own</code></td>
+      <td>Create and edit tasks that are assigned to the currently logged-in user</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">task_edit_other</code></td>
+      <td>Allows to edit all tasks that are visible to the user, create new unassigned tasks, assign team and user, remove assignment and close tasks which are assigned to another user</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">task_assign</code></td>
+      <td>Self-assign a pending task by the currently logged-in user, required to see the <code class="language-plaintext highlighter-rouge">Pending tasks</code> widget on the dashboard</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">task_start</code></td>
+      <td>Start a task - only possible if task is assigned to the current user</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">task_start_all</code></td>
+      <td>Start any task</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">task_close</code></td>
+      <td>Close a task, only possible if task is assigned to the current user or the user owns the <code class="language-plaintext highlighter-rouge">task_edit_other</code> permission</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">task_delete</code></td>
+      <td>Delete any existing task</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">task_view</code></td>
+      <td>Gives access to the task administration and task reports</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">task_details</code></td>
+      <td>See Task details</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">task_team_view</code></td>
+      <td>See the tasks of all team members</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="translations">Translations</h3>
+
+<table class="table permissions">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">edit_translation</code></td>
+      <td>Allows to translate labels, menus and more at <code class="language-plaintext highlighter-rouge">System &gt; Translations</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="audit-logs">Audit logs</h3>
+
+<table class="table permissions">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">audit_logs</code></td>
+      <td>Grant access to the <code class="language-plaintext highlighter-rouge">Audit logs</code> page with all entries at <code class="language-plaintext highlighter-rouge">Administration &gt; Audit logs</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">audit_customer</code></td>
+      <td>see all changes for customers</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">audit_project</code></td>
+      <td>see all changes for projects</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">audit_activity</code></td>
+      <td>see all changes for activities</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">audit_user</code></td>
+      <td>see all changes for users</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">audit_configuration</code></td>
+      <td>see all changes for system configurations</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">audit_invoice</code></td>
+      <td>see all changes for invoices</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">audit_own_timesheet</code></td>
+      <td>see all changes for own timesheet records</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">audit_other_timesheet</code></td>
+      <td>see all changes in other users timesheet records (only via team timesheets)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="custom-content">Custom content</h3>
+
+<table class="table permissions">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">edit_custom_content</code></td>
+      <td>Grant access to the <code class="language-plaintext highlighter-rouge">Custom content</code> administration at <code class="language-plaintext highlighter-rouge">System &gt; Custom content</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">js_custom_content</code></td>
+      <td>edit the additional javascript</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">css_custom_content</code></td>
+      <td>Edit the additional stylesheet</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">alert_custom_content</code></td>
+      <td>Edit the page wide warning message</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">news_custom_content</code></td>
+      <td>Edit the additional news page</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="expenses">Expenses</h3>
+
+<table class="table permissions">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">view_expense</code></td>
+      <td>Grant access to the <code class="language-plaintext highlighter-rouge">Expenses</code> page</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">edit_expense</code></td>
+      <td>Edit existing expenses</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">edit_expense_cost</code></td>
+      <td>Edit the cost of a single expense (deactivate this, if you want to provide default costs via the category)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">export_expense</code></td>
+      <td>Export expenses</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">create_expense</code></td>
+      <td>Create new expenses</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">delete_expense</code></td>
+      <td>Delete existing expenses</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">manage_expense_category</code></td>
+      <td>Manage expense types</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">edit_exported_expense</code></td>
+      <td>Allow to edit and delete exported expenses</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="importer">Importer</h3>
+
+<table class="table permissions">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">importer</code></td>
+      <td>Grant access to the <code class="language-plaintext highlighter-rouge">Importer</code> to load CSV and JSON files at <code class="language-plaintext highlighter-rouge">System &gt; Importer</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="kiosk">Kiosk</h3>
+
+<table class="table permissions">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">kiosk_admin</code></td>
+      <td>Grant access to the <code class="language-plaintext highlighter-rouge">Kiosk</code> administration to assign user codes at <code class="language-plaintext highlighter-rouge">Administration &gt; Kiosk mode</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">kiosk_own_profile</code></td>
+      <td>Configure codes and user specific kiosk settings (eg. start and end time) for own account</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">kiosk_other_profile</code></td>
+      <td>Configure codes and user specific kiosk settings (eg. start and end time) for other accounts</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="reporting">Reporting</h3>
+
+<table class="table permissions">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">view_reporting</code></td>
+      <td>Grant access to the <code class="language-plaintext highlighter-rouge">Reporting</code> screen</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">view_other_reporting</code></td>
+      <td>Grant access to the reports of other users, meaning that you can either see other users directly or that you are able to switch the view to another user to see its data.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="others">Others</h3>
+
+<table class="table permissions">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">api_access</code></td>
+      <td>Grant access to use the JSON API via API token authentication</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">plugins</code></td>
+      <td>Access the plugin administration</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">role_permissions</code></td>
+      <td><strong>SECURITY ALERT</strong> - view and change permissions for user roles, create and delete user roles - <code class="language-plaintext highlighter-rouge">System-Admins</code> will always own that permission</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">system_configuration</code></td>
+      <td>Configure global Kimai settings</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">system_information</code></td>
+      <td>Enter the system-information (about) screen</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">view_all_data</code></td>
+      <td><strong>SECURITY ALERT</strong> - allows to see all data (disables team permissions) - <code class="language-plaintext highlighter-rouge">System-Admins</code> will always own that permission</td>
+    </tr>
+  </tbody>
+</table>
+
+
+                        </div>
+                        
+
+                        
+                    </div>
+                </div>
+            </div>
+
+            
+                <aside class="side-nav side-nav-end d-none d-xxl-block docs-toc pe-0">
+                    <h3 class="fs-lg mt-2">Jump to</h3>
+                    <ul class="nav" id="jumpToNav"><li class="nav-item"><a href="#roles" class="nav-link">Roles</a><ul><li class="nav-item"><a href="#creating-roles" class="nav-link">Creating roles</a></li></ul></li><li class="nav-item"><a href="#permissions" class="nav-link">Permissions</a><ul><li class="nav-item"><a href="#activity" class="nav-link">Activity</a></li><li class="nav-item"><a href="#customer" class="nav-link">Customer</a></li><li class="nav-item"><a href="#project" class="nav-link">Project</a></li><li class="nav-item"><a href="#timesheet" class="nav-link">Timesheet</a></li><li class="nav-item"><a href="#export" class="nav-link">Export</a></li><li class="nav-item"><a href="#user" class="nav-link">User</a></li><li class="nav-item"><a href="#teams" class="nav-link">Teams</a></li><li class="nav-item"><a href="#tags" class="nav-link">Tags</a></li><li class="nav-item"><a href="#invoice" class="nav-link">Invoice</a></li><li class="nav-item"><a href="#absences" class="nav-link">Absences</a></li><li class="nav-item"><a href="#working-times" class="nav-link">Working times</a></li><li class="nav-item"><a href="#customer-portal" class="nav-link">Customer portal</a></li><li class="nav-item"><a href="#custom-fields" class="nav-link">Custom fields</a></li><li class="nav-item"><a href="#public-holidays" class="nav-link">Public holidays</a></li><li class="nav-item"><a href="#tasks" class="nav-link">Tasks</a></li><li class="nav-item"><a href="#translations" class="nav-link">Translations</a></li><li class="nav-item"><a href="#audit-logs" class="nav-link">Audit logs</a></li><li class="nav-item"><a href="#custom-content" class="nav-link">Custom content</a></li><li class="nav-item"><a href="#expenses" class="nav-link">Expenses</a></li><li class="nav-item"><a href="#importer" class="nav-link">Importer</a></li><li class="nav-item"><a href="#kiosk" class="nav-link">Kiosk</a></li><li class="nav-item"><a href="#reporting" class="nav-link">Reporting</a></li><li class="nav-item"><a href="#others" class="nav-link">Others</a></li></ul></li></ul>
+                    
+                </aside>
+            
+        </div>
+    </div>
+</main>
+<script type="module" src="/assets/js/documentation-search.js?v1"></script>
+
+
+<a href="#top" class="btn-scroll-top" data-scroll>
+    <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+    <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+</a>
+
+<script src="/assets/build/main.js?v1"></script>
+
+<script defer src="https://u.kimai.org/script.js" data-website-id="e26bef12-9527-43bc-83fd-660e237f3526"></script>
+
+</body>
+</html>

@@ -1,0 +1,874 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#4188c9">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="robots" content="index,follow">
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.kimai.org/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.kimai.org/images/icon_32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.kimai.org/images/icon_16x16.png">
+<title>Rounding – Kimai</title>
+<meta name="description" content="Rounding duration and rates in Kimai: Why It Matters and How It Works">
+<link type="application/atom+xml" rel="alternate" href="/en/feed.xml" title="Kimai Time-Tracking" />
+<meta property="og:locale" content="en">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rounding">
+<meta property="og:image" content="https://www.kimai.org/images/social-preview.webp">
+<meta property="og:description" content="Rounding duration and rates in Kimai: Why It Matters and How It Works">
+<link href="/assets/build/main.css?v8" rel="stylesheet" />
+
+</head>
+<body class="">
+
+
+
+
+
+
+
+
+
+
+
+<header class="header navbar navbar-expand bg-light border-bottom border-light shadow" data-scroll-header>
+    <div class="container-fluid pe-lg-4">
+        <div class="d-flex align-items-center">
+            <a href="/" class="navbar-brand flex-shrink-0 py-1 py-lg-2">
+                <img src="/images/apple-touch-icon.png" width="32" alt="Kimai logo" class="me-2">
+                Kimai Docs
+            </a>
+            <span class="badge bg-warning">User manual</span>
+        </div>
+        <div class="docs-header-nav d-flex align-items-center w-100" style="padding-left: 6.75rem;">
+            <ul class="docs-primary-nav navbar-nav d-none d-lg-flex">
+                
+                    
+                    
+                    <li class="nav-item">
+                        <a href="/documentation/chapter-manual.html" class="nav-link  active">
+                            <i class="bx bx-book opacity-70 fs-lg me-1"></i>
+                            User manual
+                        </a>
+                    </li>
+                
+                    
+                    
+                    <li class="nav-item">
+                        <a href="/documentation/cloud.html" class="nav-link ">
+                            <i class="bx bx-cloud opacity-70 fs-lg me-1"></i>
+                            Kimai-Cloud
+                        </a>
+                    </li>
+                
+                    
+                    
+                    <li class="nav-item">
+                        <a href="/documentation/chapter-on-premise.html" class="nav-link ">
+                            <i class="bx bx-server opacity-70 fs-lg me-1"></i>
+                            On-Premise
+                        </a>
+                    </li>
+                
+                    
+                    
+                    <li class="nav-item">
+                        <a href="/documentation/chapter-developer.html" class="nav-link ">
+                            <i class="bx bx-code-alt opacity-70 fs-lg me-1"></i>
+                            Developer
+                        </a>
+                    </li>
+                
+            </ul>
+            <div class="docs-toolbar d-none d-xl-flex" data-pagefind-ignore="all">
+                <div class="docs-search-panel" data-doc-search>
+                    <label class="form-label visually-hidden" for="documentation-search">Search documentation</label>
+                    <input
+                        id="documentation-search"
+                        class="form-control"
+                        type="search"
+                        autocomplete="off"
+                        spellcheck="false"
+                        placeholder="Search the documentation"
+                        aria-describedby="documentation-search-status"
+                        data-doc-search-input
+                    >
+                    <div
+                        id="documentation-search-results"
+                        class="docs-search-results card border-0 shadow-sm"
+                        role="listbox"
+                        aria-label="Documentation search results"
+                        data-doc-search-results
+                    ></div>
+                    <div id="documentation-search-status" class="visually-hidden" aria-live="polite" data-doc-search-status></div>
+                </div>
+            </div>
+            <button type="button" class="navbar-toggler d-block d-lg-none ms-auto me-4" data-bs-toggle="offcanvas" data-bs-target="#componentsNav" aria-controls="componentsNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<aside class="bg-dark">
+    <div id="componentsNav" class="offcanvas-lg offcanvas-start d-flex flex-column position-fixed top-0 start-0 vh-100 bg-dark border-end-lg" style="width: 19rem; z-index: 1045;">
+        <div class="offcanvas-header d-none d-lg-flex justify-content-start">
+            <a href="/" class="navbar-brand d-none d-lg-flex py-0">
+                <img src="/images/apple-touch-icon.png" width="26" alt="Kimai logo" class="me-3">
+                Kimai Docs
+            </a>
+        </div>
+        <div class="offcanvas-header d-block d-lg-none border-bottom">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+                <h5 class="d-lg-none mb-0">Menu</h5>
+                <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas" data-bs-target="#componentsNav" aria-label="Close"></button>
+            </div>
+            <div class="list-group list-group-flush mx-n4">
+                
+                    
+                    
+                    <a href="/documentation/chapter-manual.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-1 px-4">
+                        <i class="bx bx-book opacity-70 me-1"></i>
+                        User manual
+                    </a>
+                
+                    
+                    
+                    <a href="/documentation/cloud.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-1 px-4">
+                        <i class="bx bx-cloud opacity-70 me-1"></i>
+                        Kimai-Cloud
+                    </a>
+                
+                    
+                    
+                    <a href="/documentation/chapter-on-premise.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-1 px-4">
+                        <i class="bx bx-server opacity-70 me-1"></i>
+                        On-Premise
+                    </a>
+                
+                    
+                    
+                    <a href="/documentation/chapter-developer.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-1 px-4">
+                        <i class="bx bx-code-alt opacity-70 me-1"></i>
+                        Developer
+                    </a>
+                
+            </div>
+        </div>
+        <div class="offcanvas-body overflow-scroll w-100 p-4">
+            <div class="h-auto docsnavi">
+                
+                    
+                    
+                    
+                    
+                    <p class="fs-lg mb-1 text-white fw-bold">User Guide</p>
+                    <div class="list-group list-group-flush mb-4 me-n4 border-start">
+                        
+                        
+                        
+                        
+                        <a href="/documentation/timesheet.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-timesheet">
+                            
+                            Timesheet
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/weekly-times.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-weekly-times">
+                            
+                            Weekly hours
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/calendar.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-calendar">
+                            
+                            Calendar
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/invoices.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-invoices">
+                            
+                            Invoices
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/export.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-export">
+                            
+                            Export
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/reporting.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-reporting">
+                            
+                            Reporting
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/customer.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-customer">
+                            
+                            Customer
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/project.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-project">
+                            
+                            Projects
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/activity.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-activity">
+                            
+                            Activities
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/tags.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-tags">
+                            
+                            Tags
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/users.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-users">
+                            
+                            Users
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/user-preferences.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-user-preferences">
+                            
+                            User preferences
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/permissions.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-permissions">
+                            
+                            Roles & Permissions
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/teams.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-teams">
+                            
+                            Teams
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/configurations.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-configurations">
+                            
+                            Settings
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/doctor.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-doctor">
+                            
+                            Doctor
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/contract.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-contract">
+                            
+                            Working times
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/public-holiday.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-public-holiday">
+                            
+                            Public holiday
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/absence.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-absence">
+                            
+                            Absence
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/dashboard.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-dashboard">
+                            
+                            Dashboard
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-custom-fields.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-custom-fields">
+                            
+                            Custom fields
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-expenses.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-expenses">
+                            
+                            Expenses
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-task-management.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-task-management">
+                            
+                            Tasks
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-custom-css.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-custom-css">
+                            
+                            Custom CSS
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-custom-content.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-custom-content">
+                            
+                            Custom content
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-translation.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-translation">
+                            
+                            Translation
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-invoice.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-invoice">
+                            
+                            Invoice+
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-import.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-import">
+                            
+                            Importer
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-audit-trail.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-audit-trail">
+                            
+                            Audit logs
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-kiosk.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-kiosk">
+                            
+                            Kiosk mode
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-customer-portal.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-customer-portal">
+                            
+                            Customer Portal
+                            
+                        </a>
+                        
+                        
+                    </div>
+                    
+                    
+                    
+                    <p class="fs-lg mb-1 text-white fw-bold">Advanced Topics</p>
+                    <div class="list-group list-group-flush mb-4 me-n4 border-start">
+                        
+                        
+                        
+                        
+                        <a href="/documentation/initial-setup.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-initial-setup">
+                            
+                            Initial setup
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/rates.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-rates">
+                            
+                            Prices (rates)
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/rounding.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2  active" id="docnavi-rounding">
+                            
+                            Rounding
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/billable.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-billable">
+                            
+                            Billable
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/invoice-templates.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-invoice-templates">
+                            
+                            Invoice templates
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/pdf-templates.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-pdf-templates">
+                            
+                            PDF templates
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/keyboard-shortcuts.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-keyboard-shortcuts">
+                            
+                            Keyboard shortcuts
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/i18n-am-pm.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-i18n-am-pm">
+                            
+                            Date and Time formats
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/duration-format.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-duration-format">
+                            
+                            Duration format
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/homescreen.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-homescreen">
+                            
+                            Use Kimai as app
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/user-api.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-user-api">
+                            
+                            Connecting via API
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/markdown.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-markdown">
+                            
+                            Markdown
+                            
+                        </a>
+                        
+                        
+                    </div>
+                    
+                    <div class="list-group list-group-flush pb-3 mb-4 mx-n4">
+                
+                    <a href="/en/" class="list-group-item list-group-item-action border-0 py-1 fs-sm px-4">Kimai Home</a>
+                    <a href="/en/site-notice.html" class="list-group-item list-group-item-action border-0 py-1 fs-sm px-4">Site notice</a>
+                    <a href="/en/privacy-policy.html" class="list-group-item list-group-item-action border-0 py-1 fs-sm px-4">Privacy policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        const dpm = document.getElementById('docnavi-rounding');
+        if (dpm !== null) {
+            dpm.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+        }
+    });
+</script>
+<main class="docs-container">
+    <div class="container-fluid px-xxl-3 px-lg-2 pt-4 pt-lg-5 pb-2 pb-lg-4">
+        <div class="docs-layout">
+            <div class="docs-article" data-pagefind-body>
+                <div class="d-sm-flex align-items-end justify-content-between ps-lg-2 ps-xxl-0 mt-2 mt-lg-0 mb-n3 gap-4">
+                    <div class="me-4">
+                        <h1 class="pb-1" data-pagefind-meta="title" data-pagefind-weight="10.0">Rounding</h1>
+                        
+                        <p class="text-muted fs-lg mb-2" data-pagefind-meta="description">Rounding duration and rates in Kimai: Why It Matters and How It Works</p>
+                        
+                    </div>
+                    <div class="d-none d-lg-flex">
+                    
+
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="markdown py-5 ps-lg-2 ps-xxl-0">
+                    <div>
+                        
+                        <div id="documentation-content">
+                            <h2 id="why-do-we-round-at-all">Why do we round at all?</h2>
+
+<p>Time tracking and invoicing operate on two fundamentally different mathematical bases:</p>
+
+<ul>
+  <li><strong>Time</strong> is measured in <strong>base 60</strong></li>
+  <li><strong>Money</strong> is calculated in <strong>base 100</strong></li>
+</ul>
+
+<p>At first glance this does not seem important, but when a system needs to combine <em>measured time</em> with <em>decimal invoices</em>, rounding becomes unavoidable.</p>
+
+<p>This page explains why rounding is necessary, why there are different ways with different results and why you should configure the correct behavior for you, 
+so Kimai can create (mathematically) <strong>correct</strong> invoices that comply with accounting and e-invoicing standards.</p>
+
+<h3 id="time-base-60">Time: base 60</h3>
+
+<p>Time entries are stored in seconds.
+A minute has 60 seconds, an hour has 60 minutes. Divisions in this system often produce repeating decimals when converted into decimal hours.</p>
+
+<p><strong>Example:</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>5 minutes = 300 seconds
+300 / 3600 = 0.0833333… hours
+</code></pre></div></div>
+
+<h3 id="money-base-100">Money: base 100</h3>
+
+<p>Prices and invoice totals must follow decimal rules.
+The smallest allowed monetary unit is:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0.01 (one cent)
+</code></pre></div></div>
+
+<h2 id="should-i-round-my-times">Should I round my times?</h2>
+
+<p>The general answer is: for most businesses <strong>yes</strong>.</p>
+
+<p>But not in the way most people think. Humans tend to round to multiples of 5 — often 10 — because it feels natural.
+However, when it comes to time-tracking and converting durations into decimal hours, rounding to 5 or 10 minutes
+<strong>creates repeating decimals</strong> (e.g., 10 minutes = 0.16666… hours), which can lead to unexpected results in invoices or reports.</p>
+
+<p>To avoid this problem, it is recommended to round your recorded working time to a multiple of 3 minutes.</p>
+
+<p><strong>Why 3?</strong></p>
+
+<p>Because 3 minutes is 1/20 of an hour = exactly 0.05 hours. No repeating decimals. Common and reliable duration roundings are therefore:</p>
+
+<ul>
+  <li>3 minutes = 0.05 h</li>
+  <li>6 minutes = 0.1 h</li>
+  <li>15 minutes = 0.25 h</li>
+</ul>
+
+<p>These values help you <strong>avoid all decimal rounding issues</strong> and are widely used in many industries because they simplify both time-tracking and invoicing.</p>
+
+<p>Of course, Kimai supports exact second-based tracking for businesses that need precise timestamps; rounding rules simply ensure that your invoice totals always remain predictable, consistent, and compliant.</p>
+
+<h2 id="selecting-the-rounding-mode">Selecting the rounding mode</h2>
+
+<ul>
+  <li>Go to <a href="/documentation/configurations.html">System → Settings</a></li>
+  <li>Go to <code class="language-plaintext highlighter-rouge">Invoice</code></li>
+  <li>Select the <code class="language-plaintext highlighter-rouge">Rate rounding</code> mode
+    <ul>
+      <li>The <code class="language-plaintext highlighter-rouge">classic</code> mode, feels most natural but can lead to small rounding issues</li>
+      <li>The <code class="language-plaintext highlighter-rouge">decimal</code> mode rounds duration to a multiple of 36 second, safe but can be unintuitive</li>
+    </ul>
+  </li>
+</ul>
+
+<p>There are other rules to define how the timesheet start and end times and the duration should be rounded. 
+The rounding issues discussed in this article always originate from the <strong>duration of a timesheet</strong>.</p>
+
+<p>The relevant configuration to check and adjust is <code class="language-plaintext highlighter-rouge">Time rounding → Rounding of the duration</code> at <a href="/documentation/configurations.html">System → Settings</a>.</p>
+
+<h2 id="rounding-classic">Rounding: CLASSIC</h2>
+
+<p>This mode is available, as it is the most intuitive one. 
+Due to potential rounding issues, it is recommended to round the <code class="language-plaintext highlighter-rouge">duration</code> with a multiple of <code class="language-plaintext highlighter-rouge">3</code> minutes.</p>
+
+<ul>
+  <li><strong>Calculate</strong> with unrounded seconds</li>
+  <li>Uses <strong>4 decimals</strong> to calculate rates</li>
+  <li><strong>Displays</strong> rounded decimal hours with <strong>2 decimals</strong></li>
+  <li>Can produce mismatch between displayed duration and monetary total</li>
+</ul>
+
+<p>Use this, if you never experienced rounding issues. It is the <code class="language-plaintext highlighter-rouge">default</code> rounding mode.</p>
+
+<h2 id="rounding-decimal">Rounding: DECIMAL</h2>
+
+<p>Decimal hours are displayed with two decimal places on invoices:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0.0833333… rounds to 0.08 hours
+</code></pre></div></div>
+
+<p>But if you <strong>calculate money using the unrounded duration</strong>, yet <strong>display only the rounded duration</strong>, you create a mismatch.
+This can cause (in certain circumstances) invoice validation issues.</p>
+
+<h3 id="001-hours--36-seconds"><strong>0.01 hours = 36 seconds</strong></h3>
+
+<p>To stay compatible with decimal invoices, Kimai can convert time into the smallest possible unit that works for both systems:</p>
+
+<ul>
+  <li>The smallest monetary step is <strong>0.01</strong></li>
+  <li>Therefor the smallest compatible duration step is:
+<strong>0.01 hours × 3600 seconds = 36 seconds</strong></li>
+</ul>
+
+<p>This means:</p>
+
+<ul>
+  <li>All durations are rounded to multiples of <strong>36 seconds</strong></li>
+  <li>All hourly calculations use these <strong>rounded durations</strong></li>
+  <li>The result always matches:
+<strong>displayed duration × hourly rate = displayed amount</strong></li>
+</ul>
+
+<p>This ensures your invoice is mathematically correct and fully compatible with tax authorities and e-invoicing systems.</p>
+
+<h3 id="expectation-vs-reality">Expectation vs Reality</h3>
+
+<p>Let’s compare the <strong>intuitive</strong> calculation vs. the <strong>decimal</strong> calculation.</p>
+
+<p>The intuitive expectation stems from thinking in “base 60” units:</p>
+
+<ul>
+  <li>1 hour = 60€</li>
+  <li>60 minutes / 5 minutes = 12</li>
+  <li>60€ / 12 = <strong>5€</strong></li>
+</ul>
+
+<p>But this method ignores decimal rounding, which looks like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>5 minutes = 300 seconds
+300 / 3600 = 0.083333… rounds to 0.08 hours
+60€ × 0.08 = 4.8€
+</code></pre></div></div>
+
+<p>This is how <strong>decimal rounding</strong> works.</p>
+
+<p>Showing <code class="language-plaintext highlighter-rouge">0.08h</code> on the invoice, but charging <code class="language-plaintext highlighter-rouge">5€</code> is <strong>incorrect</strong>.</p>
+
+<p>This inconsistency can:</p>
+
+<ul>
+  <li>violate accounting rules</li>
+  <li>make clients reject invoices</li>
+  <li>lead to automatic validation errors in e-invoices</li>
+</ul>
+
+<p>Decimal rounding prevent this.</p>
+
+<h3 id="examples">Examples</h3>
+
+<p><strong>5 minutes (loss)</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>300 sec / 3600 = 0.083333… rounds to 0.08
+60€ × 0.08 = 4.8€
+</code></pre></div></div>
+
+<p><strong>10 minutes (gain)</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>600 sec / 3600 = 0.166666… rounds to 0.17
+60€ × 0.17 = 10.2€
+</code></pre></div></div>
+
+<p>As you see:</p>
+
+<ul>
+  <li>Sometimes this rounding means you “lose” a few cents</li>
+  <li>Sometimes you “gain” a few cents</li>
+  <li>Over time, these effects should cancel out</li>
+</ul>
+
+<h3 id="summary">Summary</h3>
+
+<ul>
+  <li>Time is base 60, money is base 100 - conversion can lead to rounding issues</li>
+  <li>Decimal hours have only 2 decimals with the smallest unit = <strong>0.01h = 36 seconds</strong></li>
+  <li>Rounding durations to multiples of 36 seconds guarantees: <strong>displayed duration × hourly rate = total rate</strong></li>
+  <li>Completely eliminates hidden rounding differences</li>
+</ul>
+
+<p>Even if certain examples feel unintuitive at first, this rounding system ensures that your invoices are consistent and always compliant.</p>
+
+
+                        </div>
+                        
+
+                        
+                    </div>
+                </div>
+            </div>
+
+            
+                <aside class="side-nav side-nav-end d-none d-xxl-block docs-toc pe-0">
+                    <h3 class="fs-lg mt-2">Jump to</h3>
+                    <ul class="nav" id="jumpToNav"><li class="nav-item"><a href="#why-do-we-round-at-all" class="nav-link">Why do we round at all?</a><ul><li class="nav-item"><a href="#time-base-60" class="nav-link">Time: base 60</a></li><li class="nav-item"><a href="#money-base-100" class="nav-link">Money: base 100</a></li></ul></li><li class="nav-item"><a href="#should-i-round-my-times" class="nav-link">Should I round my times?</a></li><li class="nav-item"><a href="#selecting-the-rounding-mode" class="nav-link">Selecting the rounding mode</a></li><li class="nav-item"><a href="#rounding-classic" class="nav-link">Rounding: CLASSIC</a></li><li class="nav-item"><a href="#rounding-decimal" class="nav-link">Rounding: DECIMAL</a><ul><li class="nav-item"><a href="#001-hours--36-seconds" class="nav-link">0.01 hours = 36 seconds</a></li><li class="nav-item"><a href="#expectation-vs-reality" class="nav-link">Expectation vs Reality</a></li><li class="nav-item"><a href="#examples" class="nav-link">Examples</a></li><li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li></ul></li></ul>
+                    
+                </aside>
+            
+        </div>
+    </div>
+</main>
+<script type="module" src="/assets/js/documentation-search.js?v1"></script>
+
+
+<a href="#top" class="btn-scroll-top" data-scroll>
+    <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+    <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+</a>
+
+<script src="/assets/build/main.js?v1"></script>
+
+<script defer src="https://u.kimai.org/script.js" data-website-id="e26bef12-9527-43bc-83fd-660e237f3526"></script>
+
+</body>
+</html>

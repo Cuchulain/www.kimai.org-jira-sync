@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#4188c9">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="robots" content="index,follow">
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.kimai.org/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.kimai.org/images/icon_32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.kimai.org/images/icon_16x16.png">
+<title>Setting user preferences for automated onboarding – Kimai</title>
+<meta name="description" content="Creating user and configuring their preferences with the API allows for automated onboarding workflows">
+<link type="application/atom+xml" rel="alternate" href="/en/feed.xml" title="Kimai Time-Tracking" />
+<meta property="og:locale" content="en">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Setting user preferences for automated onboarding">
+<meta property="og:image" content="https://www.kimai.org/images/social-preview.webp">
+<meta property="og:description" content="Creating user and configuring their preferences with the API allows for automated onboarding workflows">
+<link href="/assets/build/main.css?v8" rel="stylesheet" />
+
+</head>
+<body class="">
+
+
+
+
+
+
+
+
+
+
+
+<header class="header navbar navbar-expand bg-light border-bottom border-light shadow" data-scroll-header>
+    <div class="container-fluid pe-lg-4">
+        <div class="d-flex align-items-center">
+            <a href="/" class="navbar-brand flex-shrink-0 py-1 py-lg-2">
+                <img src="/images/apple-touch-icon.png" width="32" alt="Kimai logo" class="me-2">
+                Kimai Docs
+            </a>
+            <span class="badge bg-warning">Developer</span>
+        </div>
+        <div class="docs-header-nav d-flex align-items-center w-100" style="padding-left: 6.75rem;">
+            <ul class="docs-primary-nav navbar-nav d-none d-lg-flex">
+                
+                    
+                    
+                    <li class="nav-item">
+                        <a href="/documentation/chapter-manual.html" class="nav-link ">
+                            <i class="bx bx-book opacity-70 fs-lg me-1"></i>
+                            User manual
+                        </a>
+                    </li>
+                
+                    
+                    
+                    <li class="nav-item">
+                        <a href="/documentation/cloud.html" class="nav-link ">
+                            <i class="bx bx-cloud opacity-70 fs-lg me-1"></i>
+                            Kimai-Cloud
+                        </a>
+                    </li>
+                
+                    
+                    
+                    <li class="nav-item">
+                        <a href="/documentation/chapter-on-premise.html" class="nav-link ">
+                            <i class="bx bx-server opacity-70 fs-lg me-1"></i>
+                            On-Premise
+                        </a>
+                    </li>
+                
+                    
+                    
+                    <li class="nav-item">
+                        <a href="/documentation/chapter-developer.html" class="nav-link  active">
+                            <i class="bx bx-code-alt opacity-70 fs-lg me-1"></i>
+                            Developer
+                        </a>
+                    </li>
+                
+            </ul>
+            <div class="docs-toolbar d-none d-xl-flex" data-pagefind-ignore="all">
+                <div class="docs-search-panel" data-doc-search>
+                    <label class="form-label visually-hidden" for="documentation-search">Search documentation</label>
+                    <input
+                        id="documentation-search"
+                        class="form-control"
+                        type="search"
+                        autocomplete="off"
+                        spellcheck="false"
+                        placeholder="Search the documentation"
+                        aria-describedby="documentation-search-status"
+                        data-doc-search-input
+                    >
+                    <div
+                        id="documentation-search-results"
+                        class="docs-search-results card border-0 shadow-sm"
+                        role="listbox"
+                        aria-label="Documentation search results"
+                        data-doc-search-results
+                    ></div>
+                    <div id="documentation-search-status" class="visually-hidden" aria-live="polite" data-doc-search-status></div>
+                </div>
+            </div>
+            <button type="button" class="navbar-toggler d-block d-lg-none ms-auto me-4" data-bs-toggle="offcanvas" data-bs-target="#componentsNav" aria-controls="componentsNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<aside class="bg-dark">
+    <div id="componentsNav" class="offcanvas-lg offcanvas-start d-flex flex-column position-fixed top-0 start-0 vh-100 bg-dark border-end-lg" style="width: 19rem; z-index: 1045;">
+        <div class="offcanvas-header d-none d-lg-flex justify-content-start">
+            <a href="/" class="navbar-brand d-none d-lg-flex py-0">
+                <img src="/images/apple-touch-icon.png" width="26" alt="Kimai logo" class="me-3">
+                Kimai Docs
+            </a>
+        </div>
+        <div class="offcanvas-header d-block d-lg-none border-bottom">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+                <h5 class="d-lg-none mb-0">Menu</h5>
+                <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas" data-bs-target="#componentsNav" aria-label="Close"></button>
+            </div>
+            <div class="list-group list-group-flush mx-n4">
+                
+                    
+                    
+                    <a href="/documentation/chapter-manual.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-1 px-4">
+                        <i class="bx bx-book opacity-70 me-1"></i>
+                        User manual
+                    </a>
+                
+                    
+                    
+                    <a href="/documentation/cloud.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-1 px-4">
+                        <i class="bx bx-cloud opacity-70 me-1"></i>
+                        Kimai-Cloud
+                    </a>
+                
+                    
+                    
+                    <a href="/documentation/chapter-on-premise.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-1 px-4">
+                        <i class="bx bx-server opacity-70 me-1"></i>
+                        On-Premise
+                    </a>
+                
+                    
+                    
+                    <a href="/documentation/chapter-developer.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-1 px-4">
+                        <i class="bx bx-code-alt opacity-70 me-1"></i>
+                        Developer
+                    </a>
+                
+            </div>
+        </div>
+        <div class="offcanvas-body overflow-scroll w-100 p-4">
+            <div class="h-auto docsnavi">
+                
+                    
+                    
+                    
+                    
+                    <p class="fs-lg mb-1 text-white fw-bold">JSON API</p>
+                    <div class="list-group list-group-flush mb-4 me-n4 border-start">
+                        
+                        
+                        
+                        
+                        <a href="/documentation/rest-api.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-rest-api">
+                            
+                            Kimai API
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/api-pagination.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-api-pagination">
+                            
+                            Pagination
+                            
+                        </a>
+                        
+                        
+                    </div>
+                    
+                    
+                    
+                    <p class="fs-lg mb-1 text-white fw-bold">API Examples</p>
+                    <div class="list-group list-group-flush mb-4 me-n4 border-start">
+                        
+                        
+                        
+                        
+                        <a href="/documentation/rest-api-examples.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-rest-api-examples">
+                            
+                            Importing a CSV file
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/api-example-javascript.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-api-example-javascript">
+                            
+                            jQuery Demo
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/api-example-sync.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-api-example-sync">
+                            
+                            Sync to a local DB
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/api-example-user.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2  active" id="docnavi-api-example-user">
+                            
+                            Onboarding users
+                            
+                        </a>
+                        
+                        
+                    </div>
+                    
+                    
+                    
+                    <p class="fs-lg mb-1 text-white fw-bold">Create plugins</p>
+                    <div class="list-group list-group-flush mb-4 me-n4 border-start">
+                        
+                        
+                        
+                        
+                        <a href="/documentation/developers.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-developers">
+                            
+                            Development environment
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/extending-kimai.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-extending-kimai">
+                            
+                            Extending Kimai
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugins.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugins">
+                            
+                            Create plugins
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/translations.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-translations">
+                            
+                            Translations / i18n
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/meta-fields.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-meta-fields">
+                            
+                            Custom fields
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/theme.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-theme">
+                            
+                            Theme
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/store.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-store">
+                            
+                            Add to store
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/migration-v2.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-migration-v2">
+                            
+                            Migrate plugins to v2
+                            
+                        </a>
+                        
+                        
+                    </div>
+                    
+                    
+                    
+                    <p class="fs-lg mb-1 text-white fw-bold">Technical background</p>
+                    <div class="list-group list-group-flush mb-4 me-n4 border-start">
+                        
+                        
+                        
+                        
+                        <a href="/documentation/bughunter.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-bughunter">
+                            
+                            Security advisories
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/permission-structure.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-permission-structure">
+                            
+                            Permission structure
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/sql-examples.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-sql-examples">
+                            
+                            SQL Examples
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/redis.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-redis">
+                            
+                            Using Redis for caching
+                            
+                        </a>
+                        
+                        
+                    </div>
+                    
+                    <div class="list-group list-group-flush pb-3 mb-4 mx-n4">
+                
+                    <a href="/en/" class="list-group-item list-group-item-action border-0 py-1 fs-sm px-4">Kimai Home</a>
+                    <a href="/en/site-notice.html" class="list-group-item list-group-item-action border-0 py-1 fs-sm px-4">Site notice</a>
+                    <a href="/en/privacy-policy.html" class="list-group-item list-group-item-action border-0 py-1 fs-sm px-4">Privacy policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        const dpm = document.getElementById('docnavi-api-example-user');
+        if (dpm !== null) {
+            dpm.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+        }
+    });
+</script>
+<main class="docs-container">
+    <div class="container-fluid px-xxl-3 px-lg-2 pt-4 pt-lg-5 pb-2 pb-lg-4">
+        <div class="docs-layout">
+            <div class="docs-article" data-pagefind-body>
+                <div class="d-sm-flex align-items-end justify-content-between ps-lg-2 ps-xxl-0 mt-2 mt-lg-0 mb-n3 gap-4">
+                    <div class="me-4">
+                        <h1 class="pb-1" data-pagefind-meta="title" data-pagefind-weight="10.0">Setting user preferences for automated onboarding</h1>
+                        
+                        <p class="text-muted fs-lg mb-2" data-pagefind-meta="description">Creating user and configuring their preferences with the API allows for automated onboarding workflows</p>
+                        
+                    </div>
+                    <div class="d-none d-lg-flex">
+                    
+
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="markdown py-5 ps-lg-2 ps-xxl-0">
+                    <div>
+                        
+                        <div id="documentation-content">
+                            <p>For larger companies, it is often easier to pre-sync user accounts to Kimai, instead of creating them with the UI.</p>
+
+<p>The API has the following endpoints:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">GET /api/users/{id}</code> - for reading one user</li>
+  <li><code class="language-plaintext highlighter-rouge">POST /api/users</code> - for creating users</li>
+  <li><code class="language-plaintext highlighter-rouge">PATCH /api/users/{id}/preferences</code> - for updating settings</li>
+</ul>
+
+<p>Please read the API docs to understand the exact requests.</p>
+
+<h2 id="configure-contracts-with-user-preferences">Configure contracts with user-preferences</h2>
+
+<p>You can configure working contracts <a href="/documentation/rest-api.html">using the API</a>.
+All settings are kept in user-preferences, so you can set them with the <code class="language-plaintext highlighter-rouge">PATCH /api/users/{id}/preferences</code> endpoint.</p>
+
+<p><strong>Contract Types</strong></p>
+
+<p>Please note that some contract types are only available with the <a href="/en/store/controlling.html">Working contract plugin</a> or the <code class="language-plaintext highlighter-rouge">Pro</code> cloud plan.</p>
+
+<p><strong>Type “month” - Total monthly hours</strong></p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"work_contract_type"</span><span class="p">,</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"month"</span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"hours_per_month"</span><span class="p">,</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"432000"</span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"work_days_month"</span><span class="p">,</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1,2,3,4,5"</span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+
+<p><strong>Type “week” - Total weekly hours</strong></p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"work_contract_type"</span><span class="p">,</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"week"</span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"hours_per_week"</span><span class="p">,</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"144000"</span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"work_days_week"</span><span class="p">,</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1,2,3,4,5"</span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+
+<p><strong>Type <code class="language-plaintext highlighter-rouge">day</code> - Individual daily hours</strong></p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"work_contract_type"</span><span class="p">,</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"day"</span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"work_monday"</span><span class="p">,</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"28800"</span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"work_tuesday"</span><span class="p">,</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"28800"</span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"work_wednesday"</span><span class="p">,</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"28800"</span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"work_thursday"</span><span class="p">,</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"28800"</span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"work_friday"</span><span class="p">,</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"14400"</span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+
+<p><strong>Available Preferences</strong></p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Preference</th>
+      <th>Example</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">work_contract_type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">week</code> or <code class="language-plaintext highlighter-rouge">day</code>or <code class="language-plaintext highlighter-rouge">month</code></td>
+      <td>Contract type</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">hours_per_week</code></td>
+      <td><code class="language-plaintext highlighter-rouge">144000</code></td>
+      <td>Weekly hours in seconds (144000 = 40h)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">hours_per_month</code></td>
+      <td><code class="language-plaintext highlighter-rouge">144000</code></td>
+      <td>Monthly hours in seconds (432000 = 120h)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">work_monday</code> .. <code class="language-plaintext highlighter-rouge">work_sunday</code></td>
+      <td><code class="language-plaintext highlighter-rouge">28800</code></td>
+      <td>Daily hours in seconds (28800 = 8h)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">work_days_month</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1,2,3,4,5</code></td>
+      <td>Work days for contract type <code class="language-plaintext highlighter-rouge">month</code> (1=Monday, 5=Friday, 7=Sunday)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">work_days_week</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1,2,3,4,5</code></td>
+      <td>Work days for contract type <code class="language-plaintext highlighter-rouge">week</code>  (1=Monday, 5=Friday, 7=Sunday)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">holidays</code></td>
+      <td><code class="language-plaintext highlighter-rouge">30</code></td>
+      <td>Vacation days per year</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">public_holiday_group</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1</code></td>
+      <td>Holiday group ID</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">work_start_day</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2025-01-01</code></td>
+      <td>Contract start</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">work_last_day</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2027-12-31</code></td>
+      <td>Contract end (optional)</td>
+    </tr>
+  </tbody>
+</table>
+
+                        </div>
+                        
+
+                        
+                        <div data-pagefind-ignore="all">
+                            <h2 id="related-articles" class="fs-4 mt-5">Related articles</h2>
+                            <ul>
+                                
+                                
+                                <li>
+                                    <a href="/documentation/rest-api.html">Start using the Kimai API</a> &ndash; Access your time-tracking data with the Kimai JSON API
+                                </li>
+                                
+                                
+                                <li>
+                                    <a href="/documentation/rest-api-examples.html">Using the API to import CSV data with PHP</a> &ndash; Demo application that uses a CSV oparse and the Kimai API to import local data
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            
+                <aside class="side-nav side-nav-end d-none d-xxl-block docs-toc pe-0">
+                    <h3 class="fs-lg mt-2">Jump to</h3>
+                    <ul class="nav" id="jumpToNav"><li class="nav-item"><a href="#configure-contracts-with-user-preferences" class="nav-link">Configure contracts with user-preferences</a></li></ul>
+                    
+                    <ul class="nav">
+                        <li>
+                            <a href="#related-articles" class="nav-link">Related articles</a>
+                        </li>
+                    </ul>
+                    
+                </aside>
+            
+        </div>
+    </div>
+</main>
+<script type="module" src="/assets/js/documentation-search.js?v1"></script>
+
+
+<a href="#top" class="btn-scroll-top" data-scroll>
+    <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+    <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+</a>
+
+<script src="/assets/build/main.js?v1"></script>
+
+<script defer src="https://u.kimai.org/script.js" data-website-id="e26bef12-9527-43bc-83fd-660e237f3526"></script>
+
+</body>
+</html>

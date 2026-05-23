@@ -1,0 +1,2055 @@
+<!doctype html>
+<html lang="sk" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#4188c9">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="robots" content="index,follow">
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.kimai.org/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.kimai.org/images/icon_32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.kimai.org/images/icon_16x16.png">
+<title>Plugins for Kimai</title>
+<meta name="description" content="Rozšírenia a komerčná podpora pre Kimai">
+<link type="application/atom+xml" rel="alternate" href="/sk/feed.xml" title="Kimai Time-Tracking" />
+<meta property="og:locale" content="sk">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Plugins for Kimai">
+<meta property="og:image" content="https://www.kimai.org/images/social-preview.webp">
+<meta property="og:description" content="Rozšírenia a komerčná podpora pre Kimai">
+<link rel="alternate" hreflang="ca" href="https://www.kimai.org/ca/store/">
+<link rel="alternate" hreflang="cs" href="https://www.kimai.org/cs/store/">
+<link rel="alternate" hreflang="de" href="https://www.kimai.org/de/store/">
+<link rel="alternate" hreflang="en" href="https://www.kimai.org/en/store/">
+<link rel="alternate" hreflang="es" href="https://www.kimai.org/es/store/">
+<link rel="alternate" hreflang="fr" href="https://www.kimai.org/fr/store/">
+<link rel="alternate" hreflang="he" href="https://www.kimai.co.il/store/">
+<link rel="alternate" hreflang="hr" href="https://www.kimai.org/hr/store/">
+<link rel="alternate" hreflang="it" href="https://www.kimai.org/it/store/">
+<link rel="alternate" hreflang="nl" href="https://www.kimai.org/nl/store/">
+<link rel="alternate" hreflang="pl" href="https://www.kimai.org/pl/store/">
+<link rel="alternate" hreflang="pt" href="https://www.kimai.org/pt/store/">
+<link rel="alternate" hreflang="pt-br" href="https://www.kimai.org/pt_BR/store/">
+<link rel="alternate" hreflang="ru" href="https://www.kimai.org/ru/store/">
+<link rel="alternate" hreflang="sk" href="https://www.kimai.org/sk/store/">
+<link rel="alternate" hreflang="sv" href="https://www.kimai.org/sv/store/">
+<link rel="alternate" hreflang="ta" href="https://www.kimai.org/ta/store/">
+<link rel="alternate" hreflang="uk" href="https://www.kimai.org/uk/store/">
+<link rel="alternate" hreflang="zh-hans" href="https://www.kimai.org/zh_Hans/store/">
+<link rel="alternate" hreflang="zh-hant" href="https://www.kimai.tw/store/">
+<link href="/assets/build/main.css?v8" rel="stylesheet" />
+
+</head>
+<body class="">
+
+<main class="page-wrapper">
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="header navbar navbar-expand-lg position-absolute    navbar-sticky">
+    <div class="container px-3">
+        <a href="/sk/" class="navbar-brand pe-3">
+        <img src="/images/kimai_logo_48.webp" style="height:36px;width:36px;" alt="Kimai - Open Source sledovanie času"> Kimai
+        </a>
+        <div id="navbarNav" class="offcanvas offcanvas-end">
+            <div class="offcanvas-header border-bottom">
+                <h5 class="offcanvas-title">Menu</h5>
+                <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-current="page">Product</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/sk/about.html" class="dropdown-item">Informácie o Kimai</a></li>
+                            <li><a href="/en/open-source-community" class="dropdown-item">Open Source</a></li>
+                            <li class="dropdown-divider"></li>
+                            <li><a href="/sk/integrations" class="dropdown-item">Apps & Integrations</a></li>
+                            <li><a href="/sk/demo.html" class="dropdown-item">Demo</a></li>
+                            <li class="dropdown-divider"></li>
+                            <li><a href="/sk/blog/" class="dropdown-item">Novinky</a></li>
+                            <li><a href="/sk/support.html" class="dropdown-item">Podpora</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-current="page">Cloud</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/sk/pricing" class="dropdown-item">Pricing</a></li>
+                            <li><a href="/sk/changelog" class="dropdown-item">Changelog</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-current="page">Self hosting</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/sk/download.html" class="dropdown-item">Stiahnuť</a></li>
+                            <li><a href="/sk/store/" class="dropdown-item">Obchod</a></li>
+                            <li><a href="https://github.com/kimai/kimai/discussions" target="_blank" class="dropdown-item">Forum <i class="bx bx-link-external me-2"></i></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-current="page">Dokumentácia</a>
+                        <ul class="dropdown-menu">
+                        
+                            
+                            
+                            <li><a href="https://www.kimai.org/documentation/chapter-manual.html" class="dropdown-item">
+                                <i class="bx bx-book me-2"></i>
+                                
+                                Užívateľská príručka
+                            </a></li>
+                        
+                            
+                            
+                            <li><a href="https://www.kimai.org/documentation/cloud.html" class="dropdown-item">
+                                <i class="bx bx-cloud me-2"></i>
+                                
+                                Kimai-Cloud
+                            </a></li>
+                        
+                            
+                            
+                            <li><a href="https://www.kimai.org/documentation/chapter-on-premise.html" class="dropdown-item">
+                                <i class="bx bx-server me-2"></i>
+                                
+                                Self hosting
+                            </a></li>
+                        
+                            
+                            
+                            <li><a href="https://www.kimai.org/documentation/chapter-developer.html" class="dropdown-item">
+                                <i class="bx bx-code-alt me-2"></i>
+                                
+                                Vývojári
+                            </a></li>
+                        
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="pe-lg-1 ms-auto me-2">
+            
+
+
+
+<a href="https://www.kimai.cloud/auth/" class="btn btn-sm fs-sm d-none d-md-inline-flex me-2 btn-outline-secondary">Login</a>
+
+            <a href="https://www.kimai.cloud/auth/registration" class="btn btn-success btn-sm fs-sm d-inline-flex">Začnite zdarma</a>
+
+        </div>
+        <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</header>
+
+
+    <section class="position-relative py-5">
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-primary opacity-10"></div>
+        <div class="container position-relative zindex-2 py-lg-4 pt-xxl-5">
+            <div class="row">
+                <div class="col-xl-5 d-flex flex-column">
+                    <h1 class="display-3 mb-4">
+                        Plugins for Kimai
+                    </h1>
+                    <p class="fs-lg mb-5">
+                        Rozšírte Kimai naším veľkým výberom pluginov. Vyberte si zo stoviek aplikácií a rozšírení v ekosystéme Kimai a prineste super-silu do svojho zážitku zo sledovania času hneď teraz!
+                    </p>
+                    <div class="d-flex align-items-center mt-auto mb-3 mb-lg-0 pb-4 pb-lg-0 pb-xl-5 ps-3">
+                        
+                        <div class="d-flex">
+    <div class="d-flex me-3">
+        
+        <div class="d-flex align-items-center justify-content-center bg-light rounded-circle ms-n3" style="width: 48px; height: 48px;">
+            <img src="/images/testimonials/christoph-empl.webp" class="rounded-circle" width="44" alt="Christoph Empl - CEO - Etronet">
+        </div>
+        
+        <div class="d-flex align-items-center justify-content-center bg-light rounded-circle ms-n3" style="width: 48px; height: 48px;">
+            <img src="/images/testimonials/johannes-mertens.webp" class="rounded-circle" width="44" alt="Johannes Mertens - Entwickler - Fairtrade Deutschland e.V.">
+        </div>
+        
+        <div class="d-flex align-items-center justify-content-center bg-light rounded-circle ms-n3" style="width: 48px; height: 48px;">
+            <img src="/images/testimonials/christoph-van-bracht.webp" class="rounded-circle" width="44" alt="Christoph van Bracht - Geschäftsführer - van Bracht | Haus & EDV">
+        </div>
+        
+        <div class="d-flex align-items-center justify-content-center bg-light rounded-circle ms-n3" style="width: 48px; height: 48px;">
+            <img src="/images/testimonials/jeremy-white.webp" class="rounded-circle" width="44" alt="Jeremy White - Founder - CodeWeavers">
+        </div>
+        
+        <div class="d-flex align-items-center justify-content-center bg-light rounded-circle ms-n3" style="width: 48px; height: 48px;">
+            <img src="/images/testimonials/alessandro-pollastri.webp" class="rounded-circle" width="44" alt="Alessandro Pollastri - Developer - Comunità Papa Giovanni XXIII">
+        </div>
+        
+    </div>
+    
+    <div>
+        <div class="d-block fs-base">
+            <i class="bx bxs-star text-warning"></i>
+            <i class="bx bxs-star text-warning"></i>
+            <i class="bx bxs-star text-warning"></i>
+            <i class="bx bxs-star text-warning"></i>
+            <i class="bx bxs-star text-warning"></i>
+            5.0
+        </div>
+        <span class="fs-sm"><span class="text-primary fw-semibold">5000</span> zákazníkov je už s nami</span>
+    </div>
+</div>
+
+                    </div>
+                </div>
+                <div class="col-xl-7">
+                    <div class="d-none d-xl-block mx-auto me-lg-0" style="max-width: 648px;">
+                        <div class="align-self-end ms-xl-0 ms-md-4 p-lg-4 p-sm-3 p-2 rounded-4 overflow-hidden" style="background: linear-gradient(153.32deg, rgba(255, 255, 255, .3) -65.62%, rgba(255, 255, 255, .1) 83.28%); box-shadow: 0 .25rem 1.5rem -.0625rem rgba(0, 0, 0, .2); backdrop-filter: blur(25px);">
+                            <img src="/images/layout/shop-hero.webp" alt="Shop" class="rounded-4" style="box-shadow: 0 0 7.5rem rgba(0, 0, 0, .1);">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mb-lg-4 pb-5 pt-3">
+        <div class="alert alert-warning d-flex" role="alert"><i class="bx bx-alarm-exclamation lead me-3"></i><p>Plugins are for on-premises customers, cloud users have access to plugins labelled <span class="badge bg-warning zindex-2 mx-2 text-capitalize">Cloud</span></p>
+</div>
+
+        <article class="mb-5 pt-3">
+            
+            
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+
+
+
+
+
+
+
+
+
+<div class="col">
+    <article class="card card-hover h-100 border-0 shadow-sm">
+        <a href="/sk/store/audit-trail-bundle.html" class="d-block position-absolute w-100 h-100 top-0 start-0" aria-label="Link to: Auditné záznamy"></a>
+        
+        <div class="card-body pb-1">
+            <h3 class="h5 mb-3">
+                <a href="/sk/store/audit-trail-bundle.html">Auditné záznamy</a>
+            </h3>
+            <p>Zaznamenáva detailné zmeny a Auditné výpisy (logy) pre pracovné výkazy, zákazníkov, projekty, aktivity a zobrazte si ich podla časovej osi ako samostatné položky.</p>
+            <!--p class="fs-lg fw-semibold text-primary mb-0">$12.50</p-->
+        </div>
+        <div class="px-4 pb-3">
+            
+                
+            
+                
+                    
+                        
+                        
+                        <span class="badge bg-primary zindex-2 me-2 text-capitalize">featured</span>
+                    
+                
+            
+                
+                    
+                        
+                        
+                        <span class="badge bg-warning zindex-2 me-2 text-capitalize">cloud</span>
+                    
+                
+            
+        </div>
+        <div class="card-footer d-flex align-items-center fs-sm text-muted py-4">
+            
+            <div class="d-flex align-items-center me-4 text-nowrap">
+            
+                <i class="bx bx-cart fs-xl me-1"></i>
+                49 €
+            
+            </div>
+            
+            <div class="d-flex align-items-center text-nowrap text-truncate">
+                <i class="bx bx-user fs-xl me-1"></i>
+                Kevin Papst
+            </div>
+        </div>
+    </article>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col">
+    <article class="card card-hover h-100 border-0 shadow-sm">
+        <a href="/sk/store/custom-fields-bundle.html" class="d-block position-absolute w-100 h-100 top-0 start-0" aria-label="Link to: Vlastné polia"></a>
+        
+        <div class="card-body pb-1">
+            <h3 class="h5 mb-3">
+                <a href="/sk/store/custom-fields-bundle.html">Vlastné polia</a>
+            </h3>
+            <p>Vytvorte si voľno-konfigurovateľné doplnkové polia pre pracovné výkazy, zákazníkov, projekty, aktivity a uživateľov v rôznych formátoch. Polia môžu byť voľitelné alebo povinné a obmedzené podľa oprávnení.</p>
+            <!--p class="fs-lg fw-semibold text-primary mb-0">$12.50</p-->
+        </div>
+        <div class="px-4 pb-3">
+            
+                
+            
+                
+                    
+                        
+                        
+                        <span class="badge bg-primary zindex-2 me-2 text-capitalize">featured</span>
+                    
+                
+            
+                
+                    
+                        
+                        
+                        <span class="badge bg-warning zindex-2 me-2 text-capitalize">cloud</span>
+                    
+                
+            
+        </div>
+        <div class="card-footer d-flex align-items-center fs-sm text-muted py-4">
+            
+            <div class="d-flex align-items-center me-4 text-nowrap">
+            
+                <i class="bx bx-cart fs-xl me-1"></i>
+                99 €
+            
+            </div>
+            
+            <div class="d-flex align-items-center text-nowrap text-truncate">
+                <i class="bx bx-user fs-xl me-1"></i>
+                Kevin Papst
+            </div>
+        </div>
+    </article>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col">
+    <article class="card card-hover h-100 border-0 shadow-sm">
+        <a href="/sk/store/expenses-bundle.html" class="d-block position-absolute w-100 h-100 top-0 start-0" aria-label="Link to: Správa výdavkov"></a>
+        
+        <div class="card-body pb-1">
+            <h3 class="h5 mb-3">
+                <a href="/sk/store/expenses-bundle.html">Správa výdavkov</a>
+            </h3>
+            <p>Majte prehľad o svojich nákladoch/výdavkoch podľa zákazníka a projektu. Tieto náklady môžu byť kategoruzované a pridané do vašich faktúr.</p>
+            <!--p class="fs-lg fw-semibold text-primary mb-0">$12.50</p-->
+        </div>
+        <div class="px-4 pb-3">
+            
+                
+            
+                
+                    
+                        
+                        
+                        <span class="badge bg-primary zindex-2 me-2 text-capitalize">featured</span>
+                    
+                
+            
+                
+                    
+                        
+                        
+                        <span class="badge bg-warning zindex-2 me-2 text-capitalize">cloud</span>
+                    
+                
+            
+        </div>
+        <div class="card-footer d-flex align-items-center fs-sm text-muted py-4">
+            
+            <div class="d-flex align-items-center me-4 text-nowrap">
+            
+                <i class="bx bx-cart fs-xl me-1"></i>
+                99 €
+            
+            </div>
+            
+            <div class="d-flex align-items-center text-nowrap text-truncate">
+                <i class="bx bx-user fs-xl me-1"></i>
+                Kevin Papst
+            </div>
+        </div>
+    </article>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col">
+    <article class="card card-hover h-100 border-0 shadow-sm">
+        <a href="/sk/store/kiosk-barcode-bundle.html" class="d-block position-absolute w-100 h-100 top-0 start-0" aria-label="Link to: Režim Kiosku s podporou čiarových kódov a identifikáciou RFID"></a>
+        
+        <div class="card-body pb-1">
+            <h3 class="h5 mb-3">
+                <a href="/sk/store/kiosk-barcode-bundle.html">Režim Kiosku s podporou čiarových kódov a identifikáciou RFID</a>
+            </h3>
+            <p>Sledovanie času dochádzky v prostredí, kde uživateľ nemá prístup k aplikácii Kimai (Napríklad v sklade) pomocou používania čítačiek čiarových kódov alebo RFID skenera na začatie a ukončenie pracovných časov.</p>
+            <!--p class="fs-lg fw-semibold text-primary mb-0">$12.50</p-->
+        </div>
+        <div class="px-4 pb-3">
+            
+                
+            
+                
+                    
+                        
+                        
+                        <span class="badge bg-primary zindex-2 me-2 text-capitalize">featured</span>
+                    
+                
+            
+                
+                    
+                        
+                        
+                        <span class="badge bg-warning zindex-2 me-2 text-capitalize">cloud</span>
+                    
+                
+            
+        </div>
+        <div class="card-footer d-flex align-items-center fs-sm text-muted py-4">
+            
+            <div class="d-flex align-items-center me-4 text-nowrap">
+            
+                <i class="bx bx-cart fs-xl me-1"></i>
+                199 €
+            
+            </div>
+            
+            <div class="d-flex align-items-center text-nowrap text-truncate">
+                <i class="bx bx-user fs-xl me-1"></i>
+                Kevin Papst
+            </div>
+        </div>
+    </article>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col">
+    <article class="card card-hover h-100 border-0 shadow-sm">
+        <a href="/sk/store/task-management-bundle.html" class="d-block position-absolute w-100 h-100 top-0 start-0" aria-label="Link to: Plánovač úloh"></a>
+        
+        <div class="card-body pb-1">
+            <h3 class="h5 mb-3">
+                <a href="/sk/store/task-management-bundle.html">Plánovač úloh</a>
+            </h3>
+            <p>Vytvárajte úlohy, spustite/zastavte/prerušte ich, prideľte ich uživateľom a tímom, zaznamenávajte čas pre nich —spravujte zoznamy úloh(to-do listy) s Kimai</p>
+            <!--p class="fs-lg fw-semibold text-primary mb-0">$12.50</p-->
+        </div>
+        <div class="px-4 pb-3">
+            
+                
+            
+                
+                    
+                        
+                        
+                        <span class="badge bg-primary zindex-2 me-2 text-capitalize">featured</span>
+                    
+                
+            
+                
+                    
+                        
+                        
+                        <span class="badge bg-warning zindex-2 me-2 text-capitalize">cloud</span>
+                    
+                
+            
+        </div>
+        <div class="card-footer d-flex align-items-center fs-sm text-muted py-4">
+            
+            <div class="d-flex align-items-center me-4 text-nowrap">
+            
+                <i class="bx bx-cart fs-xl me-1"></i>
+                79 €
+            
+            </div>
+            
+            <div class="d-flex align-items-center text-nowrap text-truncate">
+                <i class="bx bx-user fs-xl me-1"></i>
+                Kevin Papst
+            </div>
+        </div>
+    </article>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col">
+    <article class="card card-hover h-100 border-0 shadow-sm">
+        <a href="/sk/store/controlling.html" class="d-block position-absolute w-100 h-100 top-0 start-0" aria-label="Link to: Zamestnanecký účet: Pracovné hodiny, dovolenky, choroby, sviatky"></a>
+        
+        <div class="card-body pb-1">
+            <h3 class="h5 mb-3">
+                <a href="/sk/store/controlling.html">Zamestnanecký účet: Pracovné hodiny, dovolenky, choroby, sviatky</a>
+            </h3>
+            <p>Správa zamestnancov: Pracovné hodiny a nadčasy. Dovolenky, choroby a voľno. Správa verejných sviatkov a kalendárna integrácia. Mesačné schvaľovanie s PDF.</p>
+            <!--p class="fs-lg fw-semibold text-primary mb-0">$12.50</p-->
+        </div>
+        <div class="px-4 pb-3">
+            
+                
+            
+                
+                    
+                        
+                        
+                        <span class="badge bg-primary zindex-2 me-2 text-capitalize">featured</span>
+                    
+                
+            
+                
+                    
+                        
+                        
+                        <span class="badge bg-warning zindex-2 me-2 text-capitalize">cloud</span>
+                    
+                
+            
+        </div>
+        <div class="card-footer d-flex align-items-center fs-sm text-muted py-4">
+            
+            <div class="d-flex align-items-center me-4 text-nowrap">
+            
+                <i class="bx bx-cart fs-xl me-1"></i>
+                299 €
+            
+            </div>
+            
+            <div class="d-flex align-items-center text-nowrap text-truncate">
+                <i class="bx bx-user fs-xl me-1"></i>
+                Kevin Papst
+            </div>
+        </div>
+    </article>
+</div>
+
+
+
+
+</div>
+
+        </article>
+
+        <article class="mb-5 pt-3">
+            <header class="d-flex align-items-center justify-content-between mb-5">
+                <span class="badge bg-success shadow-info fs-base fw-normal">Pluginy pre vašu Kimai inštaláciu</span>
+            </header>
+            
+            
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+
+
+
+
+
+
+
+
+
+<div class="col">
+    <article class="card card-hover h-100 border-0 shadow-sm">
+        <a href="/sk/store/katjaglass-approval-bundle.html" class="d-block position-absolute w-100 h-100 top-0 start-0" aria-label="Link to: Schvaľovací pracovný postup pre pracovné výkazy"></a>
+        
+        <div class="card-body pb-1">
+            <h3 class="h5 mb-3">
+                <a href="/sk/store/katjaglass-approval-bundle.html">Schvaľovací pracovný postup pre pracovné výkazy</a>
+            </h3>
+            <p>Tento balíček vie vykonať schvalovanie pracovných výkazov každý týždeň.</p>
+            <!--p class="fs-lg fw-semibold text-primary mb-0">$12.50</p-->
+        </div>
+        <div class="px-4 pb-3">
+            
+                
+            
+        </div>
+        <div class="card-footer d-flex align-items-center fs-sm text-muted py-4">
+            
+            <div class="d-flex align-items-center me-4 text-nowrap">
+            
+                <i class="bx bx-gift fs-xl me-1"></i>
+                For free
+            
+            </div>
+            
+            <div class="d-flex align-items-center text-nowrap text-truncate">
+                <i class="bx bx-user fs-xl me-1"></i>
+                Katja Glass Consulting
+            </div>
+        </div>
+    </article>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col">
+    <article class="card card-hover h-100 border-0 shadow-sm">
+        <a href="/sk/store/district09-archive-timesheets-command-bundle.html" class="d-block position-absolute w-100 h-100 top-0 start-0" aria-label="Link to: Príkaz na archiváciu pracovných výkazov (timesheets)"></a>
+        
+        <div class="card-body pb-1">
+            <h3 class="h5 mb-3">
+                <a href="/sk/store/district09-archive-timesheets-command-bundle.html">Príkaz na archiváciu pracovných výkazov (timesheets)</a>
+            </h3>
+            <p>Plugin, ktorá umožňuje archivovať pracovné výkazy staršie ako špecifikovaný čas, pomocou príkazu.</p>
+            <!--p class="fs-lg fw-semibold text-primary mb-0">$12.50</p-->
+        </div>
+        <div class="px-4 pb-3">
+            
+                
+            
+        </div>
+        <div class="card-footer d-flex align-items-center fs-sm text-muted py-4">
+            
+            <div class="d-flex align-items-center me-4 text-nowrap">
+            
+                <i class="bx bx-gift fs-xl me-1"></i>
+                For free
+            
+            </div>
+            
+            <div class="d-flex align-items-center text-nowrap text-truncate">
+                <i class="bx bx-user fs-xl me-1"></i>
+                District09
+            </div>
+        </div>
+    </article>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col">
+    <article class="card card-hover h-100 border-0 shadow-sm">
+        <a href="/sk/store/helsinkisystems-budgetwatcher.html" class="d-block position-absolute w-100 h-100 top-0 start-0" aria-label="Link to: Budget Watcher (sledovanie rozpočtu projektov a odosielanie upozornení)"></a>
+        
+        <div class="card-body pb-1">
+            <h3 class="h5 mb-3">
+                <a href="/sk/store/helsinkisystems-budgetwatcher.html">Budget Watcher (sledovanie rozpočtu projektov a odosielanie upozornení)</a>
+            </h3>
+            <p>Dostávajte upozornenia, keď sa určitá časť rozpočtu vašich projektov spotrebuje.</p>
+            <!--p class="fs-lg fw-semibold text-primary mb-0">$12.50</p-->
+        </div>
+        <div class="px-4 pb-3">
+            
+                
+            
+        </div>
+        <div class="card-footer d-flex align-items-center fs-sm text-muted py-4">
+            
+            <div class="d-flex align-items-center me-4 text-nowrap">
+            
+                <i class="bx bx-cart fs-xl me-1"></i>
+                99 €
+            
+            </div>
+            
+            <div class="d-flex align-items-center text-nowrap text-truncate">
+                <i class="bx bx-user fs-xl me-1"></i>
+                Helsinki Systems GmbH
+            </div>
+        </div>
+    </article>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col">
+    <article class="card card-hover h-100 border-0 shadow-sm">
+        <a href="/sk/store/keleo-css-custom-bundle.html" class="d-block position-absolute w-100 h-100 top-0 start-0" aria-label="Link to: Vlastné CSS"></a>
+        
+        <div class="card-body pb-1">
+            <h3 class="h5 mb-3">
+                <a href="/sk/store/keleo-css-custom-bundle.html">Vlastné CSS</a>
+            </h3>
+            <p>Plugin ktorý umožňuje priamo pridať vlastné CSS zmeny pomocou administratívnej obrazovky. Upravte, zmeňte alebo uplne odstránťe niektoré časti CSS.</p>
+            <!--p class="fs-lg fw-semibold text-primary mb-0">$12.50</p-->
+        </div>
+        <div class="px-4 pb-3">
+            
+                
+            
+        </div>
+        <div class="card-footer d-flex align-items-center fs-sm text-muted py-4">
+            
+            <div class="d-flex align-items-center me-4 text-nowrap">
+            
+                <i class="bx bx-gift fs-xl me-1"></i>
+                For free
+            
+            </div>
+            
+            <div class="d-flex align-items-center text-nowrap text-truncate">
+                <i class="bx bx-user fs-xl me-1"></i>
+                Kevin Papst
+            </div>
+        </div>
+    </article>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col">
+    <article class="card card-hover h-100 border-0 shadow-sm">
+        <a href="/sk/store/custom-content-bundle.html" class="d-block position-absolute w-100 h-100 top-0 start-0" aria-label="Link to: Vlastný obsah"></a>
+        
+        <div class="card-body pb-1">
+            <h3 class="h5 mb-3">
+                <a href="/sk/store/custom-content-bundle.html">Vlastný obsah</a>
+            </h3>
+            <p>Vytvorte si vlastný obsah pre CSS (kaskádové štýly), Javascrupt, globálnu varovnú správu alebo úplne novú stránku pre zobrazenie noviniek z vašej firmy.</p>
+            <!--p class="fs-lg fw-semibold text-primary mb-0">$12.50</p-->
+        </div>
+        <div class="px-4 pb-3">
+            
+                
+            
+                
+                    
+                        
+                        
+                        <span class="badge bg-warning zindex-2 me-2 text-capitalize">cloud</span>
+                    
+                
+            
+        </div>
+        <div class="card-footer d-flex align-items-center fs-sm text-muted py-4">
+            
+            <div class="d-flex align-items-center me-4 text-nowrap">
+            
+                <i class="bx bx-cart fs-xl me-1"></i>
+                19 €
+            
+            </div>
+            
+            <div class="d-flex align-items-center text-nowrap text-truncate">
+                <i class="bx bx-user fs-xl me-1"></i>
+                Kevin Papst
+            </div>
+        </div>
+    </article>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col">
+    <article class="card card-hover h-100 border-0 shadow-sm">
+        <a href="/sk/store/simonschaufi-customer-email-report-bundle.html" class="d-block position-absolute w-100 h-100 top-0 start-0" aria-label="Link to: Správa o e-mailových správach zákazníkov"></a>
+        
+        <div class="card-body pb-1">
+            <h3 class="h5 mb-3">
+                <a href="/sk/store/simonschaufi-customer-email-report-bundle.html">Správa o e-mailových správach zákazníkov</a>
+            </h3>
+            <p>Odoslanie e-mailovej správy zákazníkom o vašom pracovnom čase</p>
+            <!--p class="fs-lg fw-semibold text-primary mb-0">$12.50</p-->
+        </div>
+        <div class="px-4 pb-3">
+            
+                
+            
+        </div>
+        <div class="card-footer d-flex align-items-center fs-sm text-muted py-4">
+            
+            <div class="d-flex align-items-center me-4 text-nowrap">
+            
+                <i class="bx bx-cart fs-xl me-1"></i>
+                19 €
+            
+            </div>
+            
+            <div class="d-flex align-items-center text-nowrap text-truncate">
+                <i class="bx bx-user fs-xl me-1"></i>
+                Simon Schaufelberger
+            </div>
+        </div>
+    </article>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col">
+    <article class="card card-hover h-100 border-0 shadow-sm">
+        <a href="/sk/store/customer-portal.html" class="d-block position-absolute w-100 h-100 top-0 start-0" aria-label="Link to: Customer Portal"></a>
+        
+        <div class="card-body pb-1">
+            <h3 class="h5 mb-3">
+                <a href="/sk/store/customer-portal.html">Customer Portal</a>
+            </h3>
+            <p>Share client and project statistics and timesheets with anyone using a secret URL, optionally password protected.</p>
+            <!--p class="fs-lg fw-semibold text-primary mb-0">$12.50</p-->
+        </div>
+        <div class="px-4 pb-3">
+            
+                
+            
+                
+                    
+                        
+                        
+                        <span class="badge bg-warning zindex-2 me-2 text-capitalize">cloud</span>
+                    
+                
+            
+        </div>
+        <div class="card-footer d-flex align-items-center fs-sm text-muted py-4">
+            
+            <div class="d-flex align-items-center me-4 text-nowrap">
+            
+                <i class="bx bx-gift fs-xl me-1"></i>
+                For free
+            
+            </div>
+            
+            <div class="d-flex align-items-center text-nowrap text-truncate">
+                <i class="bx bx-user fs-xl me-1"></i>
+                Kevin Papst
+            </div>
+        </div>
+    </article>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col">
+    <article class="card card-hover h-100 border-0 shadow-sm">
+        <a href="/sk/store/keleo-deduction-time-bundle.html" class="d-block position-absolute w-100 h-100 top-0 start-0" aria-label="Link to: Balíček času odpočtu"></a>
+        
+        <div class="card-body pb-1">
+            <h3 class="h5 mb-3">
+                <a href="/sk/store/keleo-deduction-time-bundle.html">Balíček času odpočtu</a>
+            </h3>
+            <p>Nastavte si aktivity ako časy odpočtu a ukladajte záporné časy trvania</p>
+            <!--p class="fs-lg fw-semibold text-primary mb-0">$12.50</p-->
+        </div>
+        <div class="px-4 pb-3">
+            
+                
+            
+        </div>
+        <div class="card-footer d-flex align-items-center fs-sm text-muted py-4">
+            
+            <div class="d-flex align-items-center me-4 text-nowrap">
+            
+                <i class="bx bx-gift fs-xl me-1"></i>
+                For free
+            
+            </div>
+            
+            <div class="d-flex align-items-center text-nowrap text-truncate">
+                <i class="bx bx-user fs-xl me-1"></i>
+                Kevin Papst
+            </div>
+        </div>
+    </article>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col">
+    <article class="card card-hover h-100 border-0 shadow-sm">
+        <a href="/sk/store/maximiliangross-easy-backup-bundle.html" class="d-block position-absolute w-100 h-100 top-0 start-0" aria-label="Link to: Jednoduché zálohovanie"></a>
+        
+        <div class="card-body pb-1">
+            <h3 class="h5 mb-3">
+                <a href="/sk/store/maximiliangross-easy-backup-bundle.html">Jednoduché zálohovanie</a>
+            </h3>
+            <p>Kimai plugin ktorý umožňuje vytvoriť kompletnú zálohu vašej Kimai aplikácie kliknutím jedného tlačidla</p>
+            <!--p class="fs-lg fw-semibold text-primary mb-0">$12.50</p-->
+        </div>
+        <div class="px-4 pb-3">
+            
+                
+            
+        </div>
+        <div class="card-footer d-flex align-items-center fs-sm text-muted py-4">
+            
+            <div class="d-flex align-items-center me-4 text-nowrap">
+            
+                <i class="bx bx-gift fs-xl me-1"></i>
+                For free
+            
+            </div>
+            
+            <div class="d-flex align-items-center text-nowrap text-truncate">
+                <i class="bx bx-user fs-xl me-1"></i>
+                Maximilian Gross
+            </div>
+        </div>
+    </article>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col">
+    <article class="card card-hover h-100 border-0 shadow-sm">
+        <a href="/sk/store/fail2ban-bundle.html" class="d-block position-absolute w-100 h-100 top-0 start-0" aria-label="Link to: Fail2Ban pre prihlásenie"></a>
+        
+        <div class="card-body pb-1">
+            <h3 class="h5 mb-3">
+                <a href="/sk/store/fail2ban-bundle.html">Fail2Ban pre prihlásenie</a>
+            </h3>
+            <p>A fail2ban kompaktibilný plugin, zaznamenávajte neúspešné prihlásenia</p>
+            <!--p class="fs-lg fw-semibold text-primary mb-0">$12.50</p-->
+        </div>
+        <div class="px-4 pb-3">
+            
+                
+            
+        </div>
+        <div class="card-footer d-flex align-items-center fs-sm text-muted py-4">
+            
+            <div class="d-flex align-items-center me-4 text-nowrap">
+            
+                <i class="bx bx-gift fs-xl me-1"></i>
+                For free
+            
+            </div>
+            
+            <div class="d-flex align-items-center text-nowrap text-truncate">
+                <i class="bx bx-user fs-xl me-1"></i>
+                Kevin Papst
+            </div>
+        </div>
+    </article>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col">
+    <article class="card card-hover h-100 border-0 shadow-sm">
+        <a href="/sk/store/keleo-invoice-format-fixation-bundle.html" class="d-block position-absolute w-100 h-100 top-0 start-0" aria-label="Link to: Pevný formát údajov na faktúre (podľa jazyka)"></a>
+        
+        <div class="card-body pb-1">
+            <h3 class="h5 mb-3">
+                <a href="/sk/store/keleo-invoice-format-fixation-bundle.html">Pevný formát údajov na faktúre (podľa jazyka)</a>
+            </h3>
+            <p>Plugin ktorý umožňuje nastavenie globálneho jazyka pre formáty údajov faktúr</p>
+            <!--p class="fs-lg fw-semibold text-primary mb-0">$12.50</p-->
+        </div>
+        <div class="px-4 pb-3">
+            
+                
+            
+        </div>
+        <div class="card-footer d-flex align-items-center fs-sm text-muted py-4">
+            
+            <div class="d-flex align-items-center me-4 text-nowrap">
+            
+                <i class="bx bx-gift fs-xl me-1"></i>
+                For free
+            
+            </div>
+            
+            <div class="d-flex align-items-center text-nowrap text-truncate">
+                <i class="bx bx-user fs-xl me-1"></i>
+                Kevin Papst
+            </div>
+        </div>
+    </article>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col">
+    <article class="card card-hover h-100 border-0 shadow-sm">
+        <a href="/sk/store/keleo-importer-bundle.html" class="d-block position-absolute w-100 h-100 top-0 start-0" aria-label="Link to: Importér (CSV a JSON)"></a>
+        
+        <div class="card-body pb-1">
+            <h3 class="h5 mb-3">
+                <a href="/sk/store/keleo-importer-bundle.html">Importér (CSV a JSON)</a>
+            </h3>
+            <p>Plugin ktorý umožňuje importovať CSV súbory pomocou administrátorskej správy.</p>
+            <!--p class="fs-lg fw-semibold text-primary mb-0">$12.50</p-->
+        </div>
+        <div class="px-4 pb-3">
+            
+                
+            
+                
+                    
+                        
+                        
+                        <span class="badge bg-warning zindex-2 me-2 text-capitalize">cloud</span>
+                    
+                
+            
+        </div>
+        <div class="card-footer d-flex align-items-center fs-sm text-muted py-4">
+            
+            <div class="d-flex align-items-center me-4 text-nowrap">
+            
+                <i class="bx bx-gift fs-xl me-1"></i>
+                For free
+            
+            </div>
+            
+            <div class="d-flex align-items-center text-nowrap text-truncate">
+                <i class="bx bx-user fs-xl me-1"></i>
+                Kevin Papst
+            </div>
+        </div>
+    </article>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col">
+    <article class="card card-hover h-100 border-0 shadow-sm">
+        <a href="/sk/store/invoice-bundle.html" class="d-block position-absolute w-100 h-100 top-0 start-0" aria-label="Link to: Fakturácie s automatickými PDF pracovnými výkazmi"></a>
+        
+        <div class="card-body pb-1">
+            <h3 class="h5 mb-3">
+                <a href="/sk/store/invoice-bundle.html">Fakturácie s automatickými PDF pracovnými výkazmi</a>
+            </h3>
+            <p>Zlepšené fakturačné funkcie. Zmeňte lokalizácie, meny peňazí, dátumy, automatické PDF výkazy pre nové faktúry.</p>
+            <!--p class="fs-lg fw-semibold text-primary mb-0">$12.50</p-->
+        </div>
+        <div class="px-4 pb-3">
+            
+                
+            
+                
+                    
+                        
+                        
+                        <span class="badge bg-warning zindex-2 me-2 text-capitalize">cloud</span>
+                    
+                
+            
+        </div>
+        <div class="card-footer d-flex align-items-center fs-sm text-muted py-4">
+            
+            <div class="d-flex align-items-center me-4 text-nowrap">
+            
+                <i class="bx bx-cart fs-xl me-1"></i>
+                99 €
+            
+            </div>
+            
+            <div class="d-flex align-items-center text-nowrap text-truncate">
+                <i class="bx bx-user fs-xl me-1"></i>
+                Kevin Papst
+            </div>
+        </div>
+    </article>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col">
+    <article class="card card-hover h-100 border-0 shadow-sm">
+        <a href="/sk/store/helsinkisystems-lexoffice.html" class="d-block position-absolute w-100 h-100 top-0 start-0" aria-label="Link to: Lexoffice Invoice Sync"></a>
+        
+        <div class="card-body pb-1">
+            <h3 class="h5 mb-3">
+                <a href="/sk/store/helsinkisystems-lexoffice.html">Lexoffice Invoice Sync</a>
+            </h3>
+            <p>Whenever an invoice is created in Kimai this plugin automatically creates a Lexoffice invoice.</p>
+            <!--p class="fs-lg fw-semibold text-primary mb-0">$12.50</p-->
+        </div>
+        <div class="px-4 pb-3">
+            
+                
+            
+        </div>
+        <div class="card-footer d-flex align-items-center fs-sm text-muted py-4">
+            
+            <div class="d-flex align-items-center me-4 text-nowrap">
+            
+                <i class="bx bx-cart fs-xl me-1"></i>
+                99 €
+            
+            </div>
+            
+            <div class="d-flex align-items-center text-nowrap text-truncate">
+                <i class="bx bx-user fs-xl me-1"></i>
+                Helsinki Systems GmbH
+            </div>
+        </div>
+    </article>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col">
+    <article class="card card-hover h-100 border-0 shadow-sm">
+        <a href="/sk/store/lockdown-per-user-bundle.html" class="d-block position-absolute w-100 h-100 top-0 start-0" aria-label="Link to: Zablokovanie podľa nastavení uživateľa"></a>
+        
+        <div class="card-body pb-1">
+            <h3 class="h5 mb-3">
+                <a href="/sk/store/lockdown-per-user-bundle.html">Zablokovanie podľa nastavení uživateľa</a>
+            </h3>
+            <p>Kimai plugin ktorý umožňuje nastaviť dobu uzamknutia pre daného použivateľa</p>
+            <!--p class="fs-lg fw-semibold text-primary mb-0">$12.50</p-->
+        </div>
+        <div class="px-4 pb-3">
+            
+                
+            
+        </div>
+        <div class="card-footer d-flex align-items-center fs-sm text-muted py-4">
+            
+            <div class="d-flex align-items-center me-4 text-nowrap">
+            
+                <i class="bx bx-gift fs-xl me-1"></i>
+                For free
+            
+            </div>
+            
+            <div class="d-flex align-items-center text-nowrap text-truncate">
+                <i class="bx bx-user fs-xl me-1"></i>
+                Kevin Papst
+            </div>
+        </div>
+    </article>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col">
+    <article class="card card-hover h-100 border-0 shadow-sm">
+        <a href="/sk/store/glorpen-duration-bundle.html" class="d-block position-absolute w-100 h-100 top-0 start-0" aria-label="Link to: Prepísateľné zaokrúhľovanie trvania"></a>
+        
+        <div class="card-body pb-1">
+            <h3 class="h5 mb-3">
+                <a href="/sk/store/glorpen-duration-bundle.html">Prepísateľné zaokrúhľovanie trvania</a>
+            </h3>
+            <p>Prepísať zaokrúhloľovanie trvania pre zákazníkov, projekty a aktivity</p>
+            <!--p class="fs-lg fw-semibold text-primary mb-0">$12.50</p-->
+        </div>
+        <div class="px-4 pb-3">
+            
+                
+            
+        </div>
+        <div class="card-footer d-flex align-items-center fs-sm text-muted py-4">
+            
+            <div class="d-flex align-items-center me-4 text-nowrap">
+            
+                <i class="bx bx-gift fs-xl me-1"></i>
+                For free
+            
+            </div>
+            
+            <div class="d-flex align-items-center text-nowrap text-truncate">
+                <i class="bx bx-user fs-xl me-1"></i>
+                Glorpen
+            </div>
+        </div>
+    </article>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col">
+    <article class="card card-hover h-100 border-0 shadow-sm">
+        <a href="/sk/store/lnngyn-period-insert-bundle.html" class="d-block position-absolute w-100 h-100 top-0 start-0" aria-label="Link to: Period Insert"></a>
+        
+        <div class="card-body pb-1">
+            <h3 class="h5 mb-3">
+                <a href="/sk/store/lnngyn-period-insert-bundle.html">Period Insert</a>
+            </h3>
+            <p>Generate entries for a given time period.</p>
+            <!--p class="fs-lg fw-semibold text-primary mb-0">$12.50</p-->
+        </div>
+        <div class="px-4 pb-3">
+            
+                
+            
+        </div>
+        <div class="card-footer d-flex align-items-center fs-sm text-muted py-4">
+            
+            <div class="d-flex align-items-center me-4 text-nowrap">
+            
+                <i class="bx bx-gift fs-xl me-1"></i>
+                For free
+            
+            </div>
+            
+            <div class="d-flex align-items-center text-nowrap text-truncate">
+                <i class="bx bx-user fs-xl me-1"></i>
+                Alan Nguyen
+            </div>
+        </div>
+    </article>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col">
+    <article class="card card-hover h-100 border-0 shadow-sm">
+        <a href="/sk/store/district09-personal-calendar-pref-bundle.html" class="d-block position-absolute w-100 h-100 top-0 start-0" aria-label="Link to: Preferencie osobného kalendára"></a>
+        
+        <div class="card-body pb-1">
+            <h3 class="h5 mb-3">
+                <a href="/sk/store/district09-personal-calendar-pref-bundle.html">Preferencie osobného kalendára</a>
+            </h3>
+            <p>Plugin, ktorý umožňuje uživateľom nastaviť vlastný začiatok a koniec času pre kalendár v nastaveniach.</p>
+            <!--p class="fs-lg fw-semibold text-primary mb-0">$12.50</p-->
+        </div>
+        <div class="px-4 pb-3">
+            
+                
+            
+        </div>
+        <div class="card-footer d-flex align-items-center fs-sm text-muted py-4">
+            
+            <div class="d-flex align-items-center me-4 text-nowrap">
+            
+                <i class="bx bx-gift fs-xl me-1"></i>
+                For free
+            
+            </div>
+            
+            <div class="d-flex align-items-center text-nowrap text-truncate">
+                <i class="bx bx-user fs-xl me-1"></i>
+                District09
+            </div>
+        </div>
+    </article>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col">
+    <article class="card card-hover h-100 border-0 shadow-sm">
+        <a href="/sk/store/pcsg-recurring-budget-bundle.html" class="d-block position-absolute w-100 h-100 top-0 start-0" aria-label="Link to: Opakujúce sa rozpočty"></a>
+        
+        <div class="card-body pb-1">
+            <h3 class="h5 mb-3">
+                <a href="/sk/store/pcsg-recurring-budget-bundle.html">Opakujúce sa rozpočty</a>
+            </h3>
+            <p>Automaticky pridáva peniaze alebo čas do vašich projektov na základe opakujúceho sa obdobia s vlastným intervalom.</p>
+            <!--p class="fs-lg fw-semibold text-primary mb-0">$12.50</p-->
+        </div>
+        <div class="px-4 pb-3">
+            
+                
+            
+        </div>
+        <div class="card-footer d-flex align-items-center fs-sm text-muted py-4">
+            
+            <div class="d-flex align-items-center me-4 text-nowrap">
+            
+                <i class="bx bx-cart fs-xl me-1"></i>
+                149 €
+            
+            </div>
+            
+            <div class="d-flex align-items-center text-nowrap text-truncate">
+                <i class="bx bx-user fs-xl me-1"></i>
+                PCSG - Computer & Internet Service OHG
+            </div>
+        </div>
+    </article>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col">
+    <article class="card card-hover h-100 border-0 shadow-sm">
+        <a href="/sk/store/simple-accounting-bundle.html" class="d-block position-absolute w-100 h-100 top-0 start-0" aria-label="Link to: Simple Accounting"></a>
+        
+        <div class="card-body pb-1">
+            <h3 class="h5 mb-3">
+                <a href="/sk/store/simple-accounting-bundle.html">Simple Accounting</a>
+            </h3>
+            <p>Track billable work vs. invoiced amounts and manual adjustments per project.</p>
+            <!--p class="fs-lg fw-semibold text-primary mb-0">$12.50</p-->
+        </div>
+        <div class="px-4 pb-3">
+            
+                
+            
+        </div>
+        <div class="card-footer d-flex align-items-center fs-sm text-muted py-4">
+            
+            <div class="d-flex align-items-center me-4 text-nowrap">
+            
+                <i class="bx bx-gift fs-xl me-1"></i>
+                For free
+            
+            </div>
+            
+            <div class="d-flex align-items-center text-nowrap text-truncate">
+                <i class="bx bx-user fs-xl me-1"></i>
+                David Gómez
+            </div>
+        </div>
+    </article>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col">
+    <article class="card card-hover h-100 border-0 shadow-sm">
+        <a href="/sk/store/liaraalis-small-business-rule-bundle.html" class="d-block position-absolute w-100 h-100 top-0 start-0" aria-label="Link to: Pravidlá/regulácie pre malé firmy"></a>
+        
+        <div class="card-body pb-1">
+            <h3 class="h5 mb-3">
+                <a href="/sk/store/liaraalis-small-business-rule-bundle.html">Pravidlá/regulácie pre malé firmy</a>
+            </h3>
+            <p>Aplikuje sa pre Nemecko a Rakúsko. Plugin ktorý umožňuje používanie nariadení pre malé firmy pri vytváraní faktúr v Kimai aplikácii.</p>
+            <!--p class="fs-lg fw-semibold text-primary mb-0">$12.50</p-->
+        </div>
+        <div class="px-4 pb-3">
+            
+                
+            
+        </div>
+        <div class="card-footer d-flex align-items-center fs-sm text-muted py-4">
+            
+            <div class="d-flex align-items-center me-4 text-nowrap">
+            
+                <i class="bx bx-gift fs-xl me-1"></i>
+                For free
+            
+            </div>
+            
+            <div class="d-flex align-items-center text-nowrap text-truncate">
+                <i class="bx bx-user fs-xl me-1"></i>
+                Alexander Pankow
+            </div>
+        </div>
+    </article>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col">
+    <article class="card card-hover h-100 border-0 shadow-sm">
+        <a href="/sk/store/dolux-swiss-qr-bundle.html" class="d-block position-absolute w-100 h-100 top-0 start-0" aria-label="Link to: QR-Invoices for Switzerland"></a>
+        
+        <div class="card-body pb-1">
+            <h3 class="h5 mb-3">
+                <a href="/sk/store/dolux-swiss-qr-bundle.html">QR-Invoices for Switzerland</a>
+            </h3>
+            <p>Swiss QR-codes on your QR-invoices.</p>
+            <!--p class="fs-lg fw-semibold text-primary mb-0">$12.50</p-->
+        </div>
+        <div class="px-4 pb-3">
+            
+                
+            
+        </div>
+        <div class="card-footer d-flex align-items-center fs-sm text-muted py-4">
+            
+            <div class="d-flex align-items-center me-4 text-nowrap">
+            
+                <i class="bx bx-gift fs-xl me-1"></i>
+                For free
+            
+            </div>
+            
+            <div class="d-flex align-items-center text-nowrap text-truncate">
+                <i class="bx bx-user fs-xl me-1"></i>
+                Dolux GmbH
+            </div>
+        </div>
+    </article>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col">
+    <article class="card card-hover h-100 border-0 shadow-sm">
+        <a href="/sk/store/kleinitsolutions-teams-integration.html" class="d-block position-absolute w-100 h-100 top-0 start-0" aria-label="Link to: Microsoft Teams Integration"></a>
+        
+        <div class="card-body pb-1">
+            <h3 class="h5 mb-3">
+                <a href="/sk/store/kleinitsolutions-teams-integration.html">Microsoft Teams Integration</a>
+            </h3>
+            <p>Helps to organize project related files in Microsoft Teams</p>
+            <!--p class="fs-lg fw-semibold text-primary mb-0">$12.50</p-->
+        </div>
+        <div class="px-4 pb-3">
+            
+                
+            
+                
+                    
+                        
+                        
+                        <span class="badge bg-secondary zindex-2 me-2 text-capitalize">microsoft</span>
+                    
+                
+            
+        </div>
+        <div class="card-footer d-flex align-items-center fs-sm text-muted py-4">
+            
+            <div class="d-flex align-items-center me-4 text-nowrap">
+            
+                <i class="bx bx-cart fs-xl me-1"></i>
+                99 €
+            
+            </div>
+            
+            <div class="d-flex align-items-center text-nowrap text-truncate">
+                <i class="bx bx-user fs-xl me-1"></i>
+                Klein IT Solutions
+            </div>
+        </div>
+    </article>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col">
+    <article class="card card-hover h-100 border-0 shadow-sm">
+        <a href="/sk/store/translation-bundle.html" class="d-block position-absolute w-100 h-100 top-0 start-0" aria-label="Link to: Preklady"></a>
+        
+        <div class="card-body pb-1">
+            <h3 class="h5 mb-3">
+                <a href="/sk/store/translation-bundle.html">Preklady</a>
+            </h3>
+            <p>Zmeňte všetky viditeľné prvky (štítky formulárov, hlavičky tabuliek, položky v menu ...) vo vašej Kimai inštalácií s vašimi prispôsobiteľnými prekladmi</p>
+            <!--p class="fs-lg fw-semibold text-primary mb-0">$12.50</p-->
+        </div>
+        <div class="px-4 pb-3">
+            
+                
+            
+                
+                    
+                        
+                        
+                        <span class="badge bg-warning zindex-2 me-2 text-capitalize">cloud</span>
+                    
+                
+            
+        </div>
+        <div class="card-footer d-flex align-items-center fs-sm text-muted py-4">
+            
+            <div class="d-flex align-items-center me-4 text-nowrap">
+            
+                <i class="bx bx-cart fs-xl me-1"></i>
+                29 €
+            
+            </div>
+            
+            <div class="d-flex align-items-center text-nowrap text-truncate">
+                <i class="bx bx-user fs-xl me-1"></i>
+                Kevin Papst
+            </div>
+        </div>
+    </article>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col">
+    <article class="card card-hover h-100 border-0 shadow-sm">
+        <a href="/sk/store/gbs-zip-projectrenderer-bundle.html" class="d-block position-absolute w-100 h-100 top-0 start-0" aria-label="Link to: ZipProjectRenderer (Exportovanie ZIP súborov s PDF ku každému projektu)"></a>
+        
+        <div class="card-body pb-1">
+            <h3 class="h5 mb-3">
+                <a href="/sk/store/gbs-zip-projectrenderer-bundle.html">ZipProjectRenderer (Exportovanie ZIP súborov s PDF ku každému projektu)</a>
+            </h3>
+            <p>Plugin ktorý exportuje jeden PDF súbor pre určitý projekt alebo pre viacej projektov.</p>
+            <!--p class="fs-lg fw-semibold text-primary mb-0">$12.50</p-->
+        </div>
+        <div class="px-4 pb-3">
+            
+                
+            
+        </div>
+        <div class="card-footer d-flex align-items-center fs-sm text-muted py-4">
+            
+            <div class="d-flex align-items-center me-4 text-nowrap">
+            
+                <i class="bx bx-gift fs-xl me-1"></i>
+                For free
+            
+            </div>
+            
+            <div class="d-flex align-items-center text-nowrap text-truncate">
+                <i class="bx bx-user fs-xl me-1"></i>
+                gbs-it
+            </div>
+        </div>
+    </article>
+</div>
+
+
+
+
+</div>
+
+        </article>
+    </section>
+
+</main>
+
+<section class="py-5 bg-secondary">
+    <div class="container py-md-3 py-lg-5">
+        <div class="row justify-content-center pt-2">
+            <div class="col-xl-8 col-lg-9 col-md-11">
+                <h2 class="h1 d-md-inline-block position-relative mb-md-5 mb-sm-4 text-sm-start text-center">
+                    Novinky
+                    <svg class="d-md-block d-none position-absolute top-0 ms-4 ps-1" style="left: 100%;" xmlns="http://www.w3.org/2000/svg" width="65" height="68" fill="#6366f1"><path d="M53.9527 51.0012c8.396-10.5668 2.0302-26.0134-11.7481-26.7511-.6899-.0646-1.4612.0015-2.1258.0431.1243 9.0462-4.1714 18.8896-11.5618 21.3814-6.6695 2.2133-10.3337-4.2224-7.5813-9.676 3.2966-6.4755 9.103-11.8504 16.1678-13.8189-.5654-5.6953-3.3436-10.7672-9.485-12.48517C17.2678 6.8204 6.49364 16.3681 4.98841 26.127c-.09276 1.0297-1.68569.9497-1.59293-.0801C3.98732 12.9139 19.7395 2.55212 31.9628 8.5787c4.7253 2.3813 7.2649 7.3963 7.9368 13.067 7.4237-.9311 14.5154 3.3683 18.3422 9.5422 4.3988 7.1623 2.3584 15.1401-2.6322 21.1108-.7826.9653-2.3331-.3572-1.6569-1.2975zM26.7754 32.1845c-1.9411 2.2411-4.076 5.0872-4.3542 8.1764-.3036 2.9829 3.7601 3.0525 5.4905 2.7645 2.1568-.3863 3.7221-2.3164 4.8863-4.0419 2.6228-3.6308 4.3657-9.0752 4.4844-14.2563-4.0808 1.279-7.6514 4.2327-10.507 7.3573zm24.6311 25.592c-.7061-2.9738-1.2243-6.1031-1.1591-9.143.0423-1.242 1.767-1.0805 1.8313.1372.1284 2.435.815 4.8532 1.4764 7.1651l4.1619-1.4098c1.0153-.4586 2.4373-1.5714 3.6544-1.1804.6087.1954.7347.7264.6475 1.3068-.2302 1.3976-2.4683 1.9147-3.5901 2.398-1.8429.7619-3.6293 1.2865-5.5477 1.7298-.6391.1476-1.3233-.3665-1.4746-1.0037z"/></svg>
+                </h2>
+
+                <div class="row gy-4 align-items-center pb-3">
+                    <p class="mb-0 text-sm-start text-center">
+                        Odoberajte naše novinky a zostaťe v obraze ohľadom Kimai a aktualizácií pluginov.
+                    </p>
+                </div>
+
+                <form class="mb-3 needs-validation" id="sib-form" method="POST" action="https://8e086265.sibforms.com/serve/MUIFAITbKufb1JAQqo2E52QD_HhFiUBBmQ0FmrruptD7Re6bsqQ_Yy7sqMBRW60My579lFtXWF029J18D1Lo5036KBE9Cvk1ZWaF7vEU0QJvXA6A8E0EjcjH1HRPpZvLcL8V_LdgAjXddUzHSyc8Fq7HPPRKZ1QPh1U2ZsjpWWFlJI-XvrTmTfovimFFe6r7EW8rPwEvmrdwAlGz">
+                    <div class="d-flex flex-sm-row flex-column mb-3">
+                        <div class="input-group me-sm-3 mb-sm-0">
+                            <input type="email" class="input form-control form-control-lg rounded-3 ps-5" placeholder="Váš e-mail" required id="EMAIL" name="EMAIL" autocomplete="off" data-required="true">
+                            <i class="bx bx-envelope position-absolute start-0 top-50 translate-middle-y ms-3 zindex-5 fs-5 text-muted"></i>
+                        </div>
+                        <button type="submit" class="btn btn-lg btn-primary">ODOBERAŤ *</button>
+                    </div>
+
+                    <input type="text" name="email_address_check" value="" aria-label="not required for humans" class="visually-hidden">
+                    <input type="hidden" name="locale" value="en">
+                    <input type="hidden" name="html_type" value="simple">
+                </form>
+                <div class="form-text fs-sm text-sm-start text-center">
+                    
+                    
+                    * Ako marketingovú platformu používame Sendinblue. Odoslaním tohoto formulára beriete na vedomie, že vami poskytnuté údaje budú predané spoločnosti Brevo k spracovaniu v súlade s jejich <a target="_blank" class="clickable_link" href="https://www.brevo.com/legal/termsofuse/">podmienky používania</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer bg-dark pt-5 pb-4">
+    <div class="container pt-1 pt-md-3 pt-lg-4 pt-xl-5">
+        <div class="row">
+            <div class="col-md-5 col-xl-4 mb-4 mb-md-5 mb-lg-0">
+                <div class="d-flex align-items-center pb-3 mb-1">
+                    <div class="navbar-brand text-white p-0 pe-1 me-0">
+                        Kimai
+                    </div>
+                    <hr class="vr mt-2 mx-3" style="height: 26px;">
+                    <div class="text-white fw-semibold ps-1">Sledovanie času urobené jednoduchým</div>
+                </div>
+                <p class="text-body fs-sm pb-1 pb-md-2 pb-lg-2 mb-2">
+                    Bezplatné a jednoduché sledovanie času pre freelancov, agentúry a firmy. Kimai je open source softvér dostupný na samohostovanie aj ako služba SaaS.
+                </p>
+                <div class="d-flex flex-column flex-sm-row flex-lg-column align-items-sm-center align-items-lg-start justify-content-between pb-1 pb-md-2 pb-lg-3 mb-3">
+                    <div class="position-relative">
+                        <div class="dropdown">
+                            <button type="button" class="form-select" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="bx bx-globe top-50 start-0 text-body me-2"></i>
+                                Slovenčina
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/ca/" class="dropdown-item" title="Kimai - Seguidor de temps de codi obert">Català</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/cs/" class="dropdown-item" title="Kimai - Open Source sledování času">Čeština</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/de/" class="dropdown-item" title="Kimai – Open-Source Zeiterfassung">Deutsch</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/en/" class="dropdown-item" title="Kimai - Open Source time-tracker">English</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/es/" class="dropdown-item" title="Kimai - Tracker de tiempo abierto">Español</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/fr/" class="dropdown-item" title="Kimai - Suivi du temps à code ouvert">Français</a>
+                                
+                                    <a dir="rtl" href="https://www.kimai.co.il" class="dropdown-item" title="Kimai - מעקב שעות בקוד פתוח">עברית</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/hr/" class="dropdown-item" title="Kimai – Program otvorenog koda za evidentiranje vremena">Hrvatski</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/it/" class="dropdown-item" title="Kimai: time-tracker open source">Italiano</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/nl/" class="dropdown-item" title="Kimai - Open Source tijdregistratie">Dutch</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/pl/" class="dropdown-item" title="Kimai - Otwarte oprogramowanie do śledzenia czasu">Polski</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/pt/" class="dropdown-item" title="Kimai - Rastreador de tempo de código aberto">Português</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/pt_BR/" class="dropdown-item" title="Kimai - Rastreador de tempo de código aberto">Português (Brasil)</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/ru/" class="dropdown-item" title="Kimai - регистратор времени с открытым исходным кодом">Русский</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/sk/" class="dropdown-item active" title="Kimai - Open Source sledovanie času">Slovenčina</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/sv/" class="dropdown-item" title="Kimai - öppen källkod tidsspårare">Svenska</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/ta/" class="dropdown-item" title="கிமாய் - திறந்த மூல நேர -கண்காணிப்பு">தமிழ்</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/uk/" class="dropdown-item" title="Kimai — реєстратор часу з відкритим сирцевим кодом">Українська</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/zh_Hans/" class="dropdown-item" title="Kimai - 开源时间跟踪器">中文（中国）</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.tw" class="dropdown-item" title="Kimai —— 開放源始碼的工時追蹤工具">中文（繁體）</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-md-7 offset-xl-1">
+                <div id="footer-links" class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div id="tools" class="collapse d-md-block" data-bs-parent="#footer-links">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a href="/sk/features.html" class="nav-link fs-sm fw-medium px-0 py-1">Funkcie</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/sk/stories/" class="nav-link fs-sm fw-medium px-0 py-1">Success Stories</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/sk/reviews" class="nav-link fs-sm fw-medium px-0 py-1">Reviews</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/sk/press-media" class="nav-link fs-sm fw-medium px-0 py-1">Press & Media</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/en/discount-codes" class="nav-link fs-sm fw-medium px-0 py-1">Discount codes</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/sk/newsletter" class="nav-link fs-sm fw-medium px-0 py-1">Newsletter</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div id="landing-kimai-for" class="collapse d-md-block" data-bs-parent="#footer-links">
+                            <ul class="nav flex-column">
+                                
+                                
+                                <li class="nav-item">
+                                    <a href="/en/agency-time-tracking" class="nav-link fs-sm fw-medium px-0 py-1" title="Agency">Agencies</a>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a href="/en/consultants-time-tracking" class="nav-link fs-sm fw-medium px-0 py-1" title="Consultants">Consultants</a>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a href="/en/freelancers-time-tracking" class="nav-link fs-sm fw-medium px-0 py-1" title="Freelancers">Freelancer</a>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a href="/en/software-developers-time-tracking" class="nav-link fs-sm fw-medium px-0 py-1" title="Software Developers">Software Developers</a>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a href="/en/non-profit" class="nav-link fs-sm fw-medium px-0 py-1">Non-Profits</a>
+                                </li>
+                                <li class="nav-item">
+                                    
+                                    <a href="/en/industry" class="nav-link fs-sm fw-medium px-0 py-1">More industries</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div id="footer-cmp" class="collapse d-md-block" data-bs-parent="#footer-links">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a href="/sk/alternatives/" class="nav-link fs-sm fw-medium px-0 py-1">Compare time tracker</a>
+                                </li>
+                                
+                                
+                                
+                                
+                                    <li class="nav-item">
+                                        <a href="/en/alternatives/clockify" class="nav-link fs-sm fw-medium px-0 py-1" title="Compare Kimai with Clockify">Clockify alternative</a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="/en/alternatives/clockodo" class="nav-link fs-sm fw-medium px-0 py-1" title="Compare Kimai with Clockodo">Clockodo alternative</a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="/en/alternatives/harvest" class="nav-link fs-sm fw-medium px-0 py-1" title="Compare Kimai with Harvest">Harvest alternative</a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="/en/alternatives/toggl" class="nav-link fs-sm fw-medium px-0 py-1" title="Compare Kimai with toggl track">toggl track alternative</a>
+                                    </li>
+                                
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="d-md-flex align-items-center justify-content-between pt-sm-2 pt-md-4 pt-lg-5 pb-2 mt-4 ">
+    <ul class="nav order-md-1 ms-md-0 mb-3 mb-md-0">
+        <li class="nav-item">
+            <a href="/sk/site-notice.html" class="nav-link fs-sm fw-medium">Upozornenia na stránkách</a>
+        </li>
+        <li class="nav-item">
+            <a href="/sk/privacy-policy.html" class="nav-link fs-sm fw-medium">Zásady ochrany osobných údajov</a>
+        </li>
+        <li class="nav-item">
+            <a href="/sk/terms-cloud.html" class="nav-link fs-sm fw-medium">Terms</a>
+        </li>
+    </ul>
+    <div class="nav order-md-2 mb-3 mb-md-0">
+        
+    <a target="_blank" href="https://github.com/kimai/kimai" class="btn btn-icon btn-secondary btn-github rounded-circle me-3" aria-label="GitHub">
+        <i class="bx bxl-github"></i>
+    </a>
+
+    <a target="_blank" href="https://www.youtube.com/@kimai_org" class="btn btn-icon btn-secondary btn-youtube rounded-circle me-3" aria-label="YouTube">
+        <i class="bx bxl-youtube"></i>
+    </a>
+
+    <a target="_blank" href="https://www.linkedin.com/company/kimai-org/" class="btn btn-icon btn-secondary btn-linkedin rounded-circle me-3" aria-label="LinkedIn">
+        <i class="bx bxl-linkedin"></i>
+    </a>
+
+    <a target="_blank" href="https://www.instagram.com/kimai_org" class="btn btn-icon btn-secondary btn-instagram rounded-circle me-3" aria-label="Instagram">
+        <i class="bx bxl-instagram"></i>
+    </a>
+
+    <a target="_blank" href="https://www.facebook.com/kimai.time.tracker" class="btn btn-icon btn-secondary btn-facebook rounded-circle me-3" aria-label="Facebook">
+        <i class="bx bxl-facebook"></i>
+    </a>
+
+    <a target="_blank" href="https://phpc.social/@kimai" class="btn btn-icon btn-secondary btn-messenger rounded-circle me-3" aria-label="Mastodon">
+        <i class="bx bxl-mastodon"></i>
+    </a>
+
+
+    </div>
+    <ul class="nav order-md-3">
+        <li class="nav-item">
+            <a href="https://status.kimai.org/" target="_blank" class="nav-link fs-sm fw-medium">Status</a>
+        </li>
+    </ul>
+    
+</div>
+
+    </div>
+</footer>
+
+
+
+<a href="#top" class="btn-scroll-top" data-scroll>
+    <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+    <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+</a>
+
+<script src="/assets/build/main.js?v1"></script>
+
+<script defer src="https://u.kimai.org/script.js" data-website-id="e26bef12-9527-43bc-83fd-660e237f3526"></script>
+
+</body>
+</html>

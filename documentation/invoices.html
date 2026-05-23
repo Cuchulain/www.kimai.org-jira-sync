@@ -1,0 +1,970 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#4188c9">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="robots" content="index,follow">
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.kimai.org/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.kimai.org/images/icon_32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.kimai.org/images/icon_16x16.png">
+<title>Invoices – Kimai</title>
+<meta name="description" content="Create invoices within Kimai in several file formats">
+<link type="application/atom+xml" rel="alternate" href="/en/feed.xml" title="Kimai Time-Tracking" />
+<meta property="og:locale" content="en">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Invoices">
+<meta property="og:image" content="https://www.kimai.org/images/social-preview.webp">
+<meta property="og:description" content="Create invoices within Kimai in several file formats">
+<link rel="canonical" href="https://www.kimai.org/documentation/invoices.html" />
+<link href="/assets/build/main.css?v8" rel="stylesheet" />
+
+</head>
+<body class="">
+
+
+
+
+
+
+
+
+
+
+
+<header class="header navbar navbar-expand bg-light border-bottom border-light shadow" data-scroll-header>
+    <div class="container-fluid pe-lg-4">
+        <div class="d-flex align-items-center">
+            <a href="/" class="navbar-brand flex-shrink-0 py-1 py-lg-2">
+                <img src="/images/apple-touch-icon.png" width="32" alt="Kimai logo" class="me-2">
+                Kimai Docs
+            </a>
+            <span class="badge bg-warning">User manual</span>
+        </div>
+        <div class="docs-header-nav d-flex align-items-center w-100" style="padding-left: 6.75rem;">
+            <ul class="docs-primary-nav navbar-nav d-none d-lg-flex">
+                
+                    
+                    
+                    <li class="nav-item">
+                        <a href="/documentation/chapter-manual.html" class="nav-link  active">
+                            <i class="bx bx-book opacity-70 fs-lg me-1"></i>
+                            User manual
+                        </a>
+                    </li>
+                
+                    
+                    
+                    <li class="nav-item">
+                        <a href="/documentation/cloud.html" class="nav-link ">
+                            <i class="bx bx-cloud opacity-70 fs-lg me-1"></i>
+                            Kimai-Cloud
+                        </a>
+                    </li>
+                
+                    
+                    
+                    <li class="nav-item">
+                        <a href="/documentation/chapter-on-premise.html" class="nav-link ">
+                            <i class="bx bx-server opacity-70 fs-lg me-1"></i>
+                            On-Premise
+                        </a>
+                    </li>
+                
+                    
+                    
+                    <li class="nav-item">
+                        <a href="/documentation/chapter-developer.html" class="nav-link ">
+                            <i class="bx bx-code-alt opacity-70 fs-lg me-1"></i>
+                            Developer
+                        </a>
+                    </li>
+                
+            </ul>
+            <div class="docs-toolbar d-none d-xl-flex" data-pagefind-ignore="all">
+                <div class="docs-search-panel" data-doc-search>
+                    <label class="form-label visually-hidden" for="documentation-search">Search documentation</label>
+                    <input
+                        id="documentation-search"
+                        class="form-control"
+                        type="search"
+                        autocomplete="off"
+                        spellcheck="false"
+                        placeholder="Search the documentation"
+                        aria-describedby="documentation-search-status"
+                        data-doc-search-input
+                    >
+                    <div
+                        id="documentation-search-results"
+                        class="docs-search-results card border-0 shadow-sm"
+                        role="listbox"
+                        aria-label="Documentation search results"
+                        data-doc-search-results
+                    ></div>
+                    <div id="documentation-search-status" class="visually-hidden" aria-live="polite" data-doc-search-status></div>
+                </div>
+            </div>
+            <button type="button" class="navbar-toggler d-block d-lg-none ms-auto me-4" data-bs-toggle="offcanvas" data-bs-target="#componentsNav" aria-controls="componentsNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<aside class="bg-dark">
+    <div id="componentsNav" class="offcanvas-lg offcanvas-start d-flex flex-column position-fixed top-0 start-0 vh-100 bg-dark border-end-lg" style="width: 19rem; z-index: 1045;">
+        <div class="offcanvas-header d-none d-lg-flex justify-content-start">
+            <a href="/" class="navbar-brand d-none d-lg-flex py-0">
+                <img src="/images/apple-touch-icon.png" width="26" alt="Kimai logo" class="me-3">
+                Kimai Docs
+            </a>
+        </div>
+        <div class="offcanvas-header d-block d-lg-none border-bottom">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+                <h5 class="d-lg-none mb-0">Menu</h5>
+                <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas" data-bs-target="#componentsNav" aria-label="Close"></button>
+            </div>
+            <div class="list-group list-group-flush mx-n4">
+                
+                    
+                    
+                    <a href="/documentation/chapter-manual.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-1 px-4">
+                        <i class="bx bx-book opacity-70 me-1"></i>
+                        User manual
+                    </a>
+                
+                    
+                    
+                    <a href="/documentation/cloud.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-1 px-4">
+                        <i class="bx bx-cloud opacity-70 me-1"></i>
+                        Kimai-Cloud
+                    </a>
+                
+                    
+                    
+                    <a href="/documentation/chapter-on-premise.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-1 px-4">
+                        <i class="bx bx-server opacity-70 me-1"></i>
+                        On-Premise
+                    </a>
+                
+                    
+                    
+                    <a href="/documentation/chapter-developer.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-1 px-4">
+                        <i class="bx bx-code-alt opacity-70 me-1"></i>
+                        Developer
+                    </a>
+                
+            </div>
+        </div>
+        <div class="offcanvas-body overflow-scroll w-100 p-4">
+            <div class="h-auto docsnavi">
+                
+                    
+                    
+                    
+                    
+                    <p class="fs-lg mb-1 text-white fw-bold">User Guide</p>
+                    <div class="list-group list-group-flush mb-4 me-n4 border-start">
+                        
+                        
+                        
+                        
+                        <a href="/documentation/timesheet.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-timesheet">
+                            
+                            Timesheet
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/weekly-times.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-weekly-times">
+                            
+                            Weekly hours
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/calendar.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-calendar">
+                            
+                            Calendar
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/invoices.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2  active" id="docnavi-invoices">
+                            
+                            Invoices
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/export.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-export">
+                            
+                            Export
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/reporting.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-reporting">
+                            
+                            Reporting
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/customer.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-customer">
+                            
+                            Customer
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/project.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-project">
+                            
+                            Projects
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/activity.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-activity">
+                            
+                            Activities
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/tags.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-tags">
+                            
+                            Tags
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/users.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-users">
+                            
+                            Users
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/user-preferences.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-user-preferences">
+                            
+                            User preferences
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/permissions.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-permissions">
+                            
+                            Roles & Permissions
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/teams.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-teams">
+                            
+                            Teams
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/configurations.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-configurations">
+                            
+                            Settings
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/doctor.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-doctor">
+                            
+                            Doctor
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/contract.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-contract">
+                            
+                            Working times
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/public-holiday.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-public-holiday">
+                            
+                            Public holiday
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/absence.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-absence">
+                            
+                            Absence
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/dashboard.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-dashboard">
+                            
+                            Dashboard
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-custom-fields.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-custom-fields">
+                            
+                            Custom fields
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-expenses.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-expenses">
+                            
+                            Expenses
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-task-management.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-task-management">
+                            
+                            Tasks
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-custom-css.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-custom-css">
+                            
+                            Custom CSS
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-custom-content.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-custom-content">
+                            
+                            Custom content
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-translation.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-translation">
+                            
+                            Translation
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-invoice.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-invoice">
+                            
+                            Invoice+
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-import.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-import">
+                            
+                            Importer
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-audit-trail.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-audit-trail">
+                            
+                            Audit logs
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-kiosk.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-kiosk">
+                            
+                            Kiosk mode
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugin-customer-portal.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-customer-portal">
+                            
+                            Customer Portal
+                            
+                        </a>
+                        
+                        
+                    </div>
+                    
+                    
+                    
+                    <p class="fs-lg mb-1 text-white fw-bold">Advanced Topics</p>
+                    <div class="list-group list-group-flush mb-4 me-n4 border-start">
+                        
+                        
+                        
+                        
+                        <a href="/documentation/initial-setup.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-initial-setup">
+                            
+                            Initial setup
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/rates.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-rates">
+                            
+                            Prices (rates)
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/rounding.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-rounding">
+                            
+                            Rounding
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/billable.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-billable">
+                            
+                            Billable
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/invoice-templates.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-invoice-templates">
+                            
+                            Invoice templates
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/pdf-templates.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-pdf-templates">
+                            
+                            PDF templates
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/keyboard-shortcuts.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-keyboard-shortcuts">
+                            
+                            Keyboard shortcuts
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/i18n-am-pm.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-i18n-am-pm">
+                            
+                            Date and Time formats
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/duration-format.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-duration-format">
+                            
+                            Duration format
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/homescreen.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-homescreen">
+                            
+                            Use Kimai as app
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/user-api.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-user-api">
+                            
+                            Connecting via API
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/markdown.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-markdown">
+                            
+                            Markdown
+                            
+                        </a>
+                        
+                        
+                    </div>
+                    
+                    <div class="list-group list-group-flush pb-3 mb-4 mx-n4">
+                
+                    <a href="/en/" class="list-group-item list-group-item-action border-0 py-1 fs-sm px-4">Kimai Home</a>
+                    <a href="/en/site-notice.html" class="list-group-item list-group-item-action border-0 py-1 fs-sm px-4">Site notice</a>
+                    <a href="/en/privacy-policy.html" class="list-group-item list-group-item-action border-0 py-1 fs-sm px-4">Privacy policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        const dpm = document.getElementById('docnavi-invoices');
+        if (dpm !== null) {
+            dpm.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+        }
+    });
+</script>
+<main class="docs-container">
+    <div class="container-fluid px-xxl-3 px-lg-2 pt-4 pt-lg-5 pb-2 pb-lg-4">
+        <div class="docs-layout">
+            <div class="docs-article" data-pagefind-body>
+                <div class="d-sm-flex align-items-end justify-content-between ps-lg-2 ps-xxl-0 mt-2 mt-lg-0 mb-n3 gap-4">
+                    <div class="me-4">
+                        <h1 class="pb-1" data-pagefind-meta="title" data-pagefind-weight="10.0">Invoices</h1>
+                        
+                        <p class="text-muted fs-lg mb-2" data-pagefind-meta="description">Create invoices within Kimai in several file formats</p>
+                        
+                    </div>
+                    <div class="d-none d-lg-flex">
+                    
+
+
+
+
+    <div class="dropdown">
+        <a class="btn btn-outline-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Older versions
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+            
+            <a class="dropdown-item" href="/documentation/1.8/invoices.html">Kimai 1.8</a>
+            
+            <a class="dropdown-item" href="/documentation/1.15/invoices.html">Kimai 1.15</a>
+            
+            <a class="dropdown-item" href="/documentation/1.14/invoices.html">Kimai 1.14</a>
+            
+            
+            <a class="dropdown-item" href="/documentation/invoices.html">2.57.0 (latest version)</a>
+        </div>
+    </div>
+
+
+                    </div>
+                </div>
+
+                <div class="markdown py-5 ps-lg-2 ps-xxl-0">
+                    <div>
+                        
+                        <div id="documentation-content">
+                            <p>Kimai allows creating invoices from timesheet data in several formats.</p>
+
+<div class="youtube-wrapper" style="max-width: 560px;">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/wrXqR4uhN-Q" title="Your first Kimai invoice" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+<h2 id="export-flag">Export flag</h2>
+
+<p>Invoices and exports share the <code class="language-plaintext highlighter-rouge">export</code> flag, which is used to mark timesheet records as processed.
+These records cannot be edited any longer by regular users and are excluded by default from further invoices and exports.</p>
+
+<p>For further information, read the <a href="/documentation/timesheet.html">timesheet documentation</a>.</p>
+
+<h2 id="billable-items-only">Billable items only</h2>
+
+<p>Only billable items will be included in invoices.</p>
+
+<p>By default, every timesheet record is billable, but users can set the billable flag on individual timesheets.</p>
+
+<p><a href="/en/store/expenses-bundle.html">Expense items</a> have a configurable billable flag per item and only the ones marked as billable (refundable) will be included.</p>
+
+<h2 id="invoice-templates">Invoice templates</h2>
+
+<p>You need an invoice template to create an invoice. 
+The invoice template is a set of attributes, that defines the invoice settings, like sending company and tax rate.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Name</code> - Internal name to identify the template</li>
+  <li><code class="language-plaintext highlighter-rouge">Title</code> - UTitle of the rendered invoice (usually something like “Invoice”)</li>
+  <li><code class="language-plaintext highlighter-rouge">Invoice issuer</code> - Data for the “invoice sender” is pulled from this company: you need to <a href="/documentation/customer.html">create a customer</a> for your own company and configure all attributes like <code class="language-plaintext highlighter-rouge">Company name</code>, <code class="language-plaintext highlighter-rouge">Vat ID</code> and <code class="language-plaintext highlighter-rouge">address</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Terms of payment</code> - Free text field to clarify payment details</li>
+  <li><code class="language-plaintext highlighter-rouge">Contact</code> - Free text field to store contact details</li>
+  <li><code class="language-plaintext highlighter-rouge">Bank account</code> - Human readable payment details (like bank name and account number)</li>
+  <li><code class="language-plaintext highlighter-rouge">Tax rate</code> - Tax rate of this invoice</li>
+  <li><code class="language-plaintext highlighter-rouge">Payment term in days</code> - Duration until this invoice needs to be paid in (in days)</li>
+  <li><code class="language-plaintext highlighter-rouge">Language</code> - Language for translations (only works in PDF and HTML invoices)</li>
+  <li><code class="language-plaintext highlighter-rouge">Invoicenumber-Generator</code> - Which logic to use when generating the invoice number</li>
+  <li><code class="language-plaintext highlighter-rouge">Invoice template</code> - The renderer of the invoice (default or custom template)</li>
+  <li><code class="language-plaintext highlighter-rouge">Grouping of invoice lines</code> - How invoice items are grouped</li>
+  <li><code class="language-plaintext highlighter-rouge">E-Invoicing</code> - Read the <a href="/documentation/plugin-invoice.html">Invoice+ plugin</a> docs (OnPremise customer need to <a href="/en/store/invoice-bundle.html">purchase the plugin</a>)</li>
+</ul>
+
+<p>Further information are available:</p>
+
+<ul>
+  <li>Read how to <a href="/documentation/invoice-templates.html">create your own invoice template</a></li>
+  <li>The community shares re-usable invoices templates at <a href="https://github.com/kimai/invoice-templates">https://github.com/kimai/invoice-templates</a></li>
+  <li>Due to security restrictions, you can only upload the formats <code class="language-plaintext highlighter-rouge">DOCX</code>, <code class="language-plaintext highlighter-rouge">ODS</code>, <code class="language-plaintext highlighter-rouge">XLSX</code></li>
+  <li>Cloud customers <a href="/documentation/cloud-invoice-templates.html">need to send customer Twig templates</a> to the support</li>
+</ul>
+
+<h2 id="invoice-state">Invoice state</h2>
+
+<p>Invoices can have multiple states:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">New</code> invoices were just created</li>
+  <li><code class="language-plaintext highlighter-rouge">Waiting for payment</code> means the invoice was sent to the customer</li>
+  <li><code class="language-plaintext highlighter-rouge">Invoice paid</code> flags the invoice for its final state (you have to choose a payment date)</li>
+  <li><code class="language-plaintext highlighter-rouge">Canceled</code> invoices were accidentally created or required changes after creation</li>
+</ul>
+
+<h3 id="cancel-invoices">Cancel invoices</h3>
+
+<p>It is important to understand, that Kimai does not keep track of the items that were included in an invoice.</p>
+
+<p>By canceling an invoice, you do <strong>not</strong> reset the <code class="language-plaintext highlighter-rouge">export</code> state of the timesheets,
+but have to filter for already exported records if you want to re-create the invoice with the same timesheets.</p>
+
+<p>Canceled invoices stay in the system and the invoice number will be kept for bookkeeping.</p>
+
+<h3 id="deleting-invoices">Deleting invoices</h3>
+
+<p>Invoices should not be deleted, because this can cause problems in Kimai (depending on your invoice number format).</p>
+
+<p>You should instead “cancel” invalid invoices. Some users fear legal issues if they don’t have consecutive invoice numbers, 
+but this is often not a legal requirement (please clarify with your accountant).</p>
+
+<p>If you still insist on deleting invoices, do <strong>not</strong> delete them if you already created invoices afterward.
+This will cause troubles with your invoice counter, as Kimai is calculating invoice numbers from the number of entries in the database.
+By deleting invoices, you lower the number of invoices in the database, and the next invoice number might be one that was already used.</p>
+
+<p>Invoice deletion is therefor disabled by default, but you can activate it with the <code class="language-plaintext highlighter-rouge">delete_invoice</code> <a href="/documentation/permissions.html">permissions</a>.</p>
+
+<h2 id="invoice-number-format">Invoice number format</h2>
+
+<p>You can mix arbitrary characters and the allowed replacer from the list below.
+All examples represent the date <code class="language-plaintext highlighter-rouge">2019-07-09</code> (2019, July 9th):</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">{date}</code>      - shortcut for <code class="language-plaintext highlighter-rouge">ymd</code>. Example: <code class="language-plaintext highlighter-rouge">190709</code> (default format before Kimai 1.9)</li>
+  <li><code class="language-plaintext highlighter-rouge">{cname}</code>     - the customer name</li>
+  <li><code class="language-plaintext highlighter-rouge">{cnumber}</code>   - the customer number</li>
+  <li><code class="language-plaintext highlighter-rouge">{c}</code>         - counter for invoices of all times, starting at 1</li>
+  <li><code class="language-plaintext highlighter-rouge">{cy}</code>        - counter for invoices this year, starting at 1</li>
+  <li><code class="language-plaintext highlighter-rouge">{cm}</code>        - counter for invoices this month, starting at 1</li>
+  <li><code class="language-plaintext highlighter-rouge">{cd}</code>        - counter for invoices this day, starting at 1</li>
+  <li><code class="language-plaintext highlighter-rouge">{Y}</code>         - full numeric representation of a year (4 digits). Example: <code class="language-plaintext highlighter-rouge">2019</code></li>
+  <li><code class="language-plaintext highlighter-rouge">{y}</code>         - two digit representation of a year. Example: <code class="language-plaintext highlighter-rouge">19</code></li>
+  <li><code class="language-plaintext highlighter-rouge">{M}</code>         - numeric representation of a month, with leading zeros. Example: <code class="language-plaintext highlighter-rouge">07</code></li>
+  <li><code class="language-plaintext highlighter-rouge">{m}</code>         - numeric representation of a month, without leading zeros. Example: <code class="language-plaintext highlighter-rouge">7</code></li>
+  <li><code class="language-plaintext highlighter-rouge">{D}</code>         - day of the month, 2 digits with leading zeros. Example: <code class="language-plaintext highlighter-rouge">09</code></li>
+  <li><code class="language-plaintext highlighter-rouge">{d}</code>         - day of the month without leading zeros. Example: <code class="language-plaintext highlighter-rouge">9</code></li>
+  <li><code class="language-plaintext highlighter-rouge">{YY}</code>        - full numeric representation of a year (4 digits), to be used with decrement/increment (default increment = 1). Example: <code class="language-plaintext highlighter-rouge">2020</code></li>
+  <li><code class="language-plaintext highlighter-rouge">{MM}</code>        - numeric representation of a month, to be used with decrement/increment (default increment = 1). Example: <code class="language-plaintext highlighter-rouge">10</code></li>
+  <li><code class="language-plaintext highlighter-rouge">{DD}</code>        - day of the month, to be used with decrement/increment (default increment = 1). Example: <code class="language-plaintext highlighter-rouge">24</code></li>
+  <li><code class="language-plaintext highlighter-rouge">{cc}</code>        - per customer invoice counter for all times, starting at 1</li>
+  <li><code class="language-plaintext highlighter-rouge">{ccy}</code>       - per customer invoice counter for this year, starting at 1</li>
+  <li><code class="language-plaintext highlighter-rouge">{ccm}</code>       - per customer invoice counter for this month, starting at 1</li>
+  <li><code class="language-plaintext highlighter-rouge">{ccd}</code>       - per customer invoice counter for this day, starting at 1</li>
+  <li><code class="language-plaintext highlighter-rouge">{cu}</code>        - per user (the one creating the invoice) invoice counter for all times, starting at 1</li>
+  <li><code class="language-plaintext highlighter-rouge">{cuy}</code>       - per user (the one creating the invoice) invoice counter for this year, starting at 1</li>
+  <li><code class="language-plaintext highlighter-rouge">{cum}</code>       - per user (the one creating the invoice) invoice counter for this month, starting at 1</li>
+  <li><code class="language-plaintext highlighter-rouge">{cud}</code>       - per user (the one creating the invoice) invoice counter for this day, starting at 1</li>
+  <li><code class="language-plaintext highlighter-rouge">{ustaff}</code>    - the user (the one creating the invoice) staff number, empty if not configured</li>
+  <li><code class="language-plaintext highlighter-rouge">{uid}</code>       - the internal user (the one creating the invoice) ID</li>
+</ul>
+
+<p>Each replacer (x) can be combined with a length formatter, which will prepend (X) leading zeros, eg. <code class="language-plaintext highlighter-rouge">{x,X}</code>.
+Example: to get a three digit long string with year counter use <code class="language-plaintext highlighter-rouge">{cy,3}</code>, which results in <code class="language-plaintext highlighter-rouge">001</code> for the first invoice of the year.</p>
+
+<div class="alert alert-warning d-flex" role="alert"><i class="bx bx-alarm-exclamation lead me-3"></i>
+<ol>
+  <li>Characters outside the replacer <strong>cannot</strong> include <code class="language-plaintext highlighter-rouge">{</code> and <code class="language-plaintext highlighter-rouge">}</code>.</li>
+  <li>The invoice number is unique in Kimai, and you cannot generate an invoice with the same invoice number twice. Kimai will try to avoid that automatically by incrementing the counter, but if that is impossible, you’ll see an error message.</li>
+  <li>You can change the format at <a href="/documentation/configurations.html">System → Settings</a>.</li>
+</ol>
+
+</div>
+
+<h3 id="increment-counter">Increment counter</h3>
+
+<p>It is possible to increment the counter by adding a number to the result.
+For evaluated counters, Kimai takes the number of found invoices and adds 1, but you can replace <code class="language-plaintext highlighter-rouge">+1</code> with an addition like <code class="language-plaintext highlighter-rouge">+3</code>.
+This works for the following replacer: <code class="language-plaintext highlighter-rouge">{c}</code> and <code class="language-plaintext highlighter-rouge">{cy}</code> and <code class="language-plaintext highlighter-rouge">{cm}</code> and <code class="language-plaintext highlighter-rouge">{cd}</code> and <code class="language-plaintext highlighter-rouge">{cc}</code> and <code class="language-plaintext highlighter-rouge">{ccy}</code> and <code class="language-plaintext highlighter-rouge">{ccm}</code> and <code class="language-plaintext highlighter-rouge">{ccd}</code>.</p>
+
+<p>Simply use the plus (<code class="language-plaintext highlighter-rouge">+</code>) after the replacer, eg. <code class="language-plaintext highlighter-rouge">{cy+72}</code>. This also works in combination with the length formatter, eg.: <code class="language-plaintext highlighter-rouge">{cy+72,3}</code></p>
+
+<h3 id="decrement-counter">Decrement counter</h3>
+
+<p>You can decrement the counter subtracting a number from the result.
+For evaluated counters, Kimai takes the number of found invoices and adds <code class="language-plaintext highlighter-rouge">+1</code>, but you can replace <code class="language-plaintext highlighter-rouge">+1</code> with a subtraction like <code class="language-plaintext highlighter-rouge">-12</code>.
+This works for the following replacer: <code class="language-plaintext highlighter-rouge">{c}</code> and <code class="language-plaintext highlighter-rouge">{cy}</code> and <code class="language-plaintext highlighter-rouge">{cm}</code> and <code class="language-plaintext highlighter-rouge">{cd}</code> and <code class="language-plaintext highlighter-rouge">{cc}</code> and <code class="language-plaintext highlighter-rouge">{ccy}</code> and <code class="language-plaintext highlighter-rouge">{ccm}</code> and <code class="language-plaintext highlighter-rouge">{ccd}</code>.</p>
+
+<p>Simply use the minus (<code class="language-plaintext highlighter-rouge">-</code>) after the replacer, eg. <code class="language-plaintext highlighter-rouge">{cy-72}</code>. This also works in combination with the length formatter, eg.: <code class="language-plaintext highlighter-rouge">{cy-72,3}</code></p>
+
+<h3 id="examples">Examples</h3>
+
+<p>Assume you already wrote 72 invoices this year (before you started to use Kimai), and your counter is an incrementing number
+per year, which is prefixed with the four-digit year:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">{Y}/{cy+73,3}</code> would result in <code class="language-plaintext highlighter-rouge">2020/073</code> for your first invoice</li>
+</ul>
+
+<p>Assume that you want to change your invoice numbering and reset it to zero, you already wrote 72 invoices this year, and your counter is an incrementing number per year that should be prefixed with the four digit year:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">{Y}/{cy-72,3}</code> would result in <code class="language-plaintext highlighter-rouge">2020/001</code> for your first invoice</li>
+</ul>
+
+<h2 id="invoice-archive">Invoice archive</h2>
+
+<p>All invoices will be stored in the <code class="language-plaintext highlighter-rouge">Invoice history</code> listing page.</p>
+
+<p>The search supports filtering by the fields:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">creation date</code></li>
+  <li><code class="language-plaintext highlighter-rouge">customer</code></li>
+  <li><code class="language-plaintext highlighter-rouge">state</code></li>
+</ul>
+
+<p>Besides these filters, you can query for a free search term, which will be searched in the fields:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">comment</code></li>
+  <li><code class="language-plaintext highlighter-rouge">customer name</code></li>
+  <li><code class="language-plaintext highlighter-rouge">customer company</code></li>
+</ul>
+
+<p>Additionally, you can filter for <a href="/documentation/plugin-custom-fields.html">custom fields</a> by using a search phrase like <code class="language-plaintext highlighter-rouge">location:homeoffice</code>.
+This would find all entries with the custom field <code class="language-plaintext highlighter-rouge">location</code> matching the term <code class="language-plaintext highlighter-rouge">homeoffice</code>.</p>
+
+<p>The search terms will be found within the full value, so searching for <code class="language-plaintext highlighter-rouge">office</code> would find:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">I love working in my office</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Office</code></li>
+  <li><code class="language-plaintext highlighter-rouge">This office is beautiful</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Our offices are very noisy</code></li>
+</ul>
+
+<p>Attention: checkboxes have the values <code class="language-plaintext highlighter-rouge">0</code> (not checked) and <code class="language-plaintext highlighter-rouge">1</code> (checked).</p>
+
+<p>You can mix the search term and use multiple meta-field queries:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">location:homeoffice hello</code> - find all entries matching the search term <code class="language-plaintext highlighter-rouge">hello</code> with the custom field <code class="language-plaintext highlighter-rouge">location</code> matching the term <code class="language-plaintext highlighter-rouge">homeoffice</code></li>
+  <li><code class="language-plaintext highlighter-rouge">location:homeoffice contract:fulltime</code> - find all entries with the custom field combination: <code class="language-plaintext highlighter-rouge">location</code> matching <code class="language-plaintext highlighter-rouge">homeoffice</code> and <code class="language-plaintext highlighter-rouge">contract</code> matching <code class="language-plaintext highlighter-rouge">fulltime</code></li>
+  <li><code class="language-plaintext highlighter-rouge">expired:0</code> finds all items whose <code class="language-plaintext highlighter-rouge">expired</code> checkbox is <code class="language-plaintext highlighter-rouge">off</code></li>
+</ul>
+
+<p>There are also special operators, which can be used in conjunction with custom fields:</p>
+
+<ul>
+  <li>The <code class="language-plaintext highlighter-rouge"> </code> empty string (e.g. <code class="language-plaintext highlighter-rouge">location:</code>) will find all entries whose value in the <code class="language-plaintext highlighter-rouge">location</code> field is either empty or not existing</li>
+  <li>The <code class="language-plaintext highlighter-rouge">~</code> search term (e.g. <code class="language-plaintext highlighter-rouge">location:~</code>) will find all entries that are missing the custom field (created before the field was created)</li>
+  <li>The <code class="language-plaintext highlighter-rouge">*</code> search term (e.g. <code class="language-plaintext highlighter-rouge">location:*</code>) will find all entries that have any value in the <code class="language-plaintext highlighter-rouge">location</code> field (basically the opposite of <code class="language-plaintext highlighter-rouge">~</code>)</li>
+</ul>
+
+<h2 id="permissions">Permissions</h2>
+
+<table class="table permissions">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">create_invoice</code></td>
+      <td>Create a new invoice</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">delete_invoice</code></td>
+      <td>Allows to delete invoices (please read docs why you shouldn’t)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">manage_invoice_template</code></td>
+      <td>Administrate invoice templates</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">upload_invoice_template</code></td>
+      <td>Allows to upload custom invoice templates</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">view_invoice</code></td>
+      <td>Gives access to the invoice history and allows to download existing invoices</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="alert alert-info d-flex" role="alert"><i class="bx bx-message-rounded-detail lead me-3"></i>
+<p>Read how to assign these permissions to your user roles in the <a href="/documentation/permissions.html">permission documentation</a>.</p>
+</div>
+
+
+                        </div>
+                        
+
+                        
+                        <div data-pagefind-ignore="all">
+                            <h2 id="related-articles" class="fs-4 mt-5">Related articles</h2>
+                            <ul>
+                                
+                                
+                                <li>
+                                    <a href="/documentation/invoice-templates.html">Invoice templates</a> &ndash; Creating custom invoice templates for
+                                </li>
+                                
+                                
+                                <li>
+                                    <a href="/documentation/plugin-invoice.html">Invoice+</a> &ndash; Enhanced invoice features
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            
+                <aside class="side-nav side-nav-end d-none d-xxl-block docs-toc pe-0">
+                    <h3 class="fs-lg mt-2">Jump to</h3>
+                    <ul class="nav" id="jumpToNav"><li class="nav-item"><a href="#export-flag" class="nav-link">Export flag</a></li><li class="nav-item"><a href="#billable-items-only" class="nav-link">Billable items only</a></li><li class="nav-item"><a href="#invoice-templates" class="nav-link">Invoice templates</a></li><li class="nav-item"><a href="#invoice-state" class="nav-link">Invoice state</a><ul><li class="nav-item"><a href="#cancel-invoices" class="nav-link">Cancel invoices</a></li><li class="nav-item"><a href="#deleting-invoices" class="nav-link">Deleting invoices</a></li></ul></li><li class="nav-item"><a href="#invoice-number-format" class="nav-link">Invoice number format</a><ul><li class="nav-item"><a href="#increment-counter" class="nav-link">Increment counter</a></li><li class="nav-item"><a href="#decrement-counter" class="nav-link">Decrement counter</a></li><li class="nav-item"><a href="#examples" class="nav-link">Examples</a></li></ul></li><li class="nav-item"><a href="#invoice-archive" class="nav-link">Invoice archive</a></li><li class="nav-item"><a href="#permissions" class="nav-link">Permissions</a></li></ul>
+                    
+                    <ul class="nav">
+                        <li>
+                            <a href="#related-articles" class="nav-link">Related articles</a>
+                        </li>
+                    </ul>
+                    
+                </aside>
+            
+        </div>
+    </div>
+</main>
+<script type="module" src="/assets/js/documentation-search.js?v1"></script>
+
+
+<a href="#top" class="btn-scroll-top" data-scroll>
+    <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+    <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+</a>
+
+<script src="/assets/build/main.js?v1"></script>
+
+<script defer src="https://u.kimai.org/script.js" data-website-id="e26bef12-9527-43bc-83fd-660e237f3526"></script>
+
+</body>
+</html>

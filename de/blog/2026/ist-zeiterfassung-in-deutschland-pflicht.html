@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#4188c9">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="robots" content="index,follow">
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.kimai.org/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.kimai.org/images/icon_32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.kimai.org/images/icon_16x16.png">
+<title>Ist Zeiterfassung in Deutschland Pflicht? – Kimai</title>
+<link type="application/atom+xml" rel="alternate" href="/de/feed.xml" title="Kimai Time-Tracking" />
+<meta property="og:locale" content="de">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ist Zeiterfassung in Deutschland Pflicht?">
+<meta property="og:image" content="https://www.kimai.org/images/blog/de/zeiterfassung-ist-pflicht.webp">
+<meta property="og:description" content="">
+<link rel="alternate" hreflang="en" href="https://www.kimai.org/en/blog/2026/ist-zeiterfassung-in-deutschland-pflicht">
+<link rel="alternate" hreflang="de" href="https://www.kimai.org/de/blog/2026/ist-zeiterfassung-in-deutschland-pflicht">
+<link href="/assets/build/main.css?v8" rel="stylesheet" />
+
+</head>
+<body class="">
+
+<main class="page-wrapper">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="header navbar navbar-expand-lg    bg-light navbar-sticky">
+    <div class="container px-3">
+        <a href="/de/" class="navbar-brand pe-3">
+        <img src="/images/kimai_logo_48.webp" style="height:36px;width:36px;" alt="Kimai – Open-Source Zeiterfassung"> Kimai
+        </a>
+        <div id="navbarNav" class="offcanvas offcanvas-end">
+            <div class="offcanvas-header border-bottom">
+                <h5 class="offcanvas-title">Menu</h5>
+                <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-current="page">Produkt</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/de/about.html" class="dropdown-item">Über Kimai</a></li>
+                            <li><a href="/de/open-source-community" class="dropdown-item">Open Source</a></li>
+                            <li class="dropdown-divider"></li>
+                            <li><a href="/de/integrations" class="dropdown-item">Apps und Integrationen</a></li>
+                            <li><a href="/de/demo.html" class="dropdown-item">Demo</a></li>
+                            <li class="dropdown-divider"></li>
+                            <li><a href="/de/blog/" class="dropdown-item">Blog</a></li>
+                            <li><a href="/de/support.html" class="dropdown-item">Support</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-current="page">Cloud</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/de/pricing" class="dropdown-item">Preise</a></li>
+                            <li><a href="/de/changelog" class="dropdown-item">Änderungen</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-current="page">Selber hosten</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/de/download.html" class="dropdown-item">Installation</a></li>
+                            <li><a href="/de/store/" class="dropdown-item">Plugins</a></li>
+                            <li><a href="https://github.com/kimai/kimai/discussions" target="_blank" class="dropdown-item">Forum <i class="bx bx-link-external me-2"></i></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-current="page">Dokumentation</a>
+                        <ul class="dropdown-menu">
+                        
+                            
+                            
+                            <li><a href="https://www.kimai.org/documentation/chapter-manual.html" class="dropdown-item">
+                                <i class="bx bx-book me-2"></i>
+                                
+                                Benutzerhandbuch
+                            </a></li>
+                        
+                            
+                            
+                            <li><a href="https://www.kimai.org/documentation/cloud.html" class="dropdown-item">
+                                <i class="bx bx-cloud me-2"></i>
+                                
+                                Cloud
+                            </a></li>
+                        
+                            
+                            
+                            <li><a href="https://www.kimai.org/documentation/chapter-on-premise.html" class="dropdown-item">
+                                <i class="bx bx-server me-2"></i>
+                                
+                                Selber hosten
+                            </a></li>
+                        
+                            
+                            
+                            <li><a href="https://www.kimai.org/documentation/chapter-developer.html" class="dropdown-item">
+                                <i class="bx bx-code-alt me-2"></i>
+                                
+                                Entwickler
+                            </a></li>
+                        
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="pe-lg-1 ms-auto me-2">
+            
+
+
+
+<a href="https://www.kimai.cloud/de/auth/" class="btn btn-sm fs-sm d-none d-md-inline-flex me-2 btn-outline-secondary">Anmelden</a>
+
+            <a href="https://www.kimai.cloud/de/auth/registrierung" class="btn btn-success btn-sm fs-sm d-inline-flex">Kostenlos starten</a>
+
+        </div>
+        <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</header>
+
+
+    
+
+<section class="container mt-4 pt-lg-2 pb-3">
+    <h1 class="pb-3" style="max-width: 970px;">Ist Zeiterfassung in Deutschland Pflicht?</h1>
+    <div class="d-flex flex-md-row flex-column align-items-md-center justify-content-md-between mb-3">
+        <div class="d-flex align-items-center flex-wrap text-muted mb-md-0 mb-4">
+            <div class="fs-xs border-end pe-3 me-3 mb-2">
+                
+                    
+                    <span class="badge bg-faded-primary text-primary fs-base">General</span>
+                
+            </div>
+            <div class="fs-sm pe-3 me-3 mb-2">13 May 2026</div>
+        </div>
+        <div class="d-flex align-items-center position-relative ps-md-3 pe-lg-5 mb-2">
+            <img src="/images/valentina.webp" class="rounded-circle" width="60" alt="Avatar">
+            <div class="ps-3">
+                <h6 class="mb-1">Valentina</h6>
+                
+                <a href="https://www.linkedin.com/in/ivalentina/" target="_blank" rel="author" class="fw-semibold stretched-link">@ivalentina</a>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="container mb-5 pb-2 py-mg-4">
+    <div class="row gy-4">
+        <div class="col-lg-9">
+            <p>Wer nach „Zeiterfassungspflicht Deutschland” sucht, findet jede Menge widersprüchliche Informationen. 
+Manche Quellen sagen, ein neues Gesetz sei noch in Arbeit. 
+Andere behaupten, die Pflicht bestehe bereits. 
+Beides stimmt, und genau deshalb sind so viele Arbeitgeber irritiert, was sie jetzt konkret tun müssen.</p>
+
+<p>Heute versuchen wir Klarheit in die Angelegenheit zu bringen (auch wenn wir keine Rechtsberatung geben können). 
+Wir erläutern die rechtlichen Grundlagen, die bereits heute gelten, was sich durch die gesetzlichen Neuerungen 2026 ändert (und was nicht) – und was in der Praxis passiert, wenn ein Unternehmen die Pflichten nicht erfüllt.</p>
+
+<h2 id="welche-gesetze-verpflichten-arbeitgeber-zur-zeiterfassung-in-deutschland">Welche Gesetze verpflichten Arbeitgeber zur Zeiterfassung in Deutschland?</h2>
+
+<p>Müssen Arbeitgeber in Deutschland Arbeitszeiten erfassen? 
+Kurze Antwort: Ja. 
+Die Pflicht ergibt sich aus drei sich überschneidenden Quellen, die zusammen keinen echten Zweifel lassen. Hier eine Übersicht:</p>
+
+<h3 id="eugh-urteil-mai-2019">EuGH-Urteil, Mai 2019</h3>
+
+<p>Der Europäische Gerichtshof entschied, dass alle EU-Mitgliedstaaten Arbeitgeber dazu verpflichten müssen, ein System zur täglichen Arbeitszeiterfassung einzuführen. 
+Dies ist das rechtliche Fundament der Aufzeichnungspflicht in Deutschland.</p>
+
+<blockquote>
+  <p>CCOO gegen Deutsche Bank (C-55/18)</p>
+
+  <p>Der Gerichtshof entschied, dass EU-Mitgliedstaaten Arbeitgeber verpflichten müssen, „ein objektives, verlässliches und zugängliches System einzurichten, mit dem die von jedem Arbeitnehmer geleistete tägliche Arbeitszeit gemessen werden kann”, um die effektive Durchsetzung von Arbeitszeitgrenzen und Ruhezeitenansprüchen zu gewährleisten.</p>
+
+  <p><a href="https://curia.europa.eu/juris/document/document.jsf?docid=214043&amp;doclang=DE">https://curia.europa.eu/juris/document/document.jsf?docid=214043&amp;doclang=D</a></p>
+</blockquote>
+
+<h3 id="bag-urteil-september-2022-1-abr-2221">BAG-Urteil, September 2022 (1 ABR 22/21)</h3>
+
+<p>Das Bundesarbeitsgericht leitete eine Pflicht zur Zeiterfassung unmittelbar aus <a href="https://www.gesetze-im-internet.de/arbschg/__3.html">§ 3 Abs. 2 Nr. 1 ArbSchG</a> ab. 
+Arbeitgeber müssen Beginn, Ende und Dauer der täglichen Arbeitszeit jedes Beschäftigten aufzeichnen. 
+Dies gilt für alle Arbeitgeber – ab dem ersten Mitarbeiter, unabhängig von Unternehmensgröße oder Arbeitsmodell.</p>
+
+<blockquote>
+  <p>Das Bundesarbeitsgericht entschied, dass <a href="https://www.gesetze-im-internet.de/arbschg/__3.html">§ 3 Abs. 2 Nr. 1 ArbSchG</a> Arbeitgeber bereits verpflichtet, “Beginn und Ende der täglichen Arbeitszeit einschließlich Überstunden” aufzuzeichnen. Die Pflicht ergibt sich unmittelbar aus dem geltenden Gesetz und bedarf keiner weiteren Umsetzungsgesetzgebung.</p>
+
+  <p><a href="https://www.bundesarbeitsgericht.de/entscheidung/1-abr-22-21/">https://www.bundesarbeitsgericht.de/entscheidung/1-abr-22-21/</a></p>
+</blockquote>
+
+<h3 id="arbeitszeitgesetz-arbzg">Arbeitszeitgesetz (ArbZG)</h3>
+
+<p>Das <a href="https://www.gesetze-im-internet.de/arbzg/">ArbZG</a> schreibt seit Langem vor, Arbeitszeiten zu dokumentieren, die täglich 8 Stunden überschreiten. Die Pflicht zur Überstundenerfassung besteht in Deutschland seit Jahrzehnten, mit direkten Bußgeldern bei Verstößen gegen Höchstarbeitszeiten, Ruhezeiten und Pausenregelungen.</p>
+
+<blockquote>
+  <p>“Der Arbeitgeber ist verpflichtet, die über die werktägliche Arbeitszeit des § 3 Satz 1 hinausgehende Arbeitszeit der Arbeitnehmer aufzuzeichnen und ein Verzeichnis der Arbeitnehmer zu führen, die in eine Verlängerung der Arbeitszeit gemäß § 7 Abs. 7 eingewilligt haben. Die Nachweise sind mindestens zwei Jahre aufzubewahren”.</p>
+
+  <p><a href="https://www.gesetze-im-internet.de/arbzg/__16.html">ArbZG § 16 Abs. 2</a></p>
+</blockquote>
+
+<h3 id="bmas--bundesministerium-für-arbeit-und-soziales">BMAS – Bundesministerium für Arbeit und Soziales</h3>
+
+<p>Das BMAS bestätigte in seinen offiziellen FAQ, dass die Pflicht zur Einführung eines Zeiterfassungssystems bereits heute besteht – auf Grundlage des <a href="https://www.gesetze-im-internet.de/arbschg/">ArbSchG</a>. 
+Die Bundesregierung selbst bezeichnet dies als aktuelle Verpflichtung, nicht als künftige.</p>
+
+<h3 id="auch-anwälte-ohne-leitungsfunktion-müssen-zeiten-erfassen">Auch “Anwälte ohne Leitungsfunktion” müssen Zeiten erfassen</h3>
+
+<p>Das Verwaltungsgericht Hamburg verpflichtete eine große internationale Anwaltskanzlei zur Arbeitszeiterfassung ihrer angestellten Anwälte und bestätigte damit, dass die allgemeine Aufzeichnungspflicht auch für Associates, also angestellte Anwälte ohne Leitungsfunktion, gilt.</p>
+
+<p>Siehe <a href="https://justiz.hamburg.de/resource/blob/1111604/a0d9fbb29a6dd9e9772a89470ebeed98/21-k-1202-25-urteil-vom-18-7-25-data.pdf">Urteil VG Hamburg II – November 2025</a></p>
+
+<h2 id="was-sich-2026-ändert-und-was-nicht">Was sich 2026 ändert (und was nicht)</h2>
+
+<p>Der Koalitionsvertrag von CDU/CSU und SPD vom April 2025 sieht ausdrücklich vor, elektronische Zeiterfassung „unbürokratisch” zur Pflicht zu machen, mit geplanten Übergangsfristen für KMU. 
+Ein konkretes Gesetz wird für 2026 erwartet. 
+Aber hier liegt der entscheidende Punkt: dieses Gesetz wird die Pflicht nicht erst begründen. 
+Es wird eine bereits bestehende Pflicht formalisieren und digitalisieren. 
+Die Aufzeichnungspflicht gilt seit September 2022. 
+Was 2026 hinzukommt, sind strengere Anforderungen an die Art der Erfassung (elektronisch, manipulationssicher, tagesgenau) – nicht an das Ob.</p>
+
+<h2 id="welche-bußgelder-drohen-in-deutschland">Welche Bußgelder drohen in Deutschland</h2>
+
+<p>Die Bußgeldstruktur beim deutschen Zeiterfassungsgesetz ist etwas indirekt – was ein Grund dafür ist, dass viele Arbeitgeber das Risiko unterschätzt haben.</p>
+
+<blockquote>
+  <p>Verstöße gegen Arbeitgeberpflichten nach dem Arbeitsschutzgesetz, einschließlich der Nichtbefolgung einer Anordnung der Aufsichtsbehörde, können mit Bußgeldern von bis zu 25.000 € geahndet werden.</p>
+
+  <p><a href="https://www.gesetze-im-internet.de/arbschg/__25.html">§ 25 ArbSchG</a></p>
+</blockquote>
+
+<p>So funktioniert es in der Praxis:</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Szenario</th>
+      <th>Rechtsgrundlage</th>
+      <th>Strafe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Arbeitszeiten über 8 Std./Tag nicht erfasst</td>
+      <td><a href="https://www.gesetze-im-internet.de/arbzg/__16.html">§ 16 Abs. 2</a> + <a href="https://www.gesetze-im-internet.de/arbzg/__22.html">§ 22 Abs. 1 Nr. 9, Abs. 2 ArbZG</a></td>
+      <td>Bis zu 30.000 € pro Verstoß</td>
+    </tr>
+    <tr>
+      <td>Höchstarbeitszeiten oder Ruhezeiten verletzt</td>
+      <td><a href="https://www.gesetze-im-internet.de/arbzg/__22.html">§ 22 ArbZG und § 23 ArbZG</a></td>
+      <td>Bis zu 30.000 € pro Verstoß; bei vorsätzlichen/wiederholten gesundheitsgefährdenden Verstößen: strafrechtliche Haftung, bis zu 1 Jahr Freiheitsstrafe</td>
+    </tr>
+    <tr>
+      <td>Behördliche Anordnung ignoriert</td>
+      <td><a href="https://www.gesetze-im-internet.de/arbschg/__25.html">§ 25 Abs. 2 ArbSchG</a></td>
+      <td>Bußgeld nach ArbSchG-Katalog; kann sich über alle Mitarbeiter über 24 Monate aufaddieren</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Da das Bußgeld für das bloße Fehlen eines Systems indirekt greift (es setzt erst nach einer ignorierten Behördenanordnung ein), haben viele Unternehmen das Risiko als theoretisch eingeschätzt. 
+Die genannten Fälle zeigen: Das ist es nicht.</p>
+
+<h2 id="faq">FAQ</h2>
+
+<h3 id="ist-elektronische-zeiterfassung-in-deutschland-pflicht">Ist elektronische Zeiterfassung in Deutschland Pflicht?</h3>
+
+<p>Noch nicht – aber sie kommt. 
+Nach geltendem Recht (<a href="https://www.bundesarbeitsgericht.de/entscheidung/1-abr-22-21/">BAG-Urteil 2022</a>) ist jede zuverlässige Methode zulässig: Papier, Tabellenkalkulation oder Software. 
+Der BMAS-Referentenentwurf und der Koalitionsvertrag 2025 sehen vor, elektronische Erfassung voraussichtlich ab 2026 verpflichtend zu machen, mit Übergangsfristen für kleinere Unternehmen. 
+Kleinstunternehmen (bis zu 10 Mitarbeiter) erhalten möglicherweise zusätzliche Zeit. 
+Ob eine Excel-Tabelle als „elektronisch” im Sinne des künftigen Gesetzes gilt, ist noch nicht abschließend geklärt. 
+Der sicherere Weg: dedizierte Software.</p>
+
+<h3 id="dürfen-unternehmen-in-deutschland-excel-zur-zeiterfassung-nutzen">Dürfen Unternehmen in Deutschland Excel zur Zeiterfassung nutzen?</h3>
+
+<p>Ja, nach geltendem Recht. 
+Das <a href="https://www.bundesarbeitsgericht.de/entscheidung/1-abr-22-21/">BAG-Urteil</a> schreibt kein bestimmtes Format vor. 
+Papier-Stundenzettel, Excel oder dedizierte Software erfüllen alle die bestehende Pflicht. 
+Das kommende Gesetz wird jedoch voraussichtlich eine elektronische, manipulationssichere Erfassung fordern. 
+Ob Excel als „elektronisch” gilt, ist rechtlich noch ungeklärt. 
+Hinzu kommt: Excel-Aufzeichnungen sind schwer zu prüfen, leicht zu bearbeiten und erzeugen genau die Dokumentationslücken, die bei Behördeninspektionen Probleme verursachen. 
+Dedizierte Tools wie Kimai sind deutlich sicherer für die Compliance.</p>
+
+<h3 id="was-sind-die-anforderungen-an-die-arbeitszeiterfassung-in-deutschland">Was sind die Anforderungen an die Arbeitszeiterfassung in Deutschland?</h3>
+
+<p>Gemäß <a href="https://www.bundesarbeitsgericht.de/entscheidung/1-abr-22-21/">BAG-Urteil</a> und <a href="https://www.gesetze-im-internet.de/arbzg/">ArbZG</a> müssen Beginn, Ende und Dauer der täglichen Arbeitszeit jedes Mitarbeiters erfasst werden – idealerweise am selben Tag. 
+Pausen sollten ebenfalls dokumentiert werden (bei Schichten über 6 Stunden vorgeschrieben). 
+Aufzeichnungen müssen mindestens 2 Jahre aufbewahrt werden. 
+Behörden können die letzten 24 Monate rückwirkend prüfen. 
+Eine bestimmte Software ist noch nicht vorgeschrieben, die Aufzeichnungen müssen jedoch zuverlässig, zugänglich und nachprüfbar sein.</p>
+
+<h3 id="was-passiert-wenn-man-arbeitszeiten-in-deutschland-nicht-erfasst">Was passiert, wenn man Arbeitszeiten in Deutschland nicht erfasst?</h3>
+
+<p>Es drohen drei Konsequenzen – in eskalierender Reihenfolge. 
+Erstens kann eine Arbeitsbehörde erscheinen und Aufzeichnungen für bis zu 24 Monate zurück verlangen. 
+Zweitens ergeht eine formelle Anordnung. 
+Wird diese ignoriert, greifen Bußgelder nach <a href="https://www.gesetze-im-internet.de/arbschg/__25.html">§ 25 ArbSchG</a>. Drittens fehlen ohne Zeitaufzeichnungen Belege zur Verteidigung bei Überstunden-, Ruhezeitverstößen oder arbeitsgerichtlichen Verfahren. Die versteckten Kosten dieses dritten Szenarios übersteigen oft die Bußgelder selbst.</p>
+
+<h3 id="gilt-das-bag-urteil-auch-für-unternehmen-mit-vertrauensarbeitszeit">Gilt das BAG-Urteil auch für Unternehmen mit Vertrauensarbeitszeit?</h3>
+
+<p>Ja. Vertrauensarbeitszeit bleibt weiterhin zulässig, befreit Arbeitgeber jedoch nicht von der Aufzeichnungspflicht. 
+Flexibilität ist erlaubt; Unsichtbarkeit nicht. 
+Mitarbeiter erfassen ihre Zeiten selbst, der Arbeitgeber ist dafür verantwortlich, dass dies geschieht und die Aufzeichnungen korrekt sind.</p>
+
+<h3 id="gelten-die-deutschen-regelungen-zur-überstundenerfassung-für-alle-mitarbeiter">Gelten die deutschen Regelungen zur Überstundenerfassung für alle Mitarbeiter?</h3>
+
+<p>Ja. Das BAG-Urteil gilt für alle Arbeitnehmer, einschließlich Telearbeitskräften, Teilzeitkräften und Beschäftigten mit flexiblen Arbeitszeiten. Leitende Angestellte sind von der Aufzeichnungspflicht ausgenommen. 
+Associates und Senior Associates in Anwaltskanzleien unterfallen aber nicht dem Begriff des leitenden Angestellten und sind deshalb aufzeichnungspflichtig (Hamburger Urteil vom November 2025). 
+Vollständig ausgenommen sind nur Solo-Selbstständige ohne eigene Mitarbeiter.</p>
+
+<h2 id="jetzt-handeln">Jetzt handeln</h2>
+
+<p>Das rechtliche Bild ist eindeutig: Die Pflicht gilt jetzt, die Durchsetzung ist real, und die Anforderungen werden weiter verschärft. 
+Die gute Nachricht: Compliance muss nicht kompliziert sein.</p>
+
+<p>Digitale Tools wie Kimai – eine kostenlose Open-Source-Zeiterfassungsapp – sind genau dafür gemacht. 
+Sie erfassen Beginn und Ende der Arbeitszeit, erstellen prüfungssichere Berichte, unterstützen jede Teamgröße und liefern die manipulationssichere Dokumentation, die einer Behördenprüfung standhält. 
+Ob kleines Team, mittelständisches Unternehmen oder internationaler Konzern: Kimai bietet einen rechtssicheren, zukunftsfähigen Nachweis – ohne Vorabkosten.</p>
+
+        </div>
+        <div class="col-lg-3 position-relative">
+            <div class="sticky-top ms-xl-5 ms-lg-4 ps-xxl-4" style="top: 105px !important;">
+                <h6>Diesen Beitrag teilen:</h6>
+                <div class="mb-4 pb-lg-3">
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.kimai.org/de/blog/2026/ist-zeiterfassung-in-deutschland-pflicht&title=Ist Zeiterfassung in Deutschland Pflicht?" class="btn btn-icon btn-secondary btn-linkedin me-2 mb-2" aria-label="LinkedIn">
+                        <i class="bx bxl-linkedin"></i>
+                    </a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.kimai.org/de/blog/2026/ist-zeiterfassung-in-deutschland-pflicht" class="btn btn-icon btn-secondary btn-facebook me-2 mb-2" aria-label="Facebook">
+                        <i class="bx bxl-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com/intent/tweet?text=https://www.kimai.org/de/blog/2026/ist-zeiterfassung-in-deutschland-pflicht" class="btn btn-icon btn-secondary btn-twitter me-2 mb-2" aria-label="Twitter">
+                        <i class="bx bxl-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    
+<section class="container mb-5">
+    <div class="position-relative bg-dark rounded-3 overflow-hidden px-3 py-5">
+        <span class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(255, 255, 255, .05)"></span>
+        <div class="position-relative zindex-5 text-center my-xl-3 py-1 py-md-4 py-lg-5">
+            <p class="lead text-light opacity-70 mb-3">Bereit loszulegen?</p>
+            <h2 class="h1 text-light pb-3 pb-lg-0 mb-lg-5">Starte jetzt damit Zeiten zu erfassen</h2>
+            <a href="https://www.kimai.cloud/de/auth/registrierung" class="btn btn-success btn-lg">Kostenlos starten</a>
+
+        </div>
+    </div>
+</section>
+
+
+
+</main>
+
+<footer class="footer bg-dark pt-5 pb-4">
+    <div class="container pt-1 pt-md-3 pt-lg-4 pt-xl-5">
+        <div class="row">
+            <div class="col-md-5 col-xl-4 mb-4 mb-md-5 mb-lg-0">
+                <div class="d-flex align-items-center pb-3 mb-1">
+                    <div class="navbar-brand text-white p-0 pe-1 me-0">
+                        Kimai
+                    </div>
+                    <hr class="vr mt-2 mx-3" style="height: 26px;">
+                    <div class="text-white fw-semibold ps-1">#1 Open-Source Zeiterfassung</div>
+                </div>
+                <p class="text-body fs-sm pb-1 pb-md-2 pb-lg-2 mb-2">
+                    Zeiterfassung leicht gemacht. Eine Open-Source-Lösung für Teams jeder Größe - selbst gehostet oder als SaaS.
+                </p>
+                <div class="d-flex flex-column flex-sm-row flex-lg-column align-items-sm-center align-items-lg-start justify-content-between pb-1 pb-md-2 pb-lg-3 mb-3">
+                    <div class="position-relative">
+                        <div class="dropdown">
+                            <button type="button" class="form-select" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="bx bx-globe top-50 start-0 text-body me-2"></i>
+                                Deutsch
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/ca/" class="dropdown-item" title="Kimai - Seguidor de temps de codi obert">Català</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/cs/" class="dropdown-item" title="Kimai - Open Source sledování času">Čeština</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/de/" class="dropdown-item active" title="Kimai – Open-Source Zeiterfassung">Deutsch</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/en/" class="dropdown-item" title="Kimai - Open Source time-tracker">English</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/es/" class="dropdown-item" title="Kimai - Tracker de tiempo abierto">Español</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/fr/" class="dropdown-item" title="Kimai - Suivi du temps à code ouvert">Français</a>
+                                
+                                    <a dir="rtl" href="https://www.kimai.co.il" class="dropdown-item" title="Kimai - מעקב שעות בקוד פתוח">עברית</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/hr/" class="dropdown-item" title="Kimai – Program otvorenog koda za evidentiranje vremena">Hrvatski</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/it/" class="dropdown-item" title="Kimai: time-tracker open source">Italiano</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/nl/" class="dropdown-item" title="Kimai - Open Source tijdregistratie">Dutch</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/pl/" class="dropdown-item" title="Kimai - Otwarte oprogramowanie do śledzenia czasu">Polski</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/pt/" class="dropdown-item" title="Kimai - Rastreador de tempo de código aberto">Português</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/pt_BR/" class="dropdown-item" title="Kimai - Rastreador de tempo de código aberto">Português (Brasil)</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/ru/" class="dropdown-item" title="Kimai - регистратор времени с открытым исходным кодом">Русский</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/sk/" class="dropdown-item" title="Kimai - Open Source sledovanie času">Slovenčina</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/sv/" class="dropdown-item" title="Kimai - öppen källkod tidsspårare">Svenska</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/ta/" class="dropdown-item" title="கிமாய் - திறந்த மூல நேர -கண்காணிப்பு">தமிழ்</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/uk/" class="dropdown-item" title="Kimai — реєстратор часу з відкритим сирцевим кодом">Українська</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/zh_Hans/" class="dropdown-item" title="Kimai - 开源时间跟踪器">中文（中国）</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.tw" class="dropdown-item" title="Kimai —— 開放源始碼的工時追蹤工具">中文（繁體）</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-md-7 offset-xl-1">
+                <div id="footer-links" class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div id="tools" class="collapse d-md-block" data-bs-parent="#footer-links">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a href="/de/features.html" class="nav-link fs-sm fw-medium px-0 py-1">Funktionen</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/de/stories/" class="nav-link fs-sm fw-medium px-0 py-1">Erfolgsgeschichten</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/de/reviews" class="nav-link fs-sm fw-medium px-0 py-1">Bewertungen</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/de/press-media" class="nav-link fs-sm fw-medium px-0 py-1">Presse & Medien</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/de/discount-codes" class="nav-link fs-sm fw-medium px-0 py-1">Rabatt-Codes</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/de/newsletter" class="nav-link fs-sm fw-medium px-0 py-1">Newsletter</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div id="landing-kimai-for" class="collapse d-md-block" data-bs-parent="#footer-links">
+                            <ul class="nav flex-column">
+                                
+                                
+                                <li class="nav-item">
+                                    <a href="/en/agency-time-tracking" class="nav-link fs-sm fw-medium px-0 py-1" title="Agency">Agenturen</a>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a href="/en/consultants-time-tracking" class="nav-link fs-sm fw-medium px-0 py-1" title="Consultants">Berater</a>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a href="/en/freelancers-time-tracking" class="nav-link fs-sm fw-medium px-0 py-1" title="Freelancers">Freiberufler</a>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a href="/en/software-developers-time-tracking" class="nav-link fs-sm fw-medium px-0 py-1" title="Software Developers">Softwareentwickler</a>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a href="/de/non-profit" class="nav-link fs-sm fw-medium px-0 py-1">Gemeinnützige Organisationen</a>
+                                </li>
+                                <li class="nav-item">
+                                    
+                                    <a href="/en/industry" class="nav-link fs-sm fw-medium px-0 py-1">Weitere Branchen</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div id="footer-cmp" class="collapse d-md-block" data-bs-parent="#footer-links">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a href="/de/alternatives/" class="nav-link fs-sm fw-medium px-0 py-1">Vergleiche Zeiterfassungen</a>
+                                </li>
+                                
+                                
+                                
+                                
+                                    <li class="nav-item">
+                                        <a href="/en/alternatives/clockify" class="nav-link fs-sm fw-medium px-0 py-1" title="Vergleiche Kimai mit Clockify">Clockify Alternative</a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="/en/alternatives/clockodo" class="nav-link fs-sm fw-medium px-0 py-1" title="Vergleiche Kimai mit Clockodo">Clockodo Alternative</a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="/en/alternatives/harvest" class="nav-link fs-sm fw-medium px-0 py-1" title="Vergleiche Kimai mit Harvest">Harvest Alternative</a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="/en/alternatives/toggl" class="nav-link fs-sm fw-medium px-0 py-1" title="Vergleiche Kimai mit toggl track">toggl track Alternative</a>
+                                    </li>
+                                
+                                
+                                <li class="nav-item">
+                                    <a href="/de/time-tracking-terms" class="nav-link fs-sm fw-medium px-0 py-1">Zeiterfassungsbegriffe</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="d-md-flex align-items-center justify-content-between pt-sm-2 pt-md-4 pt-lg-5 pb-2 mt-4 ">
+    <ul class="nav order-md-1 ms-md-0 mb-3 mb-md-0">
+        <li class="nav-item">
+            <a href="/de/site-notice.html" class="nav-link fs-sm fw-medium">Impressum</a>
+        </li>
+        <li class="nav-item">
+            <a href="/de/privacy-policy.html" class="nav-link fs-sm fw-medium">Datenschutz</a>
+        </li>
+        <li class="nav-item">
+            <a href="/de/terms-cloud.html" class="nav-link fs-sm fw-medium">AGB</a>
+        </li>
+    </ul>
+    <div class="nav order-md-2 mb-3 mb-md-0">
+        
+    <a target="_blank" href="https://github.com/kimai/kimai" class="btn btn-icon btn-secondary btn-github rounded-circle me-3" aria-label="GitHub">
+        <i class="bx bxl-github"></i>
+    </a>
+
+    <a target="_blank" href="https://www.youtube.com/@kimai_org" class="btn btn-icon btn-secondary btn-youtube rounded-circle me-3" aria-label="YouTube">
+        <i class="bx bxl-youtube"></i>
+    </a>
+
+    <a target="_blank" href="https://www.linkedin.com/company/kimai-org/" class="btn btn-icon btn-secondary btn-linkedin rounded-circle me-3" aria-label="LinkedIn">
+        <i class="bx bxl-linkedin"></i>
+    </a>
+
+    <a target="_blank" href="https://www.instagram.com/kimai_org" class="btn btn-icon btn-secondary btn-instagram rounded-circle me-3" aria-label="Instagram">
+        <i class="bx bxl-instagram"></i>
+    </a>
+
+    <a target="_blank" href="https://www.facebook.com/kimai.time.tracker" class="btn btn-icon btn-secondary btn-facebook rounded-circle me-3" aria-label="Facebook">
+        <i class="bx bxl-facebook"></i>
+    </a>
+
+    <a target="_blank" href="https://phpc.social/@kimai" class="btn btn-icon btn-secondary btn-messenger rounded-circle me-3" aria-label="Mastodon">
+        <i class="bx bxl-mastodon"></i>
+    </a>
+
+
+    </div>
+    <ul class="nav order-md-3">
+        <li class="nav-item">
+            <a href="https://status.kimai.org/" target="_blank" class="nav-link fs-sm fw-medium">Status</a>
+        </li>
+    </ul>
+    
+</div>
+
+    </div>
+</footer>
+
+
+
+
+<a href="#top" class="btn-scroll-top" data-scroll>
+    <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+    <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+</a>
+
+<script src="/assets/build/main.js?v1"></script>
+
+<script defer src="https://u.kimai.org/script.js" data-website-id="e26bef12-9527-43bc-83fd-660e237f3526"></script>
+
+</body>
+</html>
