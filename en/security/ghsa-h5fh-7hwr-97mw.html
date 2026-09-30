@@ -19,33 +19,16 @@
 <meta property="og:title" content="Arbitrary file read in invoice PDF renderer (admin)">
 <meta property="og:image" content="https://www.kimai.org/images/social-preview.webp">
 <meta property="og:description" content="">
-<link href="/assets/build/main.css?v8" rel="stylesheet" />
+<link href="/assets/build/main.css?v14" rel="stylesheet" />
 
 </head>
 <body class="">
-
-
-
-
-
-
 
 <main class="page-wrapper">
     
 
 
-
-
-
-
-
-
-
-
-
-
-
-<header class="header navbar navbar-expand-lg    bg-light navbar-sticky">
+<header class="header navbar navbar-expand-lg border-bottom bg-light navbar-sticky">
     <div class="container px-3">
         <a href="/en/" class="navbar-brand pe-3">
         <img src="/images/kimai_logo_48.webp" style="height:36px;width:36px;" alt="Kimai - Open Source time-tracker"> Kimai
@@ -53,28 +36,31 @@
         <div id="navbarNav" class="offcanvas offcanvas-end">
             <div class="offcanvas-header border-bottom">
                 <h5 class="offcanvas-title">Menu</h5>
-                <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-current="page">Product</a>
                         <ul class="dropdown-menu">
-                            <li><a href="/en/about.html" class="dropdown-item">About Kimai</a></li>
-                            <li><a href="/en/open-source-community" class="dropdown-item">Open Source</a></li>
-                            <li class="dropdown-divider"></li>
                             <li><a href="/en/integrations" class="dropdown-item">Apps & Integrations</a></li>
                             <li><a href="/en/demo.html" class="dropdown-item">Demo</a></li>
                             <li class="dropdown-divider"></li>
                             <li><a href="/en/blog/" class="dropdown-item">Blog</a></li>
                             <li><a href="/en/support.html" class="dropdown-item">Support</a></li>
+                            
+                            <li><a href="/en/partner/" class="dropdown-item">Partner</a></li>
+                            
+                            <li class="dropdown-divider"></li>
+                            <li><a href="/en/about.html" class="dropdown-item">About Kimai</a></li>
+                            <li><a href="/en/open-source-community" class="dropdown-item">Open Source</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-current="page">Cloud</a>
                         <ul class="dropdown-menu">
                             <li><a href="/en/pricing" class="dropdown-item">Pricing</a></li>
-                            <li><a href="/en/changelog" class="dropdown-item">Changelog</a></li>
+                            <li><a href="/en/changelog" class="dropdown-item">Updates</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -92,7 +78,6 @@
                             
                             
                             <li><a href="https://www.kimai.org/documentation/chapter-manual.html" class="dropdown-item">
-                                <i class="bx bx-book me-2"></i>
                                 
                                 User manual
                             </a></li>
@@ -100,7 +85,6 @@
                             
                             
                             <li><a href="https://www.kimai.org/documentation/cloud.html" class="dropdown-item">
-                                <i class="bx bx-cloud me-2"></i>
                                 
                                 Cloud
                             </a></li>
@@ -108,7 +92,6 @@
                             
                             
                             <li><a href="https://www.kimai.org/documentation/chapter-on-premise.html" class="dropdown-item">
-                                <i class="bx bx-server me-2"></i>
                                 
                                 Self hosting
                             </a></li>
@@ -116,7 +99,6 @@
                             
                             
                             <li><a href="https://www.kimai.org/documentation/chapter-developer.html" class="dropdown-item">
-                                <i class="bx bx-code-alt me-2"></i>
                                 
                                 Developer
                             </a></li>
@@ -128,10 +110,124 @@
         </div>
         <div class="pe-lg-1 ms-auto me-2">
             
-
-
-
-<a href="https://www.kimai.cloud/auth/" class="btn btn-sm fs-sm d-none d-md-inline-flex me-2 btn-outline-secondary">Login</a>
+            
+            <div class="dropdown language-dropdown d-inline-block">
+    <button type="button" class="btn btn-sm fs-sm d-none d-md-inline-flex me-2 btn-outline-secondary px-2 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="bx bx-globe fs-lg top-50 start-0 text-body me-2"></i>
+            English
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end">
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/ca/" class="dropdown-item" title="Kimai - Seguidor de temps de codi obert">Català</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/cs/" class="dropdown-item" title="Kimai - Open Source sledování času">Čeština</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/de/" class="dropdown-item" title="Kimai – Open-Source Zeiterfassung">Deutsch</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/en/" class="dropdown-item active" aria-current="true" title="Kimai - Open Source time-tracker">English</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/es/" class="dropdown-item" title="Kimai - Tracker de tiempo abierto">Español</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/fr/" class="dropdown-item" title="Kimai - Suivi du temps à code ouvert">Français</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="rtl" href="https://www.kimai.co.il" class="dropdown-item" title="Kimai - מעקב שעות בקוד פתוח">עברית</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/hr/" class="dropdown-item" title="Kimai – Program otvorenog koda za evidentiranje vremena">Hrvatski</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/it/" class="dropdown-item" title="Kimai: time-tracker open source">Italiano</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/nl/" class="dropdown-item" title="Kimai - Open Source tijdsregistratietool">Dutch</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/pl/" class="dropdown-item" title="Kimai - Otwarte oprogramowanie do śledzenia czasu">Polski</a>
+            </li>
+            
+        
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/pt_BR/" class="dropdown-item" title="Kimai - Rastreador de tempo de código aberto">Português (Brasil)</a>
+            </li>
+            
+        
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/sk/" class="dropdown-item" title="Kimai - Open Source sledovanie času">Slovenčina</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/sv/" class="dropdown-item" title="Kimai - öppen källkod tidsspårare">Svenska</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/ta/" class="dropdown-item" title="கிமாய் - திறந்த மூல நேர -கண்காணிப்பு">தமிழ்</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/uk/" class="dropdown-item" title="Kimai — реєстратор часу з відкритим сирцевим кодом">Українська</a>
+            </li>
+            
+        
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.tw" class="dropdown-item" title="Kimai —— 開放源始碼的工時追蹤工具">中文（繁體）</a>
+            </li>
+            
+        
+    </ul>
+</div>
 
             <a href="https://www.kimai.cloud/auth/registration" class="btn btn-success btn-sm fs-sm d-inline-flex">Start for free</a>
 
@@ -143,53 +239,70 @@
 </header>
 
 
-    <section class="container py-5 my-1 my-md-4 my-lg-5">
-        <div class="row">
-            <div class="col-lg-12 mb-4 mb-lg-0">
-                <div class="pe-lg-4 me-lg-3 pe-xl-0 me-xl-0">
-                    
-                    <h2 class="h1 mb-4">Arbitrary file read in invoice PDF renderer (admin)</h2>
-                    
-                    <div class="mb-0">
-                        <ol class="breadcrumb mb-4">
+    
+
+
+
+
+
+
+
+
+    
+
+
+
+
+<section class="hero container pt-md-1 pt-lg-4 pt-xl-5">
+    <div class="mt-4 py-2 pb-sm-3 pb-md-4 pb-lg-5 mx-auto text-center title-header">
+        
+        <h1 class="page-title ">
+            Arbitrary file read in invoice PDF renderer (admin)
+        </h1>
+        
+    </div>
+</section>
+
+
+
+
+<section class="container mb-5 pb-2 py-mg-4">
+    <div class="row gy-4">
+        <div class="col-lg-9">
+
+<ol class="breadcrumb mb-4">
     <li class="breadcrumb-item">
         <a href="/"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
     </li>
     <li class="breadcrumb-item">
-        <a href="/documentation/bughunter.html">Security</a>
+        <a href="/documentation/security.html">Security</a>
     </li>
     <li class="breadcrumb-item active" aria-current="page">
         Kimai Advisory
-        CVE-2026-44298
+        
+            CVE-2026-44298
+        
     </li>
 </ol>
+
 
 <h2>Affected versions</h2>
 
 <ul>
-    <li>Affected versions: <strong>>= 2.32.0, <= 2.55</strong></li>
-    <li>Patched version: <strong>2.56</strong></li>
-    <li>Advisory published: <strong>05 May 2026</strong></li>
+<li>Kimai versions <strong>>= 2.32.0, <= 2.55</strong> are affected by this security issue</li>
+<li>The issue has been fixed in Kimai <strong>2.56</strong></li>
+<li>Severity: <strong>Medium</strong></li>
+<li>
+
+    The Common Vulnerabilities and Exposures (CVE) project has assigned the name <strong>CVE-2026-44298</strong> to this issue
+
+</li>
 </ul>
 
-<h2>Severity</h2>
-<p>
-    Severity: <strong>Medium</strong>
-</p>
-
-<p>
-
-    The Common Vulnerabilities and Exposures (CVE) project has assigned the name <strong>CVE-2026-44298</strong> to this issue.
-
-</p>
-
-
-<h2>Vulnerability</h2>
+<h2>Description</h2>
 
 <p>Kimai allowed a <code class="language-plaintext highlighter-rouge">System-Admin</code> (<code class="language-plaintext highlighter-rouge">ROLE_SUPER_ADMIN</code>) with the <code class="language-plaintext highlighter-rouge">upload_invoice_template</code> permission to abuse PDF renderer options from within a sandboxed invoice Twig template.
 In affected versions, a crafted template could pass a malicious <code class="language-plaintext highlighter-rouge">associated_files</code> entry to mPDF and cause the renderer to read a local file from the server and embed its contents into the generated PDF.</p>
-
-<h2 id="info">Info</h2>
 
 <p>This issue affected uploaded invoice templates rendered as PDF documents.</p>
 
@@ -221,7 +334,10 @@ In affected versions, a crafted template could pass a malicious <code class="lan
 <h2>Credits</h2>
 
 <ul>
-    <li>Reported by: melnicek</li>
+    <li>
+        Reported by: melnicek
+        
+    </li>
     <li>Patched by: kevinpapst</li>
 </ul>
 
@@ -229,13 +345,17 @@ In affected versions, a crafted template could pass a malicious <code class="lan
     First reported in GitHub advisory: <a href="https://github.com/kimai/kimai/security/advisories/GHSA-h5fh-7hwr-97mw" target="_blank">GHSA-h5fh-7hwr-97mw</a>
 </p>
 
-                    </div>
-                </div>
-            </div>
         </div>
-    </section>
+    </div>
+</section>
 
+
+
+
+    
 </main>
+
+
 
 <footer class="footer bg-dark pt-5 pb-4">
     <div class="container pt-1 pt-md-3 pt-lg-4 pt-xl-5">
@@ -253,57 +373,125 @@ In affected versions, a crafted template could pass a malicious <code class="lan
                 </p>
                 <div class="d-flex flex-column flex-sm-row flex-lg-column align-items-sm-center align-items-lg-start justify-content-between pb-1 pb-md-2 pb-lg-3 mb-3">
                     <div class="position-relative">
-                        <div class="dropdown">
-                            <button type="button" class="form-select" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="bx bx-globe top-50 start-0 text-body me-2"></i>
-                                English
-                            </button>
-                            <div class="dropdown-menu dropdown-menu-end">
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/ca/" class="dropdown-item" title="Kimai - Seguidor de temps de codi obert">Català</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/cs/" class="dropdown-item" title="Kimai - Open Source sledování času">Čeština</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/de/" class="dropdown-item" title="Kimai – Open-Source Zeiterfassung">Deutsch</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/en/" class="dropdown-item active" title="Kimai - Open Source time-tracker">English</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/es/" class="dropdown-item" title="Kimai - Tracker de tiempo abierto">Español</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/fr/" class="dropdown-item" title="Kimai - Suivi du temps à code ouvert">Français</a>
-                                
-                                    <a dir="rtl" href="https://www.kimai.co.il" class="dropdown-item" title="Kimai - מעקב שעות בקוד פתוח">עברית</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/hr/" class="dropdown-item" title="Kimai – Program otvorenog koda za evidentiranje vremena">Hrvatski</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/it/" class="dropdown-item" title="Kimai: time-tracker open source">Italiano</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/nl/" class="dropdown-item" title="Kimai - Open Source tijdregistratie">Dutch</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/pl/" class="dropdown-item" title="Kimai - Otwarte oprogramowanie do śledzenia czasu">Polski</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/pt/" class="dropdown-item" title="Kimai - Rastreador de tempo de código aberto">Português</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/pt_BR/" class="dropdown-item" title="Kimai - Rastreador de tempo de código aberto">Português (Brasil)</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/ru/" class="dropdown-item" title="Kimai - регистратор времени с открытым исходным кодом">Русский</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/sk/" class="dropdown-item" title="Kimai - Open Source sledovanie času">Slovenčina</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/sv/" class="dropdown-item" title="Kimai - öppen källkod tidsspårare">Svenska</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/ta/" class="dropdown-item" title="கிமாய் - திறந்த மூல நேர -கண்காணிப்பு">தமிழ்</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/uk/" class="dropdown-item" title="Kimai — реєстратор часу з відкритим сирцевим кодом">Українська</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/zh_Hans/" class="dropdown-item" title="Kimai - 开源时间跟踪器">中文（中国）</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.tw" class="dropdown-item" title="Kimai —— 開放源始碼的工時追蹤工具">中文（繁體）</a>
-                                
-                            </div>
-                        </div>
+                        <div class="dropdown language-dropdown d-inline-block">
+    <button type="button" class="btn btn-sm fs-sm btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="bx bx-globe fs-lg top-50 start-0 text-body me-2"></i>
+            English
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end">
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/ca/" class="dropdown-item" title="Kimai - Seguidor de temps de codi obert">Català</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/cs/" class="dropdown-item" title="Kimai - Open Source sledování času">Čeština</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/de/" class="dropdown-item" title="Kimai – Open-Source Zeiterfassung">Deutsch</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/en/" class="dropdown-item active" aria-current="true" title="Kimai - Open Source time-tracker">English</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/es/" class="dropdown-item" title="Kimai - Tracker de tiempo abierto">Español</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/fr/" class="dropdown-item" title="Kimai - Suivi du temps à code ouvert">Français</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="rtl" href="https://www.kimai.co.il" class="dropdown-item" title="Kimai - מעקב שעות בקוד פתוח">עברית</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/hr/" class="dropdown-item" title="Kimai – Program otvorenog koda za evidentiranje vremena">Hrvatski</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/it/" class="dropdown-item" title="Kimai: time-tracker open source">Italiano</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/nl/" class="dropdown-item" title="Kimai - Open Source tijdsregistratietool">Dutch</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/pl/" class="dropdown-item" title="Kimai - Otwarte oprogramowanie do śledzenia czasu">Polski</a>
+            </li>
+            
+        
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/pt_BR/" class="dropdown-item" title="Kimai - Rastreador de tempo de código aberto">Português (Brasil)</a>
+            </li>
+            
+        
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/sk/" class="dropdown-item" title="Kimai - Open Source sledovanie času">Slovenčina</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/sv/" class="dropdown-item" title="Kimai - öppen källkod tidsspårare">Svenska</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/ta/" class="dropdown-item" title="கிமாய் - திறந்த மூல நேர -கண்காணிப்பு">தமிழ்</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/uk/" class="dropdown-item" title="Kimai — реєстратор часу з відкритим сирцевим кодом">Українська</a>
+            </li>
+            
+        
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.tw" class="dropdown-item" title="Kimai —— 開放源始碼的工時追蹤工具">中文（繁體）</a>
+            </li>
+            
+        
+    </ul>
+</div>
+
                     </div>
-                    
                 </div>
             </div>
             <div class="col-md-7 offset-xl-1">
@@ -350,12 +538,13 @@ In affected versions, a crafted template could pass a malicious <code class="lan
                                 </li>
                                 
                                 <li class="nav-item">
-                                    <a href="/en/software-developers-time-tracking" class="nav-link fs-sm fw-medium px-0 py-1" title="Software Developers">Software Developers</a>
+                                    <a href="/en/non-profit" class="nav-link fs-sm fw-medium px-0 py-1" title="Non Profit">Non-Profits</a>
                                 </li>
                                 
                                 <li class="nav-item">
-                                    <a href="/en/non-profit" class="nav-link fs-sm fw-medium px-0 py-1">Non-Profits</a>
+                                    <a href="/en/software-developers-time-tracking" class="nav-link fs-sm fw-medium px-0 py-1" title="Software Developers">Software Developers</a>
                                 </li>
+                                
                                 <li class="nav-item">
                                     
                                     <a href="/en/industry" class="nav-link fs-sm fw-medium px-0 py-1">More industries</a>
@@ -391,13 +580,12 @@ In affected versions, a crafted template could pass a malicious <code class="lan
                                 
                                 
                                 <li class="nav-item">
-                                    <a href="/en/time-tracking-terms" class="nav-link fs-sm fw-medium px-0 py-1">Time Tracking Terms</a>
+                                    <a href="/en/time-tracking-terms" class="nav-link fs-sm fw-medium px-0 py-1">Glossary</a>
                                 </li>
                                 
                             </ul>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </div>
@@ -412,41 +600,39 @@ In affected versions, a crafted template could pass a malicious <code class="lan
         <li class="nav-item">
             <a href="/en/terms-cloud.html" class="nav-link fs-sm fw-medium">Terms</a>
         </li>
+        <li class="nav-item">
+            <a href="https://status.kimai.org/" target="_blank" class="nav-link fs-sm fw-medium">System-Status</a>
+        </li>
     </ul>
     <div class="nav order-md-2 mb-3 mb-md-0">
         
+    
     <a target="_blank" href="https://github.com/kimai/kimai" class="btn btn-icon btn-secondary btn-github rounded-circle me-3" aria-label="GitHub">
         <i class="bx bxl-github"></i>
     </a>
 
+    
     <a target="_blank" href="https://www.youtube.com/@kimai_org" class="btn btn-icon btn-secondary btn-youtube rounded-circle me-3" aria-label="YouTube">
         <i class="bx bxl-youtube"></i>
     </a>
 
+    
     <a target="_blank" href="https://www.linkedin.com/company/kimai-org/" class="btn btn-icon btn-secondary btn-linkedin rounded-circle me-3" aria-label="LinkedIn">
         <i class="bx bxl-linkedin"></i>
     </a>
 
-    <a target="_blank" href="https://www.instagram.com/kimai_org" class="btn btn-icon btn-secondary btn-instagram rounded-circle me-3" aria-label="Instagram">
-        <i class="bx bxl-instagram"></i>
+    
+    <a target="_blank" href="https://www.reddit.com/r/kimai/" class="btn btn-icon btn-secondary btn-reddit rounded-circle me-3" aria-label="reddit">
+        <i class="bx bxl-reddit"></i>
     </a>
 
-    <a target="_blank" href="https://www.facebook.com/kimai.time.tracker" class="btn btn-icon btn-secondary btn-facebook rounded-circle me-3" aria-label="Facebook">
-        <i class="bx bxl-facebook"></i>
-    </a>
-
+    
     <a target="_blank" href="https://phpc.social/@kimai" class="btn btn-icon btn-secondary btn-messenger rounded-circle me-3" aria-label="Mastodon">
         <i class="bx bxl-mastodon"></i>
     </a>
 
 
     </div>
-    <ul class="nav order-md-3">
-        <li class="nav-item">
-            <a href="https://status.kimai.org/" target="_blank" class="nav-link fs-sm fw-medium">Status</a>
-        </li>
-    </ul>
-    
 </div>
 
     </div>
@@ -460,7 +646,7 @@ In affected versions, a crafted template could pass a malicious <code class="lan
     <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
 </a>
 
-<script src="/assets/build/main.js?v1"></script>
+<script src="/assets/build/main.js?v4"></script>
 
 <script defer src="https://u.kimai.org/script.js" data-website-id="e26bef12-9527-43bc-83fd-660e237f3526"></script>
 

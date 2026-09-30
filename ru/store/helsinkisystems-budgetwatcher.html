@@ -39,7 +39,7 @@
 <link rel="alternate" hreflang="uk" href="https://www.kimai.org/uk/store/helsinkisystems-budgetwatcher.html">
 <link rel="alternate" hreflang="zh-hans" href="https://www.kimai.org/zh_Hans/store/helsinkisystems-budgetwatcher.html">
 <link rel="alternate" hreflang="zh-hant" href="https://www.kimai.tw/store/helsinkisystems-budgetwatcher.html">
-<link href="/assets/build/main.css?v8" rel="stylesheet" />
+<link href="/assets/build/main.css?v14" rel="stylesheet" />
 
 
 
@@ -86,18 +86,7 @@
     
 
 
-
-
-
-
-
-
-
-
-
-
-
-<header class="header navbar navbar-expand-lg    bg-light navbar-sticky">
+<header class="header navbar navbar-expand-lg border-bottom bg-light navbar-sticky">
     <div class="container px-3">
         <a href="/ru/" class="navbar-brand pe-3">
         <img src="/images/kimai_logo_48.webp" style="height:36px;width:36px;" alt="Kimai - регистратор времени с открытым исходным кодом"> Kimai
@@ -105,28 +94,29 @@
         <div id="navbarNav" class="offcanvas offcanvas-end">
             <div class="offcanvas-header border-bottom">
                 <h5 class="offcanvas-title">Menu</h5>
-                <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-current="page">Product</a>
                         <ul class="dropdown-menu">
-                            <li><a href="/ru/about.html" class="dropdown-item">О Kimai</a></li>
-                            <li><a href="/en/open-source-community" class="dropdown-item">Open Source</a></li>
-                            <li class="dropdown-divider"></li>
                             <li><a href="/ru/integrations" class="dropdown-item">Apps & Integrations</a></li>
                             <li><a href="/ru/demo.html" class="dropdown-item">Демо-версия</a></li>
                             <li class="dropdown-divider"></li>
                             <li><a href="/ru/blog/" class="dropdown-item">Новости</a></li>
                             <li><a href="/ru/support.html" class="dropdown-item">Поддержка</a></li>
+                            
+                            <li class="dropdown-divider"></li>
+                            <li><a href="/ru/about.html" class="dropdown-item">О Kimai</a></li>
+                            <li><a href="/en/open-source-community" class="dropdown-item">Open Source</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-current="page">Облако</a>
                         <ul class="dropdown-menu">
                             <li><a href="/ru/pricing" class="dropdown-item">Pricing</a></li>
-                            <li><a href="/ru/changelog" class="dropdown-item">Changelog</a></li>
+                            <li><a href="/ru/changelog" class="dropdown-item">Updates</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -144,7 +134,6 @@
                             
                             
                             <li><a href="https://www.kimai.org/documentation/chapter-manual.html" class="dropdown-item">
-                                <i class="bx bx-book me-2"></i>
                                 
                                 Руководство пользователя
                             </a></li>
@@ -152,7 +141,6 @@
                             
                             
                             <li><a href="https://www.kimai.org/documentation/cloud.html" class="dropdown-item">
-                                <i class="bx bx-cloud me-2"></i>
                                 
                                 Kimai-Cloud
                             </a></li>
@@ -160,7 +148,6 @@
                             
                             
                             <li><a href="https://www.kimai.org/documentation/chapter-on-premise.html" class="dropdown-item">
-                                <i class="bx bx-server me-2"></i>
                                 
                                 Self hosting
                             </a></li>
@@ -168,7 +155,6 @@
                             
                             
                             <li><a href="https://www.kimai.org/documentation/chapter-developer.html" class="dropdown-item">
-                                <i class="bx bx-code-alt me-2"></i>
                                 
                                 Разработчик
                             </a></li>
@@ -180,10 +166,124 @@
         </div>
         <div class="pe-lg-1 ms-auto me-2">
             
-
-
-
-<a href="https://www.kimai.cloud/auth/" class="btn btn-sm fs-sm d-none d-md-inline-flex me-2 btn-outline-secondary">Login</a>
+            
+            <div class="dropdown language-dropdown d-inline-block">
+    <button type="button" class="btn btn-sm fs-sm d-none d-md-inline-flex me-2 btn-outline-secondary px-2 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="bx bx-globe fs-lg top-50 start-0 text-body me-2"></i>
+            Русский
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end">
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/ca/" class="dropdown-item" title="Kimai - Seguidor de temps de codi obert">Català</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/cs/" class="dropdown-item" title="Kimai - Open Source sledování času">Čeština</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/de/" class="dropdown-item" title="Kimai – Open-Source Zeiterfassung">Deutsch</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/en/" class="dropdown-item" title="Kimai - Open Source time-tracker">English</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/es/" class="dropdown-item" title="Kimai - Tracker de tiempo abierto">Español</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/fr/" class="dropdown-item" title="Kimai - Suivi du temps à code ouvert">Français</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="rtl" href="https://www.kimai.co.il" class="dropdown-item" title="Kimai - מעקב שעות בקוד פתוח">עברית</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/hr/" class="dropdown-item" title="Kimai – Program otvorenog koda za evidentiranje vremena">Hrvatski</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/it/" class="dropdown-item" title="Kimai: time-tracker open source">Italiano</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/nl/" class="dropdown-item" title="Kimai - Open Source tijdsregistratietool">Dutch</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/pl/" class="dropdown-item" title="Kimai - Otwarte oprogramowanie do śledzenia czasu">Polski</a>
+            </li>
+            
+        
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/pt_BR/" class="dropdown-item" title="Kimai - Rastreador de tempo de código aberto">Português (Brasil)</a>
+            </li>
+            
+        
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/sk/" class="dropdown-item" title="Kimai - Open Source sledovanie času">Slovenčina</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/sv/" class="dropdown-item" title="Kimai - öppen källkod tidsspårare">Svenska</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/ta/" class="dropdown-item" title="கிமாய் - திறந்த மூல நேர -கண்காணிப்பு">தமிழ்</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/uk/" class="dropdown-item" title="Kimai — реєстратор часу з відкритим сирцевим кодом">Українська</a>
+            </li>
+            
+        
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.tw" class="dropdown-item" title="Kimai —— 開放源始碼的工時追蹤工具">中文（繁體）</a>
+            </li>
+            
+        
+    </ul>
+</div>
 
             <a href="https://www.kimai.cloud/auth/registration" class="btn btn-success btn-sm fs-sm d-inline-flex">Начните бесплатно</a>
 
@@ -336,13 +436,21 @@ For example, you can set the default amounts to 50%, 75%, and 95%, and for anoth
 <p>English:</p>
 
 <div class="youtube-wrapper" style="max-width: 560px;">
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/7EuDqvmb-Rk" title="BudgetWatcher (English)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    <a class="youtube-consent" href="https://www.youtube.com/watch?v=7EuDqvmb-Rk" target="_blank" rel="noopener" data-youtube-id="7EuDqvmb-Rk" data-youtube-title="BudgetWatcher (English)" aria-label="Play video: BudgetWatcher (English)">
+        <img class="youtube-consent-thumbnail" src="/images/video-thumbnails/budgetwatcher_en.webp" alt="" loading="lazy" width="1280" height="720" />
+        <span class="youtube-consent-play" aria-hidden="true"><i class="bx bx-play"></i></span>
+        <span class="youtube-consent-notice">Click to load the video from YouTube. Data will be transferred to Google.</span>
+    </a>
 </div>
 
 <p>German:</p>
 
 <div class="youtube-wrapper" style="max-width: 560px;">
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/_ryMJwYsOOg" title="BudgetWatcher (Deutsch)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    <a class="youtube-consent" href="https://www.youtube.com/watch?v=_ryMJwYsOOg" target="_blank" rel="noopener" data-youtube-id="_ryMJwYsOOg" data-youtube-title="BudgetWatcher (Deutsch)" aria-label="Play video: BudgetWatcher (Deutsch)">
+        <img class="youtube-consent-thumbnail" src="/images/video-thumbnails/budgetwatcher_de.webp" alt="" loading="lazy" width="1280" height="720" />
+        <span class="youtube-consent-play" aria-hidden="true"><i class="bx bx-play"></i></span>
+        <span class="youtube-consent-notice">Click to load the video from YouTube. Data will be transferred to Google.</span>
+    </a>
 </div>
 
 <h2 id="support">Support</h2>
@@ -510,7 +618,7 @@ then either the directory has a wrong name (must be <strong>var/plugins/BudgetWa
                 <div class="fs-xl text-light opacity-50 mb-2">Предлагает</div>
                 <h2 class="h1 text-light mb-4">Helsinki Systems GmbH</h2>
                 <p class="text-light opacity-70 pb-4">
-                    Network and IT-Solutions
+                    Helsinki Systems is a network and IT solutions provider offering hosting, installation and ongoing operation of Kimai for organisations of all sizes.
                 </p>
 
                 <div class="mb-4">
@@ -535,6 +643,7 @@ then either the directory has a wrong name (must be <strong>var/plugins/BudgetWa
                         GitHub
                     </a>
                     
+                    
                     <br>
                     
                     
@@ -547,7 +656,11 @@ then either the directory has a wrong name (must be <strong>var/plugins/BudgetWa
 
 
 
+
+    
 </main>
+
+
 
 <footer class="footer bg-dark pt-5 pb-4">
     <div class="container pt-1 pt-md-3 pt-lg-4 pt-xl-5">
@@ -565,57 +678,125 @@ then either the directory has a wrong name (must be <strong>var/plugins/BudgetWa
                 </p>
                 <div class="d-flex flex-column flex-sm-row flex-lg-column align-items-sm-center align-items-lg-start justify-content-between pb-1 pb-md-2 pb-lg-3 mb-3">
                     <div class="position-relative">
-                        <div class="dropdown">
-                            <button type="button" class="form-select" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="bx bx-globe top-50 start-0 text-body me-2"></i>
-                                Русский
-                            </button>
-                            <div class="dropdown-menu dropdown-menu-end">
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/ca/" class="dropdown-item" title="Kimai - Seguidor de temps de codi obert">Català</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/cs/" class="dropdown-item" title="Kimai - Open Source sledování času">Čeština</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/de/" class="dropdown-item" title="Kimai – Open-Source Zeiterfassung">Deutsch</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/en/" class="dropdown-item" title="Kimai - Open Source time-tracker">English</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/es/" class="dropdown-item" title="Kimai - Tracker de tiempo abierto">Español</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/fr/" class="dropdown-item" title="Kimai - Suivi du temps à code ouvert">Français</a>
-                                
-                                    <a dir="rtl" href="https://www.kimai.co.il" class="dropdown-item" title="Kimai - מעקב שעות בקוד פתוח">עברית</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/hr/" class="dropdown-item" title="Kimai – Program otvorenog koda za evidentiranje vremena">Hrvatski</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/it/" class="dropdown-item" title="Kimai: time-tracker open source">Italiano</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/nl/" class="dropdown-item" title="Kimai - Open Source tijdregistratie">Dutch</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/pl/" class="dropdown-item" title="Kimai - Otwarte oprogramowanie do śledzenia czasu">Polski</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/pt/" class="dropdown-item" title="Kimai - Rastreador de tempo de código aberto">Português</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/pt_BR/" class="dropdown-item" title="Kimai - Rastreador de tempo de código aberto">Português (Brasil)</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/ru/" class="dropdown-item active" title="Kimai - регистратор времени с открытым исходным кодом">Русский</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/sk/" class="dropdown-item" title="Kimai - Open Source sledovanie času">Slovenčina</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/sv/" class="dropdown-item" title="Kimai - öppen källkod tidsspårare">Svenska</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/ta/" class="dropdown-item" title="கிமாய் - திறந்த மூல நேர -கண்காணிப்பு">தமிழ்</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/uk/" class="dropdown-item" title="Kimai — реєстратор часу з відкритим сирцевим кодом">Українська</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/zh_Hans/" class="dropdown-item" title="Kimai - 开源时间跟踪器">中文（中国）</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.tw" class="dropdown-item" title="Kimai —— 開放源始碼的工時追蹤工具">中文（繁體）</a>
-                                
-                            </div>
-                        </div>
+                        <div class="dropdown language-dropdown d-inline-block">
+    <button type="button" class="btn btn-sm fs-sm btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="bx bx-globe fs-lg top-50 start-0 text-body me-2"></i>
+            Русский
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end">
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/ca/" class="dropdown-item" title="Kimai - Seguidor de temps de codi obert">Català</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/cs/" class="dropdown-item" title="Kimai - Open Source sledování času">Čeština</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/de/" class="dropdown-item" title="Kimai – Open-Source Zeiterfassung">Deutsch</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/en/" class="dropdown-item" title="Kimai - Open Source time-tracker">English</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/es/" class="dropdown-item" title="Kimai - Tracker de tiempo abierto">Español</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/fr/" class="dropdown-item" title="Kimai - Suivi du temps à code ouvert">Français</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="rtl" href="https://www.kimai.co.il" class="dropdown-item" title="Kimai - מעקב שעות בקוד פתוח">עברית</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/hr/" class="dropdown-item" title="Kimai – Program otvorenog koda za evidentiranje vremena">Hrvatski</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/it/" class="dropdown-item" title="Kimai: time-tracker open source">Italiano</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/nl/" class="dropdown-item" title="Kimai - Open Source tijdsregistratietool">Dutch</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/pl/" class="dropdown-item" title="Kimai - Otwarte oprogramowanie do śledzenia czasu">Polski</a>
+            </li>
+            
+        
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/pt_BR/" class="dropdown-item" title="Kimai - Rastreador de tempo de código aberto">Português (Brasil)</a>
+            </li>
+            
+        
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/sk/" class="dropdown-item" title="Kimai - Open Source sledovanie času">Slovenčina</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/sv/" class="dropdown-item" title="Kimai - öppen källkod tidsspårare">Svenska</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/ta/" class="dropdown-item" title="கிமாய் - திறந்த மூல நேர -கண்காணிப்பு">தமிழ்</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/uk/" class="dropdown-item" title="Kimai — реєстратор часу з відкритим сирцевим кодом">Українська</a>
+            </li>
+            
+        
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.tw" class="dropdown-item" title="Kimai —— 開放源始碼的工時追蹤工具">中文（繁體）</a>
+            </li>
+            
+        
+    </ul>
+</div>
+
                     </div>
-                    
                 </div>
             </div>
             <div class="col-md-7 offset-xl-1">
@@ -650,27 +831,28 @@ then either the directory has a wrong name (must be <strong>var/plugins/BudgetWa
                                 
                                 
                                 <li class="nav-item">
-                                    <a href="/en/agency-time-tracking" class="nav-link fs-sm fw-medium px-0 py-1" title="Agency">Agencies</a>
+                                    <a href="/ru/agency-time-tracking" class="nav-link fs-sm fw-medium px-0 py-1" title="Agency">Agencies</a>
                                 </li>
                                 
                                 <li class="nav-item">
-                                    <a href="/en/consultants-time-tracking" class="nav-link fs-sm fw-medium px-0 py-1" title="Consultants">Consultants</a>
+                                    <a href="/ru/consultants-time-tracking" class="nav-link fs-sm fw-medium px-0 py-1" title="Consultants">Consultants</a>
                                 </li>
                                 
                                 <li class="nav-item">
-                                    <a href="/en/freelancers-time-tracking" class="nav-link fs-sm fw-medium px-0 py-1" title="Freelancers">Freelancer</a>
+                                    <a href="/ru/freelancers-time-tracking" class="nav-link fs-sm fw-medium px-0 py-1" title="Freelancers">Freelancer</a>
                                 </li>
                                 
                                 <li class="nav-item">
-                                    <a href="/en/software-developers-time-tracking" class="nav-link fs-sm fw-medium px-0 py-1" title="Software Developers">Software Developers</a>
+                                    <a href="/ru/non-profit" class="nav-link fs-sm fw-medium px-0 py-1" title="Non Profit">Non-Profits</a>
                                 </li>
                                 
                                 <li class="nav-item">
-                                    <a href="/en/non-profit" class="nav-link fs-sm fw-medium px-0 py-1">Non-Profits</a>
+                                    <a href="/ru/software-developers-time-tracking" class="nav-link fs-sm fw-medium px-0 py-1" title="Software Developers">Software Developers</a>
                                 </li>
+                                
                                 <li class="nav-item">
                                     
-                                    <a href="/en/industry" class="nav-link fs-sm fw-medium px-0 py-1">More industries</a>
+                                    <a href="/ru/industry" class="nav-link fs-sm fw-medium px-0 py-1">More industries</a>
                                 </li>
                             </ul>
                         </div>
@@ -705,7 +887,6 @@ then either the directory has a wrong name (must be <strong>var/plugins/BudgetWa
                             </ul>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </div>
@@ -720,41 +901,39 @@ then either the directory has a wrong name (must be <strong>var/plugins/BudgetWa
         <li class="nav-item">
             <a href="/ru/terms-cloud.html" class="nav-link fs-sm fw-medium">Terms</a>
         </li>
+        <li class="nav-item">
+            <a href="https://status.kimai.org/" target="_blank" class="nav-link fs-sm fw-medium">Status</a>
+        </li>
     </ul>
     <div class="nav order-md-2 mb-3 mb-md-0">
         
+    
     <a target="_blank" href="https://github.com/kimai/kimai" class="btn btn-icon btn-secondary btn-github rounded-circle me-3" aria-label="GitHub">
         <i class="bx bxl-github"></i>
     </a>
 
+    
     <a target="_blank" href="https://www.youtube.com/@kimai_org" class="btn btn-icon btn-secondary btn-youtube rounded-circle me-3" aria-label="YouTube">
         <i class="bx bxl-youtube"></i>
     </a>
 
+    
     <a target="_blank" href="https://www.linkedin.com/company/kimai-org/" class="btn btn-icon btn-secondary btn-linkedin rounded-circle me-3" aria-label="LinkedIn">
         <i class="bx bxl-linkedin"></i>
     </a>
 
-    <a target="_blank" href="https://www.instagram.com/kimai_org" class="btn btn-icon btn-secondary btn-instagram rounded-circle me-3" aria-label="Instagram">
-        <i class="bx bxl-instagram"></i>
+    
+    <a target="_blank" href="https://www.reddit.com/r/kimai/" class="btn btn-icon btn-secondary btn-reddit rounded-circle me-3" aria-label="reddit">
+        <i class="bx bxl-reddit"></i>
     </a>
 
-    <a target="_blank" href="https://www.facebook.com/kimai.time.tracker" class="btn btn-icon btn-secondary btn-facebook rounded-circle me-3" aria-label="Facebook">
-        <i class="bx bxl-facebook"></i>
-    </a>
-
+    
     <a target="_blank" href="https://phpc.social/@kimai" class="btn btn-icon btn-secondary btn-messenger rounded-circle me-3" aria-label="Mastodon">
         <i class="bx bxl-mastodon"></i>
     </a>
 
 
     </div>
-    <ul class="nav order-md-3">
-        <li class="nav-item">
-            <a href="https://status.kimai.org/" target="_blank" class="nav-link fs-sm fw-medium">Status</a>
-        </li>
-    </ul>
-    
 </div>
 
     </div>
@@ -768,7 +947,7 @@ then either the directory has a wrong name (must be <strong>var/plugins/BudgetWa
     <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
 </a>
 
-<script src="/assets/build/main.js?v1"></script>
+<script src="/assets/build/main.js?v4"></script>
 
 <script defer src="https://u.kimai.org/script.js" data-website-id="e26bef12-9527-43bc-83fd-660e237f3526"></script>
 

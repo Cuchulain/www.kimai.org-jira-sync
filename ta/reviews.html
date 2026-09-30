@@ -39,7 +39,7 @@
 <link rel="alternate" hreflang="uk" href="https://www.kimai.org/uk/reviews">
 <link rel="alternate" hreflang="zh-hans" href="https://www.kimai.org/zh_Hans/reviews">
 <link rel="alternate" hreflang="zh-hant" href="https://www.kimai.tw/reviews">
-<link href="/assets/build/main.css?v8" rel="stylesheet" />
+<link href="/assets/build/main.css?v14" rel="stylesheet" />
 
 </head>
 <body class="">
@@ -48,18 +48,7 @@
     
 
 
-
-
-
-
-
-
-
-
-
-
-
-<header class="header navbar navbar-expand-lg position-absolute   bg-light navbar-sticky">
+<header class="header navbar navbar-expand-lg border-bottom bg-light navbar-sticky">
     <div class="container px-3">
         <a href="/ta/" class="navbar-brand pe-3">
         <img src="/images/kimai_logo_48.webp" style="height:36px;width:36px;" alt="கிமாய் - திறந்த மூல நேர -கண்காணிப்பு"> Kimai
@@ -67,21 +56,22 @@
         <div id="navbarNav" class="offcanvas offcanvas-end">
             <div class="offcanvas-header border-bottom">
                 <h5 class="offcanvas-title">Menu</h5>
-                <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-current="page">தயாரிப்பு</a>
                         <ul class="dropdown-menu">
-                            <li><a href="/ta/about.html" class="dropdown-item">கிமாய் பற்றி</a></li>
-                            <li><a href="/en/open-source-community" class="dropdown-item">திறந்த மூலம்</a></li>
-                            <li class="dropdown-divider"></li>
                             <li><a href="/ta/integrations" class="dropdown-item">பயன்பாடுகள் மற்றும் ஒருங்கிணைப்புகள்</a></li>
                             <li><a href="/ta/demo.html" class="dropdown-item">செயற்காட்சி</a></li>
                             <li class="dropdown-divider"></li>
                             <li><a href="/ta/blog/" class="dropdown-item">வலைப்பதிவு</a></li>
                             <li><a href="/ta/support.html" class="dropdown-item">உதவி</a></li>
+                            
+                            <li class="dropdown-divider"></li>
+                            <li><a href="/ta/about.html" class="dropdown-item">கிமாய் பற்றி</a></li>
+                            <li><a href="/en/open-source-community" class="dropdown-item">திறந்த மூலம்</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -106,7 +96,6 @@
                             
                             
                             <li><a href="https://www.kimai.org/documentation/chapter-manual.html" class="dropdown-item">
-                                <i class="bx bx-book me-2"></i>
                                 
                                 பயனர் கையேடு
                             </a></li>
@@ -114,7 +103,6 @@
                             
                             
                             <li><a href="https://www.kimai.org/documentation/cloud.html" class="dropdown-item">
-                                <i class="bx bx-cloud me-2"></i>
                                 
                                 முகில்
                             </a></li>
@@ -122,7 +110,6 @@
                             
                             
                             <li><a href="https://www.kimai.org/documentation/chapter-on-premise.html" class="dropdown-item">
-                                <i class="bx bx-server me-2"></i>
                                 
                                 தன்வய ஓச்டிங்
                             </a></li>
@@ -130,7 +117,6 @@
                             
                             
                             <li><a href="https://www.kimai.org/documentation/chapter-developer.html" class="dropdown-item">
-                                <i class="bx bx-code-alt me-2"></i>
                                 
                                 உருவாக்குநர்
                             </a></li>
@@ -142,10 +128,124 @@
         </div>
         <div class="pe-lg-1 ms-auto me-2">
             
-
-
-
-<a href="https://www.kimai.cloud/auth/" class="btn btn-sm fs-sm d-none d-md-inline-flex me-2 btn-outline-secondary">புகுபதிவு</a>
+            
+            <div class="dropdown language-dropdown d-inline-block">
+    <button type="button" class="btn btn-sm fs-sm d-none d-md-inline-flex me-2 btn-outline-secondary px-2 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="bx bx-globe fs-lg top-50 start-0 text-body me-2"></i>
+            தமிழ்
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end">
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/ca/" class="dropdown-item" title="Kimai - Seguidor de temps de codi obert">Català</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/cs/" class="dropdown-item" title="Kimai - Open Source sledování času">Čeština</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/de/" class="dropdown-item" title="Kimai – Open-Source Zeiterfassung">Deutsch</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/en/" class="dropdown-item" title="Kimai - Open Source time-tracker">English</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/es/" class="dropdown-item" title="Kimai - Tracker de tiempo abierto">Español</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/fr/" class="dropdown-item" title="Kimai - Suivi du temps à code ouvert">Français</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="rtl" href="https://www.kimai.co.il" class="dropdown-item" title="Kimai - מעקב שעות בקוד פתוח">עברית</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/hr/" class="dropdown-item" title="Kimai – Program otvorenog koda za evidentiranje vremena">Hrvatski</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/it/" class="dropdown-item" title="Kimai: time-tracker open source">Italiano</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/nl/" class="dropdown-item" title="Kimai - Open Source tijdsregistratietool">Dutch</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/pl/" class="dropdown-item" title="Kimai - Otwarte oprogramowanie do śledzenia czasu">Polski</a>
+            </li>
+            
+        
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/pt_BR/" class="dropdown-item" title="Kimai - Rastreador de tempo de código aberto">Português (Brasil)</a>
+            </li>
+            
+        
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/sk/" class="dropdown-item" title="Kimai - Open Source sledovanie času">Slovenčina</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/sv/" class="dropdown-item" title="Kimai - öppen källkod tidsspårare">Svenska</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/ta/" class="dropdown-item active" aria-current="true" title="கிமாய் - திறந்த மூல நேர -கண்காணிப்பு">தமிழ்</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/uk/" class="dropdown-item" title="Kimai — реєстратор часу з відкритим сирцевим кодом">Українська</a>
+            </li>
+            
+        
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.tw" class="dropdown-item" title="Kimai —— 開放源始碼的工時追蹤工具">中文（繁體）</a>
+            </li>
+            
+        
+    </ul>
+</div>
 
             <a href="https://www.kimai.cloud/auth/registration" class="btn btn-success btn-sm fs-sm d-inline-flex">இலவசமாகத் தொடங்குங்கள்</a>
 
@@ -158,19 +258,39 @@
 
 
     
-<section class="container pt-5 mt-2 mt-md-4 mt-lg-5">
-    <div class="row pt-xl-3 justify-content-center text-center">
-        <div class="col-12 col-md-10 col-lg-8 pb-5">
-            <h1 class="mb-4 text-center">மதிப்புரைகள்</h1>
-            <p class="fs-lg pb-lg-3 mb-4 d-none d-md-block">ஆயிரக்கணக்கான நிறுவனங்கள் தங்கள் நேரங்களைக் கண்காணிக்க தினமும் கிமாயைப் பயன்படுத்துகின்றன.<br />
+
+
+
+
+
+
+
+
+    
+
+
+
+
+<section class="hero container pt-md-1 pt-lg-4 pt-xl-5">
+    <div class="mt-4 py-2 pb-sm-3 pb-md-4 pb-lg-5 mx-auto text-center title-header">
+        
+        <h1 class="page-title  mb-lg-4 mb-3">
+            மதிப்புரைகள்
+        </h1>
+        
+        <p class="mb-4">ஆயிரக்கணக்கான நிறுவனங்கள் தங்கள் நேரங்களைக் கண்காணிக்க தினமும் கிமாயைப் பயன்படுத்துகின்றன.<br />
 அவர்களில் சிலர் சொன்னது இங்கே …</p>
-        </div>
+        
     </div>
 </section>
 
+
+
+
+
 <div class="text-center mb-2">
 
-    <a href="https://senja.io/p/kimai-time/r/add-testimonial" target="_blank" class="mb-3 btn btn-info rounded-pill">உங்கள் மதிப்பாய்வை இடுங்கள்</a>
+    <a href="https://senja.io/p/kimai-time/r/add-testimonial" target="_blank" class="mb-3 btn btn-primary rounded-pill">உங்கள் மதிப்பாய்வை இடுங்கள்</a>
     
 </div>
 
@@ -179,13 +299,314 @@
         
         
 
-<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,WallOfLove,German,">
+<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="Cloud,WallOfLove,NonProfit,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
                     
-                        <img src="/images/testimonials/oteloegen.webp" width="60" class="rounded-circle" alt="Michael Hazel" />
+                        <img src="/images/testimonials/gstf.webp" width="48" class="rounded-circle" alt="Nicole S." />
+                    
+                
+                <div class="ps-3">
+                    <h6 class="fw-semibold lh-base mb-0">Nicole S.</h6>
+                    <span class="fs-sm text-muted">
+                        
+                            Koordinatorin
+                        
+                        
+                            &ndash; <a href="https://gstf.org/" target="_blank" class="text-muted text-decoration-none">Gesellschaft Schweizerisch-Tibetische Freundschaft</a>
+                        
+                    </span>
+                </div>
+            </figcaption>
+            <div class="text-nowrap py-2">
+                
+                <i class="bx bxs-star fs-3 text-warning"></i>
+                
+                <i class="bx bxs-star fs-3 text-warning"></i>
+                
+                <i class="bx bxs-star fs-3 text-warning"></i>
+                
+                <i class="bx bxs-star fs-3 text-warning"></i>
+                
+                <i class="bx bxs-star fs-3 text-warning"></i>
+                
+            </div>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>A user-friendly and reliable time-tracking tool that exceeds our expectations. <mark>It offers excellent value for the price, and the support team responds quickly, competently, and courteously.</mark></p>
+
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2026-06-25</p>
+        </div>
+    </div>
+</div>
+
+<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="Cloud,WallOfLove,NonProfit,Faces,">
+    <div class="h-100 border border-secondary rounded">
+        <div class="card-body pt-1 mt-3">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
+                
+                    <img src="/images/testimonials/hendrik-michel.webp" width="48" class="rounded-circle" alt="Hendrik Michel, PoE" />
+                
+                <div class="ps-3">
+                    <h6 class="fw-semibold lh-base mb-0">Hendrik Michel, PoE</h6>
+                    <span class="fs-sm text-muted">
+                        
+                            Head of Office &amp; Administration
+                        
+                        
+                            &ndash; <a href="https://pulseofeurope.eu/" target="_blank" class="text-muted text-decoration-none">Pulse of Europe e.V.</a>
+                        
+                    </span>
+                </div>
+            </figcaption>
+            <div class="text-nowrap py-2">
+                
+                <i class="bx bxs-star fs-3 text-warning"></i>
+                
+                <i class="bx bxs-star fs-3 text-warning"></i>
+                
+                <i class="bx bxs-star fs-3 text-warning"></i>
+                
+                <i class="bx bxs-star fs-3 text-warning"></i>
+                
+                <i class="bx bxs-star fs-3 text-warning"></i>
+                
+            </div>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>We have been using Kimai for time tracking at Pulse of Europe for quite some time now and are extremely satisfied with the experience.</p>
+
+<p>As a non-profit, pro-European citizens’ movement, we coordinate a wide range of projects, campaigns and activities involving both staff members and volunteers. Having a reliable and transparent time-tracking solution is therefore essential for our daily work.</p>
+
+<p><mark>What particularly impresses us about Kimai is its simple and intuitive user experience.</mark> Working hours can be recorded quickly and easily, while projects and tasks can be clearly categorised and flexibly filtered. This allows us to maintain an overview even across multiple teams, projects and responsibilities.</p>
+
+<p>Kimai helps us make our internal processes more transparent and efficient – both in our day-to-day operations and when evaluating project-related working hours.</p>
+
+<p>For organisations and teams looking for a powerful yet user-friendly time-tracking solution, we can wholeheartedly recommend Kimai.</p>
+
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2026-06-15</p>
+        </div>
+    </div>
+</div>
+
+<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="Cloud,WallOfLove,NonProfit,FeaturedShort,">
+    <div class="h-100 border border-secondary rounded">
+        <div class="card-body pt-1 mt-3">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
+                
+                    
+                        <img src="/images/testimonials/pulse-of-europe.webp" width="48" class="rounded-circle" alt="Wolf Peter K." />
+                    
+                
+                <div class="ps-3">
+                    <h6 class="fw-semibold lh-base mb-0">Wolf Peter K.</h6>
+                    <span class="fs-sm text-muted">
+                        
+                            Vorstand für Finanzen und IT
+                        
+                        
+                            &ndash; <a href="https://pulseofeurope.eu/" target="_blank" class="text-muted text-decoration-none">Pulse of Europe e.V.</a>
+                        
+                    </span>
+                </div>
+            </figcaption>
+            <div class="text-nowrap py-2">
+                
+                <i class="bx bxs-star fs-3 text-warning"></i>
+                
+                <i class="bx bxs-star fs-3 text-warning"></i>
+                
+                <i class="bx bxs-star fs-3 text-warning"></i>
+                
+                <i class="bx bxs-star fs-3 text-warning"></i>
+                
+                <i class="bx bxs-star fs-3 text-warning"></i>
+                
+            </div>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>Pulse of Europe e.V. is a citizens’ movement dedicated to European unity. We rely on many small and micro-donations. Before every new issue, I ask myself: Can I justify this to our donors?
+With Kimai, the answer is a resounding “YES”: <mark>Not only the generosity toward NGOs and the lightning-fast, always helpful support, but also the ease of use and the range of features justify this decision to use Kimai every single day.</mark></p>
+
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2026-06-10</p>
+        </div>
+    </div>
+</div>
+
+<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="Cloud,WallOfLove,NonProfit,">
+    <div class="h-100 border border-secondary rounded">
+        <div class="card-body pt-1 mt-3">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
+                
+                    
+                        <img src="/images/testimonials/all-we-shape.webp" width="48" class="rounded-circle" alt="Florian" />
+                    
+                
+                <div class="ps-3">
+                    <h6 class="fw-semibold lh-base mb-0">Florian</h6>
+                    <span class="fs-sm text-muted">
+                        
+                            Projektentwicklung
+                        
+                        
+                            &ndash; <a href="https://allweshape.org/" target="_blank" class="text-muted text-decoration-none">All We Shape gGmbH</a>
+                        
+                    </span>
+                </div>
+            </figcaption>
+            <div class="text-nowrap py-2">
+                
+                <i class="bx bxs-star fs-3 text-warning"></i>
+                
+                <i class="bx bxs-star fs-3 text-warning"></i>
+                
+                <i class="bx bxs-star fs-3 text-warning"></i>
+                
+                <i class="bx bxs-star fs-3 text-warning"></i>
+                
+                <i class="bx bxs-star fs-3 text-warning"></i>
+                
+            </div>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>As a non-profit organization, when it comes to digital tools, we care not only about costs but also about transparency, data privacy, and long-term independence. <mark>Kimai won us over with its open-source approach, the fair non-profit pricing, and the fast, personal support.</mark></p>
+
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2026-06-10</p>
+        </div>
+    </div>
+</div>
+
+<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,WallOfLove,English,">
+    <div class="h-100 border border-secondary rounded">
+        <div class="card-body pt-1 mt-3">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
+                
+                    
+                        <img src="/images/testimonials/clark-technical-logo.webp" width="48" class="rounded-circle" alt="Tony Clark" />
+                    
+                
+                <div class="ps-3">
+                    <h6 class="fw-semibold lh-base mb-0">Tony Clark</h6>
+                    <span class="fs-sm text-muted">
+                        
+                            Systems Engineer
+                        
+                        
+                            &ndash; <a href="https://www.clarktechnical.com" target="_blank" class="text-muted text-decoration-none">Clark Technical Services</a>
+                        
+                    </span>
+                </div>
+            </figcaption>
+            <div class="text-nowrap py-2">
+                
+                <i class="bx bxs-star fs-3 text-warning"></i>
+                
+                <i class="bx bxs-star fs-3 text-warning"></i>
+                
+                <i class="bx bxs-star fs-3 text-warning"></i>
+                
+                <i class="bx bxs-star fs-3 text-warning"></i>
+                
+                <i class="bx bxs-star fs-3 text-warning"></i>
+                
+            </div>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>Kimai is a great platform for small business to get started in time and cost tracking. It is feature rich, well documented, and well supported.</p>
+
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2026-05-30</p>
+        </div>
+    </div>
+</div>
+
+<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,WallOfLove,">
+    <div class="h-100 border border-secondary rounded">
+        <div class="card-body pt-1 mt-3">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
+                
+                    
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" /></svg>
+                    
+                
+                <div class="ps-3">
+                    <h6 class="fw-semibold lh-base mb-0">Oliver Tönse</h6>
+                    <span class="fs-sm text-muted">
+                        
+                            IT Unternehmensberatung
+                        
+                        
+                            &ndash; GETIMA GmbH
+                        
+                    </span>
+                </div>
+            </figcaption>
+            <div class="text-nowrap py-2">
+                
+                <i class="bx bxs-star fs-3 text-warning"></i>
+                
+                <i class="bx bxs-star fs-3 text-warning"></i>
+                
+                <i class="bx bxs-star fs-3 text-warning"></i>
+                
+                <i class="bx bxs-star fs-3 text-warning"></i>
+                
+                <i class="bx bxs-star fs-3 text-warning"></i>
+                
+            </div>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>I’ve been a huge fan of the Kimai time-tracking tool since 2010. It’s easy to use yet so feature-rich that you’ll find absolutely no limitations. <mark>I’ve tried many tools, but none could convince me as much as Kimai, so I remain a loyal user.</mark> And on top of that, there’s excellent, personalized support: a migration from my self-hosted Kimai instance to the cloud was handled with a personal email response and completed within minutes. I was able to continue working seamlessly right away. Absolutely top-notch! Thank you so much for this great tool!</p>
+
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2026-04-23</p>
+        </div>
+    </div>
+</div>
+
+<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,WallOfLove,">
+    <div class="h-100 border border-secondary rounded">
+        <div class="card-body pt-1 mt-3">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
+                
+                    
+                        <img src="/images/testimonials/oteloegen.webp" width="48" class="rounded-circle" alt="Michael Hazel" />
                     
                 
                 <div class="ps-3">
@@ -213,24 +634,30 @@
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>Eine riesige Gratulation an dich für Kimai – es ist so ein geiles, richtig gut ausgedachtes Tool. Alles, was man sich wünscht für Zeiterfassung, und zwar in modernen Layout und Stil.</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>Huge congratulations to you on Kimai—<mark>it’s such an awesome, really well-designed tool. It has everything you could want for time tracking</mark>, all wrapped up in a modern layout and style.</p>
 
-<p>Hört sich an, als wäre ich für diese Review bestochen worden. Wurde aber nicht 😅</p>
+<p>Sounds like I was bribed to write this review. But I wasn’t 😅</p>
 
-            </div>
-            <p class="text-muted fs-xs">April 20, 2026</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2026-04-20</p>
         </div>
     </div>
 </div>
 
-<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,WallOfLove,German,">
+<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,WallOfLove,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
                     
-                        <img src="/images/testimonials/trintec.webp" width="60" class="rounded-circle" alt="Thomas Reutimann" />
+                        <img src="/images/testimonials/trintec.webp" width="48" class="rounded-circle" alt="Thomas Reutimann" />
                     
                 
                 <div class="ps-3">
@@ -258,21 +685,27 @@
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>Wir arbeiten schon eine Weile mit dem genialen Tool Kimai und haben es auch vielen Empfohlen. Nun hatten wir intern eine Idee welche wir umgesetzt haben, bzw. am ausbauen sind. Es geht um eine Auftragsverwaltung mit Managementportal auf der Basis von Kimai. Diese ist übrigens absolut fantastisch. Es ist wirklich eindrücklich wie gut das Tool dokumentiert und auch für Erweiterungen offen gemacht wurde.</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>We’ve been using the brilliant Kimai tool for a while now and have recommended it to many people. Recently, we came up with an idea internally that we’ve implemented and are currently expanding. It involves an order management system with a management portal built on the Kimai platform. By the way, it’s absolutely fantastic. <mark>It’s truly impressive how well the tool has been documented and how open it is to customizations.</mark></p>
 
-            </div>
-            <p class="text-muted fs-xs">March 24, 2026</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2026-03-24</p>
         </div>
     </div>
 </div>
 
-<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="Cloud,WallOfLove,German,">
+<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="Cloud,WallOfLove,OpenSource,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
-                    <img src="/images/testimonials/laurin-berli.webp" width="60" class="rounded-circle" alt="Laurin Berli" />
+                    <img src="/images/testimonials/laurin-berli.webp" width="48" class="rounded-circle" alt="Laurin Berli" />
                 
                 <div class="ps-3">
                     <h6 class="fw-semibold lh-base mb-0">Laurin Berli</h6>
@@ -299,11 +732,17 @@
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>Kimai begleitet mein Unternehmen seit den Anfangsstunden. Als Dienstleister ist es für uns und unsere Kunden wichtig, dass wir auf die Minute genau auf ein Projekt abrechnen können. Unsere Kunden schätzt die klare Übersicht der geleisteten Arbeit (Dauer, Tätigkeit etc.). Wir schätzen; keine Excel, alles an einem Ort, schneller und unkomplizierter Support, Open Source und viele weitere Punkte.</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>Kimai has been with my company since the very beginning. <mark>As a service provider, it is important for us and our customers that we can bill for projects down to the minute.</mark> Our customers appreciate the clear overview of the work performed (duration, activity, etc.). We appreciate no Excel, everything in one place, faster and easier support, open source, and many other features.</p>
 
-            </div>
-            <p class="text-muted fs-xs">January 12, 2026</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2026-01-12</p>
         </div>
     </div>
 </div>
@@ -311,10 +750,10 @@
 <div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,WallOfLove,English,Social,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
                     
-                        <img src="/images/testimonials/integrament.webp" width="60" class="rounded-circle" alt="Rüdiger" />
+                        <img src="/images/testimonials/integrament.webp" width="48" class="rounded-circle" alt="Rüdiger" />
                     
                 
                 <div class="ps-3">
@@ -342,15 +781,21 @@
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>An dieser Stelle mal am Rande ein Dankeschön für Kimai.
-Anfragen die man hat, werden wirklich zeitnah, freundlich und kompetent beantwortet.
-Für uns als kleinem Anbieter von sozialen Dienstleistungen ist es toll, daß wir ein so professionelles Programm als Basisversion gratis benutzen können. Selbst wenn kostenpflichtige Module dazukommen sollten, ist es ein gutes Gefühl, daß das Geld in eine engagierte, kleine Softwareschmiede fließt.
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>At this point, I would like to say a big thank you to Kimai.
+Any queries you may have are answered promptly, politely and competently.
+<mark>For us as a small provider of social services, it's great that we can use such a professional programme as a basic version free of charge.</mark> Even if paid modules are added, it’s a good feeling to know that the money is going to a dedicated, small software company.
 👍🏼👍🏼👍🏼
 ❤️</p>
 
-            </div>
-            <p class="text-muted fs-xs">November 8, 2025</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2025-11-08</p>
         </div>
     </div>
 </div>
@@ -358,10 +803,10 @@ Für uns als kleinem Anbieter von sozialen Dienstleistungen ist es toll, daß wi
 <div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,WallOfLove,English,Legal,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
                     
-                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" /></svg>
                     
                 
                 <div class="ps-3">
@@ -389,11 +834,17 @@ Für uns als kleinem Anbieter von sozialen Dienstleistungen ist es toll, daß wi
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>Kimai is an amazing Free software time tracking tool. I have used it for many years, to keep track of work for numerous clients and to produce timesheets, and it has been superb. Thank you!</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>Kimai is an amazing Free software time tracking tool. <mark>I have used it for many years, to keep track of work for numerous clients and to produce timesheets, and it has been superb.</mark> Thank you!</p>
 
-            </div>
-            <p class="text-muted fs-xs">November 7, 2025</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2025-11-07</p>
         </div>
     </div>
 </div>
@@ -401,10 +852,10 @@ Für uns als kleinem Anbieter von sozialen Dienstleistungen ist es toll, daß wi
 <div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,WallOfLove,English,Healthcare,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
                     
-                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" /></svg>
                     
                 
                 <div class="ps-3">
@@ -432,11 +883,17 @@ Für uns als kleinem Anbieter von sozialen Dienstleistungen ist es toll, daß wi
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>Very useful and well maintained software! I use it everyday without problems. Feature requests are being considered and - if useful - implemented.</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>Very useful and well maintained software! I use it everyday without problems. Feature requests are being considered and - if useful - implemented.</p>
 
-            </div>
-            <p class="text-muted fs-xs">November 2, 2025</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2025-11-02</p>
         </div>
     </div>
 </div>
@@ -444,9 +901,9 @@ Für uns als kleinem Anbieter von sozialen Dienstleistungen ist es toll, daß wi
 <div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,WallOfLove,English,Freelancer,API,IT,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
-                    <img src="/images/testimonials/steven-broos.webp" width="60" class="rounded-circle" alt="Steven Broos" />
+                    <img src="/images/testimonials/steven-broos.webp" width="48" class="rounded-circle" alt="Steven Broos" />
                 
                 <div class="ps-3">
                     <h6 class="fw-semibold lh-base mb-0">Steven Broos</h6>
@@ -473,24 +930,30 @@ Für uns als kleinem Anbieter von sozialen Dienstleistungen ist es toll, daß wi
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>As a freelancer, time keeping is really important. Kimai makes it a breeze doing so.
-Thanks to the API I can automatically start and stop timings when arriving/leaving my customers’ premises.
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>As a freelancer, time keeping is really important. Kimai makes it a breeze doing so.
+<mark>Thanks to the API I can automatically start and stop timings when arriving/leaving my customers' premises.</mark>
 And best of all, it’s from Europe! :-)
 Thanks for making such a nice software !</p>
 
-            </div>
-            <p class="text-muted fs-xs">October 22, 2025</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2025-10-22</p>
         </div>
     </div>
 </div>
 
-<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,WallOfLove,English,Toggl,Software,">
+<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,WallOfLove,FeaturedShort,English,Toggl,Software,OpenSource,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
-                    <img src="/images/testimonials/schuett.webp" width="60" class="rounded-circle" alt="Stefan Schütt" />
+                    <img src="/images/testimonials/schuett.webp" width="48" class="rounded-circle" alt="Stefan Schütt" />
                 
                 <div class="ps-3">
                     <h6 class="fw-semibold lh-base mb-0">Stefan Schütt</h6>
@@ -517,22 +980,28 @@ Thanks for making such a nice software !</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>We recently made the switch from Toggl to a self-hosted Kimai. As a TYPO3 agency, open source, data sovereignty, and full control over the software were essential to us. We wanted to decide ourselves when to enable specific features and have the freedom to implement our own customizations. The migration of data from Toggl to Kimai was smooth, and our team quickly adapted to the interface, which resembles Toggl but offers more advanced options—especially for reporting and analytics.</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>We recently made the switch from Toggl to a self-hosted Kimai. As a TYPO3 agency, <mark>open source, data sovereignty, and full control over the software were essential to us</mark>. We wanted to decide ourselves when to enable specific features and have the freedom to implement our own customizations. The migration of data from Toggl to Kimai was smooth, and our team quickly adapted to the interface, which resembles Toggl but offers more advanced options—especially for reporting and analytics.</p>
 
-            </div>
-            <p class="text-muted fs-xs">October 14, 2025</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2025-10-14</p>
         </div>
     </div>
 </div>
 
-<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,WallOfLove,German,IT,">
+<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,WallOfLove,IT,OpenSource,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
                     
-                        <img src="/images/testimonials/logo_emilum.webp" width="60" class="rounded-circle" alt="Ronald Schiefer" />
+                        <img src="/images/testimonials/logo_emilum.webp" width="48" class="rounded-circle" alt="Ronald Schiefer" />
                     
                 
                 <div class="ps-3">
@@ -560,25 +1029,31 @@ Thanks for making such a nice software !</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>Wir sind absolut überzeugt von der Lösung. Vor allem OpenSource und selber Hosten, dass ist spitze!
-Läuft bei uns sehr stabil auf einem Ubuntu Server in der Hyper-V.
-Der Support ist 1A, kompetent, schnell, freundlich.
-Meine absolute Empfehlung.</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>We are absolutely convinced by the solution. <mark>Above all, open source and self-hosting – that's great!</mark>
+It runs very stably for us on an Ubuntu server in Hyper-V.
+The support is first-rate, competent, fast and friendly.
+My absolute recommendation.</p>
 
-            </div>
-            <p class="text-muted fs-xs">September 15, 2025</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2025-09-15</p>
         </div>
     </div>
 </div>
 
-<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,WallOfLove,German,IT,">
+<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,WallOfLove,IT,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
                     
-                        <img src="/images/testimonials/ipm-koeln-logo.webp" width="60" class="rounded-circle" alt="Ulrich Eckermann" />
+                        <img src="/images/testimonials/ipm-koeln-logo.webp" width="48" class="rounded-circle" alt="Ulrich Eckermann" />
                     
                 
                 <div class="ps-3">
@@ -606,12 +1081,18 @@ Meine absolute Empfehlung.</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>Ich muss gar nicht viel schreiben:
-Tolle Software, freundlicher und schneller Support!</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>I don’t need to write much:
+Great software, friendly and fast support!</p>
 
-            </div>
-            <p class="text-muted fs-xs">June 3, 2025</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2025-06-03</p>
         </div>
     </div>
 </div>
@@ -619,10 +1100,10 @@ Tolle Software, freundlicher und schneller Support!</p>
 <div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,WallOfLove,English,Software,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
                     
-                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" /></svg>
                     
                 
                 <div class="ps-3">
@@ -648,13 +1129,19 @@ Tolle Software, freundlicher und schneller Support!</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>Kimai has been a fantastic discovery. I reviewed several other time trackers, and frankly, none of them compared. Kimai just felt better right away. It’s easy to set up and use, with a clean design and just the right balance between features and simplicity, and the self-hosting option is a huge plus.</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>Kimai has been a fantastic discovery. I reviewed several other time trackers, and frankly, none of them compared. Kimai just felt better right away. <mark>It’s easy to set up and use, with a clean design and just the right balance between features and simplicity, and the self-hosting option is a huge plus.</mark></p>
 
 <p>Highly recommended and big thumbs up from me!</p>
 
-            </div>
-            <p class="text-muted fs-xs">May 8, 2025</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2025-05-08</p>
         </div>
     </div>
 </div>
@@ -662,9 +1149,9 @@ Tolle Software, freundlicher und schneller Support!</p>
 <div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,WallOfLove,English,Software,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
-                    <img src="/images/testimonials/niklasschroetler.webp" width="60" class="rounded-circle" alt="Niklas Schrötler" />
+                    <img src="/images/testimonials/niklasschroetler.webp" width="48" class="rounded-circle" alt="Niklas Schrötler" />
                 
                 <div class="ps-3">
                     <h6 class="fw-semibold lh-base mb-0">Niklas Schrötler</h6>
@@ -691,11 +1178,17 @@ Tolle Software, freundlicher und schneller Support!</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>We use Kimai at allroundDigital and are delighted with it. It’s really reliable, works without a lot of explanation and does everything I’d want it to do without being overloaded. Wonderful tool – would definitely recommend.</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>We use Kimai at allroundDigital and are delighted with it. <mark>It’s really reliable, works without a lot of explanation and does everything I’d want it to do without being overloaded.</mark> Wonderful tool – would definitely recommend.</p>
 
-            </div>
-            <p class="text-muted fs-xs">May 7, 2025</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2025-05-07</p>
         </div>
     </div>
 </div>
@@ -703,9 +1196,9 @@ Tolle Software, freundlicher und schneller Support!</p>
 <div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,WallOfLove,English,Software,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
-                    <img src="/images/testimonials/juergen-haas.webp" width="60" class="rounded-circle" alt="Jürgen Haas" />
+                    <img src="/images/testimonials/juergen-haas.webp" width="48" class="rounded-circle" alt="Jürgen Haas" />
                 
                 <div class="ps-3">
                     <h6 class="fw-semibold lh-base mb-0">Jürgen Haas</h6>
@@ -732,11 +1225,17 @@ Tolle Software, freundlicher und schneller Support!</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>We love Kimai! It’s a first class time tracking tool with so many features, that we hardly can’t make use of. And their support is excellent too, even on bank holidays. Can’t recommend it enough.</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>We love Kimai! <mark>It's a first class time tracking tool with so many features, that we hardly can't make use of.</mark> And their support is excellent too, even on bank holidays. Can’t recommend it enough.</p>
 
-            </div>
-            <p class="text-muted fs-xs">May 2, 2025</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2025-05-02</p>
         </div>
     </div>
 </div>
@@ -744,10 +1243,10 @@ Tolle Software, freundlicher und schneller Support!</p>
 <div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,WallOfLove,English,IT,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
                     
-                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" /></svg>
                     
                 
                 <div class="ps-3">
@@ -775,22 +1274,28 @@ Tolle Software, freundlicher und schneller Support!</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>Really great peace of software. Brings exactly the grade of transparency to my customers that they love to see and for me it‘s a convenient way to track times without any overhead.</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>Really great piece of software. Brings exactly the grade of transparency to my customers that they love to see and for me it‘s a convenient way to track times without any overhead.</p>
 
-            </div>
-            <p class="text-muted fs-xs">April 28, 2025</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2025-04-28</p>
         </div>
     </div>
 </div>
 
-<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="Cloud,WallOfLove,German,">
+<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="Cloud,WallOfLove,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
                     
-                        <img src="/images/testimonials/corewire-icon.webp" width="60" class="rounded-circle" alt="Stefan Möhrle" />
+                        <img src="/images/testimonials/corewire-icon.webp" width="48" class="rounded-circle" alt="Stefan Möhrle" />
                     
                 
                 <div class="ps-3">
@@ -818,23 +1323,29 @@ Tolle Software, freundlicher und schneller Support!</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>Sind nun auch seit über einem Jahr äußerst zufriedene Nutzer von Kimai.
-Läuft zuverlässig und stabil, ausreichender Featureumfang, einfach zu bedienen und vor allem 1-A Support - schnell, freundlich und vor allem technisch Kompetent 😎👍</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>We have been extremely satisfied users of Kimai for over a year now.
+<mark>Runs reliably and stably, sufficient range of features, easy to use and above all 1-A support - fast, friendly and above all technically competent</mark> 😎👍</p>
 
-            </div>
-            <p class="text-muted fs-xs">April 9, 2025</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2025-04-09</p>
         </div>
     </div>
 </div>
 
-<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,WallOfLove,German,">
+<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,WallOfLove,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
                     
-                        <img src="/images/testimonials/dhf_logo.webp" width="60" class="rounded-circle" alt="Jörg" />
+                        <img src="/images/testimonials/dhf_logo.webp" width="48" class="rounded-circle" alt="Jörg" />
                     
                 
                 <div class="ps-3">
@@ -862,22 +1373,28 @@ Läuft zuverlässig und stabil, ausreichender Featureumfang, einfach zu bedienen
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>Wir sind seit vielen Jahren begeisterter Nutzer von Kimai. Zu Beginn nur für eigene Dokumentationszwecke, inzwischen aber auch für die Arbeitszeitaufschreibung im Unternehmen. Statt teurer Dienstleister konnten wir mit Kimai, mit dem Kiosk Plugin und dem Plugin für die Arbeitszeiten eine günstige eigene Variante erstellen, die inzwischen zuverlässig ihren Dienst verrichtet.
-Vielen Dank an Kevin, dem kreativen Kopf im Hintergrund, der immer die passenden Lösungen bereitstellt. Wir sind rundum zufrieden mit Kimai.</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>We have been enthusiastic users of Kimai for many years. Initially only for our own documentation purposes, but now also for recording working hours in the company. <mark>Instead of using expensive service providers, we were able to use Kimai, the Kiosk plugin and the plugin for working hours to create our own low-cost version, which now works reliably.</mark>
+Many thanks to Kevin, the creative mind in the background, who always provides the right solutions. We are completely satisfied with Kimai.</p>
 
-            </div>
-            <p class="text-muted fs-xs">April 3, 2025</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2025-04-03</p>
         </div>
     </div>
 </div>
 
-<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,WallOfLove,German,">
+<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,WallOfLove,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
-                    <img src="/images/testimonials/michael-kohlfuerst-mba-cmc.webp" width="60" class="rounded-circle" alt="Michael Kohlfürst" />
+                    <img src="/images/testimonials/michael-kohlfuerst-mba-cmc.webp" width="48" class="rounded-circle" alt="Michael Kohlfürst" />
                 
                 <div class="ps-3">
                     <h6 class="fw-semibold lh-base mb-0">Michael Kohlfürst</h6>
@@ -904,13 +1421,19 @@ Vielen Dank an Kevin, dem kreativen Kopf im Hintergrund, der immer die passenden
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>Kimai hat mich wirklich überzeugt. Ich habe lange nach der für uns richtigen Lösung gesucht. Die Vorgaben war eine preisgünstige Lösung für viele Mitarbeiter bei der ich nicht für eine Teilzeitkraft eine 30 EUR / Monat Lizenz kaufen muss.
-Dabei hat Kimai (läuft bei uns am Server) aber alle (und mehr) Funktionen die wir benötigen. Vor allem Start / Stop über Browser und App, Zuordnung Projekte uvm. sind optimale Funktionen.
-Es ist die Zeiterfassung die ich Agentur-Freunden empfehlen würde.</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>Kimai really convinced me. I spent a long time looking for the right solution for us. The specifications were a low-cost solution for many employees where I didn’t have to buy a 30 EUR / month licence for a part-time employee.
+However, Kimai (which runs on our server) has all (and more) of the functions we need. Above all, start/stop via browser and app, assignment of projects and much more are optimal functions.
+<mark>It is the time recording system that I would recommend to agency friends.</mark></p>
 
-            </div>
-            <p class="text-muted fs-xs">April 3, 2025</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2025-04-03</p>
         </div>
     </div>
 </div>
@@ -918,9 +1441,9 @@ Es ist die Zeiterfassung die ich Agentur-Freunden empfehlen würde.</p>
 <div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="Cloud,WallOfLove,Docker,Freelancer,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
-                    <img src="/images/testimonials/mikael-janssens.webp" width="60" class="rounded-circle" alt="Mikaël Janssens" />
+                    <img src="/images/testimonials/mikael-janssens.webp" width="48" class="rounded-circle" alt="Mikaël Janssens" />
                 
                 <div class="ps-3">
                     <h6 class="fw-semibold lh-base mb-0">Mikaël Janssens</h6>
@@ -947,21 +1470,27 @@ Es ist die Zeiterfassung die ich Agentur-Freunden empfehlen würde.</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>Kimai is a fantastic product and it’s finished and polished in almost a maniacal way. Fantastic UI and UX, every feature well thought and finished, great support and a rare focus on privacy and security. Top notch!</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p><mark>Kimai is a fantastic product and it's finished and polished in almost a maniacal way.</mark> Fantastic UI and UX, every feature well thought and finished, great support and a rare focus on privacy and security. Top notch!</p>
 
-            </div>
-            <p class="text-muted fs-xs">March 14, 2025</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2025-03-14</p>
         </div>
     </div>
 </div>
 
-<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="On-Premise,WallOfLove,Docker,">
+<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,WallOfLove,Docker,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
-                    <img src="/images/testimonials/jonas-sander.webp" width="60" class="rounded-circle" alt="Jonas Sander" />
+                    <img src="/images/testimonials/jonas-sander.webp" width="48" class="rounded-circle" alt="Jonas Sander" />
                 
                 <div class="ps-3">
                     <h6 class="fw-semibold lh-base mb-0">Jonas Sander</h6>
@@ -988,22 +1517,28 @@ Es ist die Zeiterfassung die ich Agentur-Freunden empfehlen würde.</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>The system addresses our time tracking needs with an easy-to-use interface, which has been a major pain point with other providers. We run it in-house on our existing Docker infrastructure, helping us minimize costs. The ability to host it ourselves is something that many other solutions lack, and it’s been a deal-breaker for us in the past.</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>The system addresses our time tracking needs with an easy-to-use interface, which has been a major pain point with other providers. We run it in-house on our existing Docker infrastructure, helping us minimize costs. <mark>The ability to host it ourselves is something that many other solutions lack, and it’s been a deal-breaker for us in the past.</mark></p>
 
-            </div>
-            <p class="text-muted fs-xs">March 11, 2025</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2025-03-11</p>
         </div>
     </div>
 </div>
 
-<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="On-Premise,WallOfLove,API,">
+<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,WallOfLove,API,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
                     
-                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" /></svg>
                     
                 
                 <div class="ps-3">
@@ -1027,21 +1562,27 @@ Es ist die Zeiterfassung die ich Agentur-Freunden empfehlen würde.</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>I really like Kimai, it’s free it is working really well and you can use API! 😍💖💖 You can deploy it just in minutes!!!</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>I really like Kimai, it’s free it is working really well and you can use API! 😍💖💖 You can deploy it just in minutes!!!</p>
 
-            </div>
-            <p class="text-muted fs-xs">March 6, 2025</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2025-03-06</p>
         </div>
     </div>
 </div>
 
-<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="Cloud,German,WallOfLove,">
+<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="Cloud,WallOfLove,Consulting,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
-                    <img src="/images/testimonials/rene-glaubert.webp" width="60" class="rounded-circle" alt="Rene Glaubert" />
+                    <img src="/images/testimonials/rene-glaubert.webp" width="48" class="rounded-circle" alt="Rene Glaubert" />
                 
                 <div class="ps-3">
                     <h6 class="fw-semibold lh-base mb-0">Rene Glaubert</h6>
@@ -1068,22 +1609,28 @@ Es ist die Zeiterfassung die ich Agentur-Freunden empfehlen würde.</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>Wir nutzen Kimai jetzt bereits 7 Jahre und sind rundum zufrieden. Das Produkt selbst ist top, der Preis stimmt und der Support ist einfach klasse. Wir können es nur jedem empfehlen, der Wert auf Qualität und guten Service legt.</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>We have been using Kimai for 7 years now and are completely satisfied. <mark>The product itself is great, the price is right and the support is simply fantastic.</mark> We can only recommend it to anyone who values quality and good service.</p>
 
-            </div>
-            <p class="text-muted fs-xs">February 4, 2025</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2025-02-04</p>
         </div>
     </div>
 </div>
 
-<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="Cloud,Migration,German,WallOfLove,">
+<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="Cloud,Migration,WallOfLove,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
                     
-                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" /></svg>
                     
                 
                 <div class="ps-3">
@@ -1109,12 +1656,18 @@ Es ist die Zeiterfassung die ich Agentur-Freunden empfehlen würde.</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>Wir benutzen Kimai seit 2013 erfolgreich. Läuft seit Anfang an ohne Probleme und sehr zuverlässig. Wir haben anfangs 2025 mit der Hilfe des Supports auf die neueste Version migriert, auch absolut problemlos. Wir können Kimai an Alle empfehlen.
-Vielen Dank an Kevin für seinen Support.</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>We have been using Kimai successfully since 2013. <mark>It has been running without any problems and very reliably since the beginning.</mark> We migrated to the latest version at the beginning of 2025 with the help of support, also without any problems. We can recommend Kimai to everyone.
+Many thanks to Kevin for his support.</p>
 
-            </div>
-            <p class="text-muted fs-xs">January 28, 2025</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2025-01-28</p>
         </div>
     </div>
 </div>
@@ -1122,9 +1675,9 @@ Vielen Dank an Kevin für seinen Support.</p>
 <div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,Software,WallOfLove,English,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
-                    <img src="/images/testimonials/alan-nguyen.webp" width="60" class="rounded-circle" alt="Alan Nguyen" />
+                    <img src="/images/testimonials/alan-nguyen.webp" width="48" class="rounded-circle" alt="Alan Nguyen" />
                 
                 <div class="ps-3">
                     <h6 class="fw-semibold lh-base mb-0">Alan Nguyen</h6>
@@ -1149,11 +1702,17 @@ Vielen Dank an Kevin für seinen Support.</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>Kimai was my first foray into open-source software; my company tasked me with migrating an old Kimai plugin called Period Insert, which I eventually decided to publish. My experience has been very positive. I am impressed by Kimai’s ease of use and by how my small contribution to it has been used around the world. I am also grateful to Kevin for his open communication and assistance with publishing the plugin, which served as a warm introduction to the open-source community. Kimai is a model example of how open-source software can improve the lives of people, not just companies. I highly recommend it!</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>Kimai was my first foray into open-source software; my company tasked me with migrating an old Kimai plugin called Period Insert, which I eventually decided to publish. My experience has been very positive. I am impressed by Kimai’s ease of use and by how my small contribution to it has been used around the world. I am also grateful to Kevin for his open communication and assistance with publishing the plugin, which served as a warm introduction to the open-source community. <mark>Kimai is a model example of how open-source software can improve the lives of people, not just companies.</mark> I highly recommend it!</p>
 
-            </div>
-            <p class="text-muted fs-xs">January 24, 2025</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2025-01-24</p>
         </div>
     </div>
 </div>
@@ -1161,10 +1720,10 @@ Vielen Dank an Kevin für seinen Support.</p>
 <div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,WallOfLove,English,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
                     
-                        <img src="/images/testimonials/compacer.svg" width="60" class="rounded-circle" alt="Dimitro Pukalov" />
+                        <img src="/images/testimonials/compacer.svg" width="48" class="rounded-circle" alt="Dimitro Pukalov" />
                     
                 
                 <div class="ps-3">
@@ -1192,11 +1751,17 @@ Vielen Dank an Kevin für seinen Support.</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>Just a great app that is used in our company. It does not require a lot of resources on the server, has a great interface and a lot of features that are so necessary in everyday work.</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>Just a great app that is used in our company. It does not require a lot of resources on the server, has a great interface and a lot of features that are so necessary in everyday work.</p>
 
-            </div>
-            <p class="text-muted fs-xs">January 24, 2025</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2025-01-24</p>
         </div>
     </div>
 </div>
@@ -1204,9 +1769,9 @@ Vielen Dank an Kevin für seinen Support.</p>
 <div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,NonProfit,WallOfLove,English,OpenSource,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
-                    <img src="/images/testimonials/tuer-an-tuer-daniel.webp" width="60" class="rounded-circle" alt="Daniel Kehne" />
+                    <img src="/images/testimonials/tuer-an-tuer-daniel.webp" width="48" class="rounded-circle" alt="Daniel Kehne" />
                 
                 <div class="ps-3">
                     <h6 class="fw-semibold lh-base mb-0">Daniel Kehne</h6>
@@ -1215,7 +1780,7 @@ Vielen Dank an Kevin für seinen Support.</p>
                             Founder &amp; CEO
                         
                         
-                            &ndash; <a href="https://tuerantuer.de/digitalfabrik" target="_blank" class="text-muted text-decoration-none">Tür an Tür - Digitalfabrik gGmbH</a>
+                            &ndash; <a href="https://tuerantuer.de/digitalfabrik" target="_blank" class="text-muted text-decoration-none">Tür an Tür - Digitalfabrik</a>
                         
                     </span>
                 </div>
@@ -1233,11 +1798,17 @@ Vielen Dank an Kevin für seinen Support.</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>We use Kimai as a self-hosted instance to manage working times, vacation and illness-days for ~40 employees. We love open source software and the passion Kevin Papst puts into that tool is a real gamechanger for us. There are a lot of features and settings to adjust, but it’s not too complicated to maintain the whole system. Hopefully Kimai will be our mate for the next years to support our own story as a company, that is developing impactful and open source software!</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>We use Kimai as a self-hosted instance to manage working times, vacation and illness-days for ~40 employees. We love open source software and <mark>the passion Kevin Papst puts into that tool is a real gamechanger for us</mark>. There are a lot of features and settings to adjust, but it’s not too complicated to maintain the whole system. Hopefully Kimai will be our mate for the next years to support our own story as a company, that is developing impactful and open source software!</p>
 
-            </div>
-            <p class="text-muted fs-xs">January 22, 2025</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2025-01-22</p>
         </div>
     </div>
 </div>
@@ -1245,10 +1816,10 @@ Vielen Dank an Kevin für seinen Support.</p>
 <div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,Agency,WallOfLove,English,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
                     
-                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" /></svg>
                     
                 
                 <div class="ps-3">
@@ -1276,11 +1847,17 @@ Vielen Dank an Kevin für seinen Support.</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>We started using self-hosted Kimai - and it works perfectly! We especially like integration with Google Workspace, which is very convenient.</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>We started using self-hosted Kimai - and it works perfectly! We especially like integration with Google Workspace, which is very convenient.</p>
 
-            </div>
-            <p class="text-muted fs-xs">January 16, 2025</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2025-01-16</p>
         </div>
     </div>
 </div>
@@ -1288,10 +1865,10 @@ Vielen Dank an Kevin für seinen Support.</p>
 <div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="Cloud,English,NonProfit,WallOfLove,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
                     
-                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" /></svg>
                     
                 
                 <div class="ps-3">
@@ -1317,24 +1894,30 @@ Vielen Dank an Kevin für seinen Support.</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>Kimai combines usability and high data protection standards - a rare find in project management tools. Easy to setup and use right away, with many options for adapting it to specific needs and processes. One tip for first-users: Projects have to be set up in Administration in order to be able to start time tracking - so far that’s the only thing that got me searching.</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p><mark>Kimai combines usability and high data protection standards - a rare find in project management tools.</mark> Easy to setup and use right away, with many options for adapting it to specific needs and processes. One tip for first-users: Projects have to be set up in Administration in order to be able to start time tracking - so far that’s the only thing that got me searching.</p>
 
 <p>Great work!</p>
 
-            </div>
-            <p class="text-muted fs-xs">October 30, 2024</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2024-10-30</p>
         </div>
     </div>
 </div>
 
-<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="Cloud,German,WallOfLove,Software,Consulting,">
+<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="Cloud,WallOfLove,Software,Consulting,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
                     
-                        <img src="/images/testimonials/bizzworxx.webp" width="60" class="rounded-circle" alt="J. Setzer" />
+                        <img src="/images/testimonials/bizzworxx.webp" width="48" class="rounded-circle" alt="J. Setzer" />
                     
                 
                 <div class="ps-3">
@@ -1360,19 +1943,25 @@ Vielen Dank an Kevin für seinen Support.</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>Wir setzen KIMAI seit vielen Jahren ein, früher selbst-gehosted bei einem Internet-Provider, seit einiger Zeit in der Cloud. Das Daten-Modell passt hervorragend zu unserem Geschäftsfeld, in dem wir bestimmte Projekte nach Aufwand berechnen, andere zum Festpreis (budgetiert). Beide Abrechnungsmodelle werden von KIMAI unterstützt. Bei budgetierten Projekten behalten wir die Übersicht über den jeweiligen Verbrauch an Zeit und Kosten in Relation zum Budget (Burndown). Bei Projekten nach Aufwand exportieren wir monatlich oder quartalsweise alle abrechenbaren Zeiten mit den hinterlegten Stundensätzen als Grundlage für die Rechnungen, die wir mit einer anderen Faktura-/Buchhaltungs-Software erstellen.</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>We have been using KIMAI for many years, previously self-hosted at an internet provider, and for some time now in the cloud. The data model fits our business field perfectly, in which we bill certain projects based on effort and others at a fixed price (budgeted). Both billing models are supported by KIMAI. For budgeted projects, we keep track of the respective consumption of time and costs in relation to the budget (burndown). For time-and-materials projects, we export all billable hours along with the stored hourly rates monthly or quarterly as a basis for the invoices, which we create with another invoicing/accounting software.</p>
 
-<p>Neben dem aus meiner Sicht sehr praxisgerechten Daten-Modell und der logischen Struktur ist die Cloud-Lösung auch optisch und von der Handhabung her sehr gut gelungen, modern und intuitiv bedienbar. Ich finde alles dort, wo ich es erwarte. Zahlreiche kleine Features, etwa das Ausblenden von Spalten oder die Filter-Möglichkeiten, erleichtern die Arbeit. Zudem ist erheblich viel konfigurierbar, so dass ich nicht gezwungen werde, meine Prozesse an KIMAI anzupassen, sondern ich kann KIMA an meine Bedürfnisse anpassen.</p>
+<p>In addition to what I consider a very practical data model and the logical structure, the cloud solution is also very well designed in terms of look and feel, modern and intuitive to use. I find everything where I expect it to be. Numerous small features, such as hiding columns or the filter options, make work easier. In addition, a great deal is configurable, so I am not forced to adapt my processes to KIMAI; instead, I can adapt KIMAI to my needs.</p>
 
-<p>Der Support reagiert sehr schnell. Zudem konnte ich schon mehrere Vorschläge einbringen, die tatsächlich zeitnah eingeflossen sind. In dieser Umsetzungsstärke habe ich es bisher bei keinem anderen Anbieter von Cloud-Lösungen erlebt.</p>
+<p>Support responds very quickly. <mark>I have also been able to submit several suggestions that were actually implemented promptly. I have not yet experienced such implementation strength with any other provider of cloud solutions.</mark></p>
 
-<p>Aus Überzeugung und unentgeltlich habe ich es befreundeten Geschäftspartnern aus ganz anderen Branchen gezeigt, empfohlen und sie bei der Einrichtung unterstützt.</p>
+<p>Out of conviction and free of charge, I have shown KIMAI to befriended business partners from completely different industries, recommended it to them, and supported them in setting it up.</p>
 
-<p>Aus meiner Sicht eine absolute Empfehlung, sehr professionell und gut durchdacht. Man merkt der Software die Reife und dem Hersteller die Erfahrung in diesem Gebiet an.</p>
+<p>From my point of view, an absolute recommendation, very professional and well thought out. You can tell from the software its maturity and from the manufacturer the experience in this field.</p>
 
-            </div>
-            <p class="text-muted fs-xs">October 11, 2024</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2024-10-11</p>
         </div>
     </div>
 </div>
@@ -1380,10 +1969,10 @@ Vielen Dank an Kevin für seinen Support.</p>
 <div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="Cloud,English,WallOfLove,Freelancer,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
                     
-                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" /></svg>
                     
                 
                 <div class="ps-3">
@@ -1405,13 +1994,19 @@ Vielen Dank an Kevin für seinen Support.</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>It is a great app, I will say I am not using it yet all its future, but to track my working hours it is working like magic.
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>It is a great app, I will say I am not using it yet all its future, but <mark>to track my working hours it is working like magic</mark>.
 Customer service is also helpful and fast-responding, I recommend it to any new freelancer, because of its suitable price!.
 Thank you</p>
 
-            </div>
-            <p class="text-muted fs-xs">September 18, 2024</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2024-09-18</p>
         </div>
     </div>
 </div>
@@ -1419,10 +2014,10 @@ Thank you</p>
 <div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,English,WallOfLove,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
                     
-                        <img src="/images/testimonials/3arch.webp" width="60" class="rounded-circle" alt="Alexander Kostadinov" />
+                        <img src="/images/testimonials/3arch.webp" width="48" class="rounded-circle" alt="Alexander Kostadinov" />
                     
                 
                 <div class="ps-3">
@@ -1450,21 +2045,27 @@ Thank you</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>Kimai is an excellent time-tracking software that offers great flexibility and a lightweight, intuitive interface. It’s easy to use and has been a valuable tool for tracking work hours across our projects. We especially appreciate the variety of plug-ins available, which allow us to extend the software’s capabilities. <mark>Highly recommended for firms looking for a robust yet user-friendly solution.</mark></p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>Kimai is an excellent time-tracking software that offers great flexibility and a lightweight, intuitive interface. It’s easy to use and has been a valuable tool for tracking work hours across our projects. We especially appreciate the variety of plug-ins available, which allow us to extend the software’s capabilities. <mark>Highly recommended for firms looking for a robust yet user-friendly solution.</mark></p>
 
-            </div>
-            <p class="text-muted fs-xs">September 17, 2024</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2024-09-17</p>
         </div>
     </div>
 </div>
 
-<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="Cloud,English,WallOfLove,Faces,">
+<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="Cloud,English,WallOfLove,FeaturedShort,Faces,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
-                    <img src="/images/testimonials/christoph-empl.webp" width="60" class="rounded-circle" alt="Christoph Empl" />
+                    <img src="/images/testimonials/christoph-empl.webp" width="48" class="rounded-circle" alt="Christoph Empl" />
                 
                 <div class="ps-3">
                     <h6 class="fw-semibold lh-base mb-0">Christoph Empl</h6>
@@ -1491,21 +2092,27 @@ Thank you</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>We have been using Kimai in our electrical company for the past two years, and we are currently transitioning to a fully paperless process with <em>Kimai only</em> for managing timesheets. Our employees adapted quickly, as we developed a customized workflow tailored to our business needs. Thanks to Kimai, we’ve reduced the time spent processing timesheets for our 20 employees, as well as managing project reports (construction reports, work reports, daily customer reports), from around 10 hours per week to just 2 hours. <mark>We also underwent a payroll tax audit without any issues</mark>; the only requirement is the employee’s signature on the timesheet. The developer of Kimai is also very receptive to useful feature suggestions, which makes me confident that even more great improvements are on the way.</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>We have been using Kimai in our electrical company for the past two years, and we are currently transitioning to a fully paperless process with <em>Kimai only</em> for managing timesheets. Our employees adapted quickly, as we developed a customized workflow tailored to our business needs. Thanks to Kimai, we’ve reduced the time spent processing timesheets for our 20 employees, as well as managing project reports (construction reports, work reports, daily customer reports), from around 10 hours per week to just 2 hours. <mark>We also underwent a payroll tax audit without any issues</mark>; the only requirement is the employee’s signature on the timesheet. The developer of Kimai is also very receptive to useful feature suggestions, which makes me confident that even more great improvements are on the way.</p>
 
-            </div>
-            <p class="text-muted fs-xs">September 12, 2024</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2024-09-12</p>
         </div>
     </div>
 </div>
 
-<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,German,WallOfLove,">
+<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,WallOfLove,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
-                    <img src="/images/testimonials/stefan-scherer.webp" width="60" class="rounded-circle" alt="Stefan Scherer" />
+                    <img src="/images/testimonials/stefan-scherer.webp" width="48" class="rounded-circle" alt="Stefan Scherer" />
                 
                 <div class="ps-3">
                     <h6 class="fw-semibold lh-base mb-0">Stefan Scherer</h6>
@@ -1532,11 +2139,17 @@ Thank you</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>Kimai läuft bei uns on premise und ist sehr zuverlässig! Ich kann es nur dringend empfehlen. <mark>Es gibt keine bessere Lösung auf dem Markt!</mark></p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>Kimai runs on premise for us and is very reliable! I can only strongly recommend it. <mark>There is no better solution on the market!</mark></p>
 
-            </div>
-            <p class="text-muted fs-xs">September 2, 2024</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2024-09-02</p>
         </div>
     </div>
 </div>
@@ -1544,10 +2157,10 @@ Thank you</p>
 <div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,English,WallOfLove,Support,Freelancer,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
                     
-                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" /></svg>
                     
                 
                 <div class="ps-3">
@@ -1573,22 +2186,28 @@ Thank you</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>Nice and easy tool, let’s you track your hours and export / create invoices easily. Also you can add expenses. <mark>Top notch support on questions you might have</mark>. Loving it</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>Nice and easy tool, let’s you track your hours and export / create invoices easily. Also you can add expenses. <mark>Top notch support on questions you might have</mark>. Loving it</p>
 
-            </div>
-            <p class="text-muted fs-xs">September 1, 2024</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2024-09-01</p>
         </div>
     </div>
 </div>
 
-<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,German,WallOfLove,Support,Consulting,">
+<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,WallOfLove,Support,Consulting,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
                     
-                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" /></svg>
                     
                 
                 <div class="ps-3">
@@ -1616,21 +2235,27 @@ Thank you</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>Super schnelle Reaktion vom Support mit effizienter Hilfestellung. Einfach MEGA! Vielen herzlichen Dank!</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>Super fast response from support with efficient assistance. Simply MEGA! Thank you very much!</p>
 
-            </div>
-            <p class="text-muted fs-xs">August 22, 2024</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2024-08-22</p>
         </div>
     </div>
 </div>
 
-<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="Cloud,English,WallOfLove,Faces,Consulting,API,">
+<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="Cloud,English,WallOfLove,FeaturedShort,Faces,Consulting,API,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
-                    <img src="/images/testimonials/sam-pollock.webp" width="60" class="rounded-circle" alt="Sam Pollock" />
+                    <img src="/images/testimonials/sam-pollock.webp" width="48" class="rounded-circle" alt="Sam Pollock" />
                 
                 <div class="ps-3">
                     <h6 class="fw-semibold lh-base mb-0">Sam Pollock</h6>
@@ -1657,21 +2282,27 @@ Thank you</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>The platform is very easy to use, has great access for our analytics with a comprehensive API and the development team are incredibly responsive and helpful. We looked at and tried an awful lot of timesheet software, and <mark>Kimai is head and shoulders above the competition</mark>.</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>The platform is very easy to use, has great access for our analytics with a comprehensive API and the development team are incredibly responsive and helpful. We looked at and tried an awful lot of timesheet software, and <mark>Kimai is head and shoulders above the competition</mark>.</p>
 
-            </div>
-            <p class="text-muted fs-xs">August 9, 2024</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2024-08-09</p>
         </div>
     </div>
 </div>
 
-<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="Cloud,German,WallOfLove,SliderHomepage,FeaturedShort,Support,Freelancer,">
+<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="Cloud,WallOfLove,SliderHomepage,FeaturedShort,Support,Freelancer,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
-                    <img src="/images/testimonials/armin-bittner.webp" width="60" class="rounded-circle" alt="Armin Bittner" />
+                    <img src="/images/testimonials/armin-bittner.webp" width="48" class="rounded-circle" alt="Armin Bittner" />
                 
                 <div class="ps-3">
                     <h6 class="fw-semibold lh-base mb-0">Armin Bittner</h6>
@@ -1698,11 +2329,17 @@ Thank you</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>Die beste Software für die Projektzeiterfassung für Freelancer und kleine Unternehmen. Seit 16 Jahren im Einsatz bei uns, zuerst als lokale Installation, dann in der Cloudversion. <mark>Läuft und läuft und läuft ohne Probleme oder Störungen.</mark> Top Software, top Support! Eindeutige Empfehlung.</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>The best software for time tracking for freelancers and small businesses. We have been using it for 16 years, first as a local installation, then in the cloud version. <mark>It works without any problems or interruptions.</mark> Top software, top support! Unique recommendation.</p>
 
-            </div>
-            <p class="text-muted fs-xs">June 27, 2024</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2024-06-27</p>
         </div>
     </div>
 </div>
@@ -1710,9 +2347,9 @@ Thank you</p>
 <div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="WallOfLove,English,OnPremise,Agency,Software,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
-                    <img src="/images/testimonials/niels-przybilla.webp" width="60" class="rounded-circle" alt="Niels Przybilla" />
+                    <img src="/images/testimonials/niels-przybilla.webp" width="48" class="rounded-circle" alt="Niels Przybilla" />
                 
                 <div class="ps-3">
                     <h6 class="fw-semibold lh-base mb-0">Niels Przybilla</h6>
@@ -1739,11 +2376,17 @@ Thank you</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>I was testing Kimai several years ago and then I decided to move to different time tracking tools and the last time I was mostly working with Clockify and now I found Kimai back and I’m very impressed how the software is working, How fast it is. <mark>And I also really like a lot the approach to host the software on my own so that we keep our confidential data in our own systems.</mark> The software is easy to use, it’s fast, and I get all the features that I need, and the possibility to discuss on GitHub also helps a lot to find fast solutions. Thank you very much for your very good work and let’s work together for the future.</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>I was testing Kimai several years ago and then I decided to move to different time tracking tools and the last time I was mostly working with Clockify and now I found Kimai back and I’m very impressed how the software is working, How fast it is. <mark>And I also really like a lot the approach to host the software on my own so that we keep our confidential data in our own systems.</mark> The software is easy to use, it’s fast, and I get all the features that I need, and the possibility to discuss on GitHub also helps a lot to find fast solutions. Thank you very much for your very good work and let’s work together for the future.</p>
 
-            </div>
-            <p class="text-muted fs-xs">May 31, 2024</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2024-05-31</p>
         </div>
     </div>
 </div>
@@ -1751,9 +2394,9 @@ Thank you</p>
 <div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="WallOfLove,English,Cloud,NonProfit,SliderHomepage,FeaturedShort,OpenSource,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
-                    <img src="/images/testimonials/brian-osborn.webp" width="60" class="rounded-circle" alt="Brian Osborn" />
+                    <img src="/images/testimonials/brian-osborn.webp" width="48" class="rounded-circle" alt="Brian Osborn" />
                 
                 <div class="ps-3">
                     <h6 class="fw-semibold lh-base mb-0">Brian Osborn</h6>
@@ -1780,13 +2423,19 @@ Thank you</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p><mark>I needed to find a good time tracker on short notice, and wanted it to be EU hosted and open source. Luckily, I found Kimai and have been very happy with it ever since</mark>, especially because it is very straightforward and intuitive to use.
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p><mark>I needed to find a good time tracker on short notice, and wanted it to be EU hosted and open source. Luckily, I found Kimai and have been very happy with it ever since</mark>, especially because it is very straightforward and intuitive to use.
 After using it for my initial project, the Kimai team helped me migrate my data for company use, now allowing us to roll it out for the entire team without losing the original data.
 Keep up the good work!</p>
 
-            </div>
-            <p class="text-muted fs-xs">May 30, 2024</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2024-05-30</p>
         </div>
     </div>
 </div>
@@ -1794,9 +2443,9 @@ Keep up the good work!</p>
 <div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="English,OnPremise,WallOfLove,FeaturedShort,Faces,Software,OpenSource,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
-                    <img src="/images/testimonials/jeremy-white.webp" width="60" class="rounded-circle" alt="Jeremy White" />
+                    <img src="/images/testimonials/jeremy-white.webp" width="48" class="rounded-circle" alt="Jeremy White" />
                 
                 <div class="ps-3">
                     <h6 class="fw-semibold lh-base mb-0">Jeremy White</h6>
@@ -1823,21 +2472,27 @@ Keep up the good work!</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>Kimai has worked perfectly for CodeWeavers. We spent a great deal of energy comparing timesheet solutions, from proprietary to open source. <mark>None of the proprietary solutions had the functionality and simplicity of Kimai.</mark> Because it’s open source, we can confidently rely on it for years and years to come. Finally, we have hired Kevin to help us customize Kimai for our needs. His work has been fantastic. As a result, we have a professional solution, custom tailored to our needs, for far less than we were prepared to spend on one of the proprietary solutions.</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>Kimai has worked perfectly for CodeWeavers. We spent a great deal of energy comparing timesheet solutions, from proprietary to open source. <mark>None of the proprietary solutions had the functionality and simplicity of Kimai.</mark> Because it’s open source, we can confidently rely on it for years and years to come. Finally, we have hired Kevin to help us customize Kimai for our needs. His work has been fantastic. As a result, we have a professional solution, custom tailored to our needs, for far less than we were prepared to spend on one of the proprietary solutions.</p>
 
-            </div>
-            <p class="text-muted fs-xs">May 28, 2024</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2024-05-28</p>
         </div>
     </div>
 </div>
 
-<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="Cloud,English,WallOfLove,FeaturedShort,Faces,Freelancer,">
+<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="Cloud,English,WallOfLove,Faces,Freelancer,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
-                    <img src="/images/testimonials/panagiotis-ntinis.webp" width="60" class="rounded-circle" alt="Panagiotis Ntinis" />
+                    <img src="/images/testimonials/panagiotis-ntinis.webp" width="48" class="rounded-circle" alt="Panagiotis Ntinis" />
                 
                 <div class="ps-3">
                     <h6 class="fw-semibold lh-base mb-0">Panagiotis Ntinis</h6>
@@ -1864,26 +2519,32 @@ Keep up the good work!</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>I’ve always preferred self-hosting services, but when I discovered Kimai, I saw the value in their free cloud plan. Wanting to support the developers (being a developer myself), I upgraded to the paid version, and it’s been worth every penny.</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>I’ve always preferred self-hosting services, but when I discovered Kimai, I saw the value in their free cloud plan. Wanting to support the developers (being a developer myself), I upgraded to the paid version, and it’s been worth every penny.</p>
 
 <p>Recently, I made a mistake that almost wiped out all my data. Despite my plan not officially including support, Kimai’s team was there for me. <mark>They responded quickly and had my issue resolved within half an hour, saving me from a potential disaster.</mark></p>
 
 <p>As a freelancer, Kimai has become an essential tool for managing clients, projects, and tasks. It lets me track time accurately and create professional invoices effortlessly. For anyone looking to stay organized and efficient, I highly recommend Kimai.</p>
 
-            </div>
-            <p class="text-muted fs-xs">May 22, 2024</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2024-05-22</p>
         </div>
     </div>
 </div>
 
-<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="German,OnPremise,WallOfLove,">
+<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,WallOfLove,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
                     
-                        <img src="/images/testimonials/wts-it-gmbh.webp" width="60" class="rounded-circle" alt="Josef Wagner" />
+                        <img src="/images/testimonials/wts-it-gmbh.webp" width="48" class="rounded-circle" alt="Josef Wagner" />
                     
                 
                 <div class="ps-3">
@@ -1911,46 +2572,52 @@ Keep up the good work!</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>Wir sind IT Dienstleister und müssen unsere Zeiten zur Dokumentation und Abrechnung erfassen.</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>We are an IT service provider and need to record our times for documentation and billing purposes.</p>
 
-<p>Wir haben uns schon mit verschiedenen Systemen für die Erfassung und Erstellung von Serviceberichten / Abrechnung “gequält”.</p>
+<p>We have already ‘struggled’ with various systems for recording and creating service reports / billing.</p>
 
-<p>Mit Kimai haben wir vor 3 Jahren endlich eine gute Lösung gefunden . 
-Die Highlights für uns:</p>
+<p>We finally found a good solution 3 years ago with Kimai. 
+The highlights for us:</p>
 
 <ul>
   <li>
     <p>Speed 
-Beim Erfassen, Suchen, Abrechnen</p>
+When recording, searching, invoicing</p>
   </li>
   <li>
-    <p>Flexibilität
-Wir können Kimai anpassen, die Daten können exportiert werden. Eigenes Rechnungslayout usw. sind gut möglich.</p>
+    <p>Flexibility
+We can customise Kimai, the data can be exported. Our own invoice layout etc. is easily possible.</p>
   </li>
   <li>
-    <p>Kosten
-Im Vergleich zu anderen Lösungen unschlagbar günstig.</p>
+    <p>Cost
+Unbeatable value for money compared to other solutions.</p>
   </li>
 </ul>
 
-<p><mark>Wir sind so überzeugt von dem Produkt, dass wir es auch bei Kunden einsetzen um Excel Unsinn usw. abzulösen.</mark></p>
+<p><mark>We are so convinced by the product that we also use it with customers to replace Excel nonsense etc.</mark></p>
 
-<p>Kimai ist eine Softwarelösung die Spaß macht.</p>
+<p>Kimai is a software solution that is fun to use.</p>
 
-            </div>
-            <p class="text-muted fs-xs">May 12, 2024</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2024-05-12</p>
         </div>
     </div>
 </div>
 
-<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="German,OnPremise,WallOfLove,">
+<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,WallOfLove,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
                     
-                        <img src="/images/testimonials/lernparadies-duesseldorf.webp" width="60" class="rounded-circle" alt="Manfred Janisch" />
+                        <img src="/images/testimonials/lernparadies-duesseldorf.webp" width="48" class="rounded-circle" alt="Manfred Janisch" />
                     
                 
                 <div class="ps-3">
@@ -1978,13 +2645,18 @@ Im Vergleich zu anderen Lösungen unschlagbar günstig.</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>Wir arbeiten seit über 8 Jahren mit KIMAI 1 und haben die allerbesten Erfahrungen damit gesammelt. Es ist ideal auf unsere Bedürfnisse (Nachhilfe-Schule) zugeschnitten. 
-Und nun erfolgte der Umstieg auf KIMAI 2 mit Hilfe des sehr sympathischen und kompetenten Programmierers Kevin Papst. Die Zusammenarbeit mit Kevin Papst ist wirklich eine Freude! 
-KIMAI 2 wurde komplett neu programmiert, viele Punkte wurden optimiert und die Oberfläche auf den modernsten Standard gebracht. <mark>KIMAI ist eine eindeutige Empfehlung für alle, die eine Zeiterfassung suchen!</mark></p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>We have been working with KIMAI 1 for over 8 years and have had the very best experiences with it. It is ideally tailored to our needs (tutoring school). 
+And now we have switched to KIMAI 2 with the help of the very friendly and competent programmer Kevin Papst. Working with Kevin Papst is a real pleasure! KIMAI 2 has been completely reprogrammed, many aspects have been optimized, and the interface has been brought up to the latest standards. <mark>KIMAI comes highly recommended for anyone looking for a time tracking solution!</mark></p>
 
-            </div>
-            <p class="text-muted fs-xs">May 7, 2024</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2024-05-07</p>
         </div>
     </div>
 </div>
@@ -1992,9 +2664,9 @@ KIMAI 2 wurde komplett neu programmiert, viele Punkte wurden optimiert und die O
 <div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="Co-Work,Agency,Non-Kimai,English,WallOfLove,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
-                    <img src="/images/testimonials/kristian-matic.webp" width="60" class="rounded-circle" alt="Kristian Matic" />
+                    <img src="/images/testimonials/kristian-matic.webp" width="48" class="rounded-circle" alt="Kristian Matic" />
                 
                 <div class="ps-3">
                     <h6 class="fw-semibold lh-base mb-0">Kristian Matic</h6>
@@ -2021,11 +2693,17 @@ KIMAI 2 wurde komplett neu programmiert, viele Punkte wurden optimiert und die O
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p><mark>Collaboration with Kevin has been fantastic!</mark> His collaborative approach is top-notch, making our work smooth sailing. Kevin’s open communication style keeps us perfectly aligned.</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p><mark>Collaboration with Kevin has been fantastic!</mark> His collaborative approach is top-notch, making our work smooth sailing. Kevin’s open communication style keeps us perfectly aligned.</p>
 
-            </div>
-            <p class="text-muted fs-xs">May 5, 2024</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2024-05-05</p>
         </div>
     </div>
 </div>
@@ -2033,9 +2711,9 @@ KIMAI 2 wurde komplett neu programmiert, viele Punkte wurden optimiert und die O
 <div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="OnPremise,Plugin,English,WallOfLove,Support,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
-                    <img src="/images/testimonials/frank.webp" width="60" class="rounded-circle" alt="Frank" />
+                    <img src="/images/testimonials/frank.webp" width="48" class="rounded-circle" alt="Frank" />
                 
                 <div class="ps-3">
                     <h6 class="fw-semibold lh-base mb-0">Frank</h6>
@@ -2062,8 +2740,11 @@ KIMAI 2 wurde komplett neu programmiert, viele Punkte wurden optimiert und die O
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>When I started to identify a time reporting software for our medium size enterprise (~30 people distributed all over United States and Canada) in the software service industry for onsite and remote services, I had several programs in my mind. In my specification I had the following things to be covered</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>When I started to identify a time reporting software for our medium size enterprise (~30 people distributed all over United States and Canada) in the software service industry for onsite and remote services, I had several programs in my mind. In my specification I had the following things to be covered</p>
 <ul>
   <li>Customer related time reporting</li>
   <li>Project related time reporting</li>
@@ -2084,8 +2765,11 @@ KIMAI 2 wurde komplett neu programmiert, viele Punkte wurden optimiert und die O
 
 <p>Thanks, Kevin, for this nice software package!</p>
 
-            </div>
-            <p class="text-muted fs-xs">May 2, 2024</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2024-05-02</p>
         </div>
     </div>
 </div>
@@ -2093,10 +2777,10 @@ KIMAI 2 wurde komplett neu programmiert, viele Punkte wurden optimiert und die O
 <div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="PersonalUse,English,WallOfLove,SliderHomepage,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
                     
-                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" /></svg>
                     
                 
                 <div class="ps-3">
@@ -2120,22 +2804,28 @@ KIMAI 2 wurde komplett neu programmiert, viele Punkte wurden optimiert und die O
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>I want to say you thank you for this amazing tool you have build. Kimai is great for many purposes and I’m sure you can keep improving a great business with it. I found it a few years ago (in 2021), looking for some tools to make my life easier when i have to make everyday time tracking. 
-So that’s the unique thing i use from Kimai. </p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>I want to say you thank you for this amazing tool you have build. <mark>Kimai is great for many purposes</mark> and I’m sure you can keep improving a great business with it. I found it a few years ago (in 2021), looking for some tools to make my life easier when i have to make everyday time tracking. 
+So that’s the unique thing I use from Kimai.</p>
 
-            </div>
-            <p class="text-muted fs-xs">April 30, 2024</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2024-04-30</p>
         </div>
     </div>
 </div>
 
-<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="NonProfit,German,Cloud,WallOfLove,SliderHomepage,FeaturedShort,Support,Faces,">
+<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="NonProfit,Cloud,WallOfLove,SliderHomepage,FeaturedShort,Support,Faces,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
-                    <img src="/images/testimonials/johannes-mertens.webp" width="60" class="rounded-circle" alt="Johannes Mertens" />
+                    <img src="/images/testimonials/johannes-mertens.webp" width="48" class="rounded-circle" alt="Johannes Mertens" />
                 
                 <div class="ps-3">
                     <h6 class="fw-semibold lh-base mb-0">Johannes Mertens</h6>
@@ -2162,14 +2852,19 @@ So that’s the unique thing i use from Kimai. </p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>Wir nutzen Kimai für die Projekt-Zeiterfassung mit unseren Partner-Organisationen.
-<mark>Dabei haben wir besonders die gute Übersichtlichkeit, Auswertbarkeit und die einfache Bedienung im Fokus.</mark>
-Als NGO wissen wir auch die starke Fokussierung von Kimai auf diesen Sektor zu schätzen.
-Der Support ist hervorragend. Wir sind sehr zufrieden.</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>We use Kimai for project time tracking with our partner organizations.
+<mark>We particularly appreciate its clarity, evaluability, and ease of use.</mark>
+As an NGO, we also appreciate Kimai’s strong focus on this sector. The support is excellent. We are very satisfied.</p>
 
-            </div>
-            <p class="text-muted fs-xs">April 29, 2024</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2024-04-29</p>
         </div>
     </div>
 </div>
@@ -2177,10 +2872,10 @@ Der Support ist hervorragend. Wir sind sehr zufrieden.</p>
 <div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="English,Cloud,WallOfLove,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
                     
-                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" /></svg>
                     
                 
                 <div class="ps-3">
@@ -2206,21 +2901,27 @@ Der Support ist hervorragend. Wir sind sehr zufrieden.</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>I have been using Kimai cloud for more than 1 year, and <mark>I am very satisfied about it</mark> ! It became easier for me to send monthly reports to my clients and to track my time spent on the projects I’m working on. Thank you very much !</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>I have been using Kimai cloud for more than 1 year, and <mark>I am very satisfied about it</mark> ! It became easier for me to send monthly reports to my clients and to track my time spent on the projects I’m working on. Thank you very much !</p>
 
-            </div>
-            <p class="text-muted fs-xs">April 22, 2024</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2024-04-22</p>
         </div>
     </div>
 </div>
 
-<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="Cloud,German,WallOfLove,SliderHomepage,FeaturedShort,Support,Agency,Software,">
+<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="Cloud,WallOfLove,SliderHomepage,Support,Agency,Software,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
-                    <img src="/images/testimonials/jasmin.webp" width="60" class="rounded-circle" alt="Jasmin" />
+                    <img src="/images/testimonials/jasmin.webp" width="48" class="rounded-circle" alt="Jasmin" />
                 
                 <div class="ps-3">
                     <h6 class="fw-semibold lh-base mb-0">Jasmin</h6>
@@ -2247,22 +2948,28 @@ Der Support ist hervorragend. Wir sind sehr zufrieden.</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>Wir nutzen Kimai seit Kurzem für unser Zeitmanagement und sind sehr zufrieden. Ein schönes Design und eine einfache Bedienung waren uns wichtig, der größte Pluspunkt ist jedoch der Support: <mark>Das Team antwortet schnell und geht auf alle Wünsche und Anliegen ein</mark>, auch wenn es mal eine Sonderlösung sein muss. Dadurch für uns eine absolute Empfehlung an alle, die eine Lösung zur Zeiterfassung suchen 👍</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>We have been using Kimai for our time management for a short time and are very satisfied. A nice design and easy operation were important to us, but the biggest plus point is the support: <mark>The team responds quickly and addresses all wishes and concerns</mark>, even if a special solution is needed. Therefore, we absolutely recommend it to anyone looking for a time tracking solution 👍</p>
 
-            </div>
-            <p class="text-muted fs-xs">April 17, 2024</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2024-04-17</p>
         </div>
     </div>
 </div>
 
-<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="German,Cloud,NonProfit,WallOfLove,Support,">
+<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="Cloud,NonProfit,WallOfLove,Support,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
                     
-                        <img src="/images/testimonials/fegwissenbach.webp" width="60" class="rounded-circle" alt="Kevin" />
+                        <img src="/images/testimonials/fegwissenbach.webp" width="48" class="rounded-circle" alt="Kevin" />
                     
                 
                 <div class="ps-3">
@@ -2272,7 +2979,7 @@ Der Support ist hervorragend. Wir sind sehr zufrieden.</p>
                             IT
                         
                         
-                            &ndash; <a href="https://fegwissenbach.de/" target="_blank" class="text-muted text-decoration-none">Freie evangelische Gemeinde Wissenbach</a>
+                            &ndash; <a href="https://fegwissenbach.de/" target="_blank" class="text-muted text-decoration-none">Freie Gemeinde Wissenbach</a>
                         
                     </span>
                 </div>
@@ -2290,22 +2997,28 @@ Der Support ist hervorragend. Wir sind sehr zufrieden.</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>Ich kenne Kimai schon sehr lange. Vor über 10 Jahren haben wir Kimai in einer großen Firma für die Zeitenbuchungen in einem Softwareprojekt benutzt. Es ist einfach zu bedienen und somit für jeden User benutzbar. Heute verwende ich Kimai in unserer Kirchengemeinde, Es ist eine Unterstützung um die angefallen Zeiten nach Kategorien zu buchen. <mark>Einfach super und abgerundet wird es durch einen schnellen und zuverlässigen Support.</mark> Macht so weiter…. Danke!
-Ich kann jedem nur empfehlen, es auszutesten. Ihr werdet nicht enttäuscht sein.</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>I have known Kimai for a very long time. Over 10 years ago, we used Kimai in a large company for time bookings in a software project. It is easy to use and therefore usable for every user. Today I use Kimai in our church community. It helps us to book the accumulated hours by category. <mark>Simply great, and it is rounded off by a fast and reliable support.</mark> Keep up the great work…. Thank you!
+I can only recommend everyone to try it out. You won’t be disappointed.</p>
 
-            </div>
-            <p class="text-muted fs-xs">April 16, 2024</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2024-04-16</p>
         </div>
     </div>
 </div>
 
-<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="Italian,NonProfit,Church,WallOfLove,SliderHomepage,Faces,">
+<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="NonProfit,Church,WallOfLove,SliderHomepage,Faces,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
-                    <img src="/images/testimonials/alessandro-pollastri.webp" width="60" class="rounded-circle" alt="Alessandro Pollastri" />
+                    <img src="/images/testimonials/alessandro-pollastri.webp" width="48" class="rounded-circle" alt="Alessandro Pollastri" />
                 
                 <div class="ps-3">
                     <h6 class="fw-semibold lh-base mb-0">Alessandro Pollastri</h6>
@@ -2332,21 +3045,27 @@ Ich kann jedem nur empfehlen, es auszutesten. Ihr werdet nicht enttäuscht sein.
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>Usiamo Kimai da ormai due anni per tener traccia del tempo dedicato ad ogni fase dei nostri progetti e per la fatturazione delle ore verso le nostre realtà. Il software è completo, intuitivo e risponde appieno alle nostre necessità. Oltre a questo Kevin si è sempre dimostrato disponibile ad attento alle nostre necessità!</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>We have been using Kimai for two years now to track the time spent on each phase of our projects and to bill our clients for the hours worked. <mark>The software is comprehensive, intuitive, and fully meets our needs.</mark> In addition to this, Kevin has always been helpful and attentive to our needs!</p>
 
-            </div>
-            <p class="text-muted fs-xs">April 15, 2024</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2024-04-15</p>
         </div>
     </div>
 </div>
 
-<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="German,Cloud,WallOfLove,FeaturedShort,Support,Agency,Faces,">
+<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="Cloud,WallOfLove,FeaturedShort,Support,Agency,Faces,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
-                    <img src="/images/testimonials/christoph-van-bracht.webp" width="60" class="rounded-circle" alt="Christoph van Bracht" />
+                    <img src="/images/testimonials/christoph-van-bracht.webp" width="48" class="rounded-circle" alt="Christoph van Bracht" />
                 
                 <div class="ps-3">
                     <h6 class="fw-semibold lh-base mb-0">Christoph van Bracht</h6>
@@ -2373,22 +3092,28 @@ Ich kann jedem nur empfehlen, es auszutesten. Ihr werdet nicht enttäuscht sein.
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>Ich nutze Kimai seit mehreren Jahren. Zuerst in einem Unternehmen als Teil eines Projektteams. Später, als ich mich nebenbei selbständig gemacht habe, habe ich ein einfaches Timetracking-Tool gesucht und bin zu Kimai zurückgekehrt. Zuerst selbst installiert, dann in der Cloud. Für 3 Euro Betriebsausgaben im Monat bekomme ich als kleiner Nebenerwerbler genau das, was ich brauche: <mark>Schnelles Tracking, Übersicht über ausstehende Posten und eine blitzschnelle Abrechnung mit einem sauberen Timesheet</mark>. Aber auch für riesengroße Projekte mit einer großen Menge an Leuten bleibt es übersichtlich, nachvollziehbar und für alle einfach zu bedienen.
-Und der Support, in Persona Kevin, reagiert schnell und umfassend auf alles, was man braucht. Vielen Dank dafür!</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>I have been using Kimai for several years. First in a company as part of a project team. Later, when I started my own business on the side, I was looking for a simple time tracking tool and returned to Kimai. First self-installed, then in the cloud. For 3 euros in operating expenses per month, as a small part-time entrepreneur, I get exactly what I need: <mark>fast tracking, an overview of outstanding items, and lightning-fast billing with a clean timesheet</mark>. But even for huge projects with a large number of people, it remains clear, comprehensible, and easy for everyone to use.
+And the support, in the person of Kevin, responds quickly and comprehensively to everything you need. Many thanks for that!</p>
 
-            </div>
-            <p class="text-muted fs-xs">April 10, 2024</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2024-04-10</p>
         </div>
     </div>
 </div>
 
-<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="Architecture,Agency,German,Cloud,WallOfLove,">
+<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="Architecture,Agency,Cloud,WallOfLove,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
-                    <img src="/images/testimonials/bela-schwier.webp" width="60" class="rounded-circle" alt="Bela Schwier" />
+                    <img src="/images/testimonials/bela-schwier.webp" width="48" class="rounded-circle" alt="Bela Schwier" />
                 
                 <div class="ps-3">
                     <h6 class="fw-semibold lh-base mb-0">Bela Schwier</h6>
@@ -2415,13 +3140,19 @@ Und der Support, in Persona Kevin, reagiert schnell und umfassend auf alles, was
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>Wir benutzen Kimai seit vielen Jahren, zuerst als Standalone-Lösung auf eigenem Server, seit drei Jahren nun aber in der kimai.cloud. 
-Kimai erfüllt mit seiner Gliederungsstruktur die Anforderungen, die wir als Architekturbüro an eine Zeiterfassung haben und kann alle unsere Prozesse flexibel abbilden, was nicht bei vielen Zeiterfassungssystemen möglich ist. 
-Die Zuverlässigkeit, die konstante Pflege und Verbesserung und der direkte, persönliche Service, verbunden mit einer absolut fairen Preisgestaltung überzeugen uns nach wie vor. <mark>Wir können (und haben bereits) kimai.cloud nur weiterempfehlen!</mark></p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>We have been using Kimai for many years, initially as a standalone solution on our own server, but for the past three years now in the kimai.cloud. 
+With its structured layout, Kimai meets the time tracking requirements we have as an architecture firm and can flexibly map all of our processes, which is not possible with many time tracking systems. 
+We remain impressed by its reliability, constant maintenance and improvement, and direct, personal service, combined with absolutely fair pricing. <mark>We can (and already have) highly recommend kimai.cloud!</mark></p>
 
-            </div>
-            <p class="text-muted fs-xs">April 4, 2024</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2024-04-04</p>
         </div>
     </div>
 </div>
@@ -2429,9 +3160,9 @@ Die Zuverlässigkeit, die konstante Pflege und Verbesserung und der direkte, per
 <div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="English,Cloud,WallOfLove,SliderHomepage,Consulting,Faces,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
-                    <img src="/images/testimonials/mathias.webp" width="60" class="rounded-circle" alt="Mathias" />
+                    <img src="/images/testimonials/mathias.webp" width="48" class="rounded-circle" alt="Mathias" />
                 
                 <div class="ps-3">
                     <h6 class="fw-semibold lh-base mb-0">Mathias</h6>
@@ -2458,29 +3189,35 @@ Die Zuverlässigkeit, die konstante Pflege und Verbesserung und der direkte, per
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>kimai is a super web for keeping tracks of our daily work, the interface is clean and very useful, just easy, couple clicks and data, and that is done. 
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>Kimai is a super web platform for keeping tracks of our daily work, the interface is clean and very useful, just easy, couple clicks and data, and that is done. 
 <mark>we have used since 5 years ago, and the reports are easy to run</mark>. only 1 time i have to support a ticket, because we forgot the password!. 
 thanks for all the work here!</p>
 
-            </div>
-            <p class="text-muted fs-xs">April 3, 2024</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2024-04-03</p>
         </div>
     </div>
 </div>
 
-<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="English,Creative,OnPremise,Invoice,WallOfLove,SliderHomepage,FeaturedShort,Freelancer,">
+<div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="English,Creative,OnPremise,Invoice,WallOfLove,SliderHomepage,Freelancer,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
-                    <img src="/images/testimonials/isaac-mailach.webp" width="60" class="rounded-circle" alt="Isaac Mailach" />
+                    <img src="/images/testimonials/isaac-mailach.webp" width="48" class="rounded-circle" alt="Isaac Mailach" />
                 
                 <div class="ps-3">
                     <h6 class="fw-semibold lh-base mb-0">Isaac Mailach</h6>
                     <span class="fs-sm text-muted">
                         
-                            Media Composer and Studio Cellist
+                            Media Composer, Studio Cellist
                         
                         
                             &ndash; <a href="https://isaacmailach.im" target="_blank" class="text-muted text-decoration-none">Freelancer</a>
@@ -2501,11 +3238,17 @@ thanks for all the work here!</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p><mark>I love how I can combine time tracking, expense tracking, and invoicing into one app</mark> without features hidden behind nagging subscriptions. I can click one button to invoice my clients now! Seriously a godsend. Also, the clean UI is well thought-out and simple to learn. Highly recommend this one!</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p><mark>I love how I can combine time tracking, expense tracking, and invoicing into one app</mark> without features hidden behind nagging subscriptions. I can click one button to invoice my clients now! Seriously a godsend. Also, the clean UI is well thought-out and simple to learn. Highly recommend this one!</p>
 
-            </div>
-            <p class="text-muted fs-xs">April 1, 2024</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2024-04-01</p>
         </div>
     </div>
 </div>
@@ -2513,9 +3256,9 @@ thanks for all the work here!</p>
 <div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="Docker,OnPremise,English,WallOfLove,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
-                    <img src="/images/testimonials/paul-knulst.webp" width="60" class="rounded-circle" alt="Paul Knulst" />
+                    <img src="/images/testimonials/paul-knulst.webp" width="48" class="rounded-circle" alt="Paul Knulst" />
                 
                 <div class="ps-3">
                     <h6 class="fw-semibold lh-base mb-0">Paul Knulst</h6>
@@ -2540,11 +3283,17 @@ thanks for all the work here!</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>the best time tracking tool i used :) (and still do)</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p>the best time tracking tool i used :) (and still do)</p>
 
-            </div>
-            <p class="text-muted fs-xs">March 28, 2024</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2024-03-28</p>
         </div>
     </div>
 </div>
@@ -2552,10 +3301,10 @@ thanks for all the work here!</p>
 <div class="card border-0 p-0 p-sm-0 p-md-2 col-12 col-md-6 col-xl-4 mb-2 mb-md-0" data-filter="English,WallOfLove,">
     <div class="h-100 border border-secondary rounded">
         <div class="card-body pt-1 mt-3">
-            <figcaption class="d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
+            <figcaption class="d-flex align-items-center border-0 pt-0 mt-lg-0">
                 
                     
-                        <img src="/images/testimonials/marco-cosatto.webp" width="60" class="rounded-circle" alt="Marco Cosatto" />
+                        <img src="/images/testimonials/marco-cosatto.webp" width="48" class="rounded-circle" alt="Marco Cosatto" />
                     
                 
                 <div class="ps-3">
@@ -2581,13 +3330,19 @@ thanks for all the work here!</p>
                 <i class="bx bxs-star fs-3 text-warning"></i>
                 
             </div>
-            <div class="test-start">
-                <p>Kimai is my most beloved business tool!</p>
+            
+<div class="testimonial-text-wrapper">
+    <div class="testimonial-text">
+        
+        <p><mark>Kimai is my most beloved business tool!</mark></p>
 
 <p>My real world problem would be automating this sequence I do: prepare a “time only” “invoice” pdf in kimai and send it zapier, create an e-invoice in “Fatture in Cloud” with the timesheet attached (can’t use kimai, e-invoice mandatory).’</p>
 
-            </div>
-            <p class="text-muted fs-xs">November 24, 2023</p>
+    </div>
+    <div class="testimonial-fade"></div>
+</div>
+
+            <p class="text-muted fs-xs">2023-11-24</p>
         </div>
     </div>
 </div>
@@ -2597,20 +3352,28 @@ thanks for all the work here!</p>
     </div>
 </section>
 
-<section class="container mb-5">
-    <div class="position-relative bg-dark rounded-3 overflow-hidden px-3 py-5">
-        <span class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(255, 255, 255, .05)"></span>
-        <div class="position-relative zindex-5 text-center my-xl-3 py-1 py-md-4 py-lg-5">
-            <p class="lead text-light opacity-70 mb-3">தொடங்கத் தயாரா?</p>
-            <h2 class="h1 text-light pb-3 pb-lg-0 mb-lg-5">உங்கள் நேரத்தைக் கண்காணிப்பதைத் தொடங்குங்கள்</h2>
-            <a href="https://www.kimai.cloud/auth/registration" class="btn btn-success btn-lg">இலவசமாகத் தொடங்குங்கள்</a>
 
+
+
+    
+        
+<section class="container pt-3 pb-4 pb-md-5">
+    <div class="card border-0 bg-dark">
+        <div class="card-body p-md-5 p-4 bg-size-cover" style="background-image: url(/images/layout/contact-bg.webp);">
+            <div class="py-md-5 py-4 text-center">
+                <p class="lead text-light opacity-70 mb-3">தொடங்கத் தயாரா?</p>
+                <h2 class="text-light pb-3 pb-lg-0 mb-lg-5">உங்கள் நேரத்தைக் கண்காணிப்பதைத் தொடங்குங்கள்</h2>
+                <a href="https://www.kimai.cloud/auth/registration" class="btn btn-success btn-lg">இலவசமாகத் தொடங்குங்கள்</a>
+
+            </div>
         </div>
     </div>
 </section>
 
-
+    
 </main>
+
+
 
 <footer class="footer bg-dark pt-5 pb-4">
     <div class="container pt-1 pt-md-3 pt-lg-4 pt-xl-5">
@@ -2628,57 +3391,125 @@ thanks for all the work here!</p>
                 </p>
                 <div class="d-flex flex-column flex-sm-row flex-lg-column align-items-sm-center align-items-lg-start justify-content-between pb-1 pb-md-2 pb-lg-3 mb-3">
                     <div class="position-relative">
-                        <div class="dropdown">
-                            <button type="button" class="form-select" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="bx bx-globe top-50 start-0 text-body me-2"></i>
-                                தமிழ்
-                            </button>
-                            <div class="dropdown-menu dropdown-menu-end">
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/ca/" class="dropdown-item" title="Kimai - Seguidor de temps de codi obert">Català</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/cs/" class="dropdown-item" title="Kimai - Open Source sledování času">Čeština</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/de/" class="dropdown-item" title="Kimai – Open-Source Zeiterfassung">Deutsch</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/en/" class="dropdown-item" title="Kimai - Open Source time-tracker">English</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/es/" class="dropdown-item" title="Kimai - Tracker de tiempo abierto">Español</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/fr/" class="dropdown-item" title="Kimai - Suivi du temps à code ouvert">Français</a>
-                                
-                                    <a dir="rtl" href="https://www.kimai.co.il" class="dropdown-item" title="Kimai - מעקב שעות בקוד פתוח">עברית</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/hr/" class="dropdown-item" title="Kimai – Program otvorenog koda za evidentiranje vremena">Hrvatski</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/it/" class="dropdown-item" title="Kimai: time-tracker open source">Italiano</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/nl/" class="dropdown-item" title="Kimai - Open Source tijdregistratie">Dutch</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/pl/" class="dropdown-item" title="Kimai - Otwarte oprogramowanie do śledzenia czasu">Polski</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/pt/" class="dropdown-item" title="Kimai - Rastreador de tempo de código aberto">Português</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/pt_BR/" class="dropdown-item" title="Kimai - Rastreador de tempo de código aberto">Português (Brasil)</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/ru/" class="dropdown-item" title="Kimai - регистратор времени с открытым исходным кодом">Русский</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/sk/" class="dropdown-item" title="Kimai - Open Source sledovanie času">Slovenčina</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/sv/" class="dropdown-item" title="Kimai - öppen källkod tidsspårare">Svenska</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/ta/" class="dropdown-item active" title="கிமாய் - திறந்த மூல நேர -கண்காணிப்பு">தமிழ்</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/uk/" class="dropdown-item" title="Kimai — реєстратор часу з відкритим сирцевим кодом">Українська</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/zh_Hans/" class="dropdown-item" title="Kimai - 开源时间跟踪器">中文（中国）</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.tw" class="dropdown-item" title="Kimai —— 開放源始碼的工時追蹤工具">中文（繁體）</a>
-                                
-                            </div>
-                        </div>
+                        <div class="dropdown language-dropdown d-inline-block">
+    <button type="button" class="btn btn-sm fs-sm btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="bx bx-globe fs-lg top-50 start-0 text-body me-2"></i>
+            தமிழ்
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end">
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/ca/" class="dropdown-item" title="Kimai - Seguidor de temps de codi obert">Català</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/cs/" class="dropdown-item" title="Kimai - Open Source sledování času">Čeština</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/de/" class="dropdown-item" title="Kimai – Open-Source Zeiterfassung">Deutsch</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/en/" class="dropdown-item" title="Kimai - Open Source time-tracker">English</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/es/" class="dropdown-item" title="Kimai - Tracker de tiempo abierto">Español</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/fr/" class="dropdown-item" title="Kimai - Suivi du temps à code ouvert">Français</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="rtl" href="https://www.kimai.co.il" class="dropdown-item" title="Kimai - מעקב שעות בקוד פתוח">עברית</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/hr/" class="dropdown-item" title="Kimai – Program otvorenog koda za evidentiranje vremena">Hrvatski</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/it/" class="dropdown-item" title="Kimai: time-tracker open source">Italiano</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/nl/" class="dropdown-item" title="Kimai - Open Source tijdsregistratietool">Dutch</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/pl/" class="dropdown-item" title="Kimai - Otwarte oprogramowanie do śledzenia czasu">Polski</a>
+            </li>
+            
+        
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/pt_BR/" class="dropdown-item" title="Kimai - Rastreador de tempo de código aberto">Português (Brasil)</a>
+            </li>
+            
+        
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/sk/" class="dropdown-item" title="Kimai - Open Source sledovanie času">Slovenčina</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/sv/" class="dropdown-item" title="Kimai - öppen källkod tidsspårare">Svenska</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/ta/" class="dropdown-item active" aria-current="true" title="கிமாய் - திறந்த மூல நேர -கண்காணிப்பு">தமிழ்</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/uk/" class="dropdown-item" title="Kimai — реєстратор часу з відкритим сирцевим кодом">Українська</a>
+            </li>
+            
+        
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.tw" class="dropdown-item" title="Kimai —— 開放源始碼的工時追蹤工具">中文（繁體）</a>
+            </li>
+            
+        
+    </ul>
+</div>
+
                     </div>
-                    
                 </div>
             </div>
             <div class="col-md-7 offset-xl-1">
@@ -2713,27 +3544,28 @@ thanks for all the work here!</p>
                                 
                                 
                                 <li class="nav-item">
-                                    <a href="/en/agency-time-tracking" class="nav-link fs-sm fw-medium px-0 py-1" title="Agency">Agencies</a>
+                                    <a href="/ta/agency-time-tracking" class="nav-link fs-sm fw-medium px-0 py-1" title="Agency">Agencies</a>
                                 </li>
                                 
                                 <li class="nav-item">
-                                    <a href="/en/consultants-time-tracking" class="nav-link fs-sm fw-medium px-0 py-1" title="Consultants">Consultants</a>
+                                    <a href="/ta/consultants-time-tracking" class="nav-link fs-sm fw-medium px-0 py-1" title="Consultants">Consultants</a>
                                 </li>
                                 
                                 <li class="nav-item">
-                                    <a href="/en/freelancers-time-tracking" class="nav-link fs-sm fw-medium px-0 py-1" title="Freelancers">Freelancer</a>
+                                    <a href="/ta/freelancers-time-tracking" class="nav-link fs-sm fw-medium px-0 py-1" title="Freelancers">Freelancer</a>
                                 </li>
                                 
                                 <li class="nav-item">
-                                    <a href="/en/software-developers-time-tracking" class="nav-link fs-sm fw-medium px-0 py-1" title="Software Developers">Software Developers</a>
+                                    <a href="/ta/non-profit" class="nav-link fs-sm fw-medium px-0 py-1" title="Non Profit">Non-Profits</a>
                                 </li>
                                 
                                 <li class="nav-item">
-                                    <a href="/en/non-profit" class="nav-link fs-sm fw-medium px-0 py-1">இலாப நோக்கற்ற</a>
+                                    <a href="/ta/software-developers-time-tracking" class="nav-link fs-sm fw-medium px-0 py-1" title="Software Developers">Software Developers</a>
                                 </li>
+                                
                                 <li class="nav-item">
                                     
-                                    <a href="/en/industry" class="nav-link fs-sm fw-medium px-0 py-1">மேலும் தொழில்கள்</a>
+                                    <a href="/ta/industry" class="nav-link fs-sm fw-medium px-0 py-1">மேலும் தொழில்கள்</a>
                                 </li>
                             </ul>
                         </div>
@@ -2768,7 +3600,6 @@ thanks for all the work here!</p>
                             </ul>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </div>
@@ -2783,41 +3614,39 @@ thanks for all the work here!</p>
         <li class="nav-item">
             <a href="/ta/terms-cloud.html" class="nav-link fs-sm fw-medium">விதிமுறைகள்</a>
         </li>
+        <li class="nav-item">
+            <a href="https://status.kimai.org/" target="_blank" class="nav-link fs-sm fw-medium">நிலை</a>
+        </li>
     </ul>
     <div class="nav order-md-2 mb-3 mb-md-0">
         
+    
     <a target="_blank" href="https://github.com/kimai/kimai" class="btn btn-icon btn-secondary btn-github rounded-circle me-3" aria-label="GitHub">
         <i class="bx bxl-github"></i>
     </a>
 
+    
     <a target="_blank" href="https://www.youtube.com/@kimai_org" class="btn btn-icon btn-secondary btn-youtube rounded-circle me-3" aria-label="YouTube">
         <i class="bx bxl-youtube"></i>
     </a>
 
+    
     <a target="_blank" href="https://www.linkedin.com/company/kimai-org/" class="btn btn-icon btn-secondary btn-linkedin rounded-circle me-3" aria-label="LinkedIn">
         <i class="bx bxl-linkedin"></i>
     </a>
 
-    <a target="_blank" href="https://www.instagram.com/kimai_org" class="btn btn-icon btn-secondary btn-instagram rounded-circle me-3" aria-label="Instagram">
-        <i class="bx bxl-instagram"></i>
+    
+    <a target="_blank" href="https://www.reddit.com/r/kimai/" class="btn btn-icon btn-secondary btn-reddit rounded-circle me-3" aria-label="reddit">
+        <i class="bx bxl-reddit"></i>
     </a>
 
-    <a target="_blank" href="https://www.facebook.com/kimai.time.tracker" class="btn btn-icon btn-secondary btn-facebook rounded-circle me-3" aria-label="Facebook">
-        <i class="bx bxl-facebook"></i>
-    </a>
-
+    
     <a target="_blank" href="https://phpc.social/@kimai" class="btn btn-icon btn-secondary btn-messenger rounded-circle me-3" aria-label="Mastodon">
         <i class="bx bxl-mastodon"></i>
     </a>
 
 
     </div>
-    <ul class="nav order-md-3">
-        <li class="nav-item">
-            <a href="https://status.kimai.org/" target="_blank" class="nav-link fs-sm fw-medium">நிலை</a>
-        </li>
-    </ul>
-    
 </div>
 
     </div>
@@ -2831,7 +3660,7 @@ thanks for all the work here!</p>
     <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
 </a>
 
-<script src="/assets/build/main.js?v1"></script>
+<script src="/assets/build/main.js?v4"></script>
 
 <script defer src="https://u.kimai.org/script.js" data-website-id="e26bef12-9527-43bc-83fd-660e237f3526"></script>
 

@@ -20,56 +20,52 @@
 <meta property="og:title" content="Open-Source Time-Tracker">
 <meta property="og:image" content="https://www.kimai.org/images/social-preview.webp">
 <meta property="og:description" content="A time-tracker is a software tool or application designed to automatically or manually record and monitor how time is spent on various activities, tasks,...">
-<link href="/assets/build/main.css?v8" rel="stylesheet" />
+<link href="/assets/build/main.css?v14" rel="stylesheet" />
 
 </head>
 <body class="">
 
 <main class="page-wrapper">
     
+    
+    
+
+    
 
 
-
-
-
-
-
-
-
-
-
-
-
-<header class="header navbar navbar-expand-lg position-absolute navbar-dark   navbar-sticky">
+<header class="header navbar navbar-expand-lg border-bottom bg-light navbar-sticky">
     <div class="container px-3">
         <a href="/en/" class="navbar-brand pe-3">
         <img src="/images/kimai_logo_48.webp" style="height:36px;width:36px;" alt="Kimai - Open Source time-tracker"> Kimai
         </a>
-        <div id="navbarNav" class="offcanvas offcanvas-end bg-dark">
+        <div id="navbarNav" class="offcanvas offcanvas-end">
             <div class="offcanvas-header border-bottom">
                 <h5 class="offcanvas-title">Menu</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-current="page">Product</a>
                         <ul class="dropdown-menu">
-                            <li><a href="/en/about.html" class="dropdown-item">About Kimai</a></li>
-                            <li><a href="/en/open-source-community" class="dropdown-item">Open Source</a></li>
-                            <li class="dropdown-divider"></li>
                             <li><a href="/en/integrations" class="dropdown-item">Apps & Integrations</a></li>
                             <li><a href="/en/demo.html" class="dropdown-item">Demo</a></li>
                             <li class="dropdown-divider"></li>
                             <li><a href="/en/blog/" class="dropdown-item">Blog</a></li>
                             <li><a href="/en/support.html" class="dropdown-item">Support</a></li>
+                            
+                            <li><a href="/en/partner/" class="dropdown-item">Partner</a></li>
+                            
+                            <li class="dropdown-divider"></li>
+                            <li><a href="/en/about.html" class="dropdown-item">About Kimai</a></li>
+                            <li><a href="/en/open-source-community" class="dropdown-item">Open Source</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-current="page">Cloud</a>
                         <ul class="dropdown-menu">
                             <li><a href="/en/pricing" class="dropdown-item">Pricing</a></li>
-                            <li><a href="/en/changelog" class="dropdown-item">Changelog</a></li>
+                            <li><a href="/en/changelog" class="dropdown-item">Updates</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -87,7 +83,6 @@
                             
                             
                             <li><a href="https://www.kimai.org/documentation/chapter-manual.html" class="dropdown-item">
-                                <i class="bx bx-book me-2"></i>
                                 
                                 User manual
                             </a></li>
@@ -95,7 +90,6 @@
                             
                             
                             <li><a href="https://www.kimai.org/documentation/cloud.html" class="dropdown-item">
-                                <i class="bx bx-cloud me-2"></i>
                                 
                                 Cloud
                             </a></li>
@@ -103,7 +97,6 @@
                             
                             
                             <li><a href="https://www.kimai.org/documentation/chapter-on-premise.html" class="dropdown-item">
-                                <i class="bx bx-server me-2"></i>
                                 
                                 Self hosting
                             </a></li>
@@ -111,7 +104,6 @@
                             
                             
                             <li><a href="https://www.kimai.org/documentation/chapter-developer.html" class="dropdown-item">
-                                <i class="bx bx-code-alt me-2"></i>
                                 
                                 Developer
                             </a></li>
@@ -123,10 +115,124 @@
         </div>
         <div class="pe-lg-1 ms-auto me-2">
             
-
-
-
-<a href="https://www.kimai.cloud/auth/" class="btn btn-sm fs-sm d-none d-md-inline-flex me-2 btn-outline-light">Login</a>
+            
+            <div class="dropdown language-dropdown d-inline-block">
+    <button type="button" class="btn btn-sm fs-sm d-none d-md-inline-flex me-2 btn-outline-secondary px-2 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="bx bx-globe fs-lg top-50 start-0 text-body me-2"></i>
+            English
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end">
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/ca/" class="dropdown-item" title="Kimai - Seguidor de temps de codi obert">Català</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/cs/" class="dropdown-item" title="Kimai - Open Source sledování času">Čeština</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/de/" class="dropdown-item" title="Kimai – Open-Source Zeiterfassung">Deutsch</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/en/" class="dropdown-item active" aria-current="true" title="Kimai - Open Source time-tracker">English</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/es/" class="dropdown-item" title="Kimai - Tracker de tiempo abierto">Español</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/fr/" class="dropdown-item" title="Kimai - Suivi du temps à code ouvert">Français</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="rtl" href="https://www.kimai.co.il" class="dropdown-item" title="Kimai - מעקב שעות בקוד פתוח">עברית</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/hr/" class="dropdown-item" title="Kimai – Program otvorenog koda za evidentiranje vremena">Hrvatski</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/it/" class="dropdown-item" title="Kimai: time-tracker open source">Italiano</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/nl/" class="dropdown-item" title="Kimai - Open Source tijdsregistratietool">Dutch</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/pl/" class="dropdown-item" title="Kimai - Otwarte oprogramowanie do śledzenia czasu">Polski</a>
+            </li>
+            
+        
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/pt_BR/" class="dropdown-item" title="Kimai - Rastreador de tempo de código aberto">Português (Brasil)</a>
+            </li>
+            
+        
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/sk/" class="dropdown-item" title="Kimai - Open Source sledovanie času">Slovenčina</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/sv/" class="dropdown-item" title="Kimai - öppen källkod tidsspårare">Svenska</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/ta/" class="dropdown-item" title="கிமாய் - திறந்த மூல நேர -கண்காணிப்பு">தமிழ்</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/uk/" class="dropdown-item" title="Kimai — реєстратор часу з відкритим сирцевим кодом">Українська</a>
+            </li>
+            
+        
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.tw" class="dropdown-item" title="Kimai —— 開放源始碼的工時追蹤工具">中文（繁體）</a>
+            </li>
+            
+        
+    </ul>
+</div>
 
             <a href="https://www.kimai.cloud/auth/registration" class="btn btn-success btn-sm fs-sm d-inline-flex">Start for free</a>
 
@@ -138,35 +244,24 @@
 </header>
 
 
-    
-    
-
-    
-    
-    
-    
-
-    <section class="position-relative pt-5 bg-dark">
-
-    <div class="container position-relative zindex-2 pt-5 pb-2 pb-md-0">
-
-        <div class="row justify-content-center pt-3 mt-3">
-            <div class="col-xl-6 col-lg-7 col-md-8 col-sm-10 text-center">
-                <h1 class="mb-4"><span class="small fs-4 d-block">Open Source</span> Time Tracker</h1>
-                <p class="text-body fs-lg pb-3 mb-3">A time-tracker is a software tool or application designed to automatically or manually record and monitor how time is spent on various activities, tasks, or projects, helping individuals and organizations measure and analyze their time usage. ✨</p>
+    <section class="hero border-bottom position-relative py-5 overflow-hidden">
+        <span class="position-absolute top-0 start-0 d-block w-100 h-100 bg-hero"></span>
+        <div class="container position-relative pt-xl-5 pt-md-3 zindex-5">
+            <div class="row justify-content-center flex-md-nowrap">
+                <div class="d-flex flex-column justify-content-between mb-3 text-center">
+                    <p class="eyebrow mb-1">Open Source</p>
+                    <h1 class="page-title mb-lg-4 mb-3">
+                        <span class="fw-semibold">Time Tracker</span>
+                    </h1>
+                    <p class="mb-4 pb-xl-3 pb-lg-2 fs-lg mx-auto" style="max-width: 30.5rem;">
+                        A time-tracker is a software tool or application designed to automatically or manually record and monitor how time is spent on various activities, tasks, or projects, helping individuals and organizations measure and analyze their time usage. ✨
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="d-flex position-absolute top-100 start-0 w-100 overflow-hidden mt-n5" style="color: #0b0f19;">
-        <div class="position-relative start-50 translate-middle-x flex-shrink-0 mt-n5 mt-md-n3 mt-lg-n1" style="width: 3788px;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="3788" height="144" viewBox="0 0 3788 144"><path fill="currentColor" d="M0,0h3788.7c-525,90.2-1181.7,143.9-1894.3,143.9S525,90.2,0,0z"></path></svg>
-        </div>
-    </div>
-</section>
-
-
-    <section class="container pt-5 mt-md-2 mt-lg-4 mt-xl-5">
+    <section class="container">
         <div class="row justify-content-center pt-5">
             <div class="col-xxl-10 col-xl-11 col-lg-12 pt-sm-2 pt-md-5">
                 <div class="d-sm-flex">
@@ -198,62 +293,50 @@
     <section class="bg-secondary pb-5 mb-md-2 mb-lg-4 mb-xl-5">
         <div class="container">
             <div class="row pt-5 pb-1 pb-sm-2 pb-md-3">
-                <h2 class="h1 mt-3 mb-5 text-center">Discover Kimai</h2>
+                <h2 class="mt-3 mb-5 text-center">Discover Kimai</h2>
 
                 <div class="lp-content">
-                    <p>Welcome to a world where time trackers meet innovation — Kimai is the cutting edge open source time tracker software!</p>
+                    <p>There are hundreds of time trackers out there. Most of them look the same, work the same, and cost the same — a monthly fee per user that quietly adds up until someone in accounting starts asking questions. Kimai takes a different approach: it’s open source, it’s free to self-host, and it’s been around since 2006. That’s not a typo — nearly two decades of development, long before “SaaS time tracker” became a crowded category.</p>
 
-<h4 id="open-source-time-tracker-for-professionals">Open-source time-tracker for professionals</h4>
+<h3 id="what-a-time-tracker-actually-needs-to-do">What a time tracker actually needs to do</h3>
 
-<p>As you evaluate your options, consider the freedom, flexibility, and full control that Kimai offers. 
-It’s not just software; it’s a game-changer for your business.</p>
+<p>Strip away the marketing buzzwords and a time tracker has one job: record how people spend their working hours. Everything else — reports, invoices, integrations — is built on top of that foundation.</p>
 
-<p>In your search for the perfect time tracker solution, you’ve probably come across numerous options.
-But if you’re looking for unparalleled flexibility and control, Kimai is the open source time tracker software stands out as the optimal choice.</p>
+<p>The trouble is, most time trackers optimize for the demo, not for daily use. Flashy dashboards look great in a sales call but slow you down at 8 AM on a Monday. Kimai takes the opposite approach: the most common action (starting and stopping a timer) is one click. Everything else stays out of your way until you need it.</p>
 
-<h4 id="kimai-is-the-best-open-source-choice-for-time-tracking">Kimai is the best open-source choice for time-tracking</h4>
+<h3 id="who-uses-an-open-source-time-tracker">Who uses an open-source time tracker?</h3>
 
-<p>Kimai isn’t just another simplified time-tracking tool; it’s also providing many features around project management, employee management and tracking and so mut more!</p>
+<p><strong>Agencies billing by the hour</strong> need every minute assigned to the right client. Kimai tracks time against a hierarchy of customers, projects, and activities. At the end of the month, invoices generate from actual recorded hours — no guessing, no rounding, no spreadsheets.</p>
 
-<p>Kimai is a professional grade software, given away for free by its maker, who strongly beliefs in the idea of open-source software, even in B2B situations.</p>
+<p><strong>Development teams</strong> use Kimai to understand where engineering time goes. When half the sprint disappears into unplanned support work, the time tracker makes that visible. You can’t fix what you can’t measure.</p>
 
-<h4 id="where-functionality-meets-freedom">Where functionality meets freedom</h4>
+<p><strong>Universities and research institutions</strong> appreciate two things about Kimai: it’s free, and it runs on their own servers. Research budgets are tight, data protection requirements are strict, and a self-hosted open-source time tracker checks both boxes.</p>
 
-<p>With Kimai, you’re not just buying software; you’re buying a customisable platform that adapts to your business needs.</p>
+<p><strong>Trades and construction firms</strong> need a time tracker that works on a job site. Kimai runs in any browser — including the one on that dusty tablet in the foreman’s truck. The kiosk mode lets workers clock in and out with a PIN, no individual accounts required.</p>
 
-<p>You can modify and extend its functionality to fit your workflows and processes. You can add pre-made plugins or develop your own ones, to hook deep into the core of Kimai.</p>
+<p><strong>Freelancers</strong> want something lightweight but professional. Kimai delivers clean time reports for clients and a solid paper trail for taxes. No per-user fees when you’re the only user.</p>
 
-<h4 id="robust-features-that-drive-productivity">Robust features that drive productivity</h4>
+<h3 id="why-open-source-matters-for-time-tracking">Why open source matters for time tracking</h3>
 
-<ul>
-  <li><strong>Effortless time tracker</strong>: Track hours with a single click and focus on the work that matters.</li>
-  <li><strong>Project based organisation</strong>: Assign every second to the right task for accurate billing and reporting.</li>
-  <li><strong>Transparent reporting</strong>: Create detailed reports that provide insight into your team’s productivity.</li>
-  <li><strong>User Access Levels</strong>: Maintain control with customised user roles and permissions.</li>
-  <li><strong>Cross-Platform Availability</strong>: Whether you’re on a PC, tablet, or smartphone, Kimai is there for you—anytime, anywhere.</li>
-  <li><strong>Customization at its Core</strong>: Mold Kimai to fit your business like a glove with extensive customization options.</li>
-</ul>
+<p>A time tracker sees everything: when your team starts working, how long they spend on each task, when they take breaks. That’s sensitive data. With a proprietary SaaS tool, you trust the vendor’s privacy policy and hope for the best. With Kimai, you can read every line of code, host it on your own infrastructure, and know exactly where your data lives.</p>
 
-<h4 id="driven-through-community-feedback">Driven through community feedback</h4>
+<p>Open source also means no artificial limitations. There’s no “starter plan” with 5 users and crippled reporting, no “enterprise tier” that unlocks the features you actually need. Self-hosted Kimai gives you everything, for free, with unlimited users.</p>
 
-<p>Kimai plays well with others and has an extensive API that can manage your employee time trackers, integrating effortlessly with your favorite tools and services.</p>
+<h3 id="extending-kimai-plugins-api-and-custom-fields">Extending Kimai: plugins, API, and custom fields</h3>
 
-<p>Plus, being open source means you have a robust community for support, offering updates, plugins, and fixes.
-Get answers, share ideas and move forward with community-validated solutions.</p>
+<p>Out of the box, Kimai covers the fundamentals well. But businesses have specific needs, and that’s where the plugin system comes in. Pre-built plugins add features like advanced invoicing, custom reports, approval workflows, and expense tracking. If none of the existing plugins fit, the API lets you build your own integrations.</p>
 
-<h4 id="saas-hosted-or-on-premise">SaaS-Hosted or On-Premise</h4>
+<p>Custom fields deserve a special mention: you can add any data field to time entries, projects, customers, or users. Tracking cost centers? Add a custom field. Need a purchase order number on every entry? Custom field. This flexibility means Kimai adapts to your processes instead of forcing you to adapt to its assumptions.</p>
 
-<p>Kimai is fully open, no matter which version you choose: you get the same code.</p>
+<h3 id="cloud-or-self-hosted--same-software-your-call">Cloud or self-hosted — same software, your call</h3>
 
-<p>Both the SaaS version and the On-Premise version are running the same codebase, including the commercial plugins.</p>
+<p>The Kimai Cloud is the fastest way to get started: sign up, create your instance, invite your team. It runs on European servers, handles updates and backups automatically, and includes all commercial plugins.</p>
 
-<p>That means there is no vendor lock-in, not even in the cloud. As paying customer your receive regular full backups of your data, including the entire database and all generated invoices.
-So if you ever need to move from Cloud to On-Premise - that is possible!</p>
+<p>Self-hosting gives you full control. Run Kimai on your own Linux server, your company’s Kubernetes cluster, or a five-dollar VPS — it’s your choice. Docker images make deployment straightforward.</p>
 
-<p>The other way around is also no problem, we can migrate your On-Premise Kimai to the cloud.</p>
+<p>Both versions run the same code. Switching directions is always possible: cloud customers receive full data exports, self-hosted users can migrate to the cloud. No lock-in, no data hostage situations.</p>
 
-<p>You see: when it comes to time trackers, Kimai is more than just software - it is a strategic partner that grows with you.
-Take advantage of open source and make it your time-tracking experience: choose Kimai.</p>
+<p>Give Kimai a try and discover what time tracking feels like when the software works for you, not the other way around.</p>
 
                 </div>
             </div>
@@ -294,7 +377,9 @@ Take advantage of open source and make it your time-tracking experience: choose 
         </div>
     </div>
     <div class="row justify-content-center pt-5 pb-1 pb-sm-2 pb-md-3 text-center">
-        <h3 class="mb-5">One software, two versions</h3>
+        <h3 class="mb-5">Cloud or self-hosted.<br />
+You decide.<br />
+</h3>
     </div>
     <div class="row justify-content-center pt-5 pb-1 pb-sm-2 pb-md-3">
         <table class="table compare-versions">
@@ -302,14 +387,10 @@ Take advantage of open source and make it your time-tracking experience: choose 
             <tr>
                 <th></th>
                 <th class="text-center">
-                    Hosted by you
-                    <br>
-                    On-Premise
+                    Self hosting
                 </th>
                 <th class="text-center">
-                    Hosted for you
-                    <br>
-                    Cloud
+                    Kimai Cloud
                 </th>
             </tr>
             </thead>
@@ -492,14 +573,15 @@ Take advantage of open source and make it your time-tracking experience: choose 
 
 
     
-<section class="container mb-5">
-    <div class="position-relative bg-dark rounded-3 overflow-hidden px-3 py-5">
-        <span class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(255, 255, 255, .05)"></span>
-        <div class="position-relative zindex-5 text-center my-xl-3 py-1 py-md-4 py-lg-5">
-            <p class="lead text-light opacity-70 mb-3">Ready to get started?</p>
-            <h2 class="h1 text-light pb-3 pb-lg-0 mb-lg-5">Start your time-tracking now</h2>
-            <a href="https://www.kimai.cloud/auth/registration" class="btn btn-success btn-lg">Start for free</a>
+<section class="container pt-3 pb-4 pb-md-5">
+    <div class="card border-0 bg-dark">
+        <div class="card-body p-md-5 p-4 bg-size-cover" style="background-image: url(/images/layout/contact-bg.webp);">
+            <div class="py-md-5 py-4 text-center">
+                <p class="lead text-light opacity-70 mb-3">Ready to get started?</p>
+                <h2 class="text-light pb-3 pb-lg-0 mb-lg-5">Start your time-tracking now</h2>
+                <a href="https://www.kimai.cloud/auth/registration" class="btn btn-success btn-lg">Start for free</a>
 
+            </div>
         </div>
     </div>
 </section>
@@ -522,57 +604,125 @@ Take advantage of open source and make it your time-tracking experience: choose 
                 </p>
                 <div class="d-flex flex-column flex-sm-row flex-lg-column align-items-sm-center align-items-lg-start justify-content-between pb-1 pb-md-2 pb-lg-3 mb-3">
                     <div class="position-relative">
-                        <div class="dropdown">
-                            <button type="button" class="form-select" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="bx bx-globe top-50 start-0 text-body me-2"></i>
-                                English
-                            </button>
-                            <div class="dropdown-menu dropdown-menu-end">
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/ca/" class="dropdown-item" title="Kimai - Seguidor de temps de codi obert">Català</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/cs/" class="dropdown-item" title="Kimai - Open Source sledování času">Čeština</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/de/" class="dropdown-item" title="Kimai – Open-Source Zeiterfassung">Deutsch</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/en/" class="dropdown-item active" title="Kimai - Open Source time-tracker">English</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/es/" class="dropdown-item" title="Kimai - Tracker de tiempo abierto">Español</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/fr/" class="dropdown-item" title="Kimai - Suivi du temps à code ouvert">Français</a>
-                                
-                                    <a dir="rtl" href="https://www.kimai.co.il" class="dropdown-item" title="Kimai - מעקב שעות בקוד פתוח">עברית</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/hr/" class="dropdown-item" title="Kimai – Program otvorenog koda za evidentiranje vremena">Hrvatski</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/it/" class="dropdown-item" title="Kimai: time-tracker open source">Italiano</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/nl/" class="dropdown-item" title="Kimai - Open Source tijdregistratie">Dutch</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/pl/" class="dropdown-item" title="Kimai - Otwarte oprogramowanie do śledzenia czasu">Polski</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/pt/" class="dropdown-item" title="Kimai - Rastreador de tempo de código aberto">Português</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/pt_BR/" class="dropdown-item" title="Kimai - Rastreador de tempo de código aberto">Português (Brasil)</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/ru/" class="dropdown-item" title="Kimai - регистратор времени с открытым исходным кодом">Русский</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/sk/" class="dropdown-item" title="Kimai - Open Source sledovanie času">Slovenčina</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/sv/" class="dropdown-item" title="Kimai - öppen källkod tidsspårare">Svenska</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/ta/" class="dropdown-item" title="கிமாய் - திறந்த மூல நேர -கண்காணிப்பு">தமிழ்</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/uk/" class="dropdown-item" title="Kimai — реєстратор часу з відкритим сирцевим кодом">Українська</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.org/zh_Hans/" class="dropdown-item" title="Kimai - 开源时间跟踪器">中文（中国）</a>
-                                
-                                    <a dir="ltr" href="https://www.kimai.tw" class="dropdown-item" title="Kimai —— 開放源始碼的工時追蹤工具">中文（繁體）</a>
-                                
-                            </div>
-                        </div>
+                        <div class="dropdown language-dropdown d-inline-block">
+    <button type="button" class="btn btn-sm fs-sm btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="bx bx-globe fs-lg top-50 start-0 text-body me-2"></i>
+            English
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end">
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/ca/" class="dropdown-item" title="Kimai - Seguidor de temps de codi obert">Català</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/cs/" class="dropdown-item" title="Kimai - Open Source sledování času">Čeština</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/de/" class="dropdown-item" title="Kimai – Open-Source Zeiterfassung">Deutsch</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/en/" class="dropdown-item active" aria-current="true" title="Kimai - Open Source time-tracker">English</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/es/" class="dropdown-item" title="Kimai - Tracker de tiempo abierto">Español</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/fr/" class="dropdown-item" title="Kimai - Suivi du temps à code ouvert">Français</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="rtl" href="https://www.kimai.co.il" class="dropdown-item" title="Kimai - מעקב שעות בקוד פתוח">עברית</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/hr/" class="dropdown-item" title="Kimai – Program otvorenog koda za evidentiranje vremena">Hrvatski</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/it/" class="dropdown-item" title="Kimai: time-tracker open source">Italiano</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/nl/" class="dropdown-item" title="Kimai - Open Source tijdsregistratietool">Dutch</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/pl/" class="dropdown-item" title="Kimai - Otwarte oprogramowanie do śledzenia czasu">Polski</a>
+            </li>
+            
+        
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/pt_BR/" class="dropdown-item" title="Kimai - Rastreador de tempo de código aberto">Português (Brasil)</a>
+            </li>
+            
+        
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/sk/" class="dropdown-item" title="Kimai - Open Source sledovanie času">Slovenčina</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/sv/" class="dropdown-item" title="Kimai - öppen källkod tidsspårare">Svenska</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/ta/" class="dropdown-item" title="கிமாய் - திறந்த மூல நேர -கண்காணிப்பு">தமிழ்</a>
+            </li>
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.org/uk/" class="dropdown-item" title="Kimai — реєстратор часу з відкритим сирцевим кодом">Українська</a>
+            </li>
+            
+        
+            
+        
+            
+            <li>
+                <a dir="ltr" href="https://www.kimai.tw" class="dropdown-item" title="Kimai —— 開放源始碼的工時追蹤工具">中文（繁體）</a>
+            </li>
+            
+        
+    </ul>
+</div>
+
                     </div>
-                    
                 </div>
             </div>
             <div class="col-md-7 offset-xl-1">
@@ -619,12 +769,13 @@ Take advantage of open source and make it your time-tracking experience: choose 
                                 </li>
                                 
                                 <li class="nav-item">
-                                    <a href="/en/software-developers-time-tracking" class="nav-link fs-sm fw-medium px-0 py-1" title="Software Developers">Software Developers</a>
+                                    <a href="/en/non-profit" class="nav-link fs-sm fw-medium px-0 py-1" title="Non Profit">Non-Profits</a>
                                 </li>
                                 
                                 <li class="nav-item">
-                                    <a href="/en/non-profit" class="nav-link fs-sm fw-medium px-0 py-1">Non-Profits</a>
+                                    <a href="/en/software-developers-time-tracking" class="nav-link fs-sm fw-medium px-0 py-1" title="Software Developers">Software Developers</a>
                                 </li>
+                                
                                 <li class="nav-item">
                                     
                                     <a href="/en/industry" class="nav-link fs-sm fw-medium px-0 py-1">More industries</a>
@@ -660,13 +811,12 @@ Take advantage of open source and make it your time-tracking experience: choose 
                                 
                                 
                                 <li class="nav-item">
-                                    <a href="/en/time-tracking-terms" class="nav-link fs-sm fw-medium px-0 py-1">Time Tracking Terms</a>
+                                    <a href="/en/time-tracking-terms" class="nav-link fs-sm fw-medium px-0 py-1">Glossary</a>
                                 </li>
                                 
                             </ul>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </div>
@@ -681,41 +831,39 @@ Take advantage of open source and make it your time-tracking experience: choose 
         <li class="nav-item">
             <a href="/en/terms-cloud.html" class="nav-link fs-sm fw-medium">Terms</a>
         </li>
+        <li class="nav-item">
+            <a href="https://status.kimai.org/" target="_blank" class="nav-link fs-sm fw-medium">System-Status</a>
+        </li>
     </ul>
     <div class="nav order-md-2 mb-3 mb-md-0">
         
+    
     <a target="_blank" href="https://github.com/kimai/kimai" class="btn btn-icon btn-secondary btn-github rounded-circle me-3" aria-label="GitHub">
         <i class="bx bxl-github"></i>
     </a>
 
+    
     <a target="_blank" href="https://www.youtube.com/@kimai_org" class="btn btn-icon btn-secondary btn-youtube rounded-circle me-3" aria-label="YouTube">
         <i class="bx bxl-youtube"></i>
     </a>
 
+    
     <a target="_blank" href="https://www.linkedin.com/company/kimai-org/" class="btn btn-icon btn-secondary btn-linkedin rounded-circle me-3" aria-label="LinkedIn">
         <i class="bx bxl-linkedin"></i>
     </a>
 
-    <a target="_blank" href="https://www.instagram.com/kimai_org" class="btn btn-icon btn-secondary btn-instagram rounded-circle me-3" aria-label="Instagram">
-        <i class="bx bxl-instagram"></i>
+    
+    <a target="_blank" href="https://www.reddit.com/r/kimai/" class="btn btn-icon btn-secondary btn-reddit rounded-circle me-3" aria-label="reddit">
+        <i class="bx bxl-reddit"></i>
     </a>
 
-    <a target="_blank" href="https://www.facebook.com/kimai.time.tracker" class="btn btn-icon btn-secondary btn-facebook rounded-circle me-3" aria-label="Facebook">
-        <i class="bx bxl-facebook"></i>
-    </a>
-
+    
     <a target="_blank" href="https://phpc.social/@kimai" class="btn btn-icon btn-secondary btn-messenger rounded-circle me-3" aria-label="Mastodon">
         <i class="bx bxl-mastodon"></i>
     </a>
 
 
     </div>
-    <ul class="nav order-md-3">
-        <li class="nav-item">
-            <a href="https://status.kimai.org/" target="_blank" class="nav-link fs-sm fw-medium">Status</a>
-        </li>
-    </ul>
-    
 </div>
 
     </div>
@@ -729,7 +877,7 @@ Take advantage of open source and make it your time-tracking experience: choose 
     <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
 </a>
 
-<script src="/assets/build/main.js?v1"></script>
+<script src="/assets/build/main.js?v4"></script>
 
 <script defer src="https://u.kimai.org/script.js" data-website-id="e26bef12-9527-43bc-83fd-660e237f3526"></script>
 

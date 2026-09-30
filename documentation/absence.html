@@ -20,7 +20,7 @@
 <meta property="og:title" content="Absence">
 <meta property="og:image" content="https://www.kimai.org/images/social-preview.webp">
 <meta property="og:description" content="Managing absences">
-<link href="/assets/build/main.css?v8" rel="stylesheet" />
+<link href="/assets/build/main.css?v14" rel="stylesheet" />
 
 </head>
 <body class="">
@@ -35,7 +35,7 @@
 
 
 
-<header class="header navbar navbar-expand bg-light border-bottom border-light shadow" data-scroll-header>
+<header class="header navbar navbar-expand bg-light border-bottom border-light shadow position-sticky top-0" style="z-index: 40" data-scroll-header>
     <div class="container-fluid pe-lg-4">
         <div class="d-flex align-items-center">
             <a href="/" class="navbar-brand flex-shrink-0 py-1 py-lg-2">
@@ -51,7 +51,6 @@
                     
                     <li class="nav-item">
                         <a href="/documentation/chapter-manual.html" class="nav-link  active">
-                            <i class="bx bx-book opacity-70 fs-lg me-1"></i>
                             User manual
                         </a>
                     </li>
@@ -60,8 +59,7 @@
                     
                     <li class="nav-item">
                         <a href="/documentation/cloud.html" class="nav-link ">
-                            <i class="bx bx-cloud opacity-70 fs-lg me-1"></i>
-                            Kimai-Cloud
+                            Cloud
                         </a>
                     </li>
                 
@@ -69,8 +67,7 @@
                     
                     <li class="nav-item">
                         <a href="/documentation/chapter-on-premise.html" class="nav-link ">
-                            <i class="bx bx-server opacity-70 fs-lg me-1"></i>
-                            On-Premise
+                            Self hosting
                         </a>
                     </li>
                 
@@ -78,7 +75,6 @@
                     
                     <li class="nav-item">
                         <a href="/documentation/chapter-developer.html" class="nav-link ">
-                            <i class="bx bx-code-alt opacity-70 fs-lg me-1"></i>
                             Developer
                         </a>
                     </li>
@@ -115,7 +111,7 @@
 </header>
 
 <aside class="bg-dark">
-    <div id="componentsNav" class="offcanvas-lg offcanvas-start d-flex flex-column position-fixed top-0 start-0 vh-100 bg-dark border-end-lg" style="width: 19rem; z-index: 1045;">
+    <div id="componentsNav" class="bg-dark offcanvas-lg offcanvas-start d-flex flex-column position-fixed top-0 start-0 vh-100" style="width: 19rem; z-index: 1045;">
         <div class="offcanvas-header d-none d-lg-flex justify-content-start">
             <a href="/" class="navbar-brand d-none d-lg-flex py-0">
                 <img src="/images/apple-touch-icon.png" width="26" alt="Kimai logo" class="me-3">
@@ -140,14 +136,14 @@
                     
                     <a href="/documentation/cloud.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-1 px-4">
                         <i class="bx bx-cloud opacity-70 me-1"></i>
-                        Kimai-Cloud
+                        Cloud
                     </a>
                 
                     
                     
                     <a href="/documentation/chapter-on-premise.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-1 px-4">
                         <i class="bx bx-server opacity-70 me-1"></i>
-                        On-Premise
+                        Self hosting
                     </a>
                 
                     
@@ -166,448 +162,465 @@
                     
                     
                     
-                    <p class="fs-lg mb-1 text-white fw-bold">User Guide</p>
-                    <div class="list-group list-group-flush mb-4 me-n4 border-start">
+                    <p class="fs-sm mb-1 text-uppercase text-muted fw-semibold ps-3">User Guide</p>
+                    <div class="list-group list-group-flush mb-4 me-n4">
                         
                         
-                        
-                        
-                        <a href="/documentation/timesheet.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-timesheet">
                             
-                            Timesheet
                             
-                        </a>
+                            <a href="/documentation/timesheet.html" class="list-group-item list-group-item-action border-0 " id="docnavi-timesheet">
+                                
+                                Timesheet
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/weekly-times.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-weekly-times">
                             
-                            Weekly hours
                             
-                        </a>
+                            <a href="/documentation/weekly-times.html" class="list-group-item list-group-item-action border-0 " id="docnavi-weekly-times">
+                                
+                                Weekly hours
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/calendar.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-calendar">
                             
-                            Calendar
                             
-                        </a>
+                            <a href="/documentation/calendar.html" class="list-group-item list-group-item-action border-0 " id="docnavi-calendar">
+                                
+                                Calendar
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/invoices.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-invoices">
                             
-                            Invoices
                             
-                        </a>
+                            <a href="/documentation/invoices.html" class="list-group-item list-group-item-action border-0 " id="docnavi-invoices">
+                                
+                                Invoices
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/export.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-export">
                             
-                            Export
                             
-                        </a>
+                            <a href="/documentation/export.html" class="list-group-item list-group-item-action border-0 " id="docnavi-export">
+                                
+                                Export
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/reporting.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-reporting">
                             
-                            Reporting
                             
-                        </a>
+                            <a href="/documentation/reporting.html" class="list-group-item list-group-item-action border-0 " id="docnavi-reporting">
+                                
+                                Reporting
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/customer.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-customer">
                             
-                            Customer
                             
-                        </a>
+                            <a href="/documentation/customer.html" class="list-group-item list-group-item-action border-0 " id="docnavi-customer">
+                                
+                                Customer
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/project.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-project">
                             
-                            Projects
                             
-                        </a>
+                            <a href="/documentation/project.html" class="list-group-item list-group-item-action border-0 " id="docnavi-project">
+                                
+                                Projects
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/activity.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-activity">
                             
-                            Activities
                             
-                        </a>
+                            <a href="/documentation/activity.html" class="list-group-item list-group-item-action border-0 " id="docnavi-activity">
+                                
+                                Activities
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/tags.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-tags">
                             
-                            Tags
                             
-                        </a>
+                            <a href="/documentation/tags.html" class="list-group-item list-group-item-action border-0 " id="docnavi-tags">
+                                
+                                Tags
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/users.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-users">
                             
-                            Users
                             
-                        </a>
+                            <a href="/documentation/users.html" class="list-group-item list-group-item-action border-0 " id="docnavi-users">
+                                
+                                Users
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/user-preferences.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-user-preferences">
                             
-                            User preferences
                             
-                        </a>
+                            <a href="/documentation/user-preferences.html" class="list-group-item list-group-item-action border-0 " id="docnavi-user-preferences">
+                                
+                                User preferences
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/permissions.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-permissions">
                             
-                            Roles & Permissions
                             
-                        </a>
+                            <a href="/documentation/contract.html" class="list-group-item list-group-item-action border-0 " id="docnavi-contract">
+                                
+                                Working times
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/teams.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-teams">
                             
-                            Teams
                             
-                        </a>
+                            <a href="/documentation/absence.html" class="list-group-item list-group-item-action border-0  active" id="docnavi-absence">
+                                
+                                Absence
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/configurations.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-configurations">
                             
-                            Settings
                             
-                        </a>
+                            <a href="/documentation/dashboard.html" class="list-group-item list-group-item-action border-0 " id="docnavi-dashboard">
+                                
+                                Dashboard
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/doctor.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-doctor">
                             
-                            Doctor
                             
-                        </a>
+                            <a href="/documentation/plugin-expenses.html" class="list-group-item list-group-item-action border-0 " id="docnavi-plugin-expenses">
+                                
+                                Expenses
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/contract.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-contract">
                             
-                            Working times
                             
-                        </a>
+                            <a href="/documentation/plugin-task-management.html" class="list-group-item list-group-item-action border-0 " id="docnavi-plugin-task-management">
+                                
+                                Tasks
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/public-holiday.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-public-holiday">
                             
-                            Public holiday
                             
-                        </a>
+                            <a href="/documentation/plugin-invoice.html" class="list-group-item list-group-item-action border-0 " id="docnavi-plugin-invoice">
+                                
+                                Invoice+
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/absence.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2  active" id="docnavi-absence">
                             
-                            Absence
                             
-                        </a>
+                            <a href="/documentation/plugin-customer-portal.html" class="list-group-item list-group-item-action border-0 " id="docnavi-plugin-customer-portal">
+                                
+                                Customer Portal
+                                
+                            </a>
                         
-                        
-                        
-                        
-                        
-                        <a href="/documentation/dashboard.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-dashboard">
-                            
-                            Dashboard
-                            
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        <a href="/documentation/plugin-custom-fields.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-custom-fields">
-                            
-                            Custom fields
-                            
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        <a href="/documentation/plugin-expenses.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-expenses">
-                            
-                            Expenses
-                            
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        <a href="/documentation/plugin-task-management.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-task-management">
-                            
-                            Tasks
-                            
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        <a href="/documentation/plugin-custom-css.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-custom-css">
-                            
-                            Custom CSS
-                            
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        <a href="/documentation/plugin-custom-content.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-custom-content">
-                            
-                            Custom content
-                            
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        <a href="/documentation/plugin-translation.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-translation">
-                            
-                            Translation
-                            
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        <a href="/documentation/plugin-invoice.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-invoice">
-                            
-                            Invoice+
-                            
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        <a href="/documentation/plugin-import.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-import">
-                            
-                            Importer
-                            
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        <a href="/documentation/plugin-audit-trail.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-audit-trail">
-                            
-                            Audit logs
-                            
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        <a href="/documentation/plugin-kiosk.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-kiosk">
-                            
-                            Kiosk mode
-                            
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        <a href="/documentation/plugin-customer-portal.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-customer-portal">
-                            
-                            Customer Portal
-                            
-                        </a>
-                        
-                        
+                    
                     </div>
                     
                     
                     
-                    <p class="fs-lg mb-1 text-white fw-bold">Advanced Topics</p>
-                    <div class="list-group list-group-flush mb-4 me-n4 border-start">
+                    <p class="fs-sm mb-1 text-uppercase text-muted fw-semibold ps-3">Admin Guide</p>
+                    <div class="list-group list-group-flush mb-4 me-n4">
                         
                         
-                        
-                        
-                        <a href="/documentation/initial-setup.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-initial-setup">
                             
-                            Initial setup
                             
-                        </a>
+                            <a href="/documentation/permissions.html" class="list-group-item list-group-item-action border-0 " id="docnavi-permissions">
+                                
+                                Roles & Permissions
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/rates.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-rates">
                             
-                            Prices (rates)
                             
-                        </a>
+                            <a href="/documentation/teams.html" class="list-group-item list-group-item-action border-0 " id="docnavi-teams">
+                                
+                                Teams
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/rounding.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-rounding">
                             
-                            Rounding
                             
-                        </a>
+                            <a href="/documentation/public-holiday.html" class="list-group-item list-group-item-action border-0 " id="docnavi-public-holiday">
+                                
+                                Public holiday
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/billable.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-billable">
                             
-                            Billable
                             
-                        </a>
+                            <a href="/documentation/configurations.html" class="list-group-item list-group-item-action border-0 " id="docnavi-configurations">
+                                
+                                Settings
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/invoice-templates.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-invoice-templates">
                             
-                            Invoice templates
                             
-                        </a>
+                            <a href="/documentation/plugin-custom-fields.html" class="list-group-item list-group-item-action border-0 " id="docnavi-plugin-custom-fields">
+                                
+                                Custom fields
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/pdf-templates.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-pdf-templates">
                             
-                            PDF templates
                             
-                        </a>
+                            <a href="/documentation/plugin-kiosk.html" class="list-group-item list-group-item-action border-0 " id="docnavi-plugin-kiosk">
+                                
+                                Kiosk mode
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/keyboard-shortcuts.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-keyboard-shortcuts">
                             
-                            Keyboard shortcuts
                             
-                        </a>
+                            <a href="/documentation/plugin-audit-trail.html" class="list-group-item list-group-item-action border-0 " id="docnavi-plugin-audit-trail">
+                                
+                                Audit logs
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/i18n-am-pm.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-i18n-am-pm">
                             
-                            Date and Time formats
                             
-                        </a>
+                            <a href="/documentation/plugin-custom-css.html" class="list-group-item list-group-item-action border-0 " id="docnavi-plugin-custom-css">
+                                
+                                Custom CSS
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/duration-format.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-duration-format">
                             
-                            Duration format
                             
-                        </a>
+                            <a href="/documentation/plugin-custom-content.html" class="list-group-item list-group-item-action border-0 " id="docnavi-plugin-custom-content">
+                                
+                                Custom content
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        
-                        
-                        <a href="/documentation/homescreen.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-homescreen">
                             
-                            Use Kimai as app
                             
-                        </a>
+                            <a href="/documentation/plugin-translation.html" class="list-group-item list-group-item-action border-0 " id="docnavi-plugin-translation">
+                                
+                                Translation
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/user-api.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-user-api">
                             
-                            Connecting via API
                             
-                        </a>
+                            <a href="/documentation/doctor.html" class="list-group-item list-group-item-action border-0 " id="docnavi-doctor">
+                                
+                                Doctor
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/markdown.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-markdown">
                             
-                            Markdown
                             
-                        </a>
+                            <a href="/documentation/plugin-import.html" class="list-group-item list-group-item-action border-0 " id="docnavi-plugin-import">
+                                
+                                Importer
+                                
+                            </a>
+                        
+                    
+                    </div>
+                    
+                    
+                    
+                    <p class="fs-sm mb-1 text-uppercase text-muted fw-semibold ps-3">Advanced Topics</p>
+                    <div class="list-group list-group-flush mb-4 me-n4">
                         
                         
+                            
+                            
+                            <a href="/documentation/initial-setup.html" class="list-group-item list-group-item-action border-0 " id="docnavi-initial-setup">
+                                
+                                Initial setup
+                                
+                            </a>
+                        
+                    
+                        
+                            
+                            
+                            <a href="/documentation/user-offboarding.html" class="list-group-item list-group-item-action border-0 " id="docnavi-user-offboarding">
+                                
+                                Offboarding users
+                                
+                            </a>
+                        
+                    
+                        
+                            
+                            
+                            <a href="/documentation/rates.html" class="list-group-item list-group-item-action border-0 " id="docnavi-rates">
+                                
+                                Prices (rates)
+                                
+                            </a>
+                        
+                    
+                        
+                            
+                            
+                            <a href="/documentation/rounding.html" class="list-group-item list-group-item-action border-0 " id="docnavi-rounding">
+                                
+                                Rounding
+                                
+                            </a>
+                        
+                    
+                        
+                            
+                            
+                            <a href="/documentation/billable.html" class="list-group-item list-group-item-action border-0 " id="docnavi-billable">
+                                
+                                Billable
+                                
+                            </a>
+                        
+                    
+                        
+                            
+                            
+                            <a href="/documentation/invoice-templates.html" class="list-group-item list-group-item-action border-0 " id="docnavi-invoice-templates">
+                                
+                                Invoice templates
+                                
+                            </a>
+                        
+                    
+                        
+                            
+                            
+                            <a href="/documentation/pdf-templates.html" class="list-group-item list-group-item-action border-0 " id="docnavi-pdf-templates">
+                                
+                                PDF templates
+                                
+                            </a>
+                        
+                    
+                        
+                            
+                            
+                            <a href="/documentation/keyboard-shortcuts.html" class="list-group-item list-group-item-action border-0 " id="docnavi-keyboard-shortcuts">
+                                
+                                Keyboard shortcuts
+                                
+                            </a>
+                        
+                    
+                        
+                            
+                            
+                            <a href="/documentation/i18n-am-pm.html" class="list-group-item list-group-item-action border-0 " id="docnavi-i18n-am-pm">
+                                
+                                Date & Time format
+                                
+                            </a>
+                        
+                    
+                        
+                            
+                            
+                            <a href="/documentation/duration-format.html" class="list-group-item list-group-item-action border-0 " id="docnavi-duration-format">
+                                
+                                Duration format
+                                
+                            </a>
+                        
+                    
+                        
+                    
+                        
+                            
+                            
+                            <a href="/documentation/homescreen.html" class="list-group-item list-group-item-action border-0 " id="docnavi-homescreen">
+                                
+                                Use Kimai as app
+                                
+                            </a>
+                        
+                    
+                        
+                            
+                            
+                            <a href="/documentation/user-api.html" class="list-group-item list-group-item-action border-0 " id="docnavi-user-api">
+                                
+                                Connecting via API
+                                
+                            </a>
+                        
+                    
+                        
+                            
+                            
+                            <a href="/documentation/markdown.html" class="list-group-item list-group-item-action border-0 " id="docnavi-markdown">
+                                
+                                Markdown
+                                
+                            </a>
+                        
+                    
                     </div>
                     
                     <div class="list-group list-group-flush pb-3 mb-4 mx-n4">
@@ -632,20 +645,43 @@
     <div class="container-fluid px-xxl-3 px-lg-2 pt-4 pt-lg-5 pb-2 pb-lg-4">
         <div class="docs-layout">
             <div class="docs-article" data-pagefind-body>
-                <div class="d-sm-flex align-items-end justify-content-between ps-lg-2 ps-xxl-0 mt-2 mt-lg-0 mb-n3 gap-4">
-                    <div class="me-4">
-                        <h1 class="pb-1" data-pagefind-meta="title" data-pagefind-weight="10.0">Absence</h1>
+                <div class="d-sm-flex align-items-baseline justify-content-between ps-lg-2 ps-xxl-0 mt-2 mt-lg-0 mb-n3 gap-4">
+                    <div class="w-100">
+                        <div class="d-flex align-items-baseline justify-content-between gap-3 pb-1">
+                            <div class="d-flex align-items-baseline flex-wrap gap-2">
+                                <h1 class="mb-0" data-pagefind-meta="title" data-pagefind-weight="10.0">
+                                    Absence
+                                </h1>
+                                <div id="availability-pills" class="d-flex flex-shrink-0 gap-2">
+                                    
+                                        <span class="badge bg-faded-primary text-primary rounded-pill" data-bs-html="true" title="Available in Kimai-Cloud:<br> Pro and Non-Profit" data-bs-toggle="tooltip">Cloud</span>
+                                    
+                                    
+                                    <span class="badge bg-faded-warning text-warning rounded-pill" title="Available as Plugin" data-bs-toggle="tooltip"><a href="/en/store/controlling.html" class="text-decoration-none text-warning">Plugin</a></span>
+                                    
+                                </div>
+                            </div>
+                            <div class="d-none d-lg-flex">
+                            
+
+
+
+    <div class="dropdown">
+        <a class="btn btn-outline-secondary btn-sm dropdown-toggle rounded-3 px-3" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Latest
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+            
+                <a class="dropdown-item" href="#">Latest (2.67.0)</a>
+            
+        </div>
+    </div>
+
+                            </div>
+                        </div>
                         
                         <p class="text-muted fs-lg mb-2" data-pagefind-meta="description">Managing absences</p>
                         
-                    </div>
-                    <div class="d-none d-lg-flex">
-                    
-
-
-
-
-
                     </div>
                 </div>
 
@@ -678,7 +714,11 @@ The supervisor is a setting in the <a href="/documentation/users.html">users pro
 <h2 id="approval-workflow">Approval workflow</h2>
 
 <div class="youtube-wrapper" style="max-width: 560px;">
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/7ZHRBY0pZKI" title="Absence approval workflow" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    <a class="youtube-consent" href="https://www.youtube.com/watch?v=7ZHRBY0pZKI" target="_blank" rel="noopener" data-youtube-id="7ZHRBY0pZKI" data-youtube-title="Absence approval workflow" aria-label="Play video: Absence approval workflow">
+        <img class="youtube-consent-thumbnail" src="/images/video-thumbnails/absence_approval_workflow.webp" alt="" loading="lazy" width="1280" height="720" />
+        <span class="youtube-consent-play" aria-hidden="true"><i class="bx bx-play"></i></span>
+        <span class="youtube-consent-notice">Click to load the video from YouTube. Data will be transferred to Google.</span>
+    </a>
 </div>
 
 <p>There are 2 phases that each absence has to go through:</p>
@@ -707,7 +747,11 @@ The supervisor is a setting in the <a href="/documentation/users.html">users pro
 <p>You can configure the mode individually for each absence type in <a href="/documentation/configurations.html">System → Settings</a>, depending on your company rules and industry requirements.</p>
 
 <div class="youtube-wrapper" style="max-width: 560px;">
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/BYkgplGTz4Q?start=36" title="Working Times introduction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    <a class="youtube-consent" href="https://www.youtube.com/watch?v=BYkgplGTz4Q&amp;t=36s" target="_blank" rel="noopener" data-youtube-id="BYkgplGTz4Q" data-youtube-start="36" data-youtube-title="Working Times introduction" aria-label="Play video: Working Times introduction">
+        <img class="youtube-consent-thumbnail" src="/images/video-thumbnails/working_contract_overview.webp" alt="" loading="lazy" width="1280" height="720" />
+        <span class="youtube-consent-play" aria-hidden="true"><i class="bx bx-play"></i></span>
+        <span class="youtube-consent-notice">Click to load the video from YouTube. Data will be transferred to Google.</span>
+    </a>
 </div>
 
 <h3 id="1-absences-compensate-expected-working-time-for-the-day">1. Absences compensate expected working time for the day</h3>
@@ -791,22 +835,70 @@ The supervisor is a setting in the <a href="/documentation/users.html">users pro
 
 <h2 id="absence-calendar">Absence calendar</h2>
 
-<p>There is a monthly report available, showing all approved absences at <a href="/documentation/reporting.html">Report → Absence calendar</a>.</p>
+<p>The absence calendar is a monthly report at <a href="/documentation/reporting.html">Report → Absence calendar</a>.
+It shows one row per user and one column per day of the selected month, so you can see at a glance who is absent and when.</p>
 
 <figure class="d-block figure mb-3" style="max-width: 800px">
     <img src="/images/documentation/absence-calendar.webp" class="figure-img img-fluid rounded border border-primary border-3 p-2" />
     <figcaption class="figure-caption">Absence calendar</figcaption>
 </figure>
 
-<p>The required <a href="/documentation/permissions.html">permission</a> to see that report is <code class="language-plaintext highlighter-rouge">absence</code>.
-To see absences of other users you require <code class="language-plaintext highlighter-rouge">view_other_absence</code> (e.g. other team members) and <code class="language-plaintext highlighter-rouge">view_other_reporting</code> (to select other teams).</p>
+<p>Typical use cases are planning team capacity, checking whether a requested vacation collides with another team member, or getting an overview of the current month before approving new requests.</p>
 
-<p>There is also <code class="language-plaintext highlighter-rouge">view_team_absence</code> which you can assign to the regular User role, so they can see absences of all team members.</p>
+<h3 id="permissions">Permissions</h3>
+
+<p>The <a href="/documentation/permissions.html">permission</a> <code class="language-plaintext highlighter-rouge">absence</code> is required to open the report.
+With that permission alone, you only see your own row.</p>
+
+<p>To see the absences of other users, you need one of these permissions:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">view_other_absence</code> by default set for the <code class="language-plaintext highlighter-rouge">Teamlead</code> role</li>
+  <li><code class="language-plaintext highlighter-rouge">view_team_absence</code> this can be safely assigned to the normal <code class="language-plaintext highlighter-rouge">User</code> role</li>
+</ul>
+
+<p>Both permissions unlock the same rows in this report and additionally show the team dropdown.
+The difference: only with <code class="language-plaintext highlighter-rouge">view_other_absence</code> the usernames become links to the absence screen of that user, as it gives access to other features as well.</p>
+
+<h3 id="which-users-are-shown">Which users are shown</h3>
+
+<ul>
+  <li>Without one of the above permissions, only your own row is shown</li>
+  <li>With one of them, you see all members of your own teams</li>
+  <li>Admins see all users, including users that are not assigned to any team</li>
+  <li>Deactivated users and system accounts are never shown</li>
+</ul>
+
+<p>By default, only users with an approved absence in the selected month are listed.
+Use the chevron button next to the filter to toggle the rows of users without absences.
+Showing all users turns the report from an <strong>absence calendar</strong> into an <strong>availability calendar</strong>.</p>
+
+<p>If you select a team from the dropdown, all members of that team are shown right away, no matter whether they have absences in that period.
+The toggle works the same way and lets you reduce the list to members with absence entries again.</p>
+
+<h3 id="what-the-calendar-shows">What the calendar shows</h3>
+
+<ul>
+  <li>Only <strong>approved</strong> absences are displayed - requested and rejected entries are not part of this report</li>
+  <li>Each absence type has its own color and icon, hover a day to see the type as tooltip</li>
+  <li>Public holidays of the user are highlighted with their own color and icon</li>
+  <li>Days that are not working days for that user (for example weekends or days without expected working time) are shown in a different shade</li>
+</ul>
+
+<div class="alert alert-info d-flex" role="alert"><i class="bx bx-message-rounded-detail lead me-3"></i>
+<p>The calendar shows one entry per day.
+Half-days look exactly like full days, and if a user has multiple absences on the same day, only one of them is displayed.
+For the exact durations and the remaining vacation days, open the <code class="language-plaintext highlighter-rouge">Absence</code> screen of that user.</p>
+</div>
 
 <h2 id="creating-absences-for-next-year">Creating absences for next year</h2>
 
 <div class="youtube-wrapper" style="max-width: 560px;">
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/zlw0cm61t7o" title="Book vacation for the next year" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    <a class="youtube-consent" href="https://www.youtube.com/watch?v=zlw0cm61t7o" target="_blank" rel="noopener" data-youtube-id="zlw0cm61t7o" data-youtube-title="Book vacation for the next year" aria-label="Play video: Book vacation for the next year">
+        <img class="youtube-consent-thumbnail" src="/images/video-thumbnails/vacation_next_year.webp" alt="" loading="lazy" width="1280" height="720" />
+        <span class="youtube-consent-play" aria-hidden="true"><i class="bx bx-play"></i></span>
+        <span class="youtube-consent-notice">Click to load the video from YouTube. Data will be transferred to Google.</span>
+    </a>
 </div>
 
 <p>You can always only select absences for the currently selected year. 
@@ -821,7 +913,11 @@ If you want to create absence requests in advance for next year, you have to cha
 <p>While this video talks about your time balance, the workflow is the same.</p>
 
 <div class="youtube-wrapper" style="max-width: 560px;">
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/3QAC9viiMSE" title="Roll over working hours into the next year" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    <a class="youtube-consent" href="https://www.youtube.com/watch?v=3QAC9viiMSE" target="_blank" rel="noopener" data-youtube-id="3QAC9viiMSE" data-youtube-title="Roll over working hours into the next year" aria-label="Play video: Roll over working hours into the next year">
+        <img class="youtube-consent-thumbnail" src="/images/video-thumbnails/roll_over_work_balance.webp" alt="" loading="lazy" width="1280" height="720" />
+        <span class="youtube-consent-play" aria-hidden="true"><i class="bx bx-play"></i></span>
+        <span class="youtube-consent-notice">Click to load the video from YouTube. Data will be transferred to Google.</span>
+    </a>
 </div>
 
 <ul>
@@ -839,7 +935,31 @@ If you want to create absence requests in advance for next year, you have to cha
 
 <p>Switch back to the previous year and remember to lock the entire year.</p>
 
-<h2 id="permissions">Permissions</h2>
+<p>Read more about manual bookings in the <a href="/documentation/contract.html">Working times</a> chapter.</p>
+
+<h2 id="settings">Settings</h2>
+
+<p>Settings for Absences can be found under “Employment contract”.</p>
+
+<p>You can configure these at <a href="/documentation/configurations.html">System → Settings</a>.</p>
+
+<ul class="table">
+  <li><code class="language-plaintext highlighter-rouge">Absence: Comment is a mandatory field</code> — Whether users have to enter a comment with their absence requests</li>
+  <li><code class="language-plaintext highlighter-rouge">Allow half days for holidays</code> — Whether users can request half days of vacation. Turn it off if you only agree to full vacation days</li>
+  <li><code class="language-plaintext highlighter-rouge">Allow time entries only for days for which expected hours are defined in the employment contract</code> — Prevents timesheets on days without expected working hours, e.g. a user working Monday to Thursday cannot record time on Fridays. The permission <code class="language-plaintext highlighter-rouge">workdays_override_timesheet</code> allows to bypass this validation</li>
+  <li><code class="language-plaintext highlighter-rouge">Only count entries of the selected project as working time</code> — If a project is selected, only timesheets of this project are used to calculate the actual working time and all other timesheets are ignored for the employment contract. Leave it empty to count all timesheets</li>
+  <li><code class="language-plaintext highlighter-rouge">Public holidays</code> — The service used by the import dialog in the public holiday administration. <code class="language-plaintext highlighter-rouge">Yasumi</code> is the recommended default, use <code class="language-plaintext highlighter-rouge">Google</code> only if Yasumi does not return any results for your country or region</li>
+  <li><code class="language-plaintext highlighter-rouge">Count as expected hours: Public holiday</code> — When enabled, a public holiday counts as worked hours towards the expected daily hours. When disabled, the expected hours for that day are set to 0</li>
+  <li><code class="language-plaintext highlighter-rouge">Count as expected hours: Sickness</code> — When enabled, a sickness fills up the remaining hours of the day until the expected duration is reached. When disabled, it reduces the remaining expected hours of that day instead</li>
+  <li><code class="language-plaintext highlighter-rouge">Count as expected hours: Absence</code> — Applies to the absence type <code class="language-plaintext highlighter-rouge">Other</code>. When enabled, the configured absence duration counts as worked hours. When disabled, it reduces the expected hours by the same duration</li>
+  <li><code class="language-plaintext highlighter-rouge">Count as expected hours: Holiday</code> — Applies to vacation. When enabled, the vacation counts as worked hours towards the expected daily hours. When disabled, it reduces the expected hours by the duration of the vacation</li>
+</ul>
+
+<p>The four <code class="language-plaintext highlighter-rouge">Count as expected hours</code> settings control the absence calculation mode and can be configured individually for every absence type.
+Please note that the labels use the internal absence type names: <code class="language-plaintext highlighter-rouge">Holiday</code> means vacation, <code class="language-plaintext highlighter-rouge">Public holiday</code> means a day from the public holiday administration and <code class="language-plaintext highlighter-rouge">Absence</code> means the absence type <code class="language-plaintext highlighter-rouge">Other</code>.
+The absence type <code class="language-plaintext highlighter-rouge">Time-Off</code> has no setting, because it never influences the working time calculation.</p>
+
+<h2 id="permissions-1">Permissions</h2>
 
 <table class="table permissions">
   <thead>
@@ -871,11 +991,11 @@ If you want to create absence requests in advance for next year, you have to cha
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">view_team_absence</code></td>
-      <td>Teamleads can see team member absences in the <code class="language-plaintext highlighter-rouge">Absence calendar</code> report</td>
+      <td>Users can see all team members in the <code class="language-plaintext highlighter-rouge">Absence calendar</code> report</td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">view_other_absence</code></td>
-      <td>Allows to switch the user in the <code class="language-plaintext highlighter-rouge">Absence</code> screen and the team in the <code class="language-plaintext highlighter-rouge">Absence calendar</code> report, also influences the visibility of absence entries in the calendar</td>
+      <td>Allows to switch the user in the <code class="language-plaintext highlighter-rouge">Absence</code> screen. Works like <code class="language-plaintext highlighter-rouge">view_team_absence</code> in the <code class="language-plaintext highlighter-rouge">Absence calendar</code>. Influences the visibility of absences in the calendar.</td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">approve_own_absence</code></td>
@@ -925,7 +1045,7 @@ If you want to create absence requests in advance for next year, you have to cha
             
                 <aside class="side-nav side-nav-end d-none d-xxl-block docs-toc pe-0">
                     <h3 class="fs-lg mt-2">Jump to</h3>
-                    <ul class="nav" id="jumpToNav"><li class="nav-item"><a href="#email-notification" class="nav-link">Email notification</a><ul><li class="nav-item"><a href="#set-up-your-teams" class="nav-link">Set up your teams</a></li></ul></li><li class="nav-item"><a href="#approval-workflow" class="nav-link">Approval workflow</a></li><li class="nav-item"><a href="#how-absences-affect-expected-working-time" class="nav-link">How absences affect expected working time</a><ul><li class="nav-item"><a href="#1-absences-compensate-expected-working-time-for-the-day" class="nav-link">1. Absences compensate expected working time for the day</a></li><li class="nav-item"><a href="#2-absences-reduce-the-expected-working-time-for-the-day" class="nav-link">2. Absences reduce the expected working time for the day</a></li></ul></li><li class="nav-item"><a href="#absence-types" class="nav-link">Absence types</a><ul><li class="nav-item"><a href="#holiday--vacation" class="nav-link">Holiday / Vacation</a></li><li class="nav-item"><a href="#sickness" class="nav-link">Sickness</a></li><li class="nav-item"><a href="#time-off" class="nav-link">Time-Off</a></li><li class="nav-item"><a href="#other-absences" class="nav-link">Other absences</a></li></ul></li><li class="nav-item"><a href="#absence-calendar" class="nav-link">Absence calendar</a></li><li class="nav-item"><a href="#creating-absences-for-next-year" class="nav-link">Creating absences for next year</a></li><li class="nav-item"><a href="#carry-over-absences-into-the-new-year" class="nav-link">Carry over absences into the new year</a></li><li class="nav-item"><a href="#permissions" class="nav-link">Permissions</a></li></ul>
+                    <ul class="nav" id="jumpToNav"><li class="nav-item"><a href="#email-notification" class="nav-link">Email notification</a><ul><li class="nav-item"><a href="#set-up-your-teams" class="nav-link">Set up your teams</a></li></ul></li><li class="nav-item"><a href="#approval-workflow" class="nav-link">Approval workflow</a></li><li class="nav-item"><a href="#how-absences-affect-expected-working-time" class="nav-link">How absences affect expected working time</a><ul><li class="nav-item"><a href="#1-absences-compensate-expected-working-time-for-the-day" class="nav-link">1. Absences compensate expected working time for the day</a></li><li class="nav-item"><a href="#2-absences-reduce-the-expected-working-time-for-the-day" class="nav-link">2. Absences reduce the expected working time for the day</a></li></ul></li><li class="nav-item"><a href="#absence-types" class="nav-link">Absence types</a><ul><li class="nav-item"><a href="#holiday--vacation" class="nav-link">Holiday / Vacation</a></li><li class="nav-item"><a href="#sickness" class="nav-link">Sickness</a></li><li class="nav-item"><a href="#time-off" class="nav-link">Time-Off</a></li><li class="nav-item"><a href="#other-absences" class="nav-link">Other absences</a></li></ul></li><li class="nav-item"><a href="#absence-calendar" class="nav-link">Absence calendar</a><ul><li class="nav-item"><a href="#permissions" class="nav-link">Permissions</a></li><li class="nav-item"><a href="#which-users-are-shown" class="nav-link">Which users are shown</a></li><li class="nav-item"><a href="#what-the-calendar-shows" class="nav-link">What the calendar shows</a></li></ul></li><li class="nav-item"><a href="#creating-absences-for-next-year" class="nav-link">Creating absences for next year</a></li><li class="nav-item"><a href="#carry-over-absences-into-the-new-year" class="nav-link">Carry over absences into the new year</a></li><li class="nav-item"><a href="#settings" class="nav-link">Settings</a></li><li class="nav-item"><a href="#permissions-1" class="nav-link">Permissions</a></li></ul>
                     
                     <ul class="nav">
                         <li>
@@ -946,7 +1066,7 @@ If you want to create absence requests in advance for next year, you have to cha
     <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
 </a>
 
-<script src="/assets/build/main.js?v1"></script>
+<script src="/assets/build/main.js?v4"></script>
 
 <script defer src="https://u.kimai.org/script.js" data-website-id="e26bef12-9527-43bc-83fd-660e237f3526"></script>
 

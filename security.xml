@@ -11,8 +11,8 @@
         <title xml:lang="en">Kimai Security Advisories</title>
         <atom:link type="application/atom+xml" href="/security.xml" rel="self"/>
         <link>https://www.kimai.org/</link>
-        <pubDate>Wed, 30 Sep 2026 20:49:34 +0200</pubDate>
-        <lastBuildDate>Wed, 30 Sep 2026 20:49:34 +0200</lastBuildDate>
+        <pubDate>Wed, 30 Sep 2026 20:57:45 +0200</pubDate>
+        <lastBuildDate>Wed, 30 Sep 2026 20:57:45 +0200</lastBuildDate>
         <language>en</language>
         <description>Security advisories for Kimai Time-Tracker</description>
         <image>
@@ -24,122 +24,123 @@
             <height>184</height>
         </image>
         
+        
         <item>
-            <title>Authenticated SSTI to RCE by uploading a malicious twig file</title>
-            <link>https://www.kimai.org/en/security/ghsa-fjhg-96cp-6fcw</link>
-            <pubDate>Fri, 27 Oct 2023 18:27:17 +0200</pubDate>
-            <guid isPermaLink="true">https://www.kimai.org/en/security/ghsa-fjhg-96cp-6fcw</guid>
+            <title>Editing a team was enough to revoke its access to customers, projects, and activities</title>
+            <link>https://www.kimai.org/en/security/ghsa-mc86-77vp-82g3</link>
+            <pubDate>Mon, 10 Aug 2026 20:25:52 +0200</pubDate>
+            <guid isPermaLink="true">https://www.kimai.org/en/security/ghsa-mc86-77vp-82g3</guid>
             <description>
                 <![CDATA[
-                        <a href="https://www.kimai.org/en/security/ghsa-fjhg-96cp-6fcw">Read the full advisory here</a>
+                        <a href="https://www.kimai.org/en/security/ghsa-mc86-77vp-82g3">Read the full advisory here</a>
                     ]]>
             </description>
         </item>
         
         <item>
-            <title>API returns timesheet entries a user shouldn&apos;t be authorized to view</title>
-            <link>https://www.kimai.org/en/security/ghsa-cj3c-5xpm-cx94</link>
-            <pubDate>Wed, 27 Mar 2024 22:58:18 +0100</pubDate>
-            <guid isPermaLink="true">https://www.kimai.org/en/security/ghsa-cj3c-5xpm-cx94</guid>
+            <title>Team leads could add time records for their team members without the required permission</title>
+            <link>https://www.kimai.org/en/security/ghsa-2w7f-x78f-89q2</link>
+            <pubDate>Thu, 30 Jul 2026 05:25:24 +0200</pubDate>
+            <guid isPermaLink="true">https://www.kimai.org/en/security/ghsa-2w7f-x78f-89q2</guid>
             <description>
                 <![CDATA[
-                        <a href="https://www.kimai.org/en/security/ghsa-cj3c-5xpm-cx94">Read the full advisory here</a>
+                        <a href="https://www.kimai.org/en/security/ghsa-2w7f-x78f-89q2">Read the full advisory here</a>
                     ]]>
             </description>
         </item>
         
         <item>
-            <title>XXE leading to local file read</title>
-            <link>https://www.kimai.org/en/security/ghsa-534c-hcr7-67jg</link>
-            <pubDate>Tue, 17 Sep 2024 08:18:39 +0200</pubDate>
-            <guid isPermaLink="true">https://www.kimai.org/en/security/ghsa-534c-hcr7-67jg</guid>
+            <title>Project overview export could be downloaded without reporting permission</title>
+            <link>https://www.kimai.org/en/security/ghsa-pvc4-crg3-gj44</link>
+            <pubDate>Mon, 27 Jul 2026 03:22:16 +0200</pubDate>
+            <guid isPermaLink="true">https://www.kimai.org/en/security/ghsa-pvc4-crg3-gj44</guid>
             <description>
                 <![CDATA[
-                        <a href="https://www.kimai.org/en/security/ghsa-534c-hcr7-67jg">Read the full advisory here</a>
+                        <a href="https://www.kimai.org/en/security/ghsa-pvc4-crg3-gj44">Read the full advisory here</a>
                     ]]>
             </description>
         </item>
         
         <item>
-            <title>Authenticated server-side template injection (SSTI)</title>
-            <link>https://www.kimai.org/en/security/ghsa-jg2j-2w24-54cg</link>
-            <pubDate>Sun, 18 Jan 2026 17:06:10 +0100</pubDate>
-            <guid isPermaLink="true">https://www.kimai.org/en/security/ghsa-jg2j-2w24-54cg</guid>
+            <title>Regular users could modify their own work-contract settings through the API</title>
+            <link>https://www.kimai.org/en/security/ghsa-5mpc-5cg2-g99r</link>
+            <pubDate>Mon, 13 Jul 2026 09:04:37 +0200</pubDate>
+            <guid isPermaLink="true">https://www.kimai.org/en/security/ghsa-5mpc-5cg2-g99r</guid>
             <description>
                 <![CDATA[
-                        <a href="https://www.kimai.org/en/security/ghsa-jg2j-2w24-54cg">Read the full advisory here</a>
+                        <a href="https://www.kimai.org/en/security/ghsa-5mpc-5cg2-g99r">Read the full advisory here</a>
                     ]]>
             </description>
         </item>
         
         <item>
-            <title>API invoice endpoint missing customer-level access control (IDOR)</title>
-            <link>https://www.kimai.org/en/security/ghsa-v33r-r6h2-8wr7</link>
-            <pubDate>Wed, 04 Mar 2026 13:43:17 +0100</pubDate>
-            <guid isPermaLink="true">https://www.kimai.org/en/security/ghsa-v33r-r6h2-8wr7</guid>
+            <title>Team permission gap could let users grant broader data access than intended</title>
+            <link>https://www.kimai.org/en/security/ghsa-gmm9-hfxg-7v29</link>
+            <pubDate>Mon, 06 Jul 2026 19:52:36 +0200</pubDate>
+            <guid isPermaLink="true">https://www.kimai.org/en/security/ghsa-gmm9-hfxg-7v29</guid>
             <description>
                 <![CDATA[
-                        <a href="https://www.kimai.org/en/security/ghsa-v33r-r6h2-8wr7">Read the full advisory here</a>
+                        <a href="https://www.kimai.org/en/security/ghsa-gmm9-hfxg-7v29">Read the full advisory here</a>
                     ]]>
             </description>
         </item>
         
         <item>
-            <title>Open-redirect via unvalidated RelayState in SAML ACS handler</title>
-            <link>https://www.kimai.org/en/security/ghsa-3jp4-mhh4-gcgr</link>
-            <pubDate>Sat, 11 Apr 2026 23:22:05 +0200</pubDate>
-            <guid isPermaLink="true">https://www.kimai.org/en/security/ghsa-3jp4-mhh4-gcgr</guid>
+            <title>Creating a default team could grant team lead rights on an existing team</title>
+            <link>https://www.kimai.org/en/security/ghsa-hvq2-5gh2-rgvv</link>
+            <pubDate>Mon, 06 Jul 2026 18:31:49 +0200</pubDate>
+            <guid isPermaLink="true">https://www.kimai.org/en/security/ghsa-hvq2-5gh2-rgvv</guid>
             <description>
                 <![CDATA[
-                        <a href="https://www.kimai.org/en/security/ghsa-3jp4-mhh4-gcgr">Read the full advisory here</a>
+                        <a href="https://www.kimai.org/en/security/ghsa-hvq2-5gh2-rgvv">Read the full advisory here</a>
                     ]]>
             </description>
         </item>
         
         <item>
-            <title>API password hash leakage via invoice Twig template</title>
-            <link>https://www.kimai.org/en/security/ghsa-rh42-6rj2-xwmc</link>
-            <pubDate>Sat, 11 Apr 2026 23:49:17 +0200</pubDate>
-            <guid isPermaLink="true">https://www.kimai.org/en/security/ghsa-rh42-6rj2-xwmc</guid>
+            <title>API request could remove all members from a team</title>
+            <link>https://www.kimai.org/en/security/ghsa-6rxf-4hh9-pp46</link>
+            <pubDate>Mon, 06 Jul 2026 17:54:27 +0200</pubDate>
+            <guid isPermaLink="true">https://www.kimai.org/en/security/ghsa-6rxf-4hh9-pp46</guid>
             <description>
                 <![CDATA[
-                        <a href="https://www.kimai.org/en/security/ghsa-rh42-6rj2-xwmc">Read the full advisory here</a>
+                        <a href="https://www.kimai.org/en/security/ghsa-6rxf-4hh9-pp46">Read the full advisory here</a>
                     ]]>
             </description>
         </item>
         
         <item>
-            <title>Stored XSS via incomplete HTML attribute escaping in Team-Member widget</title>
-            <link>https://www.kimai.org/en/security/ghsa-g82g-m9vx-vhjg</link>
-            <pubDate>Tue, 14 Apr 2026 16:03:14 +0200</pubDate>
-            <guid isPermaLink="true">https://www.kimai.org/en/security/ghsa-g82g-m9vx-vhjg</guid>
+            <title>Timesheet lists ignored team restrictions on activities</title>
+            <link>https://www.kimai.org/en/security/ghsa-c6j4-35fc-x3hw</link>
+            <pubDate>Tue, 23 Jun 2026 23:32:35 +0200</pubDate>
+            <guid isPermaLink="true">https://www.kimai.org/en/security/ghsa-c6j4-35fc-x3hw</guid>
             <description>
                 <![CDATA[
-                        <a href="https://www.kimai.org/en/security/ghsa-g82g-m9vx-vhjg">Read the full advisory here</a>
+                        <a href="https://www.kimai.org/en/security/ghsa-c6j4-35fc-x3hw">Read the full advisory here</a>
                     ]]>
             </description>
         </item>
         
         <item>
-            <title>User Preferences API allows standard users to modify: hourly_rate, internal_rate</title>
-            <link>https://www.kimai.org/en/security/ghsa-qh43-xrjm-4ggp</link>
-            <pubDate>Tue, 14 Apr 2026 16:05:11 +0200</pubDate>
-            <guid isPermaLink="true">https://www.kimai.org/en/security/ghsa-qh43-xrjm-4ggp</guid>
+            <title>Specially crafted search terms could disrupt Kimai&apos;s search feature</title>
+            <link>https://www.kimai.org/en/security/ghsa-9cxw-hp3c-637x</link>
+            <pubDate>Tue, 09 Jun 2026 16:34:20 +0200</pubDate>
+            <guid isPermaLink="true">https://www.kimai.org/en/security/ghsa-9cxw-hp3c-637x</guid>
             <description>
                 <![CDATA[
-                        <a href="https://www.kimai.org/en/security/ghsa-qh43-xrjm-4ggp">Read the full advisory here</a>
+                        <a href="https://www.kimai.org/en/security/ghsa-9cxw-hp3c-637x">Read the full advisory here</a>
                     ]]>
             </description>
         </item>
         
         <item>
-            <title>Username enumeration via timing, using deprecated API authentication</title>
-            <link>https://www.kimai.org/en/security/ghsa-jrc6-fmhw-fpq2</link>
-            <pubDate>Thu, 16 Apr 2026 23:19:11 +0200</pubDate>
-            <guid isPermaLink="true">https://www.kimai.org/en/security/ghsa-jrc6-fmhw-fpq2</guid>
+            <title>API access possible without completing two-factor authentication</title>
+            <link>https://www.kimai.org/en/security/ghsa-v8hx-4vx8-wc96</link>
+            <pubDate>Wed, 03 Jun 2026 03:25:31 +0200</pubDate>
+            <guid isPermaLink="true">https://www.kimai.org/en/security/ghsa-v8hx-4vx8-wc96</guid>
             <description>
                 <![CDATA[
-                        <a href="https://www.kimai.org/en/security/ghsa-jrc6-fmhw-fpq2">Read the full advisory here</a>
+                        <a href="https://www.kimai.org/en/security/ghsa-v8hx-4vx8-wc96">Read the full advisory here</a>
                     ]]>
             </description>
         </item>

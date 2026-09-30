@@ -20,7 +20,7 @@
 <meta property="og:title" content="Tags">
 <meta property="og:image" content="https://www.kimai.org/images/social-preview.webp">
 <meta property="og:description" content="Using tags to group timesheet entries">
-<link href="/assets/build/main.css?v8" rel="stylesheet" />
+<link href="/assets/build/main.css?v14" rel="stylesheet" />
 
 </head>
 <body class="">
@@ -35,7 +35,7 @@
 
 
 
-<header class="header navbar navbar-expand bg-light border-bottom border-light shadow" data-scroll-header>
+<header class="header navbar navbar-expand bg-light border-bottom border-light shadow position-sticky top-0" style="z-index: 40" data-scroll-header>
     <div class="container-fluid pe-lg-4">
         <div class="d-flex align-items-center">
             <a href="/" class="navbar-brand flex-shrink-0 py-1 py-lg-2">
@@ -51,7 +51,6 @@
                     
                     <li class="nav-item">
                         <a href="/documentation/chapter-manual.html" class="nav-link  active">
-                            <i class="bx bx-book opacity-70 fs-lg me-1"></i>
                             User manual
                         </a>
                     </li>
@@ -60,8 +59,7 @@
                     
                     <li class="nav-item">
                         <a href="/documentation/cloud.html" class="nav-link ">
-                            <i class="bx bx-cloud opacity-70 fs-lg me-1"></i>
-                            Kimai-Cloud
+                            Cloud
                         </a>
                     </li>
                 
@@ -69,8 +67,7 @@
                     
                     <li class="nav-item">
                         <a href="/documentation/chapter-on-premise.html" class="nav-link ">
-                            <i class="bx bx-server opacity-70 fs-lg me-1"></i>
-                            On-Premise
+                            Self hosting
                         </a>
                     </li>
                 
@@ -78,7 +75,6 @@
                     
                     <li class="nav-item">
                         <a href="/documentation/chapter-developer.html" class="nav-link ">
-                            <i class="bx bx-code-alt opacity-70 fs-lg me-1"></i>
                             Developer
                         </a>
                     </li>
@@ -115,7 +111,7 @@
 </header>
 
 <aside class="bg-dark">
-    <div id="componentsNav" class="offcanvas-lg offcanvas-start d-flex flex-column position-fixed top-0 start-0 vh-100 bg-dark border-end-lg" style="width: 19rem; z-index: 1045;">
+    <div id="componentsNav" class="bg-dark offcanvas-lg offcanvas-start d-flex flex-column position-fixed top-0 start-0 vh-100" style="width: 19rem; z-index: 1045;">
         <div class="offcanvas-header d-none d-lg-flex justify-content-start">
             <a href="/" class="navbar-brand d-none d-lg-flex py-0">
                 <img src="/images/apple-touch-icon.png" width="26" alt="Kimai logo" class="me-3">
@@ -140,14 +136,14 @@
                     
                     <a href="/documentation/cloud.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-1 px-4">
                         <i class="bx bx-cloud opacity-70 me-1"></i>
-                        Kimai-Cloud
+                        Cloud
                     </a>
                 
                     
                     
                     <a href="/documentation/chapter-on-premise.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-1 px-4">
                         <i class="bx bx-server opacity-70 me-1"></i>
-                        On-Premise
+                        Self hosting
                     </a>
                 
                     
@@ -166,448 +162,465 @@
                     
                     
                     
-                    <p class="fs-lg mb-1 text-white fw-bold">User Guide</p>
-                    <div class="list-group list-group-flush mb-4 me-n4 border-start">
+                    <p class="fs-sm mb-1 text-uppercase text-muted fw-semibold ps-3">User Guide</p>
+                    <div class="list-group list-group-flush mb-4 me-n4">
                         
                         
-                        
-                        
-                        <a href="/documentation/timesheet.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-timesheet">
                             
-                            Timesheet
                             
-                        </a>
+                            <a href="/documentation/timesheet.html" class="list-group-item list-group-item-action border-0 " id="docnavi-timesheet">
+                                
+                                Timesheet
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/weekly-times.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-weekly-times">
                             
-                            Weekly hours
                             
-                        </a>
+                            <a href="/documentation/weekly-times.html" class="list-group-item list-group-item-action border-0 " id="docnavi-weekly-times">
+                                
+                                Weekly hours
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/calendar.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-calendar">
                             
-                            Calendar
                             
-                        </a>
+                            <a href="/documentation/calendar.html" class="list-group-item list-group-item-action border-0 " id="docnavi-calendar">
+                                
+                                Calendar
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/invoices.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-invoices">
                             
-                            Invoices
                             
-                        </a>
+                            <a href="/documentation/invoices.html" class="list-group-item list-group-item-action border-0 " id="docnavi-invoices">
+                                
+                                Invoices
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/export.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-export">
                             
-                            Export
                             
-                        </a>
+                            <a href="/documentation/export.html" class="list-group-item list-group-item-action border-0 " id="docnavi-export">
+                                
+                                Export
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/reporting.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-reporting">
                             
-                            Reporting
                             
-                        </a>
+                            <a href="/documentation/reporting.html" class="list-group-item list-group-item-action border-0 " id="docnavi-reporting">
+                                
+                                Reporting
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/customer.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-customer">
                             
-                            Customer
                             
-                        </a>
+                            <a href="/documentation/customer.html" class="list-group-item list-group-item-action border-0 " id="docnavi-customer">
+                                
+                                Customer
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/project.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-project">
                             
-                            Projects
                             
-                        </a>
+                            <a href="/documentation/project.html" class="list-group-item list-group-item-action border-0 " id="docnavi-project">
+                                
+                                Projects
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/activity.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-activity">
                             
-                            Activities
                             
-                        </a>
+                            <a href="/documentation/activity.html" class="list-group-item list-group-item-action border-0 " id="docnavi-activity">
+                                
+                                Activities
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/tags.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2  active" id="docnavi-tags">
                             
-                            Tags
                             
-                        </a>
+                            <a href="/documentation/tags.html" class="list-group-item list-group-item-action border-0  active" id="docnavi-tags">
+                                
+                                Tags
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/users.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-users">
                             
-                            Users
                             
-                        </a>
+                            <a href="/documentation/users.html" class="list-group-item list-group-item-action border-0 " id="docnavi-users">
+                                
+                                Users
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/user-preferences.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-user-preferences">
                             
-                            User preferences
                             
-                        </a>
+                            <a href="/documentation/user-preferences.html" class="list-group-item list-group-item-action border-0 " id="docnavi-user-preferences">
+                                
+                                User preferences
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/permissions.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-permissions">
                             
-                            Roles & Permissions
                             
-                        </a>
+                            <a href="/documentation/contract.html" class="list-group-item list-group-item-action border-0 " id="docnavi-contract">
+                                
+                                Working times
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/teams.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-teams">
                             
-                            Teams
                             
-                        </a>
+                            <a href="/documentation/absence.html" class="list-group-item list-group-item-action border-0 " id="docnavi-absence">
+                                
+                                Absence
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/configurations.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-configurations">
                             
-                            Settings
                             
-                        </a>
+                            <a href="/documentation/dashboard.html" class="list-group-item list-group-item-action border-0 " id="docnavi-dashboard">
+                                
+                                Dashboard
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/doctor.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-doctor">
                             
-                            Doctor
                             
-                        </a>
+                            <a href="/documentation/plugin-expenses.html" class="list-group-item list-group-item-action border-0 " id="docnavi-plugin-expenses">
+                                
+                                Expenses
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/contract.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-contract">
                             
-                            Working times
                             
-                        </a>
+                            <a href="/documentation/plugin-task-management.html" class="list-group-item list-group-item-action border-0 " id="docnavi-plugin-task-management">
+                                
+                                Tasks
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/public-holiday.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-public-holiday">
                             
-                            Public holiday
                             
-                        </a>
+                            <a href="/documentation/plugin-invoice.html" class="list-group-item list-group-item-action border-0 " id="docnavi-plugin-invoice">
+                                
+                                Invoice+
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/absence.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-absence">
                             
-                            Absence
                             
-                        </a>
+                            <a href="/documentation/plugin-customer-portal.html" class="list-group-item list-group-item-action border-0 " id="docnavi-plugin-customer-portal">
+                                
+                                Customer Portal
+                                
+                            </a>
                         
-                        
-                        
-                        
-                        
-                        <a href="/documentation/dashboard.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-dashboard">
-                            
-                            Dashboard
-                            
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        <a href="/documentation/plugin-custom-fields.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-custom-fields">
-                            
-                            Custom fields
-                            
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        <a href="/documentation/plugin-expenses.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-expenses">
-                            
-                            Expenses
-                            
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        <a href="/documentation/plugin-task-management.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-task-management">
-                            
-                            Tasks
-                            
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        <a href="/documentation/plugin-custom-css.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-custom-css">
-                            
-                            Custom CSS
-                            
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        <a href="/documentation/plugin-custom-content.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-custom-content">
-                            
-                            Custom content
-                            
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        <a href="/documentation/plugin-translation.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-translation">
-                            
-                            Translation
-                            
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        <a href="/documentation/plugin-invoice.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-invoice">
-                            
-                            Invoice+
-                            
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        <a href="/documentation/plugin-import.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-import">
-                            
-                            Importer
-                            
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        <a href="/documentation/plugin-audit-trail.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-audit-trail">
-                            
-                            Audit logs
-                            
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        <a href="/documentation/plugin-kiosk.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-kiosk">
-                            
-                            Kiosk mode
-                            
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        <a href="/documentation/plugin-customer-portal.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-customer-portal">
-                            
-                            Customer Portal
-                            
-                        </a>
-                        
-                        
+                    
                     </div>
                     
                     
                     
-                    <p class="fs-lg mb-1 text-white fw-bold">Advanced Topics</p>
-                    <div class="list-group list-group-flush mb-4 me-n4 border-start">
+                    <p class="fs-sm mb-1 text-uppercase text-muted fw-semibold ps-3">Admin Guide</p>
+                    <div class="list-group list-group-flush mb-4 me-n4">
                         
                         
-                        
-                        
-                        <a href="/documentation/initial-setup.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-initial-setup">
                             
-                            Initial setup
                             
-                        </a>
+                            <a href="/documentation/permissions.html" class="list-group-item list-group-item-action border-0 " id="docnavi-permissions">
+                                
+                                Roles & Permissions
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/rates.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-rates">
                             
-                            Prices (rates)
                             
-                        </a>
+                            <a href="/documentation/teams.html" class="list-group-item list-group-item-action border-0 " id="docnavi-teams">
+                                
+                                Teams
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/rounding.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-rounding">
                             
-                            Rounding
                             
-                        </a>
+                            <a href="/documentation/public-holiday.html" class="list-group-item list-group-item-action border-0 " id="docnavi-public-holiday">
+                                
+                                Public holiday
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/billable.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-billable">
                             
-                            Billable
                             
-                        </a>
+                            <a href="/documentation/configurations.html" class="list-group-item list-group-item-action border-0 " id="docnavi-configurations">
+                                
+                                Settings
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/invoice-templates.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-invoice-templates">
                             
-                            Invoice templates
                             
-                        </a>
+                            <a href="/documentation/plugin-custom-fields.html" class="list-group-item list-group-item-action border-0 " id="docnavi-plugin-custom-fields">
+                                
+                                Custom fields
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/pdf-templates.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-pdf-templates">
                             
-                            PDF templates
                             
-                        </a>
+                            <a href="/documentation/plugin-kiosk.html" class="list-group-item list-group-item-action border-0 " id="docnavi-plugin-kiosk">
+                                
+                                Kiosk mode
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/keyboard-shortcuts.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-keyboard-shortcuts">
                             
-                            Keyboard shortcuts
                             
-                        </a>
+                            <a href="/documentation/plugin-audit-trail.html" class="list-group-item list-group-item-action border-0 " id="docnavi-plugin-audit-trail">
+                                
+                                Audit logs
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/i18n-am-pm.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-i18n-am-pm">
                             
-                            Date and Time formats
                             
-                        </a>
+                            <a href="/documentation/plugin-custom-css.html" class="list-group-item list-group-item-action border-0 " id="docnavi-plugin-custom-css">
+                                
+                                Custom CSS
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/duration-format.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-duration-format">
                             
-                            Duration format
                             
-                        </a>
+                            <a href="/documentation/plugin-custom-content.html" class="list-group-item list-group-item-action border-0 " id="docnavi-plugin-custom-content">
+                                
+                                Custom content
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        
-                        
-                        <a href="/documentation/homescreen.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-homescreen">
                             
-                            Use Kimai as app
                             
-                        </a>
+                            <a href="/documentation/plugin-translation.html" class="list-group-item list-group-item-action border-0 " id="docnavi-plugin-translation">
+                                
+                                Translation
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/user-api.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-user-api">
                             
-                            Connecting via API
                             
-                        </a>
+                            <a href="/documentation/doctor.html" class="list-group-item list-group-item-action border-0 " id="docnavi-doctor">
+                                
+                                Doctor
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/markdown.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-markdown">
                             
-                            Markdown
                             
-                        </a>
+                            <a href="/documentation/plugin-import.html" class="list-group-item list-group-item-action border-0 " id="docnavi-plugin-import">
+                                
+                                Importer
+                                
+                            </a>
+                        
+                    
+                    </div>
+                    
+                    
+                    
+                    <p class="fs-sm mb-1 text-uppercase text-muted fw-semibold ps-3">Advanced Topics</p>
+                    <div class="list-group list-group-flush mb-4 me-n4">
                         
                         
+                            
+                            
+                            <a href="/documentation/initial-setup.html" class="list-group-item list-group-item-action border-0 " id="docnavi-initial-setup">
+                                
+                                Initial setup
+                                
+                            </a>
+                        
+                    
+                        
+                            
+                            
+                            <a href="/documentation/user-offboarding.html" class="list-group-item list-group-item-action border-0 " id="docnavi-user-offboarding">
+                                
+                                Offboarding users
+                                
+                            </a>
+                        
+                    
+                        
+                            
+                            
+                            <a href="/documentation/rates.html" class="list-group-item list-group-item-action border-0 " id="docnavi-rates">
+                                
+                                Prices (rates)
+                                
+                            </a>
+                        
+                    
+                        
+                            
+                            
+                            <a href="/documentation/rounding.html" class="list-group-item list-group-item-action border-0 " id="docnavi-rounding">
+                                
+                                Rounding
+                                
+                            </a>
+                        
+                    
+                        
+                            
+                            
+                            <a href="/documentation/billable.html" class="list-group-item list-group-item-action border-0 " id="docnavi-billable">
+                                
+                                Billable
+                                
+                            </a>
+                        
+                    
+                        
+                            
+                            
+                            <a href="/documentation/invoice-templates.html" class="list-group-item list-group-item-action border-0 " id="docnavi-invoice-templates">
+                                
+                                Invoice templates
+                                
+                            </a>
+                        
+                    
+                        
+                            
+                            
+                            <a href="/documentation/pdf-templates.html" class="list-group-item list-group-item-action border-0 " id="docnavi-pdf-templates">
+                                
+                                PDF templates
+                                
+                            </a>
+                        
+                    
+                        
+                            
+                            
+                            <a href="/documentation/keyboard-shortcuts.html" class="list-group-item list-group-item-action border-0 " id="docnavi-keyboard-shortcuts">
+                                
+                                Keyboard shortcuts
+                                
+                            </a>
+                        
+                    
+                        
+                            
+                            
+                            <a href="/documentation/i18n-am-pm.html" class="list-group-item list-group-item-action border-0 " id="docnavi-i18n-am-pm">
+                                
+                                Date & Time format
+                                
+                            </a>
+                        
+                    
+                        
+                            
+                            
+                            <a href="/documentation/duration-format.html" class="list-group-item list-group-item-action border-0 " id="docnavi-duration-format">
+                                
+                                Duration format
+                                
+                            </a>
+                        
+                    
+                        
+                    
+                        
+                            
+                            
+                            <a href="/documentation/homescreen.html" class="list-group-item list-group-item-action border-0 " id="docnavi-homescreen">
+                                
+                                Use Kimai as app
+                                
+                            </a>
+                        
+                    
+                        
+                            
+                            
+                            <a href="/documentation/user-api.html" class="list-group-item list-group-item-action border-0 " id="docnavi-user-api">
+                                
+                                Connecting via API
+                                
+                            </a>
+                        
+                    
+                        
+                            
+                            
+                            <a href="/documentation/markdown.html" class="list-group-item list-group-item-action border-0 " id="docnavi-markdown">
+                                
+                                Markdown
+                                
+                            </a>
+                        
+                    
                     </div>
                     
                     <div class="list-group list-group-flush pb-3 mb-4 mx-n4">
@@ -632,33 +645,43 @@
     <div class="container-fluid px-xxl-3 px-lg-2 pt-4 pt-lg-5 pb-2 pb-lg-4">
         <div class="docs-layout">
             <div class="docs-article" data-pagefind-body>
-                <div class="d-sm-flex align-items-end justify-content-between ps-lg-2 ps-xxl-0 mt-2 mt-lg-0 mb-n3 gap-4">
-                    <div class="me-4">
-                        <h1 class="pb-1" data-pagefind-meta="title" data-pagefind-weight="10.0">Tags</h1>
-                        
-                        <p class="text-muted fs-lg mb-2" data-pagefind-meta="description">Using tags to group timesheet entries</p>
-                        
-                    </div>
-                    <div class="d-none d-lg-flex">
-                    
-
+                <div class="d-sm-flex align-items-baseline justify-content-between ps-lg-2 ps-xxl-0 mt-2 mt-lg-0 mb-n3 gap-4">
+                    <div class="w-100">
+                        <div class="d-flex align-items-baseline justify-content-between gap-3 pb-1">
+                            <div class="d-flex align-items-baseline flex-wrap gap-2">
+                                <h1 class="mb-0" data-pagefind-meta="title" data-pagefind-weight="10.0">
+                                    Tags
+                                </h1>
+                                <div id="availability-pills" class="d-flex flex-shrink-0 gap-2">
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="d-none d-lg-flex">
+                            
 
 
 
     <div class="dropdown">
-        <a class="btn btn-outline-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Older versions
+        <a class="btn btn-outline-secondary btn-sm dropdown-toggle rounded-3 px-3" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Latest
         </a>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
             
-            <a class="dropdown-item" href="/documentation/1.14/tags.html">Kimai 1.14</a>
+                
+                <a class="dropdown-item" href="/documentation/1.14/tags.html">Kimai 1.14</a>
+                
+                
+                <a class="dropdown-item" href="/documentation/tags.html">Latest (2.67.0)</a>
             
-            
-            <a class="dropdown-item" href="/documentation/tags.html">2.57.0 (latest version)</a>
         </div>
     </div>
 
-
+                            </div>
+                        </div>
+                        
+                        <p class="text-muted fs-lg mb-2" data-pagefind-meta="description">Using tags to group timesheet entries</p>
+                        
                     </div>
                 </div>
 
@@ -668,44 +691,153 @@
                         <div id="documentation-content">
                             <h2 id="tagging-timesheet-records">Tagging timesheet records</h2>
 
-<p>Kimai supports tagging timesheet records, which allows you to create arbitrary logical structures, 
-which can be used to filter records in exports/invoices and reports.</p>
+<p>Kimai supports tagging of timesheet records, which allows you to create arbitrary logical structures.</p>
+
+<p>Unlike customer, project and activity, tags are not hierarchical: every timesheet record can have any number of tags
+and every tag can be used by any number of records. They are the right tool whenever you need a second dimension
+besides your project structure, e.g. to mark records as <code class="language-plaintext highlighter-rouge">travel</code>, <code class="language-plaintext highlighter-rouge">onsite</code>, <code class="language-plaintext highlighter-rouge">bugfix</code> or with a sprint name.</p>
+
+<p>Tags can be used to filter records in the timesheet screens, exports, invoices and reports.</p>
 
 <div class="youtube-wrapper" style="max-width: 560px;">
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/qVexU6KyWUE?start=239" title="Creating and editing timesheets" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    <a class="youtube-consent" href="https://www.youtube.com/watch?v=qVexU6KyWUE&amp;t=239s" target="_blank" rel="noopener" data-youtube-id="qVexU6KyWUE" data-youtube-start="239" data-youtube-title="Creating and editing timesheets" aria-label="Play video: Creating and editing timesheets">
+        <img class="youtube-consent-thumbnail" src="/images/video-thumbnails/timesheets.webp" alt="" loading="lazy" width="1280" height="720" />
+        <span class="youtube-consent-play" aria-hidden="true"><i class="bx bx-play"></i></span>
+        <span class="youtube-consent-notice">Click to load the video from YouTube. Data will be transferred to Google.</span>
+    </a>
 </div>
+
+<h3 id="assigning-tags">Assigning tags</h3>
+
+<p>Tags are assigned in the timesheet form (and in the batch-update form when editing multiple records at once).
+Only <code class="language-plaintext highlighter-rouge">visible</code> tags are offered for selection.</p>
+
+<p>The tag field adapts to the amount of existing tags:</p>
+
+<ul>
+  <li>up to 500 visible tags: a dropdown with search and multi-select</li>
+  <li>more than 500 visible tags: a text field with auto-completion</li>
+</ul>
 
 <h3 id="tagging-modes">Tagging modes</h3>
 
-<p>Kimai supports two tagging modes:</p>
+<p>Kimai supports two tagging modes, which are controlled by the <code class="language-plaintext highlighter-rouge">create_tag</code> permission:</p>
 
 <ul>
-  <li>free tagging: users can assign any number of tags to each timesheet entry</li>
-  <li>predefined: users can only select tags from a pre-defined list (since 1.8)</li>
+  <li><strong>Free tagging</strong>: users with the <code class="language-plaintext highlighter-rouge">create_tag</code> permission can enter arbitrary tags in the timesheet form.
+Unknown tags are created automatically when the form is saved. This permission is assigned to <code class="language-plaintext highlighter-rouge">ROLE_USER</code> by default.</li>
+  <li><strong>Predefined tags</strong>: if you remove the <code class="language-plaintext highlighter-rouge">create_tag</code> permission at <code class="language-plaintext highlighter-rouge">System → Roles</code>, users can only select from
+the tags that were created before in the tag administration.</li>
 </ul>
 
-<p>The mode can be switched in the <code class="language-plaintext highlighter-rouge">Theme</code> section at <a href="/documentation/configurations.html">System → Settings</a>.</p>
+<div class="alert alert-info d-flex" role="alert"><i class="bx bx-message-rounded-detail lead me-3"></i><p>Removing <code class="language-plaintext highlighter-rouge">create_tag</code> does not delete existing tags, it only prevents the creation of new ones.</p>
+</div>
+
+<h3 id="tag-names">Tag names</h3>
+
+<p>A couple of rules apply to tag names:</p>
+
+<ul>
+  <li>they have to be unique</li>
+  <li>they must be between 2 and 100 characters long</li>
+  <li>leading and trailing whitespaces are removed automatically</li>
+  <li>these characters are not allowed: <code class="language-plaintext highlighter-rouge">,</code> <code class="language-plaintext highlighter-rouge">"</code> <code class="language-plaintext highlighter-rouge">&lt;</code> <code class="language-plaintext highlighter-rouge">&gt;</code> <code class="language-plaintext highlighter-rouge">=</code></li>
+</ul>
 
 <h2 id="tag-administration">Tag administration</h2>
 
-<p>There is a tag administration screen, which displays all available tags including the counter how often they are used.</p>
+<p>The tag administration screen can be found at <code class="language-plaintext highlighter-rouge">Administration → Tags</code> and requires the <code class="language-plaintext highlighter-rouge">view_tag</code> permission.
+It lists all tags (including the hidden ones) with:</p>
 
-<p>The action menu for each tag allows you to filter all records for the chosen tag, by linking to the team timesheet with 
-a preset tag filter.</p>
+<ul>
+  <li>the tag <code class="language-plaintext highlighter-rouge">name</code>, rendered in the tags color</li>
+  <li>an <code class="language-plaintext highlighter-rouge">amount</code> counter, which shows how often the tag is used in timesheet records</li>
+  <li>the <code class="language-plaintext highlighter-rouge">visibility</code> state</li>
+</ul>
+
+<p>The listing can be sorted by each of these columns.</p>
+
+<h3 id="create-and-edit-a-tag">Create and edit a tag</h3>
+
+<p>Creating and editing tags requires the <code class="language-plaintext highlighter-rouge">manage_tag</code> permission. A tag has these attributes:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Name</code> - see the naming rules above</li>
+  <li><code class="language-plaintext highlighter-rouge">Visible</code> - whether the tag can still be assigned to timesheet records</li>
+  <li><code class="language-plaintext highlighter-rouge">Color</code> - used to highlight the tag in listings, e.g. in the timesheet tables</li>
+</ul>
+
+<p>The available colors can be configured with the <code class="language-plaintext highlighter-rouge">Allowed colors</code> setting in the
+<code class="language-plaintext highlighter-rouge">Theme</code> section at <a href="/documentation/configurations.html">System → Settings</a>.
+If no color is chosen, Kimai calculates one from the tag name.</p>
+
+<h3 id="visibility">Visibility</h3>
+
+<p>Hiding a tag is the recommended way to retire a keyword that should no longer be used:</p>
+
+<ul>
+  <li>hidden tags are not offered in the tag dropdowns any longer</li>
+  <li>existing timesheet records keep their tag and are still exported, filtered and invoiced as before</li>
+</ul>
+
+<h3 id="batch-actions">Batch actions</h3>
+
+<p>Select multiple rows with the checkboxes in the first column to apply one of these actions to all of them at once:</p>
+
+<ul>
+  <li>set visible / set invisible (requires <code class="language-plaintext highlighter-rouge">manage_tag</code>)</li>
+  <li>delete (requires <code class="language-plaintext highlighter-rouge">delete_tag</code>)</li>
+</ul>
+
+<h3 id="row-actions">Row actions</h3>
+
+<p>The action menu of each tag allows you to:</p>
+
+<ul>
+  <li>edit the tag (requires <code class="language-plaintext highlighter-rouge">manage_tag</code>)</li>
+  <li>filter all records for the chosen tag, by linking to the team timesheet page with a preset tag filter
+(requires <code class="language-plaintext highlighter-rouge">view_other_timesheet</code>)</li>
+  <li>delete the tag (requires <code class="language-plaintext highlighter-rouge">delete_tag</code>)</li>
+</ul>
 
 <h3 id="deleting-a-tag">Deleting a tag</h3>
 
 <p>When a tag is deleted, only the tag and all links to it are deleted.
 The linked timesheet records are NOT touched.</p>
 
+<div class="alert alert-warning d-flex" role="alert"><i class="bx bx-alarm-exclamation lead me-3"></i><p>Deleting a tag cannot be undone: the tag assignments of all timesheet records are lost.
+If you only want to stop the further usage of a tag, set it to invisible instead.</p>
+</div>
+
 <h2 id="filter-and-search">Filter and search</h2>
 
-<p>You can query for a free search term, which will be searched in the fields:</p>
+<p>The tag administration can be filtered by <code class="language-plaintext highlighter-rouge">visibility</code> and you can query for a free search term,
+which will be searched in the fields:</p>
+
 <ul>
   <li><code class="language-plaintext highlighter-rouge">name</code></li>
 </ul>
 
+<p>Timesheet records can be filtered by tags in <code class="language-plaintext highlighter-rouge">My times</code>, <code class="language-plaintext highlighter-rouge">Administration → Timesheets</code>, in the export
+and when creating invoices.</p>
+
+<h2 id="tags-in-other-features">Tags in other features</h2>
+
+<ul>
+  <li><strong>Invoices</strong>: the placeholder <code class="language-plaintext highlighter-rouge">${entry.tags}</code> prints a comma separated list of all tags of a timesheet record,
+see <a href="/documentation/invoice-templates.html">invoice templates</a></li>
+  <li><strong>Import</strong>: timesheets can be imported with a <code class="language-plaintext highlighter-rouge">Tags</code> column (comma separated list of tag names),
+see <a href="/documentation/plugin-import.html">Import</a></li>
+  <li><strong>Auto-tags</strong>: tags can be assigned automatically through customer, project and activity,
+see <a href="/documentation/plugin-custom-fields.html">Custom-Fields plugin</a></li>
+  <li><strong>API</strong>: tags can be read and created through the <a href="/documentation/user-api.html">API</a></li>
+</ul>
+
 <h2 id="permissions">Permissions</h2>
+
+<p>Users always have access to the list of all existing tags (in forms and with the API).
+Tags cannot be restricted in their visibility for certain users or teams.
+The existing permissions all handle administrative tasks.</p>
 
 <table class="table permissions">
   <thead>
@@ -717,7 +849,11 @@ The linked timesheet records are NOT touched.</p>
   <tbody>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">view_tag</code></td>
-      <td>View the <code class="language-plaintext highlighter-rouge">Tags</code> administration at <code class="language-plaintext highlighter-rouge">Administration &gt; Tags</code></td>
+      <td>View the <code class="language-plaintext highlighter-rouge">Tags</code> administration at <code class="language-plaintext highlighter-rouge">Administration &gt; Tags</code> (this is hiding the menu, users can always see tags in forms and with the API)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">create_tag</code></td>
+      <td>Create new tags on-the-fly in the timesheet form (assigned to <code class="language-plaintext highlighter-rouge">ROLE_USER</code> by default, remove it to only allow pre-defined tags)</td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">delete_tag</code></td>
@@ -739,6 +875,28 @@ The linked timesheet records are NOT touched.</p>
                         
 
                         
+                        <div data-pagefind-ignore="all">
+                            <h2 id="related-articles" class="fs-4 mt-5">Related articles</h2>
+                            <ul>
+                                
+                                
+                                <li>
+                                    <a href="/documentation/timesheet.html">Timesheet</a> &ndash; View and manage your time-tracking data in the timesheet view
+                                </li>
+                                
+                                
+                                <li>
+                                    <a href="/documentation/permissions.html">Roles & Permissions</a> &ndash; Configure the permission system which is based on user roles
+                                </li>
+                                
+                                
+                                <li>
+                                    <a href="/documentation/configurations.html">Settings</a> &ndash; Kimai system configurations
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -746,7 +904,13 @@ The linked timesheet records are NOT touched.</p>
             
                 <aside class="side-nav side-nav-end d-none d-xxl-block docs-toc pe-0">
                     <h3 class="fs-lg mt-2">Jump to</h3>
-                    <ul class="nav" id="jumpToNav"><li class="nav-item"><a href="#tagging-timesheet-records" class="nav-link">Tagging timesheet records</a><ul><li class="nav-item"><a href="#tagging-modes" class="nav-link">Tagging modes</a></li></ul></li><li class="nav-item"><a href="#tag-administration" class="nav-link">Tag administration</a><ul><li class="nav-item"><a href="#deleting-a-tag" class="nav-link">Deleting a tag</a></li></ul></li><li class="nav-item"><a href="#filter-and-search" class="nav-link">Filter and search</a></li><li class="nav-item"><a href="#permissions" class="nav-link">Permissions</a></li></ul>
+                    <ul class="nav" id="jumpToNav"><li class="nav-item"><a href="#tagging-timesheet-records" class="nav-link">Tagging timesheet records</a><ul><li class="nav-item"><a href="#assigning-tags" class="nav-link">Assigning tags</a></li><li class="nav-item"><a href="#tagging-modes" class="nav-link">Tagging modes</a></li><li class="nav-item"><a href="#tag-names" class="nav-link">Tag names</a></li></ul></li><li class="nav-item"><a href="#tag-administration" class="nav-link">Tag administration</a><ul><li class="nav-item"><a href="#create-and-edit-a-tag" class="nav-link">Create and edit a tag</a></li><li class="nav-item"><a href="#visibility" class="nav-link">Visibility</a></li><li class="nav-item"><a href="#batch-actions" class="nav-link">Batch actions</a></li><li class="nav-item"><a href="#row-actions" class="nav-link">Row actions</a></li><li class="nav-item"><a href="#deleting-a-tag" class="nav-link">Deleting a tag</a></li></ul></li><li class="nav-item"><a href="#filter-and-search" class="nav-link">Filter and search</a></li><li class="nav-item"><a href="#tags-in-other-features" class="nav-link">Tags in other features</a></li><li class="nav-item"><a href="#permissions" class="nav-link">Permissions</a></li></ul>
+                    
+                    <ul class="nav">
+                        <li>
+                            <a href="#related-articles" class="nav-link">Related articles</a>
+                        </li>
+                    </ul>
                     
                 </aside>
             
@@ -761,7 +925,7 @@ The linked timesheet records are NOT touched.</p>
     <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
 </a>
 
-<script src="/assets/build/main.js?v1"></script>
+<script src="/assets/build/main.js?v4"></script>
 
 <script defer src="https://u.kimai.org/script.js" data-website-id="e26bef12-9527-43bc-83fd-660e237f3526"></script>
 

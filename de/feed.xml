@@ -11,8 +11,8 @@
         <title xml:lang="en">Kimai - Open Source Time-Tracking</title>
         <atom:link type="application/atom+xml" href="https://www.kimai.org/de/feed.xml" rel="self"/>
         <link>https://www.kimai.org/</link>
-        <pubDate>Wed, 30 Sep 2026 20:49:34 +0200</pubDate>
-        <lastBuildDate>Wed, 30 Sep 2026 20:49:34 +0200</lastBuildDate>
+        <pubDate>Wed, 30 Sep 2026 20:57:45 +0200</pubDate>
+        <lastBuildDate>Wed, 30 Sep 2026 20:57:45 +0200</lastBuildDate>
         <language>de</language>
         <description>Zeiterfassung leicht gemacht. Eine Open-Source-Lösung für Teams jeder Größe - selbst gehostet oder als SaaS.</description>
         <image>
@@ -24,6 +24,90 @@
             <height>184</height>
         </image>
         
+        
+            <item>
+                <title>BlauArt Catering GmbH</title>
+                <link>https://www.kimai.org/de/stories/blauart-catering</link>
+                <pubDate>Wed, 23 Sep 2026 12:00:00 +0200</pubDate>
+                <guid isPermaLink="true">https://www.kimai.org/de/stories/blauart-catering</guid>
+                <description>
+                    <![CDATA[
+                        Chips statt Zettel: Wie das Potsdamer Catering-Unternehmen BlauArt die Zeiterfassung an 15 Schulstandorten modernisiert hat
+                        ...
+                        <a href="https://www.kimai.org/de/stories/blauart-catering">Weiterlesen</a>
+                    ]]>
+                </description>
+            </item>
+        
+            <item>
+                <title>Das Kimai Partner-Programm</title>
+                <link>https://www.kimai.org/de/blog/2026/partner-program</link>
+                <pubDate>Fri, 18 Sep 2026 10:00:00 +0200</pubDate>
+                <guid isPermaLink="true">https://www.kimai.org/de/blog/2026/partner-program</guid>
+                <description>
+                    <![CDATA[
+                        Kimai wird seit Jahren gemeinsam mit Entwicklern und Experten für Unternehmenslösungen entwickelt. Nun machen wir diese Partnerschaften offiziell.
+                        ...
+                        <a href="https://www.kimai.org/de/blog/2026/partner-program">Weiterlesen</a>
+                    ]]>
+                </description>
+            </item>
+        
+            <item>
+                <title>Arbeitsmediziner. Wien</title>
+                <link>https://www.kimai.org/de/stories/arbeitsmediziner-wien</link>
+                <pubDate>Thu, 03 Sep 2026 12:00:00 +0200</pubDate>
+                <guid isPermaLink="true">https://www.kimai.org/de/stories/arbeitsmediziner-wien</guid>
+                <description>
+                    <![CDATA[
+                        Wie ein österreichischer Arzt eine Kimai App entwickelte
+                        ...
+                        <a href="https://www.kimai.org/de/stories/arbeitsmediziner-wien">Weiterlesen</a>
+                    ]]>
+                </description>
+            </item>
+        
+            <item>
+                <title>Kimai vs. Harvest</title>
+                <link>https://www.kimai.org/de/blog/2026/kimai-vs-harvest</link>
+                <pubDate>Fri, 31 Jul 2026 10:00:00 +0200</pubDate>
+                <guid isPermaLink="true">https://www.kimai.org/de/blog/2026/kimai-vs-harvest</guid>
+                <description>
+                    <![CDATA[
+                        Ein ehrlicher Vergleich: So schneidet Kimai im direkten Vergleich mit Harvest bei Preisen, Rechnungsstellung und Kontrolle über die eigenen Daten ab.
+                        ...
+                        <a href="https://www.kimai.org/de/blog/2026/kimai-vs-harvest">Weiterlesen</a>
+                    ]]>
+                </description>
+            </item>
+        
+            <item>
+                <title>Warum Kimai an faire Preise glaubt</title>
+                <link>https://www.kimai.org/de/blog/2026/fair-pricing</link>
+                <pubDate>Wed, 08 Jul 2026 10:00:00 +0200</pubDate>
+                <guid isPermaLink="true">https://www.kimai.org/de/blog/2026/fair-pricing</guid>
+                <description>
+                    <![CDATA[
+                        Die meisten Software-Anbieter erhöhen regelmäßig ihre Preise. Hier erfahren Sie, warum wir unsere Preisgestaltung anders aufgebaut haben.
+                        ...
+                        <a href="https://www.kimai.org/de/blog/2026/fair-pricing">Weiterlesen</a>
+                    ]]>
+                </description>
+            </item>
+        
+            <item>
+                <title>decoded.legal</title>
+                <link>https://www.kimai.org/de/stories/decoded-legal</link>
+                <pubDate>Thu, 25 Jun 2026 12:00:00 +0200</pubDate>
+                <guid isPermaLink="true">https://www.kimai.org/de/stories/decoded-legal</guid>
+                <description>
+                    <![CDATA[
+                        Wie eine britische Anwaltskanzlei vollständig auf freier Open-Source-Software läuft
+                        ...
+                        <a href="https://www.kimai.org/de/stories/decoded-legal">Weiterlesen</a>
+                    ]]>
+                </description>
+            </item>
         
             <item>
                 <title>Kimai – Integrationen und Plugins</title>
@@ -77,90 +161,6 @@
                         Das neueste Release von Kimai, unserer Open-Source-Zeiterfassungs-App, ist da – und es bringt eine neue PHP-Anforderung mit sich.
                         ...
                         <a href="https://www.kimai.org/de/blog/2026/php82-required">Weiterlesen</a>
-                    ]]>
-                </description>
-            </item>
-        
-            <item>
-                <title>API-Passwörter werden entfernt – jetzt auf API-Token umstellen</title>
-                <link>https://www.kimai.org/de/blog/2026/removing-api-passwords</link>
-                <pubDate>Mon, 13 Apr 2026 12:00:00 +0200</pubDate>
-                <guid isPermaLink="true">https://www.kimai.org/de/blog/2026/removing-api-passwords</guid>
-                <description>
-                    <![CDATA[
-                        Kimai-Integrationen müssen von den benutzerdefinierten 'X-AUTH-*' Headern auf den Industriestandard 'Authorization: Bearer' Header umstellen – spätestens bis Juli 2026.
-                        ...
-                        <a href="https://www.kimai.org/de/blog/2026/removing-api-passwords">Weiterlesen</a>
-                    ]]>
-                </description>
-            </item>
-        
-            <item>
-                <title>Abwesenheitskalender ist verfügbar – bereit für Ostern</title>
-                <link>https://www.kimai.org/de/blog/2026/absence-calendar-added</link>
-                <pubDate>Mon, 30 Mar 2026 09:00:00 +0200</pubDate>
-                <guid isPermaLink="true">https://www.kimai.org/de/blog/2026/absence-calendar-added</guid>
-                <description>
-                    <![CDATA[
-                        Ostern naht und dein Posteingang füllt sich bereits mit Abwesenheitsanfragen? Kimais Abwesenheitskalender hilft Teammanagern, diese Saison leichter zu meistern.
-                        ...
-                        <a href="https://www.kimai.org/de/blog/2026/absence-calendar-added">Weiterlesen</a>
-                    ]]>
-                </description>
-            </item>
-        
-            <item>
-                <title>Osterferien verwalten: Ein Leitfaden für Unternehmer und Projektmanager</title>
-                <link>https://www.kimai.org/de/blog/2026/managing-easter-holidays</link>
-                <pubDate>Wed, 11 Mar 2026 11:00:00 +0100</pubDate>
-                <guid isPermaLink="true">https://www.kimai.org/de/blog/2026/managing-easter-holidays</guid>
-                <description>
-                    <![CDATA[
-                        Die Verwaltung von Feiertagen ist entscheidend, um die Produktivität zu erhalten und einen reibungslosen Betrieb zu gewährleisten
-                        ...
-                        <a href="https://www.kimai.org/de/blog/2026/managing-easter-holidays">Weiterlesen</a>
-                    ]]>
-                </description>
-            </item>
-        
-            <item>
-                <title>Kimai-Support-E-Mails werden jetzt über Mailbox.org abgewickelt</title>
-                <link>https://www.kimai.org/de/blog/2026/mailbox-migration</link>
-                <pubDate>Mon, 09 Mar 2026 11:00:00 +0100</pubDate>
-                <guid isPermaLink="true">https://www.kimai.org/de/blog/2026/mailbox-migration</guid>
-                <description>
-                    <![CDATA[
-                        Die gesamte E-Mail-Kommunikation von Kimai wechselt zu Mailbox.org, einem deutschen E-Mail-Anbieter mit Fokus auf Datenschutz. Hier erfahren Sie warum.
-                        ...
-                        <a href="https://www.kimai.org/de/blog/2026/mailbox-migration">Weiterlesen</a>
-                    ]]>
-                </description>
-            </item>
-        
-            <item>
-                <title>Light Side oder Dark Side? Entdecken Sie Kimais Dark Mode</title>
-                <link>https://www.kimai.org/de/blog/2026/kimai-dark-mode</link>
-                <pubDate>Tue, 20 Jan 2026 12:00:00 +0100</pubDate>
-                <guid isPermaLink="true">https://www.kimai.org/de/blog/2026/kimai-dark-mode</guid>
-                <description>
-                    <![CDATA[
-                        Warum der Dark Mode wichtig ist und wie Sie Ihre Design-Einstellungen in Kimai Time Tracker festlegen.
-                        ...
-                        <a href="https://www.kimai.org/de/blog/2026/kimai-dark-mode">Weiterlesen</a>
-                    ]]>
-                </description>
-            </item>
-        
-            <item>
-                <title>Einstellung der FPM-Docker-Images</title>
-                <link>https://www.kimai.org/de/blog/2026/sunset-fpm-docker-images</link>
-                <pubDate>Fri, 16 Jan 2026 15:00:00 +0100</pubDate>
-                <guid isPermaLink="true">https://www.kimai.org/de/blog/2026/sunset-fpm-docker-images</guid>
-                <description>
-                    <![CDATA[
-                        Aufgrund anhaltender Probleme mit den FPM-Docker-Images stellen wir deren Verwendung ein.
-                        ...
-                        <a href="https://www.kimai.org/de/blog/2026/sunset-fpm-docker-images">Weiterlesen</a>
                     ]]>
                 </description>
             </item>

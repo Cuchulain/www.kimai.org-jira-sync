@@ -194,7 +194,7 @@
             "homepage": "https://www.kevinpapst.de"
         },
         "minimum_version": "2.0.0",
-        "latest_release": "2.12.0",
+        "latest_release": "2.14.0",
         "bundle": "MetaFieldsBundle",
         "icon": "fas fa-keyboard",
         "description": "Create free-configurable additional fields for timesheets, customers, projects, activities and users in various formats. Fields can be optional or mandatory and restricted by permissions.",
@@ -340,12 +340,27 @@
             "homepage": "https://www.kevinpapst.de"
         },
         "minimum_version": "2.0.30",
-        "latest_release": "2.24.0",
+        "latest_release": "2.27.0",
         "bundle": "ImportBundle",
         "icon": "fas fa-file-import",
         "description": "Allows importing CSV files through an administration screen.",
         "new": false,
         "price": "0"
+    },
+    {"name": "Invoice Payment Reminder",
+        "url": "https://www.kimai.org/en/store/simonschaufi-invoice-payment-reminder-bundle.html",
+        "buy": "https://simonschaufi.lemonsqueezy.com/checkout/buy/3f2e64cb-2e47-443a-bd0e-0314b57b887a",
+        "developer": {
+            "name": "Simon Schaufelberger",
+            "homepage": "https://www.simonschaufelberger.de"
+        },
+        "minimum_version": "2.63.0",
+        "latest_release": "1.0.0",
+        "bundle": "InvoicePaymentReminderBundle",
+        "icon": "fas fa-envelope",
+        "description": "Send payment reminders for overdue invoices via email",
+        "new": false,
+        "price": "99 €"
     },
     {"name": "E-Invoice Plus",
         "url": "https://www.kimai.org/en/store/invoice-bundle.html",
@@ -355,12 +370,27 @@
             "homepage": "https://www.kevinpapst.de"
         },
         "minimum_version": "2.0.0",
-        "latest_release": "2.8.0",
+        "latest_release": "2.10.0",
         "bundle": "InvoiceBundle",
         "icon": "fas fa-file-invoice-dollar",
         "description": "E-invoices (EN16931, XRechnung, ZUGFeRD, Factur-X), automatic PDF timesheet export, and more advanced invoicing features",
         "new": false,
         "price": "99 €"
+    },
+    {"name": "Jira worklog sync",
+        "url": "https://www.kimai.org/en/store/jira-sync.html",
+        "buy": "https://buy.stripe.com/00wbJ32Bhfyo0AQevdefC01",
+        "developer": {
+            "name": "Hilfor",
+            "homepage": "https://www.hilfor.biz"
+        },
+        "minimum_version": "2.21.0",
+        "latest_release": "1.2.0",
+        "bundle": "JiraBundle",
+        "icon": "fab fa-jira",
+        "description": "Tag timesheets with a Jira issue key and sync tracked time to Jira as worklogs.",
+        "new": false,
+        "price": "49 €"
     },
     {"name": "Kemai — Desktop client",
         "url": "https://www.kimai.org/en/store/alexandreptj-kemai-desktop-client.html",
@@ -460,6 +490,20 @@
         "bundle": null,
         "icon": "fas fa-code-branch",
         "description": "VSCode extension to start and stop your timers",
+        "new": false,
+        "price": "0"
+    },
+    {"name": "KimaiTray",
+        "url": "https://www.kimai.org/en/store/engazan-kimaitray.html",
+        "developer": {
+            "name": "Engazan",
+            "homepage": null
+        },
+        "minimum_version": null,
+        "latest_release": null,
+        "bundle": null,
+        "icon": "fas fa-desktop",
+        "description": "System tray companion app for Kimai on macOS, Windows, and Linux",
         "new": false,
         "price": "0"
     },
@@ -642,7 +686,7 @@
             "homepage": "https://www.kevinpapst.de"
         },
         "minimum_version": "2.0.33",
-        "latest_release": "2.17.0",
+        "latest_release": "2.18.1",
         "bundle": "TaskManagementBundle",
         "icon": "fas fa-clipboard-list",
         "description": "Create tasks, start/stop/pause them, assign them to users and teams and record times for them — manage to-do lists with Kimai",
@@ -715,7 +759,7 @@
             "homepage": "https://www.kevinpapst.de"
         },
         "minimum_version": "2.0.34",
-        "latest_release": "1.34.0",
+        "latest_release": "1.35.0",
         "bundle": "WorkContractBundle",
         "icon": "fas fa-gavel",
         "description": "Employee management: Working hours & overtime. Vacations, sickness and PTO. Public holiday management and calendar integration. Monthly approvals with PDF.",

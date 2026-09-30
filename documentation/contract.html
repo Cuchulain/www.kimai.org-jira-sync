@@ -20,7 +20,7 @@
 <meta property="og:title" content="Working times">
 <meta property="og:image" content="https://www.kimai.org/images/social-preview.webp">
 <meta property="og:description" content="Contract management and working times">
-<link href="/assets/build/main.css?v8" rel="stylesheet" />
+<link href="/assets/build/main.css?v14" rel="stylesheet" />
 
 </head>
 <body class="">
@@ -35,7 +35,7 @@
 
 
 
-<header class="header navbar navbar-expand bg-light border-bottom border-light shadow" data-scroll-header>
+<header class="header navbar navbar-expand bg-light border-bottom border-light shadow position-sticky top-0" style="z-index: 40" data-scroll-header>
     <div class="container-fluid pe-lg-4">
         <div class="d-flex align-items-center">
             <a href="/" class="navbar-brand flex-shrink-0 py-1 py-lg-2">
@@ -51,7 +51,6 @@
                     
                     <li class="nav-item">
                         <a href="/documentation/chapter-manual.html" class="nav-link  active">
-                            <i class="bx bx-book opacity-70 fs-lg me-1"></i>
                             User manual
                         </a>
                     </li>
@@ -60,8 +59,7 @@
                     
                     <li class="nav-item">
                         <a href="/documentation/cloud.html" class="nav-link ">
-                            <i class="bx bx-cloud opacity-70 fs-lg me-1"></i>
-                            Kimai-Cloud
+                            Cloud
                         </a>
                     </li>
                 
@@ -69,8 +67,7 @@
                     
                     <li class="nav-item">
                         <a href="/documentation/chapter-on-premise.html" class="nav-link ">
-                            <i class="bx bx-server opacity-70 fs-lg me-1"></i>
-                            On-Premise
+                            Self hosting
                         </a>
                     </li>
                 
@@ -78,7 +75,6 @@
                     
                     <li class="nav-item">
                         <a href="/documentation/chapter-developer.html" class="nav-link ">
-                            <i class="bx bx-code-alt opacity-70 fs-lg me-1"></i>
                             Developer
                         </a>
                     </li>
@@ -115,7 +111,7 @@
 </header>
 
 <aside class="bg-dark">
-    <div id="componentsNav" class="offcanvas-lg offcanvas-start d-flex flex-column position-fixed top-0 start-0 vh-100 bg-dark border-end-lg" style="width: 19rem; z-index: 1045;">
+    <div id="componentsNav" class="bg-dark offcanvas-lg offcanvas-start d-flex flex-column position-fixed top-0 start-0 vh-100" style="width: 19rem; z-index: 1045;">
         <div class="offcanvas-header d-none d-lg-flex justify-content-start">
             <a href="/" class="navbar-brand d-none d-lg-flex py-0">
                 <img src="/images/apple-touch-icon.png" width="26" alt="Kimai logo" class="me-3">
@@ -140,14 +136,14 @@
                     
                     <a href="/documentation/cloud.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-1 px-4">
                         <i class="bx bx-cloud opacity-70 me-1"></i>
-                        Kimai-Cloud
+                        Cloud
                     </a>
                 
                     
                     
                     <a href="/documentation/chapter-on-premise.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-1 px-4">
                         <i class="bx bx-server opacity-70 me-1"></i>
-                        On-Premise
+                        Self hosting
                     </a>
                 
                     
@@ -166,448 +162,465 @@
                     
                     
                     
-                    <p class="fs-lg mb-1 text-white fw-bold">User Guide</p>
-                    <div class="list-group list-group-flush mb-4 me-n4 border-start">
+                    <p class="fs-sm mb-1 text-uppercase text-muted fw-semibold ps-3">User Guide</p>
+                    <div class="list-group list-group-flush mb-4 me-n4">
                         
                         
-                        
-                        
-                        <a href="/documentation/timesheet.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-timesheet">
                             
-                            Timesheet
                             
-                        </a>
+                            <a href="/documentation/timesheet.html" class="list-group-item list-group-item-action border-0 " id="docnavi-timesheet">
+                                
+                                Timesheet
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/weekly-times.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-weekly-times">
                             
-                            Weekly hours
                             
-                        </a>
+                            <a href="/documentation/weekly-times.html" class="list-group-item list-group-item-action border-0 " id="docnavi-weekly-times">
+                                
+                                Weekly hours
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/calendar.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-calendar">
                             
-                            Calendar
                             
-                        </a>
+                            <a href="/documentation/calendar.html" class="list-group-item list-group-item-action border-0 " id="docnavi-calendar">
+                                
+                                Calendar
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/invoices.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-invoices">
                             
-                            Invoices
                             
-                        </a>
+                            <a href="/documentation/invoices.html" class="list-group-item list-group-item-action border-0 " id="docnavi-invoices">
+                                
+                                Invoices
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/export.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-export">
                             
-                            Export
                             
-                        </a>
+                            <a href="/documentation/export.html" class="list-group-item list-group-item-action border-0 " id="docnavi-export">
+                                
+                                Export
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/reporting.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-reporting">
                             
-                            Reporting
                             
-                        </a>
+                            <a href="/documentation/reporting.html" class="list-group-item list-group-item-action border-0 " id="docnavi-reporting">
+                                
+                                Reporting
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/customer.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-customer">
                             
-                            Customer
                             
-                        </a>
+                            <a href="/documentation/customer.html" class="list-group-item list-group-item-action border-0 " id="docnavi-customer">
+                                
+                                Customer
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/project.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-project">
                             
-                            Projects
                             
-                        </a>
+                            <a href="/documentation/project.html" class="list-group-item list-group-item-action border-0 " id="docnavi-project">
+                                
+                                Projects
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/activity.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-activity">
                             
-                            Activities
                             
-                        </a>
+                            <a href="/documentation/activity.html" class="list-group-item list-group-item-action border-0 " id="docnavi-activity">
+                                
+                                Activities
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/tags.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-tags">
                             
-                            Tags
                             
-                        </a>
+                            <a href="/documentation/tags.html" class="list-group-item list-group-item-action border-0 " id="docnavi-tags">
+                                
+                                Tags
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/users.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-users">
                             
-                            Users
                             
-                        </a>
+                            <a href="/documentation/users.html" class="list-group-item list-group-item-action border-0 " id="docnavi-users">
+                                
+                                Users
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/user-preferences.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-user-preferences">
                             
-                            User preferences
                             
-                        </a>
+                            <a href="/documentation/user-preferences.html" class="list-group-item list-group-item-action border-0 " id="docnavi-user-preferences">
+                                
+                                User preferences
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/permissions.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-permissions">
                             
-                            Roles & Permissions
                             
-                        </a>
+                            <a href="/documentation/contract.html" class="list-group-item list-group-item-action border-0  active" id="docnavi-contract">
+                                
+                                Working times
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/teams.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-teams">
                             
-                            Teams
                             
-                        </a>
+                            <a href="/documentation/absence.html" class="list-group-item list-group-item-action border-0 " id="docnavi-absence">
+                                
+                                Absence
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/configurations.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-configurations">
                             
-                            Settings
                             
-                        </a>
+                            <a href="/documentation/dashboard.html" class="list-group-item list-group-item-action border-0 " id="docnavi-dashboard">
+                                
+                                Dashboard
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/doctor.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-doctor">
                             
-                            Doctor
                             
-                        </a>
+                            <a href="/documentation/plugin-expenses.html" class="list-group-item list-group-item-action border-0 " id="docnavi-plugin-expenses">
+                                
+                                Expenses
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/contract.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2  active" id="docnavi-contract">
                             
-                            Working times
                             
-                        </a>
+                            <a href="/documentation/plugin-task-management.html" class="list-group-item list-group-item-action border-0 " id="docnavi-plugin-task-management">
+                                
+                                Tasks
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/public-holiday.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-public-holiday">
                             
-                            Public holiday
                             
-                        </a>
+                            <a href="/documentation/plugin-invoice.html" class="list-group-item list-group-item-action border-0 " id="docnavi-plugin-invoice">
+                                
+                                Invoice+
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/absence.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-absence">
                             
-                            Absence
                             
-                        </a>
+                            <a href="/documentation/plugin-customer-portal.html" class="list-group-item list-group-item-action border-0 " id="docnavi-plugin-customer-portal">
+                                
+                                Customer Portal
+                                
+                            </a>
                         
-                        
-                        
-                        
-                        
-                        <a href="/documentation/dashboard.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-dashboard">
-                            
-                            Dashboard
-                            
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        <a href="/documentation/plugin-custom-fields.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-custom-fields">
-                            
-                            Custom fields
-                            
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        <a href="/documentation/plugin-expenses.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-expenses">
-                            
-                            Expenses
-                            
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        <a href="/documentation/plugin-task-management.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-task-management">
-                            
-                            Tasks
-                            
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        <a href="/documentation/plugin-custom-css.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-custom-css">
-                            
-                            Custom CSS
-                            
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        <a href="/documentation/plugin-custom-content.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-custom-content">
-                            
-                            Custom content
-                            
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        <a href="/documentation/plugin-translation.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-translation">
-                            
-                            Translation
-                            
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        <a href="/documentation/plugin-invoice.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-invoice">
-                            
-                            Invoice+
-                            
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        <a href="/documentation/plugin-import.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-import">
-                            
-                            Importer
-                            
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        <a href="/documentation/plugin-audit-trail.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-audit-trail">
-                            
-                            Audit logs
-                            
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        <a href="/documentation/plugin-kiosk.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-kiosk">
-                            
-                            Kiosk mode
-                            
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        <a href="/documentation/plugin-customer-portal.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugin-customer-portal">
-                            
-                            Customer Portal
-                            
-                        </a>
-                        
-                        
+                    
                     </div>
                     
                     
                     
-                    <p class="fs-lg mb-1 text-white fw-bold">Advanced Topics</p>
-                    <div class="list-group list-group-flush mb-4 me-n4 border-start">
+                    <p class="fs-sm mb-1 text-uppercase text-muted fw-semibold ps-3">Admin Guide</p>
+                    <div class="list-group list-group-flush mb-4 me-n4">
                         
                         
-                        
-                        
-                        <a href="/documentation/initial-setup.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-initial-setup">
                             
-                            Initial setup
                             
-                        </a>
+                            <a href="/documentation/permissions.html" class="list-group-item list-group-item-action border-0 " id="docnavi-permissions">
+                                
+                                Roles & Permissions
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/rates.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-rates">
                             
-                            Prices (rates)
                             
-                        </a>
+                            <a href="/documentation/teams.html" class="list-group-item list-group-item-action border-0 " id="docnavi-teams">
+                                
+                                Teams
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/rounding.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-rounding">
                             
-                            Rounding
                             
-                        </a>
+                            <a href="/documentation/public-holiday.html" class="list-group-item list-group-item-action border-0 " id="docnavi-public-holiday">
+                                
+                                Public holiday
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/billable.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-billable">
                             
-                            Billable
                             
-                        </a>
+                            <a href="/documentation/configurations.html" class="list-group-item list-group-item-action border-0 " id="docnavi-configurations">
+                                
+                                Settings
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/invoice-templates.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-invoice-templates">
                             
-                            Invoice templates
                             
-                        </a>
+                            <a href="/documentation/plugin-custom-fields.html" class="list-group-item list-group-item-action border-0 " id="docnavi-plugin-custom-fields">
+                                
+                                Custom fields
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/pdf-templates.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-pdf-templates">
                             
-                            PDF templates
                             
-                        </a>
+                            <a href="/documentation/plugin-kiosk.html" class="list-group-item list-group-item-action border-0 " id="docnavi-plugin-kiosk">
+                                
+                                Kiosk mode
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/keyboard-shortcuts.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-keyboard-shortcuts">
                             
-                            Keyboard shortcuts
                             
-                        </a>
+                            <a href="/documentation/plugin-audit-trail.html" class="list-group-item list-group-item-action border-0 " id="docnavi-plugin-audit-trail">
+                                
+                                Audit logs
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/i18n-am-pm.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-i18n-am-pm">
                             
-                            Date and Time formats
                             
-                        </a>
+                            <a href="/documentation/plugin-custom-css.html" class="list-group-item list-group-item-action border-0 " id="docnavi-plugin-custom-css">
+                                
+                                Custom CSS
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/duration-format.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-duration-format">
                             
-                            Duration format
                             
-                        </a>
+                            <a href="/documentation/plugin-custom-content.html" class="list-group-item list-group-item-action border-0 " id="docnavi-plugin-custom-content">
+                                
+                                Custom content
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        
-                        
-                        <a href="/documentation/homescreen.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-homescreen">
                             
-                            Use Kimai as app
                             
-                        </a>
+                            <a href="/documentation/plugin-translation.html" class="list-group-item list-group-item-action border-0 " id="docnavi-plugin-translation">
+                                
+                                Translation
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/user-api.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-user-api">
                             
-                            Connecting via API
                             
-                        </a>
+                            <a href="/documentation/doctor.html" class="list-group-item list-group-item-action border-0 " id="docnavi-doctor">
+                                
+                                Doctor
+                                
+                            </a>
                         
+                    
                         
-                        
-                        
-                        
-                        <a href="/documentation/markdown.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-markdown">
                             
-                            Markdown
                             
-                        </a>
+                            <a href="/documentation/plugin-import.html" class="list-group-item list-group-item-action border-0 " id="docnavi-plugin-import">
+                                
+                                Importer
+                                
+                            </a>
+                        
+                    
+                    </div>
+                    
+                    
+                    
+                    <p class="fs-sm mb-1 text-uppercase text-muted fw-semibold ps-3">Advanced Topics</p>
+                    <div class="list-group list-group-flush mb-4 me-n4">
                         
                         
+                            
+                            
+                            <a href="/documentation/initial-setup.html" class="list-group-item list-group-item-action border-0 " id="docnavi-initial-setup">
+                                
+                                Initial setup
+                                
+                            </a>
+                        
+                    
+                        
+                            
+                            
+                            <a href="/documentation/user-offboarding.html" class="list-group-item list-group-item-action border-0 " id="docnavi-user-offboarding">
+                                
+                                Offboarding users
+                                
+                            </a>
+                        
+                    
+                        
+                            
+                            
+                            <a href="/documentation/rates.html" class="list-group-item list-group-item-action border-0 " id="docnavi-rates">
+                                
+                                Prices (rates)
+                                
+                            </a>
+                        
+                    
+                        
+                            
+                            
+                            <a href="/documentation/rounding.html" class="list-group-item list-group-item-action border-0 " id="docnavi-rounding">
+                                
+                                Rounding
+                                
+                            </a>
+                        
+                    
+                        
+                            
+                            
+                            <a href="/documentation/billable.html" class="list-group-item list-group-item-action border-0 " id="docnavi-billable">
+                                
+                                Billable
+                                
+                            </a>
+                        
+                    
+                        
+                            
+                            
+                            <a href="/documentation/invoice-templates.html" class="list-group-item list-group-item-action border-0 " id="docnavi-invoice-templates">
+                                
+                                Invoice templates
+                                
+                            </a>
+                        
+                    
+                        
+                            
+                            
+                            <a href="/documentation/pdf-templates.html" class="list-group-item list-group-item-action border-0 " id="docnavi-pdf-templates">
+                                
+                                PDF templates
+                                
+                            </a>
+                        
+                    
+                        
+                            
+                            
+                            <a href="/documentation/keyboard-shortcuts.html" class="list-group-item list-group-item-action border-0 " id="docnavi-keyboard-shortcuts">
+                                
+                                Keyboard shortcuts
+                                
+                            </a>
+                        
+                    
+                        
+                            
+                            
+                            <a href="/documentation/i18n-am-pm.html" class="list-group-item list-group-item-action border-0 " id="docnavi-i18n-am-pm">
+                                
+                                Date & Time format
+                                
+                            </a>
+                        
+                    
+                        
+                            
+                            
+                            <a href="/documentation/duration-format.html" class="list-group-item list-group-item-action border-0 " id="docnavi-duration-format">
+                                
+                                Duration format
+                                
+                            </a>
+                        
+                    
+                        
+                    
+                        
+                            
+                            
+                            <a href="/documentation/homescreen.html" class="list-group-item list-group-item-action border-0 " id="docnavi-homescreen">
+                                
+                                Use Kimai as app
+                                
+                            </a>
+                        
+                    
+                        
+                            
+                            
+                            <a href="/documentation/user-api.html" class="list-group-item list-group-item-action border-0 " id="docnavi-user-api">
+                                
+                                Connecting via API
+                                
+                            </a>
+                        
+                    
+                        
+                            
+                            
+                            <a href="/documentation/markdown.html" class="list-group-item list-group-item-action border-0 " id="docnavi-markdown">
+                                
+                                Markdown
+                                
+                            </a>
+                        
+                    
                     </div>
                     
                     <div class="list-group list-group-flush pb-3 mb-4 mx-n4">
@@ -632,20 +645,43 @@
     <div class="container-fluid px-xxl-3 px-lg-2 pt-4 pt-lg-5 pb-2 pb-lg-4">
         <div class="docs-layout">
             <div class="docs-article" data-pagefind-body>
-                <div class="d-sm-flex align-items-end justify-content-between ps-lg-2 ps-xxl-0 mt-2 mt-lg-0 mb-n3 gap-4">
-                    <div class="me-4">
-                        <h1 class="pb-1" data-pagefind-meta="title" data-pagefind-weight="10.0">Working times</h1>
+                <div class="d-sm-flex align-items-baseline justify-content-between ps-lg-2 ps-xxl-0 mt-2 mt-lg-0 mb-n3 gap-4">
+                    <div class="w-100">
+                        <div class="d-flex align-items-baseline justify-content-between gap-3 pb-1">
+                            <div class="d-flex align-items-baseline flex-wrap gap-2">
+                                <h1 class="mb-0" data-pagefind-meta="title" data-pagefind-weight="10.0">
+                                    Working times
+                                </h1>
+                                <div id="availability-pills" class="d-flex flex-shrink-0 gap-2">
+                                    
+                                        <span class="badge bg-faded-primary text-primary rounded-pill" data-bs-html="true" title="Available in Kimai-Cloud:<br> Pro and Non-Profit" data-bs-toggle="tooltip">Cloud</span>
+                                    
+                                    
+                                    <span class="badge bg-faded-warning text-warning rounded-pill" title="Available as Plugin" data-bs-toggle="tooltip"><a href="/en/store/controlling.html" class="text-decoration-none text-warning">Plugin</a></span>
+                                    
+                                </div>
+                            </div>
+                            <div class="d-none d-lg-flex">
+                            
+
+
+
+    <div class="dropdown">
+        <a class="btn btn-outline-secondary btn-sm dropdown-toggle rounded-3 px-3" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Latest
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+            
+                <a class="dropdown-item" href="#">Latest (2.67.0)</a>
+            
+        </div>
+    </div>
+
+                            </div>
+                        </div>
                         
                         <p class="text-muted fs-lg mb-2" data-pagefind-meta="description">Contract management and working times</p>
                         
-                    </div>
-                    <div class="d-none d-lg-flex">
-                    
-
-
-
-
-
                     </div>
                 </div>
 
@@ -656,7 +692,11 @@
                             <p>This screen and the <code class="language-plaintext highlighter-rouge">Contract</code> menu can be seen by any user that has active contract settings and the ones that own the <code class="language-plaintext highlighter-rouge">contract_other_profile</code> permission (see <code class="language-plaintext highlighter-rouge">Permissions</code> below).</p>
 
 <div class="youtube-wrapper" style="max-width: 560px;">
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/Ed11R3d4Eng" title="Set Up Working Time &amp; Absences" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    <a class="youtube-consent" href="https://www.youtube.com/watch?v=Ed11R3d4Eng" target="_blank" rel="noopener" data-youtube-id="Ed11R3d4Eng" data-youtube-title="Set Up Working Time &amp; Absences" aria-label="Play video: Set Up Working Time &amp; Absences">
+        <img class="youtube-consent-thumbnail" src="/images/video-thumbnails/working_contracts_setup_and_absences.webp" alt="" loading="lazy" width="1280" height="720" />
+        <span class="youtube-consent-play" aria-hidden="true"><i class="bx bx-play"></i></span>
+        <span class="youtube-consent-notice">Click to load the video from YouTube. Data will be transferred to Google.</span>
+    </a>
 </div>
 
 <h2 id="user-interface">User interface</h2>
@@ -669,7 +709,11 @@
 </ul>
 
 <div class="youtube-wrapper" style="max-width: 560px;">
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/BYkgplGTz4Q" title="Working Times introduction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    <a class="youtube-consent" href="https://www.youtube.com/watch?v=BYkgplGTz4Q" target="_blank" rel="noopener" data-youtube-id="BYkgplGTz4Q" data-youtube-title="Working Times introduction" aria-label="Play video: Working Times introduction">
+        <img class="youtube-consent-thumbnail" src="/images/video-thumbnails/working_contract_overview.webp" alt="" loading="lazy" width="1280" height="720" />
+        <span class="youtube-consent-play" aria-hidden="true"><i class="bx bx-play"></i></span>
+        <span class="youtube-consent-notice">Click to load the video from YouTube. Data will be transferred to Google.</span>
+    </a>
 </div>
 
 <h2 id="summary">Summary</h2>
@@ -731,11 +775,20 @@ It is therefore necessary to lock all months (see above) in which the old employ
 
 <p>As you can only lock complete months, it is currently only possible to change the employment contract at the beginning of a month.</p>
 
+<p><strong>But the contract changes mid-month</strong></p>
+
+<p>In that case you ca use this workaround: close all previous months first to protect historical data. 
+Leave the current month calculated under the old contract — any difference in hours will appear as overtime or missing hours. 
+Use the Manual Booking feature to correct these discrepancies for the affected period, and add a note referencing the contract change as the reason. 
+Once the new month begins, lock the transition month and update the contract. 
+The new hours will then apply going forward without affecting past records. 
+Keep old months locked — reopening them will cause hours to recalculate under the new contract, corrupting historical data.</p>
+
 <h2 id="manual-bookings">Manual bookings</h2>
 
 <p>Attention: perform tests on a separate test account (or the <a href="/en/demo.html">demo environment</a>).</p>
 
-<p>You cannot delete manual bookings, so if you accidentally added wrong values, simply create an opposite booking and add something like “compensation for test booking” in the description.</p>
+<p>You cannot delete manual bookings, so if you accidentally added wrong values, simply create an opposite booking and add a note like “compensation for test booking” in the description.</p>
 
 <h3 id="account-working-times">Account working times</h3>
 
@@ -743,8 +796,8 @@ It is therefore necessary to lock all months (see above) in which the old employ
 
 <p>Popular examples are:</p>
 <ul>
-  <li>adding a positive amount of hours =&gt; taking over hours from the last year</li>
-  <li>removing a negative amount of hours =&gt; payment to compensate for plus hours</li>
+  <li>adding a positive amount of hours ⇒ taking over hours from the last year</li>
+  <li>removing a negative amount of hours ⇒ payment to compensate for plus hours</li>
 </ul>
 
 <h3 id="holidays">Holidays</h3>
@@ -753,11 +806,27 @@ It is therefore necessary to lock all months (see above) in which the old employ
 
 <p>Examples are:</p>
 <ul>
-  <li>adding a positive amount of days =&gt; taking over holiday from the last year</li>
-  <li>removing a negative amount of days =&gt; old holidays which were not taken on time expired</li>
+  <li>adding a positive amount of days ⇒ taking over holiday from the last year</li>
+  <li>removing a negative amount of days ⇒ old holidays which were not taken on time expired</li>
 </ul>
 
+<h3 id="why-immmutable">Why immmutable?</h3>
+
+<p>Manual bookings directly affect an employee’s working time balance. This balance determines overtime, compensation, and holiday entitlements — making it financially and legally relevant for both employers and employees.
+Kimai deliberately prevents editing or deleting manual bookings. 
+This design follows the same immutability principle that applies to other legally relevant records, such as vehicle logbooks or accounting ledgers.</p>
+
+<p>Working time records flow into payroll and are subject to regulatory requirements. These require that records are traceable, complete, and tamper-proof. Corrections must not overwrite or remove the original entry — they must be documented as separate, visible transactions. A system that allows silent modification of records may be rejected during an audit, regardless of whether actual manipulation occurred.
+An immutable record protects employees from having their time balance quietly reduced, and it protects employers from accusations of manipulating working time data. Both parties can always trace what was booked, when, and why.</p>
+
+<p><strong>Fixing invalid manual bookings</strong></p>
+
+<p>Corrections must be made through counter-bookings: a new booking with the opposite value and a note explaining the reason.</p>
+
 <h2 id="how-calculations-work">How calculations work</h2>
+
+<p>Kimai compares two values for every single day: the <strong>expected time</strong> (from the employment contract) and the <strong>actual time</strong> (from the recorded timesheets).
+Which timesheets are used for the actual time depends on the configured calculation mode, see <a href="#working-time-calculation-modes">“Working time calculation modes”</a> below.</p>
 
 <p>Kimai only calculates working time up to the current moment.
 This means that adding a holiday for tomorrow, or any other future absence, will not affect your hour balance yet.</p>
@@ -766,7 +835,12 @@ This means that adding a holiday for tomorrow, or any other future absence, will
 
 <p>In short: depending on the configured absence calculation mode, the reported annual working time can be significantly higher than the hours recorded in timesheets.</p>
 
+<p>The calculation mode is configured per absence type with the <code class="language-plaintext highlighter-rouge">Count as expected hours</code> settings in <a href="/documentation/configurations.html">System → Settings</a>.
+Be aware that these settings use the internal absence type names: <code class="language-plaintext highlighter-rouge">Holiday</code> means vacation, <code class="language-plaintext highlighter-rouge">Public holiday</code> refers to the <a href="/documentation/public-holiday.html">public holiday administration</a> and <code class="language-plaintext highlighter-rouge">Absence</code> means the absence type <code class="language-plaintext highlighter-rouge">Other</code>.</p>
+
 <h3 id="absences-compensate-expected-working-time">Absences compensate expected working time</h3>
+
+<p>This is the behaviour when the matching <code class="language-plaintext highlighter-rouge">Count as expected hours</code> setting is <strong>activated</strong>.</p>
 
 <ul>
   <li><strong>Public holidays</strong> — The configured working time for that day is added as worked time. If you create a timesheet on the same day, it is counted as overtime.</li>
@@ -778,6 +852,8 @@ This means that adding a holiday for tomorrow, or any other future absence, will
 
 <h3 id="absences-reduce-expected-working-time">Absences reduce expected working time</h3>
 
+<p>This is the behaviour when the matching <code class="language-plaintext highlighter-rouge">Count as expected hours</code> setting is <strong>deactivated</strong>.</p>
+
 <ul>
   <li><strong>Public holidays</strong> — Reduces the expected working time for that day to 0. If you create a timesheet on the same day, it is counted as overtime.</li>
   <li><strong>Vacation</strong> — Reduces the expected working time by the duration of the absence. A full-day vacation reduces it to 0. A half-day vacation reduces it accordingly. If you create a timesheet on the same day, it is counted as overtime.</li>
@@ -786,9 +862,118 @@ This means that adding a holiday for tomorrow, or any other future absence, will
   <li><strong>Time-Off</strong> — Does not affect working time calculations. This entry is for informational purposes only.</li>
 </ul>
 
+<h2 id="working-time-calculation-modes">Working time calculation modes</h2>
+
+<p>By default, Kimai adds up <strong>all</strong> timesheets of a day to calculate the actual working time.
+With the setting <code class="language-plaintext highlighter-rouge">Only count entries of the selected project as working time</code> in <a href="/documentation/configurations.html">System → Settings</a> you can change that, so only the timesheets of one single project are used.</p>
+
+<p>This changes nothing about the way the working time is calculated — it only changes <strong>which timesheets are taken into account</strong>.
+Everything else (expected time from the contract, absences, public holidays, manual bookings, locking of months) behaves identically in both modes.</p>
+
+<p>Neither mode is better than the other. They describe two different ways of working, and you should pick the one that matches how your company records time.</p>
+
+<h3 id="all-timesheets-default">All timesheets (default)</h3>
+
+<p>No project is selected, and every timesheet a user records on any project counts towards the actual working time.</p>
+
+<p>Attendance and project work are the same data: the working day is a chain of consecutive timesheets.
+The employee starts a record when arriving, switches the project or activity whenever the task changes, and stops the last record when leaving.
+Time that cannot be assigned to a customer project (internal meetings, administration, training) still has to be recorded on some project, otherwise it is missing from the balance.</p>
+
+<p><strong>Advantages</strong></p>
+
+<ul>
+  <li>Easy to understandEvery recorded minute counts, so nothing can be lost by forgetting a second, separate record.</li>
+  <li>Project times and the time account validate each other: if the sum of the project times is wrong, the balance is visibly wrong as well.</li>
+</ul>
+
+<p><strong>Disadvantages</strong></p>
+
+<ul>
+  <li>When mixing project and attendance entries, you create many records per day and a lot of switching.</li>
+  <li>Every kind of non-project time needs its own “catch-all” project, otherwise the balance drops.</li>
+  <li>Gaps between records reduce the balance, as they look like a break.</li>
+</ul>
+
+<h3 id="attendance-project-only">Attendance project only</h3>
+
+<p>One project is selected as the attendance project.
+Only the timesheets of that project are used to calculate the actual working time — all other timesheets are ignored for the employment contract.</p>
+
+<p>Those other timesheets are <strong>not</strong> deleted or changed in any way: they are still visible in <code class="language-plaintext highlighter-rouge">My times</code>, in all reports, exports, invoices and budgets.
+They simply no longer influence the time account.</p>
+
+<p>The working day now looks different: the employee starts one record on the attendance project in the morning and stops it in the evening.
+The real project times are recorded <strong>in parallel</strong> to this attendance record, and they can have gaps — they no longer need to cover the entire day.</p>
+
+<p><strong>Advantages</strong></p>
+
+<ul>
+  <li>Attendance (when was the employee at work) and project work (what did the employee do) are separated.</li>
+  <li>Project times no longer have to be gapless and can be recorded with the detail level that makes sense for controlling and invoicing.</li>
+  <li>Fewer records and less timesheet switching during the day.</li>
+</ul>
+
+<p><strong>Disadvantages</strong></p>
+
+<ul>
+  <li>The employee has to remember two things instead of one: the attendance record and the project times.</li>
+  <li>If the attendance record is missing, the day counts as zero actual time — even if project times were recorded for it.</li>
+  <li>Overlapping and parallel records have to be allowed for everybody (see below), which also allows them everywhere else.</li>
+  <li>Not all widgets and reports take this setting into account (we work on that).</li>
+</ul>
+
+<h3 id="configuring-the-attendance-project">Configuring the attendance project</h3>
+
+<p>The project is selected in <a href="/documentation/configurations.html">System → Settings</a> with the setting <code class="language-plaintext highlighter-rouge">Only count entries of the selected project as working time</code>.</p>
+
+<ul>
+  <li>Only one single project can be selected.</li>
+  <li>The setting is global for the entire installation. There is no exception for single users, it applies to everyone.</li>
+  <li>If the field is left empty, Kimai uses mode 1 (all timesheets).</li>
+</ul>
+
+<p>Two further settings in <a href="/documentation/configurations.html">System → Settings</a> have to be adjusted, because the attendance record and the project record run at the same time:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Allow overlapping time entries</code> has to be activated</li>
+  <li><code class="language-plaintext highlighter-rouge">Maximum number of active/running entries</code> has to be at least <code class="language-plaintext highlighter-rouge">2</code></li>
+</ul>
+
+<p>Both are required. If only one of them is changed, the employees cannot record their project times while the attendance record is running.</p>
+
+<h3 id="recording-breaks">Recording breaks</h3>
+
+<p>There are two ways to record breaks in the attendance mode, and which one fits depends on your company and on the legal requirements you have to fulfil.
+Some countries require the begin and the end of a break to be documented, others only require its duration.</p>
+
+<ul>
+  <li><strong>Stopping and restarting the attendance record</strong> — the employee stops the attendance record when the break starts and creates a new one when the break ends. This results in several attendance records per day and documents the exact begin and end of every break.</li>
+  <li><strong>Using the <code class="language-plaintext highlighter-rouge">Break</code> field</strong> — the employee keeps one single attendance record for the entire day and enters the break duration in the <code class="language-plaintext highlighter-rouge">Break</code> field of that record. Kimai subtracts this duration from the record, so only the duration of the break is documented, not its position within the day.</li>
+</ul>
+
+<p>Both variants reduce the actual working time by the same amount.</p>
+
+<h3 id="switching-between-the-modes">Switching between the modes</h3>
+
+<p>Kimai does not store the actual working time of a day permanently. As long as a month is not locked, the values you see are recalculated from the timesheets every time the <code class="language-plaintext highlighter-rouge">Working times</code> screen is opened.
+Only when a month is locked, the calculated values are written to the database — and from then on they are never recalculated again.</p>
+
+<p>This is why the switch between the two modes must be prepared carefully:</p>
+
+<p><strong>Lock all previous months before you change the setting.</strong>
+This includes the months of all previous years. As only the selected year is calculated at a time, you have to open every past year and lock its months individually.</p>
+
+<p>If you skip this, all days that are not locked will be recalculated with the new rule as soon as you save the setting.
+Switching to the attendance project mode would then set the actual time of all those past days to zero (no attendance records exist for them yet), which results in a massive negative balance for every employee.
+Switching back has exactly the same effect in the other direction.</p>
+
+<p>Because months can only be locked completely, the switch is only possible at the beginning of a month.
+Plan it accordingly: lock everything up to the end of the current month, inform your employees about the new way of recording, and change the setting when the new month starts.</p>
+
 <h2 id="limit-timesheets-to-working-days">Limit timesheets to working days</h2>
 
-<p>There is a validation that can be activated in <a href="/documentation/configurations.html">System → Settings</a>, which helps to restrict timesheets to contractual working days.
+<p>There is a validation called <code class="language-plaintext highlighter-rouge">Allow time entries only for days for which expected hours are defined in the employment contract</code>, which can be activated in <a href="/documentation/configurations.html">System → Settings</a> and helps to restrict timesheets to contractual working days.
 Once activated, users cannot create timesheets for days without active contract setting.
 So a user who works Monday to Thursday cannot create timesheets for Fridays.</p>
 
@@ -798,7 +983,11 @@ This permission should be granted to employees e.g. from HR department.</p>
 <h2 id="carry-over-your-time-balance-to-the-next-year">Carry over your time balance to the next year</h2>
 
 <div class="youtube-wrapper" style="max-width: 560px;">
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/3QAC9viiMSE" title="Roll over working hours into the next year" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    <a class="youtube-consent" href="https://www.youtube.com/watch?v=3QAC9viiMSE" target="_blank" rel="noopener" data-youtube-id="3QAC9viiMSE" data-youtube-title="Roll over working hours into the next year" aria-label="Play video: Roll over working hours into the next year">
+        <img class="youtube-consent-thumbnail" src="/images/video-thumbnails/roll_over_work_balance.webp" alt="" loading="lazy" width="1280" height="720" />
+        <span class="youtube-consent-play" aria-hidden="true"><i class="bx bx-play"></i></span>
+        <span class="youtube-consent-notice">Click to load the video from YouTube. Data will be transferred to Google.</span>
+    </a>
 </div>
 
 <p>At the end of the current year (or begin of the new year) and once you figured out the final balance of an employees time account, 
@@ -815,7 +1004,11 @@ you have to roll over the hours to the next year:</p>
 <p>There is older video available, explaining more details, but be warned: it also has a few outdated information bits.</p>
 
 <div class="youtube-wrapper" style="max-width: 560px;">
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/hoa8yWsR9b8" title="Working contract overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    <a class="youtube-consent" href="https://www.youtube.com/watch?v=hoa8yWsR9b8" target="_blank" rel="noopener" data-youtube-id="hoa8yWsR9b8" data-youtube-title="Working contract overview" aria-label="Play video: Working contract overview">
+        <img class="youtube-consent-thumbnail" src="/images/video-thumbnails/workcontract.webp" alt="" loading="lazy" width="1280" height="720" />
+        <span class="youtube-consent-play" aria-hidden="true"><i class="bx bx-play"></i></span>
+        <span class="youtube-consent-notice">Click to load the video from YouTube. Data will be transferred to Google.</span>
+    </a>
 </div>
 
 <h2 id="settings">Settings</h2>
@@ -824,8 +1017,19 @@ you have to roll over the hours to the next year:</p>
 
 <ul class="table">
   <li><code class="language-plaintext highlighter-rouge">Absence: Comment is a mandatory field</code> — Whether users have to enter a comment with their absence requests</li>
-  <li><code class="language-plaintext highlighter-rouge">Allow half days for holidays</code> — Whether users can request half-day absences</li>
+  <li><code class="language-plaintext highlighter-rouge">Allow half days for holidays</code> — Whether users can request half days of vacation. Turn it off if you only agree to full vacation days</li>
+  <li><code class="language-plaintext highlighter-rouge">Allow time entries only for days for which expected hours are defined in the employment contract</code> — Prevents timesheets on days without expected working hours, e.g. a user working Monday to Thursday cannot record time on Fridays. The permission <code class="language-plaintext highlighter-rouge">workdays_override_timesheet</code> allows to bypass this validation</li>
+  <li><code class="language-plaintext highlighter-rouge">Only count entries of the selected project as working time</code> — If a project is selected, only timesheets of this project are used to calculate the actual working time and all other timesheets are ignored for the employment contract. Leave it empty to count all timesheets</li>
+  <li><code class="language-plaintext highlighter-rouge">Public holidays</code> — The service used by the import dialog in the public holiday administration. <code class="language-plaintext highlighter-rouge">Yasumi</code> is the recommended default, use <code class="language-plaintext highlighter-rouge">Google</code> only if Yasumi does not return any results for your country or region</li>
+  <li><code class="language-plaintext highlighter-rouge">Count as expected hours: Public holiday</code> — When enabled, a public holiday counts as worked hours towards the expected daily hours. When disabled, the expected hours for that day are set to 0</li>
+  <li><code class="language-plaintext highlighter-rouge">Count as expected hours: Sickness</code> — When enabled, a sickness fills up the remaining hours of the day until the expected duration is reached. When disabled, it reduces the remaining expected hours of that day instead</li>
+  <li><code class="language-plaintext highlighter-rouge">Count as expected hours: Absence</code> — Applies to the absence type <code class="language-plaintext highlighter-rouge">Other</code>. When enabled, the configured absence duration counts as worked hours. When disabled, it reduces the expected hours by the same duration</li>
+  <li><code class="language-plaintext highlighter-rouge">Count as expected hours: Holiday</code> — Applies to vacation. When enabled, the vacation counts as worked hours towards the expected daily hours. When disabled, it reduces the expected hours by the duration of the vacation</li>
 </ul>
+
+<p>The four <code class="language-plaintext highlighter-rouge">Count as expected hours</code> settings control the absence calculation mode and can be configured individually for every absence type.
+Please note that the labels use the internal absence type names: <code class="language-plaintext highlighter-rouge">Holiday</code> means vacation, <code class="language-plaintext highlighter-rouge">Public holiday</code> means a day from the public holiday administration and <code class="language-plaintext highlighter-rouge">Absence</code> means the absence type <code class="language-plaintext highlighter-rouge">Other</code>.
+The absence type <code class="language-plaintext highlighter-rouge">Time-Off</code> has no setting, because it never influences the working time calculation.</p>
 
 <h2 id="permissions">Permissions</h2>
 
@@ -905,7 +1109,7 @@ you have to roll over the hours to the next year:</p>
             
                 <aside class="side-nav side-nav-end d-none d-xxl-block docs-toc pe-0">
                     <h3 class="fs-lg mt-2">Jump to</h3>
-                    <ul class="nav" id="jumpToNav"><li class="nav-item"><a href="#user-interface" class="nav-link">User interface</a></li><li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li><li class="nav-item"><a href="#working-times" class="nav-link">Working times</a></li><li class="nav-item"><a href="#lock-a-month" class="nav-link">Lock a month</a><ul><li class="nav-item"><a href="#unlock-a-month" class="nav-link">Unlock a month</a></li></ul></li><li class="nav-item"><a href="#changing-a-work-contract" class="nav-link">Changing a work contract</a></li><li class="nav-item"><a href="#manual-bookings" class="nav-link">Manual bookings</a><ul><li class="nav-item"><a href="#account-working-times" class="nav-link">Account working times</a></li><li class="nav-item"><a href="#holidays" class="nav-link">Holidays</a></li></ul></li><li class="nav-item"><a href="#how-calculations-work" class="nav-link">How calculations work</a><ul><li class="nav-item"><a href="#absences-compensate-expected-working-time" class="nav-link">Absences compensate expected working time</a></li><li class="nav-item"><a href="#absences-reduce-expected-working-time" class="nav-link">Absences reduce expected working time</a></li></ul></li><li class="nav-item"><a href="#limit-timesheets-to-working-days" class="nav-link">Limit timesheets to working days</a></li><li class="nav-item"><a href="#carry-over-your-time-balance-to-the-next-year" class="nav-link">Carry over your time balance to the next year</a></li><li class="nav-item"><a href="#video" class="nav-link">Video</a></li><li class="nav-item"><a href="#settings" class="nav-link">Settings</a></li><li class="nav-item"><a href="#permissions" class="nav-link">Permissions</a></li></ul>
+                    <ul class="nav" id="jumpToNav"><li class="nav-item"><a href="#user-interface" class="nav-link">User interface</a></li><li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li><li class="nav-item"><a href="#working-times" class="nav-link">Working times</a></li><li class="nav-item"><a href="#lock-a-month" class="nav-link">Lock a month</a><ul><li class="nav-item"><a href="#unlock-a-month" class="nav-link">Unlock a month</a></li></ul></li><li class="nav-item"><a href="#changing-a-work-contract" class="nav-link">Changing a work contract</a></li><li class="nav-item"><a href="#manual-bookings" class="nav-link">Manual bookings</a><ul><li class="nav-item"><a href="#account-working-times" class="nav-link">Account working times</a></li><li class="nav-item"><a href="#holidays" class="nav-link">Holidays</a></li><li class="nav-item"><a href="#why-immmutable" class="nav-link">Why immmutable?</a></li></ul></li><li class="nav-item"><a href="#how-calculations-work" class="nav-link">How calculations work</a><ul><li class="nav-item"><a href="#absences-compensate-expected-working-time" class="nav-link">Absences compensate expected working time</a></li><li class="nav-item"><a href="#absences-reduce-expected-working-time" class="nav-link">Absences reduce expected working time</a></li></ul></li><li class="nav-item"><a href="#working-time-calculation-modes" class="nav-link">Working time calculation modes</a><ul><li class="nav-item"><a href="#all-timesheets-default" class="nav-link">All timesheets (default)</a></li><li class="nav-item"><a href="#attendance-project-only" class="nav-link">Attendance project only</a></li><li class="nav-item"><a href="#configuring-the-attendance-project" class="nav-link">Configuring the attendance project</a></li><li class="nav-item"><a href="#recording-breaks" class="nav-link">Recording breaks</a></li><li class="nav-item"><a href="#switching-between-the-modes" class="nav-link">Switching between the modes</a></li></ul></li><li class="nav-item"><a href="#limit-timesheets-to-working-days" class="nav-link">Limit timesheets to working days</a></li><li class="nav-item"><a href="#carry-over-your-time-balance-to-the-next-year" class="nav-link">Carry over your time balance to the next year</a></li><li class="nav-item"><a href="#video" class="nav-link">Video</a></li><li class="nav-item"><a href="#settings" class="nav-link">Settings</a></li><li class="nav-item"><a href="#permissions" class="nav-link">Permissions</a></li></ul>
                     
                     <ul class="nav">
                         <li>
@@ -926,7 +1130,7 @@ you have to roll over the hours to the next year:</p>
     <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
 </a>
 
-<script src="/assets/build/main.js?v1"></script>
+<script src="/assets/build/main.js?v4"></script>
 
 <script defer src="https://u.kimai.org/script.js" data-website-id="e26bef12-9527-43bc-83fd-660e237f3526"></script>
 
